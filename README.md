@@ -10,3 +10,4 @@ dùng quản lý được số lượng sản phẩm từng mặt hàng, xuất 
 * Nguyễn Vĩnh Hoàng Phúc
 ### Liên hệ:
 📧 buiminhhuyqnam@gmail.com
+![Philadelphia's Magic Gardens. This place was so cool!](C:\Users\ACER\Desktop\QuanLiCuaHangDT\ttnv.jpg "Philadelphia's Magic Gardens")
