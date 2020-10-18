@@ -167,6 +167,7 @@ namespace QLCH_UI
         private void btnCustomers_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
+            dwgCustomers.BringToFront();
         }
 
         private void btnReport_Click(object sender, EventArgs e)
@@ -264,7 +265,7 @@ namespace QLCH_UI
                 new object[]
                 {
                     "KH01",
-                    "Pham Tan Khang",
+                    "Nguyen Van A",
                     "123"
                 }
             );
@@ -272,16 +273,16 @@ namespace QLCH_UI
               new object[]
               {
                     "KH02",
-                    "Pham Tan Khangg",
+                    "Nguyen Van B",
                     "1233"
               }
              );
             dwgCustomers.Rows.Add(
                 new object[]
                 {
-                            "KH03",
-                            "Pham Tan Khanggg",
-                            "12333"
+                    "KH03",
+                    "Nguyen Van C",
+                    "12333"
                 }
                );
 
