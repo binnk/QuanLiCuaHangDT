@@ -42,3 +42,17 @@ D:\HK3\LTTQ\DoAn\GitHub\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.csproj.CoreCom
 D:\HK3\LTTQ\DoAn\GitHub\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.csproj.CopyComplete
 D:\HK3\LTTQ\DoAn\GitHub\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.exe
 D:\HK3\LTTQ\DoAn\GitHub\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.pdb
+D:\lttq\QuanLiCuaHangDT\QLCH_UI\bin\Debug\QLCH_UI.exe.config
+D:\lttq\QuanLiCuaHangDT\QLCH_UI\bin\Debug\QLCH_UI.exe
+D:\lttq\QuanLiCuaHangDT\QLCH_UI\bin\Debug\QLCH_UI.pdb
+D:\lttq\QuanLiCuaHangDT\QLCH_UI\bin\Debug\FontAwesome.Sharp.dll
+D:\lttq\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.csprojAssemblyReference.cache
+D:\lttq\QuanLiCuaHangDT\QLCH_UI\obj\Debug\LoginUI.LoginForm.resources
+D:\lttq\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.MainForm.resources
+D:\lttq\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.Properties.Resources.resources
+D:\lttq\QuanLiCuaHangDT\QLCH_UI\obj\Debug\LoginUI.RegisterForm.resources
+D:\lttq\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.csproj.GenerateResource.cache
+D:\lttq\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.csproj.CoreCompileInputs.cache
+D:\lttq\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.csproj.CopyComplete
+D:\lttq\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.exe
+D:\lttq\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.pdb

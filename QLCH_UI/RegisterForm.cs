@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QLCH_UI;
+using QLCH_UI.DAO;
 
 namespace LoginUI
 {
@@ -201,7 +202,26 @@ namespace LoginUI
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (textPass.Text != textCPass.Text)
+            {
+                label2.Text = "Confirm your password!";
+                label2.Visible = true;
+            }
+            else
+               if (Account.Instance.Check(textUser.Text.ToString()) != false)
+            {
+                label2.Text = "Username is already taken.Try another one.";
+                label2.Visible = true;
+            }
+            else
+            {
+                if (Account.Instance.Register(textUser.Text.ToString(), textEmail.Text.ToString(), textPass.Text.ToString()) == 1)
+                {
+                    this.Hide();
+                    using (MainForm mainForm = new MainForm())
+                        mainForm.ShowDialog();
+                }
+            }
         }
 
    

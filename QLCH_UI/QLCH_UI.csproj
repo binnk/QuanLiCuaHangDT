@@ -53,6 +53,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\Account.cs" />
+    <Compile Include="DAO\ConnectSQL.cs" />
+    <Compile Include="DAO\Encrypt.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>

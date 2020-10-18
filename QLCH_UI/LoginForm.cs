@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Drawing.Design;
 using QLCH_UI;
 using System.Runtime.InteropServices;
+using QLCH_UI.DAO;
 
 namespace LoginUI
 {
@@ -73,9 +74,16 @@ namespace LoginUI
         // tạo main form, ẩn form Login
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            using (MainForm mainForm= new MainForm())
-                mainForm.ShowDialog();
+            if (Account.Instance.Login(textUser.Text.ToString(), textPass.Text.ToString()))
+            { 
+                this.Hide();
+                using (MainForm mainForm = new MainForm())
+                    mainForm.ShowDialog();
+            }
+            else
+            {
+                label2.Visible = true;
+            }                
           
 
         }
@@ -86,9 +94,7 @@ namespace LoginUI
             this.Hide();
             using (RegisterForm registerForm = new RegisterForm())
                 registerForm.ShowDialog();
-            this.Show();
-
-
+         
         }
 
 

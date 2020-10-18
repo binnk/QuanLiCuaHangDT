@@ -40,6 +40,7 @@
             this.picPass = new System.Windows.Forms.PictureBox();
             this.picLogin = new System.Windows.Forms.PictureBox();
             this.xLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogin)).BeginInit();
@@ -103,7 +104,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnLogin.Location = new System.Drawing.Point(43, 298);
+            this.btnLogin.Location = new System.Drawing.Point(39, 298);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(300, 55);
             this.btnLogin.TabIndex = 10;
@@ -174,7 +175,7 @@
             this.xLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.xLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xLabel.ForeColor = System.Drawing.Color.SteelBlue;
-            this.xLabel.Location = new System.Drawing.Point(330, 9);
+            this.xLabel.Location = new System.Drawing.Point(345, 9);
             this.xLabel.Name = "xLabel";
             this.xLabel.Size = new System.Drawing.Size(24, 28);
             this.xLabel.TabIndex = 15;
@@ -182,12 +183,25 @@
             this.xLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.xLabel.Click += new System.EventHandler(this.xLabel_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Brown;
+            this.label2.Location = new System.Drawing.Point(59, 256);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(260, 22);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "username or password incorect\r\n";
+            this.label2.Visible = false;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(366, 438);
+            this.ClientSize = new System.Drawing.Size(381, 438);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.xLabel);
             this.Controls.Add(this.lCreateAcc);
             this.Controls.Add(this.label1);
@@ -227,6 +241,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel lCreateAcc;
         private System.Windows.Forms.Label xLabel;
+        private System.Windows.Forms.Label label2;
     }
 }
 
