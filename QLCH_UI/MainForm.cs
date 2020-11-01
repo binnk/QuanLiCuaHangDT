@@ -145,16 +145,22 @@ namespace QLCH_UI
         private void btnCartP_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            openChildForm(new OrdersForm());
         }
         private void btnProduct_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            showMenu(panelProducts);
+            //dgvProducts.BringToFront();
+            openChildForm(new ProductsForm());
+
+
         }
 
         private void btnCustomer_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
+            //dgvCustomers.BringToFront();
+            //panelBotCustomers.BringToFront();
         }
 
     
@@ -167,7 +173,7 @@ namespace QLCH_UI
         private void btnCustomers_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            dwgCustomers.BringToFront();
+            openChildForm(new CustomersForm());
         }
 
         private void btnReport_Click(object sender, EventArgs e)
@@ -223,16 +229,17 @@ namespace QLCH_UI
         // cài đặt trạng thái ẩn các panel ban đầu
         private void customizeDesing()
         {
-            panelProducts.Visible = false;
+            //panelProducts.Visible = false;
             panelManage.Visible = false;
+
         }
 
         private void hideMenu()
         {
-            if (panelProducts.Visible == true)
-            {
-                panelProducts.Visible = false;
-            }
+            //if (panelProducts.Visible == true)
+            //{
+            //    panelProducts.Visible = false;
+            //}
             if (panelManage.Visible == true)
             {
                 panelManage.Visible = false;
@@ -261,33 +268,65 @@ namespace QLCH_UI
 
         private void MainForm_Shown(object sender, EventArgs e)
         {
-            dwgCustomers.Rows.Add(
-                new object[]
-                {
-                    "KH01",
-                    "Nguyen Van A",
-                    "123"
-                }
-            );
-            dwgCustomers.Rows.Add(
-              new object[]
-              {
-                    "KH02",
-                    "Nguyen Van B",
-                    "1233"
-              }
-             );
-            dwgCustomers.Rows.Add(
-                new object[]
-                {
-                    "KH03",
-                    "Nguyen Van C",
-                    "12333"
-                }
-               );
+            //dgvCustomers.Rows.Add(
+            //    new object[]
+            //    {
+            //        "KH01",
+            //        "Nguyen Van A",
+            //        "123"
+            //    }
+            //);
+            //dgvCustomers.Rows.Add(
+            //  new object[]
+            //  {
+            //        "KH02",
+            //        "Nguyen Van B",
+            //        "1233"
+            //  }
+            // );
+            //dgvCustomers.Rows.Add(
+            //    new object[]
+            //    {
+            //        "KH03",
+            //        "Nguyen Van C",
+            //        "12333"
+            //    }
+            //   );
 
         }
 
+
+
+        private void ỉtemListProducts_Click(object sender, EventArgs e)
+        {
+            //dgvProducts.BringToFront();
+        }
+
+        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private Form activeForm = null;
+
+        // Mở form gắn liền với panel main form
+
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm !=null)
+            {
+                activeForm.Close();
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.Dock = DockStyle.Fill;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+
+        }
 
     }
 }

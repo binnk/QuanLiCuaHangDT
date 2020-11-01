@@ -33,8 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panelProducts = new System.Windows.Forms.Panel();
-            this.ỉtemListProducts = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnProducts = new FontAwesome.Sharp.IconButton();
             this.iconTitleBox = new FontAwesome.Sharp.IconPictureBox();
@@ -55,54 +53,24 @@
             this.btnOrders = new FontAwesome.Sharp.IconButton();
             this.iconBtnHome = new FontAwesome.Sharp.IconButton();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.dwgCustomers = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.panelCustomers = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panelChildForm = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panelBotCustomers = new System.Windows.Forms.Panel();
+            this.btnAddCustomers = new System.Windows.Forms.Button();
+            this.dgvCustomers = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.maKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.panelProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconTitleBox)).BeginInit();
             this.panelTitle.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelManage.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
-            this.bunifuGradientPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dwgCustomers)).BeginInit();
+            this.panelCustomers.SuspendLayout();
+            this.panelBotCustomers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panelProducts
-            // 
-            this.panelProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(37)))), ((int)(((byte)(55)))));
-            this.panelProducts.Controls.Add(this.ỉtemListProducts);
-            this.panelProducts.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelProducts.Location = new System.Drawing.Point(0, 325);
-            this.panelProducts.Name = "panelProducts";
-            this.panelProducts.Size = new System.Drawing.Size(258, 60);
-            this.panelProducts.TabIndex = 7;
-            // 
-            // ỉtemListProducts
-            // 
-            this.ỉtemListProducts.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ỉtemListProducts.FlatAppearance.BorderSize = 0;
-            this.ỉtemListProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ỉtemListProducts.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.ỉtemListProducts.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ỉtemListProducts.ForeColor = System.Drawing.Color.Gainsboro;
-            this.ỉtemListProducts.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.ỉtemListProducts.IconColor = System.Drawing.Color.Gainsboro;
-            this.ỉtemListProducts.IconSize = 35;
-            this.ỉtemListProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ỉtemListProducts.Location = new System.Drawing.Point(0, 0);
-            this.ỉtemListProducts.Name = "ỉtemListProducts";
-            this.ỉtemListProducts.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.ỉtemListProducts.Rotation = 0D;
-            this.ỉtemListProducts.Size = new System.Drawing.Size(258, 60);
-            this.ỉtemListProducts.TabIndex = 8;
-            this.ỉtemListProducts.Text = " Danh sách sản phẩm";
-            this.ỉtemListProducts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ỉtemListProducts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ỉtemListProducts.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -254,7 +222,6 @@
             this.panelMenu.Controls.Add(this.btnManage);
             this.panelMenu.Controls.Add(this.btnCustomers);
             this.panelMenu.Controls.Add(this.btnCartP);
-            this.panelMenu.Controls.Add(this.panelProducts);
             this.panelMenu.Controls.Add(this.btnProducts);
             this.panelMenu.Controls.Add(this.btnOrders);
             this.panelMenu.Controls.Add(this.iconBtnHome);
@@ -278,7 +245,7 @@
             this.btnReport.IconColor = System.Drawing.Color.Gainsboro;
             this.btnReport.IconSize = 35;
             this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReport.Location = new System.Drawing.Point(0, 685);
+            this.btnReport.Location = new System.Drawing.Point(0, 625);
             this.btnReport.Name = "btnReport";
             this.btnReport.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnReport.Rotation = 0D;
@@ -296,7 +263,7 @@
             this.panelManage.Controls.Add(this.itemWareHouseManage);
             this.panelManage.Controls.Add(this.itemEmployeeManage);
             this.panelManage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelManage.Location = new System.Drawing.Point(0, 565);
+            this.panelManage.Location = new System.Drawing.Point(0, 505);
             this.panelManage.Name = "panelManage";
             this.panelManage.Size = new System.Drawing.Size(258, 120);
             this.panelManage.TabIndex = 12;
@@ -359,7 +326,7 @@
             this.btnManage.IconColor = System.Drawing.Color.Gainsboro;
             this.btnManage.IconSize = 35;
             this.btnManage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManage.Location = new System.Drawing.Point(0, 505);
+            this.btnManage.Location = new System.Drawing.Point(0, 445);
             this.btnManage.Name = "btnManage";
             this.btnManage.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnManage.Rotation = 0D;
@@ -383,7 +350,7 @@
             this.btnCustomers.IconColor = System.Drawing.Color.Gainsboro;
             this.btnCustomers.IconSize = 35;
             this.btnCustomers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCustomers.Location = new System.Drawing.Point(0, 445);
+            this.btnCustomers.Location = new System.Drawing.Point(0, 385);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnCustomers.Rotation = 0D;
@@ -407,7 +374,7 @@
             this.btnCartP.IconColor = System.Drawing.Color.Gainsboro;
             this.btnCartP.IconSize = 35;
             this.btnCartP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCartP.Location = new System.Drawing.Point(0, 385);
+            this.btnCartP.Location = new System.Drawing.Point(0, 325);
             this.btnCartP.Name = "btnCartP";
             this.btnCartP.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnCartP.Rotation = 0D;
@@ -471,7 +438,7 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuGradientPanel2);
+            this.bunifuGradientPanel1.Controls.Add(this.panelCustomers);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
@@ -482,36 +449,79 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(988, 749);
             this.bunifuGradientPanel1.TabIndex = 3;
+            this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
             // 
-            // bunifuGradientPanel2
+            // panelCustomers
             // 
-            this.bunifuGradientPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panelCustomers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
-            this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel2.Controls.Add(this.dwgCustomers);
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(29, 41);
-            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
-            this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(929, 684);
-            this.bunifuGradientPanel2.TabIndex = 0;
+            this.panelCustomers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelCustomers.BackgroundImage")));
+            this.panelCustomers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelCustomers.Controls.Add(this.panelChildForm);
+            this.panelCustomers.Controls.Add(this.panelBotCustomers);
+            this.panelCustomers.Controls.Add(this.dgvCustomers);
+            this.panelCustomers.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelCustomers.GradientBottomRight = System.Drawing.Color.White;
+            this.panelCustomers.GradientTopLeft = System.Drawing.Color.White;
+            this.panelCustomers.GradientTopRight = System.Drawing.Color.White;
+            this.panelCustomers.Location = new System.Drawing.Point(29, 41);
+            this.panelCustomers.Name = "panelCustomers";
+            this.panelCustomers.Quality = 10;
+            this.panelCustomers.Size = new System.Drawing.Size(929, 677);
+            this.panelCustomers.TabIndex = 0;
             // 
-            // dwgCustomers
+            // panelChildForm
             // 
-            this.dwgCustomers.AllowUserToAddRows = false;
-            this.dwgCustomers.AllowUserToDeleteRows = false;
+            this.panelChildForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelChildForm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelChildForm.BackgroundImage")));
+            this.panelChildForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelChildForm.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelChildForm.GradientBottomRight = System.Drawing.Color.White;
+            this.panelChildForm.GradientTopLeft = System.Drawing.Color.White;
+            this.panelChildForm.GradientTopRight = System.Drawing.Color.White;
+            this.panelChildForm.Location = new System.Drawing.Point(0, 0);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Quality = 10;
+            this.panelChildForm.Size = new System.Drawing.Size(929, 677);
+            this.panelChildForm.TabIndex = 4;
+            // 
+            // panelBotCustomers
+            // 
+            this.panelBotCustomers.Controls.Add(this.btnAddCustomers);
+            this.panelBotCustomers.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBotCustomers.Location = new System.Drawing.Point(0, 630);
+            this.panelBotCustomers.Name = "panelBotCustomers";
+            this.panelBotCustomers.Size = new System.Drawing.Size(929, 47);
+            this.panelBotCustomers.TabIndex = 3;
+            // 
+            // btnAddCustomers
+            // 
+            this.btnAddCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
+            this.btnAddCustomers.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnAddCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddCustomers.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCustomers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAddCustomers.Location = new System.Drawing.Point(750, 0);
+            this.btnAddCustomers.Name = "btnAddCustomers";
+            this.btnAddCustomers.Size = new System.Drawing.Size(179, 47);
+            this.btnAddCustomers.TabIndex = 0;
+            this.btnAddCustomers.Text = "Thêm khách hàng";
+            this.btnAddCustomers.UseVisualStyleBackColor = false;
+            // 
+            // dgvCustomers
+            // 
+            this.dgvCustomers.AllowUserToAddRows = false;
+            this.dgvCustomers.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dwgCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dwgCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dwgCustomers.BackgroundColor = System.Drawing.Color.White;
-            this.dwgCustomers.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dwgCustomers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dwgCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCustomers.BackgroundColor = System.Drawing.Color.White;
+            this.dgvCustomers.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvCustomers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -519,9 +529,9 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dwgCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dwgCustomers.ColumnHeadersHeight = 37;
-            this.dwgCustomers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvCustomers.ColumnHeadersHeight = 37;
+            this.dgvCustomers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.maKH,
             this.tenKH,
             this.sdt});
@@ -532,24 +542,24 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(224)))), ((int)(((byte)(243)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dwgCustomers.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dwgCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dwgCustomers.DoubleBuffered = true;
-            this.dwgCustomers.EnableHeadersVisualStyles = false;
-            this.dwgCustomers.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.dwgCustomers.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            this.dwgCustomers.HeaderForeColor = System.Drawing.Color.White;
-            this.dwgCustomers.Location = new System.Drawing.Point(0, 0);
-            this.dwgCustomers.Name = "dwgCustomers";
-            this.dwgCustomers.ReadOnly = true;
-            this.dwgCustomers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dwgCustomers.RowHeadersVisible = false;
-            this.dwgCustomers.RowHeadersWidth = 62;
-            this.dwgCustomers.RowTemplate.DividerHeight = 2;
-            this.dwgCustomers.RowTemplate.Height = 35;
-            this.dwgCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dwgCustomers.Size = new System.Drawing.Size(929, 684);
-            this.dwgCustomers.TabIndex = 0;
+            this.dgvCustomers.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCustomers.DoubleBuffered = true;
+            this.dgvCustomers.EnableHeadersVisualStyles = false;
+            this.dgvCustomers.GridColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvCustomers.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
+            this.dgvCustomers.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvCustomers.Location = new System.Drawing.Point(0, 0);
+            this.dgvCustomers.Name = "dgvCustomers";
+            this.dgvCustomers.ReadOnly = true;
+            this.dgvCustomers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvCustomers.RowHeadersVisible = false;
+            this.dgvCustomers.RowHeadersWidth = 62;
+            this.dgvCustomers.RowTemplate.DividerHeight = 2;
+            this.dgvCustomers.RowTemplate.Height = 35;
+            this.dgvCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCustomers.Size = new System.Drawing.Size(929, 677);
+            this.dgvCustomers.TabIndex = 0;
             // 
             // maKH
             // 
@@ -588,23 +598,22 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Shown += new System.EventHandler(this.MainForm_Shown);
-            this.panelProducts.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconTitleBox)).EndInit();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
             this.panelMenu.ResumeLayout(false);
             this.panelManage.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
-            this.bunifuGradientPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dwgCustomers)).EndInit();
+            this.panelCustomers.ResumeLayout(false);
+            this.panelBotCustomers.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panelProducts;
-        private FontAwesome.Sharp.IconButton ỉtemListProducts;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconPictureBox iconTitleBox;
         private System.Windows.Forms.Label lbTitle;
@@ -618,8 +627,8 @@
         private FontAwesome.Sharp.IconButton btnCustomers;
         private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dwgCustomers;
+        private Bunifu.Framework.UI.BunifuGradientPanel panelCustomers;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvCustomers;
         private System.Windows.Forms.DataGridViewTextBoxColumn maKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn sdt;
@@ -631,6 +640,9 @@
         private FontAwesome.Sharp.IconButton itemWareHouseManage;
         private FontAwesome.Sharp.IconButton itemEmployeeManage;
         private FontAwesome.Sharp.IconButton btnReport;
+        private System.Windows.Forms.Panel panelBotCustomers;
+        private System.Windows.Forms.Button btnAddCustomers;
+        private Bunifu.Framework.UI.BunifuGradientPanel panelChildForm;
     }
 }
 
