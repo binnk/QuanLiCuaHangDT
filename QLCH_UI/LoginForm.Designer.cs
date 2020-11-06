@@ -194,6 +194,7 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "username or password incorect\r\n";
             this.label2.Visible = false;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // LoginForm
             // 

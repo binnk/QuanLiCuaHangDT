@@ -74,17 +74,17 @@ namespace LoginUI
         // tạo main form, ẩn form Login
         private void btnLogin_Click(object sender, EventArgs e)
         {
-         //   if (Account.Instance.Login(textUser.Text.ToString(), textPass.Text.ToString()))
-         //   { 
+            //if (Account.Instance.Login(textUser.Text.ToString(), textPass.Text.ToString()))
+            { 
                 this.Hide();
                 using (MainForm mainForm = new MainForm())
                     mainForm.ShowDialog();
-            //}
+            }
             //else
             //{
-            //    label2.Visible = true;
+              //  label2.Visible = true;
             //}                
-          
+            
 
         }
         // tạo form register, ẩn form Login
@@ -157,6 +157,11 @@ namespace LoginUI
         private void xLabel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -58,17 +58,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddCustomerForm.cs">
+    <Compile Include="GUI\Customer\AddCustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddCustomerForm.Designer.cs">
+    <Compile Include="GUI\Customer\AddCustomerForm.Designer.cs">
       <DependentUpon>AddCustomerForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomersForm.cs">
+    <Compile Include="BUS\CustomersBUS.cs" />
+    <Compile Include="GUI\Customer\CustomersForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomersForm.Designer.cs">
+    <Compile Include="GUI\Customer\CustomersForm.Designer.cs">
       <DependentUpon>CustomersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\CustomersDAO.cs" />
+    <Compile Include="DTO\CustomersDTO.cs" />
+    <Compile Include="GUI\Customer\EditCustomersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Customer\EditCustomersForm.Designer.cs">
+      <DependentUpon>EditCustomersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="OrdersForm.cs">
       <SubType>Form</SubType>
@@ -105,11 +114,14 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddCustomerForm.resx">
+    <EmbeddedResource Include="GUI\Customer\AddCustomerForm.resx">
       <DependentUpon>AddCustomerForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomersForm.resx">
+    <EmbeddedResource Include="GUI\Customer\CustomersForm.resx">
       <DependentUpon>CustomersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Customer\EditCustomersForm.resx">
+      <DependentUpon>EditCustomersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdersForm.resx">
       <DependentUpon>OrdersForm.cs</DependentUpon>

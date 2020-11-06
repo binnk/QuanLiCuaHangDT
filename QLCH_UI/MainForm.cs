@@ -23,7 +23,6 @@ namespace QLCH_UI
         {
             InitializeComponent();
 
-           
         
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
@@ -152,7 +151,6 @@ namespace QLCH_UI
             ActivateButton(sender, RGBColors.color3);
             //dgvProducts.BringToFront();
             openChildForm(new ProductsForm());
-
 
         }
 
