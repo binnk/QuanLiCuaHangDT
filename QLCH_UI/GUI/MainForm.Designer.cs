@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnProducts = new FontAwesome.Sharp.IconButton();
             this.iconTitleBox = new FontAwesome.Sharp.IconPictureBox();
@@ -41,7 +38,6 @@
             this.btnMinimize = new FontAwesome.Sharp.IconButton();
             this.btnMaximize = new FontAwesome.Sharp.IconButton();
             this.panelTitle = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnReport = new FontAwesome.Sharp.IconButton();
             this.panelManage = new System.Windows.Forms.Panel();
@@ -52,24 +48,14 @@
             this.btnCartP = new FontAwesome.Sharp.IconButton();
             this.btnOrders = new FontAwesome.Sharp.IconButton();
             this.iconBtnHome = new FontAwesome.Sharp.IconButton();
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.panelCustomers = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.panelChildForm = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.panelBotCustomers = new System.Windows.Forms.Panel();
-            this.btnAddCustomers = new System.Windows.Forms.Button();
-            this.dgvCustomers = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.maKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panelChildForm = new Bunifu.Framework.UI.BunifuGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.iconTitleBox)).BeginInit();
             this.panelTitle.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelManage.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
-            this.panelCustomers.SuspendLayout();
-            this.panelBotCustomers.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -195,7 +181,6 @@
             // 
             this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
             this.panelTitle.Controls.Add(this.iconTitleBox);
-            this.panelTitle.Controls.Add(this.panel2);
             this.panelTitle.Controls.Add(this.btnMaximize);
             this.panelTitle.Controls.Add(this.btnMinimize);
             this.panelTitle.Controls.Add(this.btnExit);
@@ -206,13 +191,6 @@
             this.panelTitle.Size = new System.Drawing.Size(988, 104);
             this.panelTitle.TabIndex = 1;
             this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(817, 94);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 100);
-            this.panel2.TabIndex = 12;
             // 
             // panelMenu
             // 
@@ -434,11 +412,16 @@
             this.iconBtnHome.UseVisualStyleBackColor = true;
             this.iconBtnHome.Click += new System.EventHandler(this.iconBtnHome_Click);
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 7;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.panelCustomers);
+            this.bunifuGradientPanel1.Controls.Add(this.panelChildForm);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
@@ -451,26 +434,6 @@
             this.bunifuGradientPanel1.TabIndex = 3;
             this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
             // 
-            // panelCustomers
-            // 
-            this.panelCustomers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelCustomers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelCustomers.BackgroundImage")));
-            this.panelCustomers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelCustomers.Controls.Add(this.panelChildForm);
-            this.panelCustomers.Controls.Add(this.panelBotCustomers);
-            this.panelCustomers.Controls.Add(this.dgvCustomers);
-            this.panelCustomers.GradientBottomLeft = System.Drawing.Color.White;
-            this.panelCustomers.GradientBottomRight = System.Drawing.Color.White;
-            this.panelCustomers.GradientTopLeft = System.Drawing.Color.White;
-            this.panelCustomers.GradientTopRight = System.Drawing.Color.White;
-            this.panelCustomers.Location = new System.Drawing.Point(29, 41);
-            this.panelCustomers.Name = "panelCustomers";
-            this.panelCustomers.Quality = 10;
-            this.panelCustomers.Size = new System.Drawing.Size(929, 677);
-            this.panelCustomers.TabIndex = 0;
-            // 
             // panelChildForm
             // 
             this.panelChildForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -482,110 +445,11 @@
             this.panelChildForm.GradientBottomRight = System.Drawing.Color.White;
             this.panelChildForm.GradientTopLeft = System.Drawing.Color.White;
             this.panelChildForm.GradientTopRight = System.Drawing.Color.White;
-            this.panelChildForm.Location = new System.Drawing.Point(0, 0);
+            this.panelChildForm.Location = new System.Drawing.Point(29, 19);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Quality = 10;
             this.panelChildForm.Size = new System.Drawing.Size(929, 677);
             this.panelChildForm.TabIndex = 4;
-            // 
-            // panelBotCustomers
-            // 
-            this.panelBotCustomers.Controls.Add(this.btnAddCustomers);
-            this.panelBotCustomers.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBotCustomers.Location = new System.Drawing.Point(0, 630);
-            this.panelBotCustomers.Name = "panelBotCustomers";
-            this.panelBotCustomers.Size = new System.Drawing.Size(929, 47);
-            this.panelBotCustomers.TabIndex = 3;
-            // 
-            // btnAddCustomers
-            // 
-            this.btnAddCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            this.btnAddCustomers.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnAddCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddCustomers.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCustomers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddCustomers.Location = new System.Drawing.Point(750, 0);
-            this.btnAddCustomers.Name = "btnAddCustomers";
-            this.btnAddCustomers.Size = new System.Drawing.Size(179, 47);
-            this.btnAddCustomers.TabIndex = 0;
-            this.btnAddCustomers.Text = "Thêm khách hàng";
-            this.btnAddCustomers.UseVisualStyleBackColor = false;
-            // 
-            // dgvCustomers
-            // 
-            this.dgvCustomers.AllowUserToAddRows = false;
-            this.dgvCustomers.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCustomers.BackgroundColor = System.Drawing.Color.White;
-            this.dgvCustomers.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvCustomers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvCustomers.ColumnHeadersHeight = 37;
-            this.dgvCustomers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maKH,
-            this.tenKH,
-            this.sdt});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(224)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCustomers.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvCustomers.DoubleBuffered = true;
-            this.dgvCustomers.EnableHeadersVisualStyles = false;
-            this.dgvCustomers.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvCustomers.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            this.dgvCustomers.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvCustomers.Location = new System.Drawing.Point(0, 0);
-            this.dgvCustomers.Name = "dgvCustomers";
-            this.dgvCustomers.ReadOnly = true;
-            this.dgvCustomers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvCustomers.RowHeadersVisible = false;
-            this.dgvCustomers.RowHeadersWidth = 62;
-            this.dgvCustomers.RowTemplate.DividerHeight = 2;
-            this.dgvCustomers.RowTemplate.Height = 35;
-            this.dgvCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCustomers.Size = new System.Drawing.Size(929, 677);
-            this.dgvCustomers.TabIndex = 0;
-            // 
-            // maKH
-            // 
-            this.maKH.HeaderText = "Mã khách hàng";
-            this.maKH.MinimumWidth = 8;
-            this.maKH.Name = "maKH";
-            this.maKH.ReadOnly = true;
-            // 
-            // tenKH
-            // 
-            this.tenKH.HeaderText = "Tên khách hàng";
-            this.tenKH.MinimumWidth = 8;
-            this.tenKH.Name = "tenKH";
-            this.tenKH.ReadOnly = true;
-            // 
-            // sdt
-            // 
-            this.sdt.HeaderText = "Số điện thoại";
-            this.sdt.MinimumWidth = 8;
-            this.sdt.Name = "sdt";
-            this.sdt.ReadOnly = true;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 7;
-            this.bunifuElipse1.TargetControl = this;
             // 
             // MainForm
             // 
@@ -606,9 +470,6 @@
             this.panelMenu.ResumeLayout(false);
             this.panelManage.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
-            this.panelCustomers.ResumeLayout(false);
-            this.panelBotCustomers.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -625,13 +486,6 @@
         private FontAwesome.Sharp.IconButton btnCartP;
         private FontAwesome.Sharp.IconButton iconBtnHome;
         private FontAwesome.Sharp.IconButton btnCustomers;
-        private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.Framework.UI.BunifuGradientPanel panelCustomers;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvCustomers;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sdt;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private FontAwesome.Sharp.IconButton btnProducts;
         private FontAwesome.Sharp.IconButton btnOrders;
@@ -640,8 +494,7 @@
         private FontAwesome.Sharp.IconButton itemWareHouseManage;
         private FontAwesome.Sharp.IconButton itemEmployeeManage;
         private FontAwesome.Sharp.IconButton btnReport;
-        private System.Windows.Forms.Panel panelBotCustomers;
-        private System.Windows.Forms.Button btnAddCustomers;
+        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuGradientPanel panelChildForm;
     }
 }

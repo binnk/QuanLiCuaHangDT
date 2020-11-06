@@ -184,6 +184,7 @@ namespace QLCH_UI
         private void btnOrders_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color9);
+
         }
 
         private void iconTitleBox_Click(object sender, EventArgs e)
