@@ -30,29 +30,29 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Item));
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.tbxTongTien = new System.Windows.Forms.TextBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.icBtnXoa = new FontAwesome.Sharp.IconButton();
             this.icBtnGiam = new FontAwesome.Sharp.IconButton();
             this.icBtnTang = new FontAwesome.Sharp.IconButton();
-            this.tbxDonGia = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.lbTenSP = new System.Windows.Forms.Label();
             this.lbMaSP = new System.Windows.Forms.Label();
             this.tbxSLuong = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.lbDonGia = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
+            this.mainPanel.Controls.Add(this.label1);
+            this.mainPanel.Controls.Add(this.lbDonGia);
             this.mainPanel.Controls.Add(this.iconButton1);
-            this.mainPanel.Controls.Add(this.tbxTongTien);
             this.mainPanel.Controls.Add(this.icBtnXoa);
             this.mainPanel.Controls.Add(this.icBtnGiam);
             this.mainPanel.Controls.Add(this.icBtnTang);
-            this.mainPanel.Controls.Add(this.tbxDonGia);
             this.mainPanel.Controls.Add(this.panel11);
             this.mainPanel.Controls.Add(this.lbTenSP);
             this.mainPanel.Controls.Add(this.lbMaSP);
@@ -64,20 +64,21 @@
             this.mainPanel.Size = new System.Drawing.Size(1360, 112);
             this.mainPanel.TabIndex = 1;
             // 
-            // tbxTongTien
+            // iconButton1
             // 
-            this.tbxTongTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
-            this.tbxTongTien.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbxTongTien.Font = new System.Drawing.Font("Arial", 18F);
-            this.tbxTongTien.ForeColor = System.Drawing.Color.Black;
-            this.tbxTongTien.HideSelection = false;
-            this.tbxTongTien.Location = new System.Drawing.Point(1183, 35);
-            this.tbxTongTien.Name = "tbxTongTien";
-            this.tbxTongTien.Size = new System.Drawing.Size(140, 42);
-            this.tbxTongTien.TabIndex = 26;
-            this.tbxTongTien.TabStop = false;
-            this.tbxTongTien.Text = "140,000";
-            this.tbxTongTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.iconButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("iconButton1.BackgroundImage")));
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconSize = 16;
+            this.iconButton1.Location = new System.Drawing.Point(539, 42);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Rotation = 0D;
+            this.iconButton1.Size = new System.Drawing.Size(19, 18);
+            this.iconButton1.TabIndex = 27;
+            this.iconButton1.UseVisualStyleBackColor = true;
             // 
             // icBtnXoa
             // 
@@ -126,21 +127,6 @@
             this.icBtnTang.Size = new System.Drawing.Size(32, 32);
             this.icBtnTang.TabIndex = 23;
             this.icBtnTang.UseVisualStyleBackColor = true;
-            // 
-            // tbxDonGia
-            // 
-            this.tbxDonGia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
-            this.tbxDonGia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbxDonGia.Font = new System.Drawing.Font("Arial", 18F);
-            this.tbxDonGia.ForeColor = System.Drawing.Color.Black;
-            this.tbxDonGia.HideSelection = false;
-            this.tbxDonGia.Location = new System.Drawing.Point(895, 35);
-            this.tbxDonGia.Name = "tbxDonGia";
-            this.tbxDonGia.Size = new System.Drawing.Size(182, 42);
-            this.tbxDonGia.TabIndex = 22;
-            this.tbxDonGia.TabStop = false;
-            this.tbxDonGia.Text = "1";
-            this.tbxDonGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel11
             // 
@@ -194,21 +180,27 @@
             this.panel10.Size = new System.Drawing.Size(100, 1);
             this.panel10.TabIndex = 17;
             // 
-            // iconButton1
+            // lbDonGia
             // 
-            this.iconButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("iconButton1.BackgroundImage")));
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(247)))), ((int)(((byte)(253)))));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconSize = 16;
-            this.iconButton1.Location = new System.Drawing.Point(539, 42);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Rotation = 0D;
-            this.iconButton1.Size = new System.Drawing.Size(19, 18);
-            this.iconButton1.TabIndex = 27;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.lbDonGia.Font = new System.Drawing.Font("Arial", 18F);
+            this.lbDonGia.ForeColor = System.Drawing.Color.Gray;
+            this.lbDonGia.Location = new System.Drawing.Point(892, 35);
+            this.lbDonGia.Name = "lbDonGia";
+            this.lbDonGia.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbDonGia.Size = new System.Drawing.Size(182, 42);
+            this.lbDonGia.TabIndex = 28;
+            this.lbDonGia.Text = "1";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(1104, 34);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label1.Size = new System.Drawing.Size(234, 42);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "1";
             // 
             // UC_Item
             // 
@@ -225,16 +217,16 @@
         #endregion
 
         private System.Windows.Forms.Panel mainPanel;
-        private System.Windows.Forms.TextBox tbxTongTien;
         private FontAwesome.Sharp.IconButton icBtnXoa;
         private FontAwesome.Sharp.IconButton icBtnGiam;
         private FontAwesome.Sharp.IconButton icBtnTang;
-        private System.Windows.Forms.TextBox tbxDonGia;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label lbTenSP;
         private System.Windows.Forms.Label lbMaSP;
         private System.Windows.Forms.TextBox tbxSLuong;
         private System.Windows.Forms.Panel panel10;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbDonGia;
     }
 }

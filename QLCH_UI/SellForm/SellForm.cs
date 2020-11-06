@@ -63,16 +63,12 @@ namespace QLCH_UI
 
 
 
-
+        
         private void icExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void icBtnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
      
     }
