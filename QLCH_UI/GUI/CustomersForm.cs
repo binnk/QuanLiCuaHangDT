@@ -16,5 +16,11 @@ namespace QLCH_UI
         {
             InitializeComponent();
         }
+
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            using (GUI.AddCustomerForm addCustomerForm = new GUI.AddCustomerForm())
+                addCustomerForm.ShowDialog();
+        }
     }
 }
