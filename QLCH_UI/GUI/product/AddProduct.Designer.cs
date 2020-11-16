@@ -65,7 +65,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1024, 69);
+            this.panel1.Size = new System.Drawing.Size(1014, 69);
             this.panel1.TabIndex = 1;
             // 
             // label7
@@ -81,8 +81,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.lb_gianhap_error);
-            this.groupBox1.Controls.Add(this.lb_loaisp_error);
             this.groupBox1.Controls.Add(this.lb_masp_error);
             this.groupBox1.Controls.Add(this.cb_loaisp);
             this.groupBox1.Controls.Add(this.tb_giaban);
@@ -96,9 +94,11 @@
             this.groupBox1.Controls.Add(this.tb_ten_sp);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.lb_giaban_error);
-            this.groupBox1.Location = new System.Drawing.Point(52, 84);
+            this.groupBox1.Controls.Add(this.lb_gianhap_error);
+            this.groupBox1.Controls.Add(this.lb_loaisp_error);
+            this.groupBox1.Location = new System.Drawing.Point(53, 77);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(512, 533);
+            this.groupBox1.Size = new System.Drawing.Size(512, 470);
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             // 
@@ -106,7 +106,7 @@
             // 
             this.lb_loaisp_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_loaisp_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_loaisp_error.Location = new System.Drawing.Point(52, 460);
+            this.lb_loaisp_error.Location = new System.Drawing.Point(47, 420);
             this.lb_loaisp_error.Name = "lb_loaisp_error";
             this.lb_loaisp_error.Size = new System.Drawing.Size(417, 42);
             this.lb_loaisp_error.TabIndex = 110;
@@ -118,7 +118,7 @@
             // 
             this.lb_masp_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_masp_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_masp_error.Location = new System.Drawing.Point(52, 460);
+            this.lb_masp_error.Location = new System.Drawing.Point(47, 420);
             this.lb_masp_error.Name = "lb_masp_error";
             this.lb_masp_error.Size = new System.Drawing.Size(417, 42);
             this.lb_masp_error.TabIndex = 110;
@@ -142,7 +142,7 @@
             // 
             this.tb_giaban.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_giaban.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_giaban.Location = new System.Drawing.Point(50, 404);
+            this.tb_giaban.Location = new System.Drawing.Point(50, 373);
             this.tb_giaban.Name = "tb_giaban";
             this.tb_giaban.Size = new System.Drawing.Size(414, 44);
             this.tb_giaban.TabIndex = 106;
@@ -151,7 +151,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(43, 369);
+            this.label9.Location = new System.Drawing.Point(43, 338);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(99, 32);
             this.label9.TabIndex = 105;
@@ -161,7 +161,7 @@
             // 
             this.tb_gianhap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_gianhap.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_gianhap.Location = new System.Drawing.Point(49, 304);
+            this.tb_gianhap.Location = new System.Drawing.Point(50, 291);
             this.tb_gianhap.Name = "tb_gianhap";
             this.tb_gianhap.Size = new System.Drawing.Size(414, 44);
             this.tb_gianhap.TabIndex = 104;
@@ -170,7 +170,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(43, 269);
+            this.label6.Location = new System.Drawing.Point(44, 256);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(113, 32);
             this.label6.TabIndex = 103;
@@ -190,7 +190,7 @@
             // 
             this.lb_tensp_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_tensp_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_tensp_error.Location = new System.Drawing.Point(48, 460);
+            this.lb_tensp_error.Location = new System.Drawing.Point(43, 420);
             this.lb_tensp_error.Name = "lb_tensp_error";
             this.lb_tensp_error.Size = new System.Drawing.Size(417, 42);
             this.lb_tensp_error.TabIndex = 98;
@@ -244,7 +244,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(646, 644);
+            this.button2.Location = new System.Drawing.Point(646, 597);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(138, 59);
             this.button2.TabIndex = 42;
@@ -259,7 +259,7 @@
             this.btn_luu_customer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_luu_customer.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.btn_luu_customer.ForeColor = System.Drawing.Color.White;
-            this.btn_luu_customer.Location = new System.Drawing.Point(790, 644);
+            this.btn_luu_customer.Location = new System.Drawing.Point(790, 597);
             this.btn_luu_customer.Name = "btn_luu_customer";
             this.btn_luu_customer.Size = new System.Drawing.Size(136, 59);
             this.btn_luu_customer.TabIndex = 41;
@@ -271,7 +271,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(729, 554);
+            this.label11.Location = new System.Drawing.Point(729, 538);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(124, 32);
             this.label11.TabIndex = 109;
@@ -289,7 +289,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(646, 106);
+            this.pictureBox1.Location = new System.Drawing.Point(646, 90);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(280, 445);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -301,9 +301,9 @@
             // 
             this.lb_gianhap_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_gianhap_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_gianhap_error.Location = new System.Drawing.Point(52, 460);
+            this.lb_gianhap_error.Location = new System.Drawing.Point(47, 420);
             this.lb_gianhap_error.Name = "lb_gianhap_error";
-            this.lb_gianhap_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_gianhap_error.Size = new System.Drawing.Size(417, 38);
             this.lb_gianhap_error.TabIndex = 110;
             this.lb_gianhap_error.Text = "Giá nhập không hợp lệ";
             this.lb_gianhap_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -313,7 +313,7 @@
             // 
             this.lb_giaban_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_giaban_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_giaban_error.Location = new System.Drawing.Point(46, 460);
+            this.lb_giaban_error.Location = new System.Drawing.Point(41, 420);
             this.lb_giaban_error.Name = "lb_giaban_error";
             this.lb_giaban_error.Size = new System.Drawing.Size(417, 42);
             this.lb_giaban_error.TabIndex = 111;
@@ -325,7 +325,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1024, 801);
+            this.ClientSize = new System.Drawing.Size(1014, 682);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_luu_customer);

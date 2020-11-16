@@ -17,7 +17,7 @@ namespace QLCH_UI.DAO
             get { if (instance == null) instance = new ConnectSQL(); return instance; }
             private set => instance = value;
         }
-        private string connectionSTR = @"Data Source=LAPTOP-4CIHSEK9\SQLEXPRESS;Initial Catalog=QL_CHDT;Integrated Security=True;";
+        private string connectionSTR = @"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CHDT_Phuc;User ID=sa;Password=123456;";
         // "Data Source=10.0.0.163,1433;Initial Catalog=quan_ly_cua_hang_dt;Persist Security Info=True;User ID=sa; PassWord=123456;";
         public DataTable ExecuteQuery(string query, object[] paramater = null)
         {
