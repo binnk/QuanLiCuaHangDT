@@ -30,6 +30,7 @@ namespace QLCH_UI.DAO
         private ProductDAO() { }
         public DataTable Productlist()
         {
+            //string query = "select * from san_pham";
             string query = "select masp as N'Mã sản phẩm',ten_sp as N'Tên sản phẩm',so_luong as N'Số lượng'  from san_pham";
             DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
             return (dt);
@@ -50,6 +51,23 @@ namespace QLCH_UI.DAO
             try
             {
                 string query = string.Format("delete from san_pham where masp= '{0}'", ID);
+                result = ConnectSQL.Instance.ExecuteNonQuery(query);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            if (result == 0) return (false);
+            else return (true);
+        }
+
+        public bool Edit(ProductDTO a)
+        {
+
+            int result = 0;
+            try
+            {
+                string query = string.Format("update san_pham set ten_sp= N'{0}', loai_sp= N'{1}', so_luong= '{2}', gia_nhap= '{3}', gia_ban= '{4}', img=N'{5}' where masp='{6}'", a.Ten_sp,a.Loai_sp,a.So_luong,a.Gia_nhap,a.Gia_ban,a.Anh);
                 result = ConnectSQL.Instance.ExecuteNonQuery(query);
             }
             catch (Exception ex)

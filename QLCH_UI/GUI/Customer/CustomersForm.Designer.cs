@@ -37,7 +37,6 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
-            this.btn_info = new System.Windows.Forms.Button();
             this.panelCustomers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
             this.panelBotProducts.SuspendLayout();
@@ -98,10 +97,10 @@
             this.dgvCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCustomers.Size = new System.Drawing.Size(929, 620);
             this.dgvCustomers.TabIndex = 5;
+            this.dgvCustomers.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomers_CellDoubleClick);
             // 
             // panelBotProducts
             // 
-            this.panelBotProducts.Controls.Add(this.btn_info);
             this.panelBotProducts.Controls.Add(this.btnDelete);
             this.panelBotProducts.Controls.Add(this.btnEdit);
             this.panelBotProducts.Controls.Add(this.btnAddProduct);
@@ -157,21 +156,6 @@
             this.btnAddProduct.UseVisualStyleBackColor = true;
             this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
-            // btn_info
-            // 
-            this.btn_info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            this.btn_info.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_info.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_info.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_info.Location = new System.Drawing.Point(213, 0);
-            this.btn_info.Name = "btn_info";
-            this.btn_info.Size = new System.Drawing.Size(179, 57);
-            this.btn_info.TabIndex = 3;
-            this.btn_info.Text = "Xem thông tin";
-            this.btn_info.UseVisualStyleBackColor = true;
-            this.btn_info.Click += new System.EventHandler(this.btn_info_Click);
-            // 
             // CustomersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -196,6 +180,5 @@
         private System.Windows.Forms.Button btnAddProduct;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Button btn_info;
     }
 }

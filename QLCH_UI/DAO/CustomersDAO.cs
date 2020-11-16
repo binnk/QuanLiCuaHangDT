@@ -34,7 +34,7 @@ namespace QLCH_UI.DAO
 
         public DataTable ViewCustomer(string ID)
         {
-            string query=string.Format("select makh as N'Mã khách hàng', ten_kh as N'Tên khách hàng', ngay_sinh as N'Ngày sinh', dia_chi as N'Địa chỉ', dien_thoai as 'SDT', gioi_tinh as 'Giới tính' from khach_hang where makh='{0}'", ID);
+            string query=string.Format("select * from khach_hang where makh='{0}'", ID);
             DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
             return (dt);
         }
@@ -61,7 +61,7 @@ namespace QLCH_UI.DAO
             int result = 0;
             try
             {
-                string query = string.Format("update khach_hang set ten_kh= N'{0}', ngay_sinh= '{1}', dia_chi= '{2}', dien_thoai= '{3}', gioi_tinh= N'{4}' where makh='{5}'", a.Ten_kh, a.Ngay_sinh, a.Dia_chi, a.Dien_thoai, a.Gioi_tinh,a.Makh);
+                string query = string.Format("update khach_hang set ten_kh= N'{0}', ngay_sinh= '{1}', dia_chi= N'{2}', dien_thoai= '{3}', gioi_tinh= N'{4}' where makh='{5}'", a.Ten_kh, a.Ngay_sinh, a.Dia_chi, a.Dien_thoai, a.Gioi_tinh,a.Makh);
                 result = ConnectSQL.Instance.ExecuteNonQuery(query);
             }
             catch (Exception ex)

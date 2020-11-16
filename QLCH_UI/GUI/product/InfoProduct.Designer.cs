@@ -42,14 +42,16 @@
             this.lb_loaisp = new System.Windows.Forms.Label();
             this.lb_giasp = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.button2 = new System.Windows.Forms.Button();
+            this.icExit = new FontAwesome.Sharp.IconPictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icExit)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(100)))), ((int)(((byte)(207)))));
+            this.panel1.Controls.Add(this.icExit);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -108,6 +110,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 86;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label4
             // 
@@ -162,27 +165,27 @@
             this.bunifuDragControl1.TargetControl = this.panel1;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // button2
+            // icExit
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(167, 442);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 59);
-            this.button2.TabIndex = 92;
-            this.button2.Text = "Thoát";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.icExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(100)))), ((int)(((byte)(207)))));
+            this.icExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("icExit.BackgroundImage")));
+            this.icExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.icExit.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.icExit.IconColor = System.Drawing.SystemColors.ControlText;
+            this.icExit.IconSize = 48;
+            this.icExit.Location = new System.Drawing.Point(990, 9);
+            this.icExit.Name = "icExit";
+            this.icExit.Size = new System.Drawing.Size(48, 48);
+            this.icExit.TabIndex = 107;
+            this.icExit.TabStop = false;
+            this.icExit.Click += new System.EventHandler(this.icExit_Click);
             // 
             // InfoProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1093, 559);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.lb_giasp);
             this.Controls.Add(this.lb_loaisp);
             this.Controls.Add(this.lb_tensp);
@@ -201,6 +204,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,6 +224,6 @@
         private System.Windows.Forms.Label lb_loaisp;
         private System.Windows.Forms.Label lb_giasp;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
-        private System.Windows.Forms.Button button2;
+        private FontAwesome.Sharp.IconPictureBox icExit;
     }
 }

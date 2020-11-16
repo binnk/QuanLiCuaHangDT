@@ -34,6 +34,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btn_luu_customer = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lb_gioitinh_error = new System.Windows.Forms.Label();
+            this.lb_SDT_error = new System.Windows.Forms.Label();
+            this.lb_diachi_error = new System.Windows.Forms.Label();
             this.lb_tenkh_error = new System.Windows.Forms.Label();
             this.tb_dia_chi = new System.Windows.Forms.TextBox();
             this.tb_phone = new System.Windows.Forms.TextBox();
@@ -49,9 +52,6 @@
             this.tb_ten_kh = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.lb_diachi_error = new System.Windows.Forms.Label();
-            this.lb_SDT_error = new System.Windows.Forms.Label();
-            this.lb_gioitinh_error = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -73,9 +73,9 @@
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
             this.label7.Location = new System.Drawing.Point(158, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(252, 45);
+            this.label7.Size = new System.Drawing.Size(253, 45);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Sủa khách hàng";
+            this.label7.Text = "Sửa khách hàng";
             // 
             // button2
             // 
@@ -131,6 +131,42 @@
             this.groupBox1.Size = new System.Drawing.Size(512, 519);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
+            // 
+            // lb_gioitinh_error
+            // 
+            this.lb_gioitinh_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_gioitinh_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_gioitinh_error.Location = new System.Drawing.Point(45, 474);
+            this.lb_gioitinh_error.Name = "lb_gioitinh_error";
+            this.lb_gioitinh_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_gioitinh_error.TabIndex = 101;
+            this.lb_gioitinh_error.Text = "Chọn giới tính";
+            this.lb_gioitinh_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_gioitinh_error.Visible = false;
+            // 
+            // lb_SDT_error
+            // 
+            this.lb_SDT_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_SDT_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_SDT_error.Location = new System.Drawing.Point(45, 474);
+            this.lb_SDT_error.Name = "lb_SDT_error";
+            this.lb_SDT_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_SDT_error.TabIndex = 103;
+            this.lb_SDT_error.Text = "Số điện thoại không hợp lệ";
+            this.lb_SDT_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_SDT_error.Visible = false;
+            // 
+            // lb_diachi_error
+            // 
+            this.lb_diachi_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_diachi_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_diachi_error.Location = new System.Drawing.Point(47, 474);
+            this.lb_diachi_error.Name = "lb_diachi_error";
+            this.lb_diachi_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_diachi_error.TabIndex = 102;
+            this.lb_diachi_error.Text = "Địa chỉ không hợp lệ";
+            this.lb_diachi_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_diachi_error.Visible = false;
             // 
             // lb_tenkh_error
             // 
@@ -282,42 +318,6 @@
             this.bunifuDragControl1.Horizontal = true;
             this.bunifuDragControl1.TargetControl = this.panel1;
             this.bunifuDragControl1.Vertical = true;
-            // 
-            // lb_diachi_error
-            // 
-            this.lb_diachi_error.Font = new System.Drawing.Font("Arial", 10F);
-            this.lb_diachi_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_diachi_error.Location = new System.Drawing.Point(47, 474);
-            this.lb_diachi_error.Name = "lb_diachi_error";
-            this.lb_diachi_error.Size = new System.Drawing.Size(417, 42);
-            this.lb_diachi_error.TabIndex = 102;
-            this.lb_diachi_error.Text = "Địa chỉ không hợp lệ";
-            this.lb_diachi_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lb_diachi_error.Visible = false;
-            // 
-            // lb_SDT_error
-            // 
-            this.lb_SDT_error.Font = new System.Drawing.Font("Arial", 10F);
-            this.lb_SDT_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_SDT_error.Location = new System.Drawing.Point(45, 474);
-            this.lb_SDT_error.Name = "lb_SDT_error";
-            this.lb_SDT_error.Size = new System.Drawing.Size(417, 42);
-            this.lb_SDT_error.TabIndex = 103;
-            this.lb_SDT_error.Text = "Số điện thoại không hợp lệ";
-            this.lb_SDT_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lb_SDT_error.Visible = false;
-            // 
-            // lb_gioitinh_error
-            // 
-            this.lb_gioitinh_error.Font = new System.Drawing.Font("Arial", 10F);
-            this.lb_gioitinh_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_gioitinh_error.Location = new System.Drawing.Point(45, 474);
-            this.lb_gioitinh_error.Name = "lb_gioitinh_error";
-            this.lb_gioitinh_error.Size = new System.Drawing.Size(417, 42);
-            this.lb_gioitinh_error.TabIndex = 101;
-            this.lb_gioitinh_error.Text = "Chọn giới tính";
-            this.lb_gioitinh_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lb_gioitinh_error.Visible = false;
             // 
             // EditCustomer
             // 

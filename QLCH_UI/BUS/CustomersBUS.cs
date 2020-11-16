@@ -27,6 +27,49 @@ namespace QLCH_UI.BUS
             }
         }
         private CustomersBUS() { }
+
+        // kiem tra ma 
+        public bool makh(string value)
+        {
+            int l = value.Length;
+            if (l == 0) return (false);
+            int k = 1;
+            if (l > 9) return (false);
+            for (int i = 0; i < l; i++)
+            {
+                if ((value[i] >= 65 && value[i] <= 90) || (value[i] >= 97 && value[i] <= 122) || (value[i] >= 48 && value[i] <= 57)) k = 1;
+                else return (false);
+            }
+            return (true);
+        }
+        // kiem tra SDT
+        public bool SDT(string value)
+        {
+            int l = value.Length;
+            for (int i = 0; i < l; i++) if (value[i] < 48 || value[i] > 57) return (false);
+            if (l > 12 || l == 0) return (false);
+            return (true);
+        }
+        // Kiem tra gioi tinh
+        public bool gioi_tinh(bool a, bool b)
+        {
+            if (a == false && b == false) return (false);
+            return (true);
+        }
+        // kiem tra ten 
+        public bool ten_kh(string value)
+        {
+            int l = value.Length;
+            if (l > 49 || l == 0) return false;
+            return (true);
+        }
+        // kiem tra dia chi
+        public bool dia_chi(string value)
+        {
+            int l = value.Length;
+            if (l > 99 || l == 0) return false;
+            return (true);
+        }
         public DataTable customerlist()
         {
             return CustomersDAO.Instance.Customerslist();

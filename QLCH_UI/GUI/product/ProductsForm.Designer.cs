@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelBotProducts = new System.Windows.Forms.Panel();
-            this.btninfo = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
@@ -45,7 +44,6 @@
             // 
             // panelBotProducts
             // 
-            this.panelBotProducts.Controls.Add(this.btninfo);
             this.panelBotProducts.Controls.Add(this.btnDelete);
             this.panelBotProducts.Controls.Add(this.btnEdit);
             this.panelBotProducts.Controls.Add(this.btnAddProduct);
@@ -54,21 +52,6 @@
             this.panelBotProducts.Name = "panelBotProducts";
             this.panelBotProducts.Size = new System.Drawing.Size(929, 47);
             this.panelBotProducts.TabIndex = 4;
-            // 
-            // btninfo
-            // 
-            this.btninfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            this.btninfo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btninfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btninfo.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btninfo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btninfo.Location = new System.Drawing.Point(213, 0);
-            this.btninfo.Name = "btninfo";
-            this.btninfo.Size = new System.Drawing.Size(179, 47);
-            this.btninfo.TabIndex = 3;
-            this.btninfo.Text = "Xem thông tin";
-            this.btninfo.UseVisualStyleBackColor = true;
-            this.btninfo.Click += new System.EventHandler(this.btninfo_Click);
             // 
             // btnDelete
             // 
@@ -161,6 +144,8 @@
             this.dgvProducts.Size = new System.Drawing.Size(929, 630);
             this.dgvProducts.TabIndex = 5;
             this.dgvProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_CellClick);
+            this.dgvProducts.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_CellContentDoubleClick);
+            this.dgvProducts.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_CellDoubleClick);
             // 
             // panelProducts
             // 
@@ -198,6 +183,5 @@
         private System.Windows.Forms.Panel panelProducts;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Button btninfo;
     }
 }

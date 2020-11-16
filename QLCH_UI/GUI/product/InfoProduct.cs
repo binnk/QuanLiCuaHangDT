@@ -26,5 +26,15 @@ namespace QLCH_UI
         {
             this.Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void icExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
