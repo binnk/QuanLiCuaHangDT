@@ -63,7 +63,6 @@ namespace QLCH_UI.DAO
 
         public bool Edit(ProductDTO a)
         {
-
             int result = 0;
             try
             {
