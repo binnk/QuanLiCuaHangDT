@@ -58,7 +58,6 @@ namespace QLCH_UI.BUS
             if (l == 0) return (false);
             return (true);
         }
-
         //gia nhap
         public bool gia_nhap(string value)
         {
