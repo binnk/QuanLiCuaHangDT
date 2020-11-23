@@ -170,6 +170,11 @@ namespace QLCH_UI
             showMenu(panelManage);
         }
 
+        private void itemEmployeeManage_Click(object sender, EventArgs e)
+        {
+            openChildForm(new StaffsForm());
+        }
+
         private void btnCustomers_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
@@ -333,5 +338,7 @@ namespace QLCH_UI
         {
 
         }
+
+    
     }
 }

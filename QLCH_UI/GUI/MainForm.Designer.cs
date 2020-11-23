@@ -292,6 +292,7 @@
             this.itemEmployeeManage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.itemEmployeeManage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.itemEmployeeManage.UseVisualStyleBackColor = true;
+            this.itemEmployeeManage.Click += new System.EventHandler(this.itemEmployeeManage_Click);
             // 
             // btnManage
             // 
