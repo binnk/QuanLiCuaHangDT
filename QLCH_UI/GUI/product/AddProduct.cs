@@ -72,7 +72,9 @@ namespace QLCH_UI
         {
             if (check_error()==true)
             {
-                ProductDTO a = new ProductDTO(this.Text, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text ,double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text));
+                byte[] k = ProductBUS.Instance.ImageToByteArray(this.Text);
+                string l = Convert.ToBase64String(k);
+                ProductDTO a = new ProductDTO(l, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text ,double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text));
                 if (ProductBUS.Instance.insert_product(a))
                 {
                     MessageBox.Show("Thêm thành công");

@@ -30,6 +30,8 @@ namespace QLCH_UI.BUS
                 ProductBUS.instance = value;
             }
         }
+        private ProductBUS() { }
+
         // kiem tra ma 
         public bool masp(string value)
         {
@@ -96,8 +98,34 @@ namespace QLCH_UI.BUS
                 }
             return (true);
         }
+        // kiem tra so luong
+        public bool so_luong(string value)
+        {
+            int l = value.Length;
+            if (l == 0) return (false);
+            for (int i = 0; i < l; i++)
+                if (value[i] < 48 || value[i] > 57) return (false);
+            return (true);
+        }
+        public Image ByteToImg (string byteString)
+        {
+            byte[] imgBytes = Convert.FromBase64String(byteString);
+            MemoryStream ms = new MemoryStream(imgBytes, 0, imgBytes.Length);
+            ms.Write(imgBytes, 0, imgBytes.Length);
+            Image image = Image.FromStream(ms, true);
+            return image;
+        }
 
-        private ProductBUS() { }
+        public byte[] ImageToByteArray(string a)
+        {
+            FileStream fs;
+            fs = new FileStream(a, FileMode.Open, FileAccess.Read);
+            byte[] picbyte = new byte[fs.Length];
+            fs.Read(picbyte, 0, System.Convert.ToInt32(fs.Length));
+            fs.Close();
+            return picbyte;
+        }
+
         public bool insert_product(ProductDTO a)
         {
             return (ProductDAO.Instance.insert(a));

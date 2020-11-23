@@ -49,7 +49,7 @@ namespace QLCH_UI.DAO
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Mã khách đã tồn tại");
+                MessageBox.Show(ex.Message);
             }
             if (result == 0) return (false);
             else return (true);
@@ -66,7 +66,7 @@ namespace QLCH_UI.DAO
             }
             catch (Exception ex)
             {
-                throw ex;
+                MessageBox.Show(ex.Message);
             }
             if (result == 0) return (false);
             else return (true);
@@ -82,7 +82,7 @@ namespace QLCH_UI.DAO
             }
             catch (Exception ex)
             {
-                throw ex;
+                MessageBox.Show(ex.Message);
             }
             if (result == 0) return (false);
             else return (true);

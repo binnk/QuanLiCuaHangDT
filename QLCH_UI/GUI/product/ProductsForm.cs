@@ -24,14 +24,7 @@ namespace QLCH_UI
         }
 
 
-        private Image ByteToImg(string byteString)
-        {
-            byte[] imgBytes = Convert.FromBase64String(byteString);
-            MemoryStream ms = new MemoryStream(imgBytes, 0, imgBytes.Length);
-            ms.Write(imgBytes, 0, imgBytes.Length);
-            Image image = Image.FromStream(ms, true);
-            return image;
-        }
+  
 
         public void load_product()
         {
@@ -67,7 +60,9 @@ namespace QLCH_UI
                 gia_nhap = (double)a.Rows[0]["gia_nhap"];
                 gia_ban = (double)a.Rows[0]["gia_ban"];
                 img = a.Rows[0]["img"].ToString();
-
+                EditProduct f = new EditProduct(img,masp,ten_sp,loai_sp,gia_nhap,gia_ban);
+                f.ShowDialog();
+                load_product();
             }
         }
 
@@ -104,10 +99,28 @@ namespace QLCH_UI
                 string ten_sp = a.Rows[0]["ten_sp"].ToString();
                 string loai_sp = a.Rows[0]["loai_sp"].ToString();
                 string gia = a.Rows[0]["gia_ban"].ToString();
-                Image anh = ByteToImg(a.Rows[0]["img"].ToString());
+                Image anh = ProductBUS.Instance.ByteToImg(a.Rows[0]["img"].ToString());
                 InfoProduct f = new InfoProduct(ma_sp, ten_sp, loai_sp, gia, anh);
                 f.ShowDialog();
 
+            }
+        }
+
+        private void btn_ImportProduct_Click(object sender, EventArgs e)
+        {
+            if (dgvProducts.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = dgvProducts.SelectedRows[0];
+                string masp = row.Cells[0].Value.ToString();
+                DataTable a = ProductDAO.Instance.viewinfo(masp);
+                string ma_sp = a.Rows[0]["masp"].ToString();
+                string ten_sp = a.Rows[0]["ten_sp"].ToString();
+                string loai_sp = a.Rows[0]["loai_sp"].ToString();
+                string gia = a.Rows[0]["gia_nhap"].ToString();
+                Image anh = ProductBUS.Instance.ByteToImg(a.Rows[0]["img"].ToString());
+                ImportProducts f = new ImportProducts(ma_sp, ten_sp, loai_sp, gia, anh);
+                f.ShowDialog();
+                load_product();
             }
         }
     }

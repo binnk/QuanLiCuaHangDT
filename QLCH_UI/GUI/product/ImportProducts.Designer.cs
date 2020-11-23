@@ -33,28 +33,24 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_gia_nhap = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_sl = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_loai_sp = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tb_makh = new System.Windows.Forms.TextBox();
+            this.tb_masp = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.date_kh = new System.Windows.Forms.DateTimePicker();
+            this.date_sp = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.tb_ten_kh = new System.Windows.Forms.TextBox();
+            this.tb_ten_sp = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btn_luu_customer = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lb_sl_error = new System.Windows.Forms.Label();
+            this.lb_gianhap_error = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,75 +79,34 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.lb_gianhap_error);
+            this.groupBox1.Controls.Add(this.lb_sl_error);
+            this.groupBox1.Controls.Add(this.tb_gia_nhap);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.tb_sl);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tb_loai_sp);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.tb_makh);
+            this.groupBox1.Controls.Add(this.tb_masp);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.date_kh);
+            this.groupBox1.Controls.Add(this.date_sp);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.tb_ten_kh);
+            this.groupBox1.Controls.Add(this.tb_ten_sp);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(52, 84);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(512, 694);
+            this.groupBox1.Size = new System.Drawing.Size(512, 547);
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             // 
-            // textBox5
+            // tb_gia_nhap
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Arial", 16F);
-            this.textBox5.Location = new System.Drawing.Point(55, 591);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(414, 44);
-            this.textBox5.TabIndex = 108;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(49, 556);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(183, 32);
-            this.label10.TabIndex = 107;
-            this.label10.Text = "Mã người nhập";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Arial", 16F);
-            this.textBox4.Location = new System.Drawing.Point(55, 503);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(414, 44);
-            this.textBox4.TabIndex = 106;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(49, 468);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(99, 32);
-            this.label9.TabIndex = 105;
-            this.label9.Text = "Giá bán";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 16F);
-            this.textBox3.Location = new System.Drawing.Point(54, 415);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(414, 44);
-            this.textBox3.TabIndex = 104;
+            this.tb_gia_nhap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_gia_nhap.Font = new System.Drawing.Font("Arial", 16F);
+            this.tb_gia_nhap.Location = new System.Drawing.Point(54, 415);
+            this.tb_gia_nhap.Name = "tb_gia_nhap";
+            this.tb_gia_nhap.Size = new System.Drawing.Size(414, 44);
+            this.tb_gia_nhap.TabIndex = 104;
             // 
             // label6
             // 
@@ -163,33 +118,34 @@
             this.label6.TabIndex = 103;
             this.label6.Text = "Giá nhập";
             // 
-            // textBox2
+            // tb_sl
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 16F);
-            this.textBox2.Location = new System.Drawing.Point(241, 336);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(133, 44);
-            this.textBox2.TabIndex = 102;
+            this.tb_sl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_sl.Font = new System.Drawing.Font("Arial", 16F);
+            this.tb_sl.Location = new System.Drawing.Point(168, 333);
+            this.tb_sl.Name = "tb_sl";
+            this.tb_sl.Size = new System.Drawing.Size(133, 44);
+            this.tb_sl.TabIndex = 102;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(48, 342);
+            this.label4.Location = new System.Drawing.Point(49, 333);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 32);
             this.label4.TabIndex = 101;
             this.label4.Text = "Số lượng";
             // 
-            // textBox1
+            // tb_loai_sp
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 16F);
-            this.textBox1.Location = new System.Drawing.Point(50, 211);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(414, 44);
-            this.textBox1.TabIndex = 100;
+            this.tb_loai_sp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_loai_sp.Font = new System.Drawing.Font("Arial", 16F);
+            this.tb_loai_sp.Location = new System.Drawing.Point(50, 211);
+            this.tb_loai_sp.Name = "tb_loai_sp";
+            this.tb_loai_sp.ReadOnly = true;
+            this.tb_loai_sp.Size = new System.Drawing.Size(414, 44);
+            this.tb_loai_sp.TabIndex = 100;
             // 
             // label3
             // 
@@ -201,25 +157,15 @@
             this.label3.TabIndex = 99;
             this.label3.Text = "Loại sản phẩm";
             // 
-            // label8
+            // tb_masp
             // 
-            this.label8.Font = new System.Drawing.Font("Arial", 10F);
-            this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(47, 638);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(417, 42);
-            this.label8.TabIndex = 98;
-            this.label8.Text = "Tên sản phẩm không hợp lệ";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tb_makh
-            // 
-            this.tb_makh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb_makh.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_makh.Location = new System.Drawing.Point(50, 129);
-            this.tb_makh.Name = "tb_makh";
-            this.tb_makh.Size = new System.Drawing.Size(414, 44);
-            this.tb_makh.TabIndex = 95;
+            this.tb_masp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_masp.Font = new System.Drawing.Font("Arial", 16F);
+            this.tb_masp.Location = new System.Drawing.Point(50, 129);
+            this.tb_masp.Name = "tb_masp";
+            this.tb_masp.ReadOnly = true;
+            this.tb_masp.Size = new System.Drawing.Size(414, 44);
+            this.tb_masp.TabIndex = 95;
             // 
             // label5
             // 
@@ -231,16 +177,16 @@
             this.label5.TabIndex = 87;
             this.label5.Text = "Ngày nhập";
             // 
-            // date_kh
+            // date_sp
             // 
-            this.date_kh.CalendarFont = new System.Drawing.Font("Arial", 16F);
-            this.date_kh.CustomFormat = "dd/MM/yyyy";
-            this.date_kh.Font = new System.Drawing.Font("Arial", 16F);
-            this.date_kh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_kh.Location = new System.Drawing.Point(49, 286);
-            this.date_kh.Name = "date_kh";
-            this.date_kh.Size = new System.Drawing.Size(325, 44);
-            this.date_kh.TabIndex = 86;
+            this.date_sp.CalendarFont = new System.Drawing.Font("Arial", 16F);
+            this.date_sp.CustomFormat = "dd/MM/yyyy";
+            this.date_sp.Font = new System.Drawing.Font("Arial", 16F);
+            this.date_sp.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.date_sp.Location = new System.Drawing.Point(49, 286);
+            this.date_sp.Name = "date_sp";
+            this.date_sp.Size = new System.Drawing.Size(325, 44);
+            this.date_sp.TabIndex = 86;
             // 
             // label1
             // 
@@ -252,14 +198,15 @@
             this.label1.TabIndex = 84;
             this.label1.Text = "Mã sản phẩm";
             // 
-            // tb_ten_kh
+            // tb_ten_sp
             // 
-            this.tb_ten_kh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb_ten_kh.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_ten_kh.Location = new System.Drawing.Point(49, 55);
-            this.tb_ten_kh.Name = "tb_ten_kh";
-            this.tb_ten_kh.Size = new System.Drawing.Size(414, 44);
-            this.tb_ten_kh.TabIndex = 83;
+            this.tb_ten_sp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_ten_sp.Font = new System.Drawing.Font("Arial", 16F);
+            this.tb_ten_sp.Location = new System.Drawing.Point(49, 66);
+            this.tb_ten_sp.Name = "tb_ten_sp";
+            this.tb_ten_sp.ReadOnly = true;
+            this.tb_ten_sp.Size = new System.Drawing.Size(414, 44);
+            this.tb_ten_sp.TabIndex = 83;
             // 
             // label2
             // 
@@ -284,6 +231,7 @@
             this.button2.TabIndex = 42;
             this.button2.Text = "Hủy";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btn_luu_customer
             // 
@@ -296,18 +244,9 @@
             this.btn_luu_customer.Name = "btn_luu_customer";
             this.btn_luu_customer.Size = new System.Drawing.Size(136, 59);
             this.btn_luu_customer.TabIndex = 41;
-            this.btn_luu_customer.Text = "Lưu";
+            this.btn_luu_customer.Text = "Xác nhận";
             this.btn_luu_customer.UseVisualStyleBackColor = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(757, 599);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(124, 32);
-            this.label11.TabIndex = 109;
-            this.label11.Text = "Thêm ảnh";
+            this.btn_luu_customer.Click += new System.EventHandler(this.btn_luu_customer_Click);
             // 
             // bunifuDragControl1
             // 
@@ -329,12 +268,36 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // lb_sl_error
+            // 
+            this.lb_sl_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_sl_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_sl_error.Location = new System.Drawing.Point(51, 480);
+            this.lb_sl_error.Name = "lb_sl_error";
+            this.lb_sl_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_sl_error.TabIndex = 110;
+            this.lb_sl_error.Text = "Số lượng không hợp lệ";
+            this.lb_sl_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_sl_error.Visible = false;
+            this.lb_sl_error.Click += new System.EventHandler(this.lb_sl_Click);
+            // 
+            // lb_gianhap_error
+            // 
+            this.lb_gianhap_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_gianhap_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_gianhap_error.Location = new System.Drawing.Point(47, 480);
+            this.lb_gianhap_error.Name = "lb_gianhap_error";
+            this.lb_gianhap_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_gianhap_error.TabIndex = 111;
+            this.lb_gianhap_error.Text = "Giá nhập không hợp lệ";
+            this.lb_gianhap_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_gianhap_error.Visible = false;
+            // 
             // ImportProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1024, 801);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_luu_customer);
             this.Controls.Add(this.pictureBox1);
@@ -352,7 +315,6 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -361,27 +323,23 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox tb_makh;
+        private System.Windows.Forms.TextBox tb_masp;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tb_ten_kh;
+        private System.Windows.Forms.TextBox tb_ten_sp;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_gia_nhap;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_sl;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_loai_sp;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker date_kh;
+        private System.Windows.Forms.DateTimePicker date_sp;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_luu_customer;
-        private System.Windows.Forms.Label label11;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lb_sl_error;
+        private System.Windows.Forms.Label lb_gianhap_error;
     }
 }

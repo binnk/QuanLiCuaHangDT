@@ -60,10 +60,13 @@
   <ItemGroup>
     <Compile Include="BUS\CustomersBUS.cs" />
     <Compile Include="BUS\ProductBUS.cs" />
+    <Compile Include="BUS\WareHouseBUS.cs" />
     <Compile Include="DAO\CustomersDAO.cs" />
     <Compile Include="DAO\ProductDAO.cs" />
+    <Compile Include="DAO\WarehouseDAO.cs" />
     <Compile Include="DTO\CustomersDTO.cs" />
     <Compile Include="DTO\ProductDTO.cs" />
+    <Compile Include="DTO\WarehouseDTO.cs" />
     <Compile Include="GUI\Customer\AddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +96,12 @@
     </Compile>
     <Compile Include="GUI\OrdersForm.Designer.cs">
       <DependentUpon>OrdersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\product\EditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\product\EditProduct.Designer.cs">
+      <DependentUpon>EditProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\product\ProductsForm.cs">
       <SubType>Form</SubType>
@@ -155,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\OrdersForm.resx">
       <DependentUpon>OrdersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\product\EditProduct.resx">
+      <DependentUpon>EditProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\product\ProductsForm.resx">
       <DependentUpon>ProductsForm.cs</DependentUpon>

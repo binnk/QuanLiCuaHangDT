@@ -108,3 +108,4 @@ C:\Users\phamt\Desktop\TestDoAn\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.exe
 C:\Users\phamt\Desktop\TestDoAn\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.pdb
 C:\Users\phamt\Desktop\TestDoAn\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ImportProducts.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ImportProducts.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.EditProduct.resources

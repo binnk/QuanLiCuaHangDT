@@ -268,6 +268,7 @@
             this.itemWareHouseManage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.itemWareHouseManage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.itemWareHouseManage.UseVisualStyleBackColor = true;
+            this.itemWareHouseManage.Click += new System.EventHandler(this.itemWareHouseManage_Click);
             // 
             // itemEmployeeManage
             // 

@@ -81,6 +81,7 @@
             this.btn_luu_customer.TabIndex = 113;
             this.btn_luu_customer.Text = "Lưu";
             this.btn_luu_customer.UseVisualStyleBackColor = false;
+            this.btn_luu_customer.Click += new System.EventHandler(this.btn_luu_customer_Click);
             // 
             // pictureBox1
             // 
@@ -93,12 +94,13 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 112;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lb_masp_error
             // 
             this.lb_masp_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_masp_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_masp_error.Location = new System.Drawing.Point(47, 420);
+            this.lb_masp_error.Location = new System.Drawing.Point(46, 425);
             this.lb_masp_error.Name = "lb_masp_error";
             this.lb_masp_error.Size = new System.Drawing.Size(417, 42);
             this.lb_masp_error.TabIndex = 110;
@@ -108,6 +110,7 @@
             // 
             // cb_loaisp
             // 
+            this.cb_loaisp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_loaisp.Font = new System.Drawing.Font("Arial", 14F);
             this.cb_loaisp.FormattingEnabled = true;
             this.cb_loaisp.Items.AddRange(new object[] {
@@ -192,6 +195,7 @@
             this.button2.TabIndex = 114;
             this.button2.Text = "Hủy";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tb_masp
             // 
