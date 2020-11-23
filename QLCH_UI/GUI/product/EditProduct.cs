@@ -1,5 +1,6 @@
 ﻿using QLCH_UI.BUS;
 using QLCH_UI.DTO;
+using QLCH_UI.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -87,16 +88,18 @@ namespace QLCH_UI
         {
             if (check_error() == true)
             {
+                DataTable c = ProductDAO.Instance.viewinfo(tb_masp.Text);
+                int so_luong = int.Parse(c.Rows[0]["so_luong"].ToString());
                 ProductDTO a;
                 if (kt==true)
                 {
-                    a = new ProductDTO(imgg, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text, double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text));
+                    a = new ProductDTO(imgg, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text, double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text), so_luong);
                 }
                 else
                 {
                     byte[] k = ProductBUS.Instance.ImageToByteArray(this.Text);
                     string l = Convert.ToBase64String(k);
-                    a = new ProductDTO(l, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text, double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text));
+                    a = new ProductDTO(l, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text, double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text), so_luong);
                 }
                 if (ProductBUS.Instance.edit_product(a))
                 {

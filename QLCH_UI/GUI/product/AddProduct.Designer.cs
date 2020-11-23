@@ -53,6 +53,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tb_sl = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lb_soluong_error = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,6 +84,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lb_soluong_error);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.tb_sl);
             this.groupBox1.Controls.Add(this.lb_masp_error);
             this.groupBox1.Controls.Add(this.cb_loaisp);
             this.groupBox1.Controls.Add(this.tb_giaban);
@@ -98,7 +104,7 @@
             this.groupBox1.Controls.Add(this.lb_loaisp_error);
             this.groupBox1.Location = new System.Drawing.Point(53, 77);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(512, 470);
+            this.groupBox1.Size = new System.Drawing.Size(512, 579);
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             // 
@@ -106,13 +112,14 @@
             // 
             this.lb_masp_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_masp_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_masp_error.Location = new System.Drawing.Point(47, 420);
+            this.lb_masp_error.Location = new System.Drawing.Point(47, 534);
             this.lb_masp_error.Name = "lb_masp_error";
             this.lb_masp_error.Size = new System.Drawing.Size(417, 42);
             this.lb_masp_error.TabIndex = 110;
             this.lb_masp_error.Text = "Mã sản phẩm không hợp lệ";
             this.lb_masp_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lb_masp_error.Visible = false;
+            this.lb_masp_error.Click += new System.EventHandler(this.lb_masp_error_Click);
             // 
             // cb_loaisp
             // 
@@ -150,7 +157,7 @@
             // 
             this.tb_gianhap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_gianhap.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_gianhap.Location = new System.Drawing.Point(50, 291);
+            this.tb_gianhap.Location = new System.Drawing.Point(49, 291);
             this.tb_gianhap.Name = "tb_gianhap";
             this.tb_gianhap.Size = new System.Drawing.Size(414, 44);
             this.tb_gianhap.TabIndex = 104;
@@ -179,7 +186,7 @@
             // 
             this.lb_tensp_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_tensp_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_tensp_error.Location = new System.Drawing.Point(43, 420);
+            this.lb_tensp_error.Location = new System.Drawing.Point(41, 527);
             this.lb_tensp_error.Name = "lb_tensp_error";
             this.lb_tensp_error.Size = new System.Drawing.Size(417, 42);
             this.lb_tensp_error.TabIndex = 98;
@@ -230,7 +237,7 @@
             // 
             this.lb_giaban_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_giaban_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_giaban_error.Location = new System.Drawing.Point(41, 420);
+            this.lb_giaban_error.Location = new System.Drawing.Point(41, 534);
             this.lb_giaban_error.Name = "lb_giaban_error";
             this.lb_giaban_error.Size = new System.Drawing.Size(417, 42);
             this.lb_giaban_error.TabIndex = 111;
@@ -242,7 +249,7 @@
             // 
             this.lb_gianhap_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_gianhap_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_gianhap_error.Location = new System.Drawing.Point(47, 420);
+            this.lb_gianhap_error.Location = new System.Drawing.Point(47, 534);
             this.lb_gianhap_error.Name = "lb_gianhap_error";
             this.lb_gianhap_error.Size = new System.Drawing.Size(417, 38);
             this.lb_gianhap_error.TabIndex = 110;
@@ -254,7 +261,7 @@
             // 
             this.lb_loaisp_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_loaisp_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_loaisp_error.Location = new System.Drawing.Point(47, 420);
+            this.lb_loaisp_error.Location = new System.Drawing.Point(47, 527);
             this.lb_loaisp_error.Name = "lb_loaisp_error";
             this.lb_loaisp_error.Size = new System.Drawing.Size(417, 42);
             this.lb_loaisp_error.TabIndex = 110;
@@ -322,6 +329,38 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // tb_sl
+            // 
+            this.tb_sl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_sl.Font = new System.Drawing.Font("Arial", 16F);
+            this.tb_sl.Location = new System.Drawing.Point(50, 470);
+            this.tb_sl.Name = "tb_sl";
+            this.tb_sl.Size = new System.Drawing.Size(414, 44);
+            this.tb_sl.TabIndex = 112;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(45, 426);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(205, 32);
+            this.label4.TabIndex = 113;
+            this.label4.Text = "Số lượng tồn kho";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // lb_soluong_error
+            // 
+            this.lb_soluong_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_soluong_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_soluong_error.Location = new System.Drawing.Point(46, 537);
+            this.lb_soluong_error.Name = "lb_soluong_error";
+            this.lb_soluong_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_soluong_error.TabIndex = 111;
+            this.lb_soluong_error.Text = "Số lượng không hợp lệ";
+            this.lb_soluong_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_soluong_error.Visible = false;
+            // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -373,5 +412,8 @@
         private System.Windows.Forms.Label lb_loaisp_error;
         private System.Windows.Forms.Label lb_gianhap_error;
         private System.Windows.Forms.Label lb_giaban_error;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tb_sl;
+        private System.Windows.Forms.Label lb_soluong_error;
     }
 }

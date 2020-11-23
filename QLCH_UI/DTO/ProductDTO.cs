@@ -10,7 +10,7 @@ namespace QLCH_UI.DTO
 {
     public class ProductDTO
     {
-        public ProductDTO(string anh,string masp, string ten_sp,string loai_sp, double gia_nhap, double gia_ban )
+        public ProductDTO(string anh,string masp, string ten_sp,string loai_sp, double gia_nhap, double gia_ban, int so_luong)
         {
             this.Anh = anh;
             this.Masp = masp;
@@ -18,6 +18,7 @@ namespace QLCH_UI.DTO
             this.Loai_sp = loai_sp;
             this.Gia_nhap = gia_nhap;
             this.Gia_ban = gia_ban;
+            this.so_luong = so_luong;
         }
         private int so_luong;
         private string anh;

@@ -65,6 +65,12 @@ namespace QLCH_UI
                 lb_giaban_error.Visible = true;
                 return (false);
             }
+            if (ProductBUS.Instance.so_luong(tb_sl.Text) == true) lb_soluong_error.Visible = false;
+            else
+            {
+                lb_soluong_error.Visible = true;
+                return (false);
+            }    
             return (true);
         }
    
@@ -74,7 +80,7 @@ namespace QLCH_UI
             {
                 byte[] k = ProductBUS.Instance.ImageToByteArray(this.Text);
                 string l = Convert.ToBase64String(k);
-                ProductDTO a = new ProductDTO(l, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text ,double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text));
+                ProductDTO a = new ProductDTO(l, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text ,double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text),int.Parse(tb_sl.Text));
                 if (ProductBUS.Instance.insert_product(a))
                 {
                     MessageBox.Show("Thêm thành công");
@@ -95,6 +101,16 @@ namespace QLCH_UI
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void lb_masp_error_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
