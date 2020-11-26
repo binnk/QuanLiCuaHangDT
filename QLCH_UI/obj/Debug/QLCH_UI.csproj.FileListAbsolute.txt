@@ -139,3 +139,10 @@ C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.csproj.CoreComp
 C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.csproj.CopyComplete
 C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.exe
 C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.pdb
+C:\Users\phamt\Desktop\TestDoAn\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.AddStaff.resources
+C:\Users\phamt\Desktop\TestDoAn\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.EditStaff.resources
+C:\Users\phamt\Desktop\TestDoAn\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.EditProduct.resources
+C:\Users\phamt\Desktop\TestDoAn\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.InfoStaff.resources
+C:\Users\phamt\Desktop\TestDoAn\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.StaffsForm.resources
+C:\Users\phamt\Desktop\TestDoAn\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ImportManagementForm.resources
+C:\Users\phamt\Desktop\TestDoAn\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.WareHouseManagentForm.resources

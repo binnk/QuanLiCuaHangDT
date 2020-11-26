@@ -1,6 +1,6 @@
 ﻿namespace QLCH_UI
 {
-    partial class ProductsForm
+    partial class WareHouseManagentForm
     {
         /// <summary>
         /// Required designer variable.
@@ -32,20 +32,22 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelBotProducts = new System.Windows.Forms.Panel();
-            this.btn_ImportProduct = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.dgvProducts = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.panelProducts = new System.Windows.Forms.Panel();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelBotProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
-            this.panelProducts.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelBotProducts
             // 
-            this.panelBotProducts.Controls.Add(this.btn_ImportProduct);
             this.panelBotProducts.Controls.Add(this.btnDelete);
             this.panelBotProducts.Controls.Add(this.btnEdit);
             this.panelBotProducts.Controls.Add(this.btnAddProduct);
@@ -53,22 +55,7 @@
             this.panelBotProducts.Location = new System.Drawing.Point(0, 630);
             this.panelBotProducts.Name = "panelBotProducts";
             this.panelBotProducts.Size = new System.Drawing.Size(929, 47);
-            this.panelBotProducts.TabIndex = 4;
-            // 
-            // btn_ImportProduct
-            // 
-            this.btn_ImportProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            this.btn_ImportProduct.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_ImportProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ImportProduct.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ImportProduct.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_ImportProduct.Location = new System.Drawing.Point(213, 0);
-            this.btn_ImportProduct.Name = "btn_ImportProduct";
-            this.btn_ImportProduct.Size = new System.Drawing.Size(179, 47);
-            this.btn_ImportProduct.TabIndex = 3;
-            this.btn_ImportProduct.Text = "Nhập hàng";
-            this.btn_ImportProduct.UseVisualStyleBackColor = true;
-            this.btn_ImportProduct.Click += new System.EventHandler(this.btn_ImportProduct_Click);
+            this.panelBotProducts.TabIndex = 5;
             // 
             // btnDelete
             // 
@@ -83,7 +70,6 @@
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Xoá";
             this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -98,7 +84,6 @@
             this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "Sửa";
             this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAddProduct
             // 
@@ -111,9 +96,8 @@
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(179, 47);
             this.btnAddProduct.TabIndex = 0;
-            this.btnAddProduct.Text = "Thêm sản phẩm";
+            this.btnAddProduct.Text = "Nhập hàng";
             this.btnAddProduct.UseVisualStyleBackColor = true;
-            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // dgvProducts
             // 
@@ -135,6 +119,13 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProducts.ColumnHeadersHeight = 37;
+            this.dgvProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column4,
+            this.Column3,
+            this.Gia,
+            this.Column5});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -159,35 +150,63 @@
             this.dgvProducts.RowTemplate.Height = 35;
             this.dgvProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProducts.Size = new System.Drawing.Size(929, 630);
-            this.dgvProducts.TabIndex = 5;
-            this.dgvProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_CellClick);
-            this.dgvProducts.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_CellContentDoubleClick);
-            this.dgvProducts.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_CellDoubleClick);
+            this.dgvProducts.TabIndex = 6;
             // 
-            // panelProducts
+            // Column1
             // 
-            this.panelProducts.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelProducts.Controls.Add(this.dgvProducts);
-            this.panelProducts.Controls.Add(this.panelBotProducts);
-            this.panelProducts.Location = new System.Drawing.Point(0, 0);
-            this.panelProducts.Name = "panelProducts";
-            this.panelProducts.Size = new System.Drawing.Size(929, 677);
-            this.panelProducts.TabIndex = 0;
+            this.Column1.HeaderText = "Mã sản phẩm";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
-            // ProductsForm
+            // Column2
+            // 
+            this.Column2.HeaderText = "Tên sản phẩm";
+            this.Column2.MinimumWidth = 8;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Loại";
+            this.Column4.MinimumWidth = 8;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Số lượng";
+            this.Column3.MinimumWidth = 8;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Gia
+            // 
+            this.Gia.HeaderText = "Giá nhập";
+            this.Gia.MinimumWidth = 8;
+            this.Gia.Name = "Gia";
+            this.Gia.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Giá bán";
+            this.Column5.MinimumWidth = 8;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // WareHouseManagentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(929, 677);
-            this.Controls.Add(this.panelProducts);
+            this.Controls.Add(this.dgvProducts);
+            this.Controls.Add(this.panelBotProducts);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ProductsForm";
-            this.Text = "CustomerForm";
+            this.Name = "WareHouseManagentForm";
+            this.Text = "WareHouseManagentForm";
             this.panelBotProducts.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
-            this.panelProducts.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -195,11 +214,15 @@
         #endregion
 
         private System.Windows.Forms.Panel panelBotProducts;
-        private System.Windows.Forms.Button btnAddProduct;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvProducts;
-        private System.Windows.Forms.Panel panelProducts;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Button btn_ImportProduct;
+        private System.Windows.Forms.Button btnAddProduct;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvProducts;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }
