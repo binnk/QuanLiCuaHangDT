@@ -24,7 +24,7 @@ namespace QLCH_UI.DAO
         int OTP = 0;
         public bool SendMail(string user)
         {
-            string query = "SELECT mat_khau,displayname FROM account WHERE username = @user ;";
+            string query = "SELECT mat_khau, email FROM account WHERE username = @user ;";
             DataTable rs = ConnectSQL.Instance.ExecuteQuery(query, new object[] { user });
             if (rs.Rows.Count <= 0) return false;
             Random r = new Random();
