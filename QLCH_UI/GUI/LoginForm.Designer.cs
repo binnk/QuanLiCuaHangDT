@@ -122,6 +122,7 @@
             this.label1.Size = new System.Drawing.Size(116, 18);
             this.label1.TabIndex = 11;
             this.label1.Text = "Not registered?";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lCreateAcc
             // 

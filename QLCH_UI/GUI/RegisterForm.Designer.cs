@@ -47,10 +47,12 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbRegister
@@ -58,16 +60,17 @@
             this.lbRegister.AutoSize = true;
             this.lbRegister.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbRegister.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbRegister.Location = new System.Drawing.Point(145, 44);
+            this.lbRegister.Location = new System.Drawing.Point(152, 66);
             this.lbRegister.Name = "lbRegister";
             this.lbRegister.Size = new System.Drawing.Size(151, 41);
             this.lbRegister.TabIndex = 7;
             this.lbRegister.Text = "Register";
+            this.lbRegister.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lbRegister_MouseDown);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel2.Location = new System.Drawing.Point(302, 66);
+            this.panel2.Location = new System.Drawing.Point(309, 106);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(120, 1);
             this.panel2.TabIndex = 8;
@@ -78,7 +81,7 @@
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnRegister.Location = new System.Drawing.Point(68, 437);
+            this.btnRegister.Location = new System.Drawing.Point(69, 446);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(300, 55);
             this.btnRegister.TabIndex = 17;
@@ -90,7 +93,7 @@
             // 
             this.panelEmail.BackColor = System.Drawing.Color.White;
             this.panelEmail.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.panelEmail.Location = new System.Drawing.Point(68, 226);
+            this.panelEmail.Location = new System.Drawing.Point(60, 252);
             this.panelEmail.Name = "panelEmail";
             this.panelEmail.Size = new System.Drawing.Size(300, 1);
             this.panelEmail.TabIndex = 16;
@@ -102,7 +105,7 @@
             this.textEmail.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textEmail.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textEmail.HideSelection = false;
-            this.textEmail.Location = new System.Drawing.Point(113, 193);
+            this.textEmail.Location = new System.Drawing.Point(105, 219);
             this.textEmail.Name = "textEmail";
             this.textEmail.Size = new System.Drawing.Size(251, 26);
             this.textEmail.TabIndex = 15;
@@ -116,7 +119,7 @@
             // panelUser
             // 
             this.panelUser.BackColor = System.Drawing.Color.White;
-            this.panelUser.Location = new System.Drawing.Point(68, 152);
+            this.panelUser.Location = new System.Drawing.Point(60, 193);
             this.panelUser.Name = "panelUser";
             this.panelUser.Size = new System.Drawing.Size(300, 1);
             this.panelUser.TabIndex = 13;
@@ -128,7 +131,7 @@
             this.textUser.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textUser.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textUser.HideSelection = false;
-            this.textUser.Location = new System.Drawing.Point(113, 120);
+            this.textUser.Location = new System.Drawing.Point(105, 161);
             this.textUser.Name = "textUser";
             this.textUser.Size = new System.Drawing.Size(251, 26);
             this.textUser.TabIndex = 12;
@@ -144,7 +147,7 @@
             this.picUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picUser.BackgroundImage")));
             this.picUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picUser.ErrorImage = null;
-            this.picUser.Location = new System.Drawing.Point(68, 114);
+            this.picUser.Location = new System.Drawing.Point(60, 155);
             this.picUser.Name = "picUser";
             this.picUser.Size = new System.Drawing.Size(32, 32);
             this.picUser.TabIndex = 11;
@@ -154,7 +157,7 @@
             // 
             this.picPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picPass.BackgroundImage")));
             this.picPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picPass.Location = new System.Drawing.Point(68, 189);
+            this.picPass.Location = new System.Drawing.Point(60, 215);
             this.picPass.Name = "picPass";
             this.picPass.Size = new System.Drawing.Size(32, 32);
             this.picPass.TabIndex = 14;
@@ -163,7 +166,7 @@
             // panel
             // 
             this.panel.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel.Location = new System.Drawing.Point(12, 66);
+            this.panel.Location = new System.Drawing.Point(26, 106);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(120, 1);
             this.panel.TabIndex = 18;
@@ -172,7 +175,7 @@
             // 
             this.panelPass.BackColor = System.Drawing.Color.White;
             this.panelPass.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.panelPass.Location = new System.Drawing.Point(67, 291);
+            this.panelPass.Location = new System.Drawing.Point(60, 312);
             this.panelPass.Name = "panelPass";
             this.panelPass.Size = new System.Drawing.Size(300, 1);
             this.panelPass.TabIndex = 21;
@@ -184,7 +187,7 @@
             this.textPass.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textPass.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textPass.HideSelection = false;
-            this.textPass.Location = new System.Drawing.Point(112, 258);
+            this.textPass.Location = new System.Drawing.Point(105, 279);
             this.textPass.Name = "textPass";
             this.textPass.Size = new System.Drawing.Size(251, 26);
             this.textPass.TabIndex = 20;
@@ -199,7 +202,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(67, 254);
+            this.pictureBox1.Location = new System.Drawing.Point(60, 275);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.TabIndex = 19;
@@ -209,7 +212,7 @@
             // 
             this.panelCPass.BackColor = System.Drawing.Color.White;
             this.panelCPass.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.panelCPass.Location = new System.Drawing.Point(67, 364);
+            this.panelCPass.Location = new System.Drawing.Point(60, 371);
             this.panelCPass.Name = "panelCPass";
             this.panelCPass.Size = new System.Drawing.Size(300, 1);
             this.panelCPass.TabIndex = 24;
@@ -221,7 +224,7 @@
             this.textCPass.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textCPass.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textCPass.HideSelection = false;
-            this.textCPass.Location = new System.Drawing.Point(112, 331);
+            this.textCPass.Location = new System.Drawing.Point(105, 337);
             this.textCPass.Name = "textCPass";
             this.textCPass.Size = new System.Drawing.Size(251, 26);
             this.textCPass.TabIndex = 23;
@@ -236,7 +239,7 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(67, 327);
+            this.pictureBox2.Location = new System.Drawing.Point(60, 333);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.TabIndex = 22;
@@ -248,7 +251,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label1.Location = new System.Drawing.Point(398, 9);
+            this.label1.Location = new System.Drawing.Point(425, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(24, 28);
             this.label1.TabIndex = 26;
@@ -261,37 +264,46 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Brown;
-            this.label2.Location = new System.Drawing.Point(74, 392);
+            this.label2.Location = new System.Drawing.Point(65, 387);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 27;
             this.label2.Text = "label2";
             this.label2.Visible = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel);
+            this.panel1.Controls.Add(this.panelPass);
+            this.panel1.Controls.Add(this.picUser);
+            this.panel1.Controls.Add(this.lbRegister);
+            this.panel1.Controls.Add(this.panelUser);
+            this.panel1.Controls.Add(this.panelCPass);
+            this.panel1.Controls.Add(this.textUser);
+            this.panel1.Controls.Add(this.panelEmail);
+            this.panel1.Controls.Add(this.textPass);
+            this.panel1.Controls.Add(this.textEmail);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.picPass);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.textCPass);
+            this.panel1.Controls.Add(this.btnRegister);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(452, 546);
+            this.panel1.TabIndex = 28;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(434, 546);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panelCPass);
-            this.Controls.Add(this.textCPass);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.panelPass);
-            this.Controls.Add(this.textPass);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel);
-            this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.picUser);
-            this.Controls.Add(this.panelEmail);
-            this.Controls.Add(this.textEmail);
-            this.Controls.Add(this.picPass);
-            this.Controls.Add(this.panelUser);
-            this.Controls.Add(this.textUser);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.lbRegister);
+            this.ClientSize = new System.Drawing.Size(452, 546);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -301,8 +313,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.picPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
         #endregion 
@@ -324,6 +337,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
     }
 
 }

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Receipt" msprop:Generator_TableClassName="ReceiptDataTable" msprop:Generator_TableVarName="tableReceipt" msprop:Generator_RowChangedName="ReceiptRowChanged" msprop:Generator_TablePropName="Receipt" msprop:Generator_RowDeletingName="ReceiptRowDeleting" msprop:Generator_RowChangingName="ReceiptRowChanging" msprop:Generator_RowEvHandlerName="ReceiptRowChangeEventHandler" msprop:Generator_RowDeletedName="ReceiptRowDeleted" msprop:Generator_RowClassName="ReceiptRow" msprop:Generator_UserTableName="Receipt" msprop:Generator_RowEvArgName="ReceiptRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaHD" msprop:Generator_ColumnVarNameInTable="columnMaHD" msprop:Generator_ColumnPropNameInRow="MaHD" msprop:Generator_ColumnPropNameInTable="MaHDColumn" msprop:Generator_UserColumnName="MaHD" type="xs:string" minOccurs="0" />
+              <xs:element name="MaNV" msprop:Generator_ColumnVarNameInTable="columnMaNV" msprop:Generator_ColumnPropNameInRow="MaNV" msprop:Generator_ColumnPropNameInTable="MaNVColumn" msprop:Generator_UserColumnName="MaNV" type="xs:string" minOccurs="0" />
+              <xs:element name="dien_thoai" msprop:Generator_ColumnVarNameInTable="columndien_thoai" msprop:Generator_ColumnPropNameInRow="dien_thoai" msprop:Generator_ColumnPropNameInTable="dien_thoaiColumn" msprop:Generator_UserColumnName="dien_thoai" type="xs:string" minOccurs="0" />
+              <xs:element name="ngay_ban" msprop:Generator_ColumnVarNameInTable="columnngay_ban" msprop:Generator_ColumnPropNameInRow="ngay_ban" msprop:Generator_ColumnPropNameInTable="ngay_banColumn" msprop:Generator_UserColumnName="ngay_ban" type="xs:string" minOccurs="0" />
+              <xs:element name="tri_gia" msprop:Generator_ColumnVarNameInTable="columntri_gia" msprop:Generator_ColumnPropNameInRow="tri_gia" msprop:Generator_ColumnPropNameInTable="tri_giaColumn" msprop:Generator_UserColumnName="tri_gia" type="xs:string" minOccurs="0" />
+              <xs:element name="Giam_gia" msprop:Generator_ColumnVarNameInTable="columnGiam_gia" msprop:Generator_ColumnPropNameInRow="Giam_gia" msprop:Generator_ColumnPropNameInTable="Giam_giaColumn" msprop:Generator_UserColumnName="Giam_gia" type="xs:string" minOccurs="0" />
+              <xs:element name="ten_sp" msprop:Generator_ColumnVarNameInTable="columnten_sp" msprop:Generator_ColumnPropNameInRow="ten_sp" msprop:Generator_ColumnPropNameInTable="ten_spColumn" msprop:Generator_UserColumnName="ten_sp" type="xs:string" minOccurs="0" />
+              <xs:element name="so_luong" msprop:Generator_ColumnVarNameInTable="columnso_luong" msprop:Generator_ColumnPropNameInRow="so_luong" msprop:Generator_ColumnPropNameInTable="so_luongColumn" msprop:Generator_UserColumnName="so_luong" type="xs:string" minOccurs="0" />
+              <xs:element name="gia_ban" msprop:Generator_ColumnVarNameInTable="columngia_ban" msprop:Generator_ColumnPropNameInRow="gia_ban" msprop:Generator_ColumnPropNameInTable="gia_banColumn" msprop:Generator_UserColumnName="gia_ban" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

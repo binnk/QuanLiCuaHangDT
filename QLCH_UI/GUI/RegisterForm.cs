@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -62,7 +63,18 @@ namespace LoginUI
         {
 
         }
-
+        #region Di chuyển form login khi kéo logo form
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+       
+        private void lbRegister_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        #endregion
         #region
         private void textPass_Click(object sender, EventArgs e)
         {
@@ -202,15 +214,9 @@ namespace LoginUI
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            if (textPass.Text != textCPass.Text)
+            if (Account.Instance.Check(textUser.Text, textPass.Text, textCPass.Text, textEmail.Text) != "")
             {
-                label2.Text = "Confirm your password!";
-                label2.Visible = true;
-            }
-            else
-               if (Account.Instance.Check(textUser.Text.ToString()) != false)
-            {
-                label2.Text = "Username is already taken.Try another one.";
+                label2.Text = Account.Instance.Check(textUser.Text, textPass.Text, textCPass.Text, textEmail.Text);
                 label2.Visible = true;
             }
             else
@@ -229,5 +235,7 @@ namespace LoginUI
         {
             this.Close();
         }
+
+      
     }
 }

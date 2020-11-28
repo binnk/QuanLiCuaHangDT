@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoProduct));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.icExit = new FontAwesome.Sharp.IconPictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,10 +43,9 @@
             this.lb_loaisp = new System.Windows.Forms.Label();
             this.lb_giasp = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.icExit = new FontAwesome.Sharp.IconPictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.icExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -58,6 +58,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1093, 69);
             this.panel1.TabIndex = 1;
+            // 
+            // icExit
+            // 
+            this.icExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.icExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(100)))), ((int)(((byte)(207)))));
+            this.icExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("icExit.BackgroundImage")));
+            this.icExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.icExit.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.icExit.IconColor = System.Drawing.SystemColors.ControlText;
+            this.icExit.IconSize = 48;
+            this.icExit.Location = new System.Drawing.Point(1042, 6);
+            this.icExit.Name = "icExit";
+            this.icExit.Size = new System.Drawing.Size(48, 48);
+            this.icExit.TabIndex = 107;
+            this.icExit.TabStop = false;
+            this.icExit.Click += new System.EventHandler(this.icExit_Click);
             // 
             // label7
             // 
@@ -165,22 +181,6 @@
             this.bunifuDragControl1.TargetControl = this.panel1;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // icExit
-            // 
-            this.icExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.icExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(100)))), ((int)(((byte)(207)))));
-            this.icExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("icExit.BackgroundImage")));
-            this.icExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.icExit.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.icExit.IconColor = System.Drawing.SystemColors.ControlText;
-            this.icExit.IconSize = 48;
-            this.icExit.Location = new System.Drawing.Point(990, 9);
-            this.icExit.Name = "icExit";
-            this.icExit.Size = new System.Drawing.Size(48, 48);
-            this.icExit.TabIndex = 107;
-            this.icExit.TabStop = false;
-            this.icExit.Click += new System.EventHandler(this.icExit_Click);
-            // 
             // InfoProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -203,8 +203,8 @@
             this.Text = "InfoProduct";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.icExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

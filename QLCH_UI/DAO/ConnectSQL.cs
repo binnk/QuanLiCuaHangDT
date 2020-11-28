@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -17,7 +18,8 @@ namespace QLCH_UI.DAO
             get { if (instance == null) instance = new ConnectSQL(); return instance; }
             private set => instance = value;
         }
-        private string connectionSTR = @"Data Source=LAPTOP-4CIHSEK9\SQLEXPRESS;Initial Catalog=QL_CHDT;Integrated Security=True";
+        private string connectionSTR = @"Data Source=LAPTOP-0096GMC1;Initial Catalog=QL_CHDT;User ID=sa; PassWord=buiminhhuy;";
+            //@"Data Source=LAPTOP-4CIHSEK9\SQLEXPRESS;Initial Catalog=QL_CHDT;Integrated Security=True";
         public DataTable ExecuteQuery(string query, object[] paramater = null)
         {
             DataTable data = new DataTable();
@@ -94,6 +96,25 @@ namespace QLCH_UI.DAO
                 connection.Close();
             }
             return data;
+        }
+        public ReportDataSource Datasoucre(string mahd)
+        {
+            // this.reportViewer2.RefreshReport();
+            // ReportDataSource datasource = ConnectSQL.Instance.Datasoucre(ma);
+
+            string query = "select  HOA_DON.mahd, HOA_DOn.manv, dien_thoai, HOA_DON.ngay_ban , SAN_PHAM.gia_ban, HOA_DON.giam_gia, ten_sp, CTHD.so_luong,HOA_DON.tri_gia  from (HOA_DON inner join"
+                           + " (CTHD inner join SAN_PHAM on CTHD.masp = SAN_PHAM.masp) on HOA_DON.mahd = CTHD.mahd) inner join KHACH_HANG on KHACH_HANG.makh = HOA_DON.makh where HOA_DON.mahd = '" + mahd + "'";
+            SqlConnection con = new SqlConnection(connectionSTR);
+
+            con.Open();
+            //   SqlCommand Command = new SqlCommand(query, con);
+            DataSet1 ds = new DataSet1();
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            da.Fill(ds, "Receipt");
+            con.Close();
+
+            ReportDataSource datasource = new ReportDataSource("DataSet_Report", ds.Tables[0]);
+            return datasource;
         }
     }
 }

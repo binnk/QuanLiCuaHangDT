@@ -74,16 +74,17 @@ namespace LoginUI
         // tạo main form, ẩn form Login
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //if (Account.Instance.Login(textUser.Text.ToString(), textPass.Text.ToString()))
-            //{
-            this.Hide();
-            using (MainForm mainForm = new MainForm())
-                mainForm.ShowDialog();
-            //}
-            //else
-            //{
-            //    label2.Visible = true;
-            //}
+            if (Account.Instance.Login(textUser.Text.ToString(), textPass.Text.ToString()))
+            {
+                this.Hide();
+                using (MainForm mainForm = new MainForm())
+                    mainForm.ShowDialog();
+            }
+            else
+            {
+                label2.Visible = true;
+                label2.Text = "username or password incorect";
+            }
 
 
         }
@@ -157,6 +158,22 @@ namespace LoginUI
         private void xLabel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            if (Mail.Instance.SendMail(textUser.Text))
+            {
+                label1.Enabled = false;
+                label2.Text = "Please enter OTP in the password field.";
+                label2.Visible = true;
+            }
+            else
+            {
+               // label1.Visible = false;
+                label2.Text = "User not exist in system.";
+                label2.Visible = true;
+            }
         }
     }
 }
