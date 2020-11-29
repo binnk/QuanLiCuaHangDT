@@ -44,8 +44,9 @@ namespace QLCH_UI.DAO
             {
                 MessageBox.Show(ex.Message);
             }
-            if (result == 0) return (false);
-            else return (true);
+           // if (result == 0) return (false);
+           // else 
+            return (true);
         }
 
         public DataTable ViewStaff(string ID)

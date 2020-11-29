@@ -33,6 +33,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lb_gianhap_error = new System.Windows.Forms.Label();
+            this.lb_sl_error = new System.Windows.Forms.Label();
             this.tb_gia_nhap = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tb_sl = new System.Windows.Forms.TextBox();
@@ -49,8 +51,6 @@
             this.btn_luu_customer = new System.Windows.Forms.Button();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lb_sl_error = new System.Windows.Forms.Label();
-            this.lb_gianhap_error = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -99,6 +99,31 @@
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             // 
+            // lb_gianhap_error
+            // 
+            this.lb_gianhap_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_gianhap_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_gianhap_error.Location = new System.Drawing.Point(47, 480);
+            this.lb_gianhap_error.Name = "lb_gianhap_error";
+            this.lb_gianhap_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_gianhap_error.TabIndex = 111;
+            this.lb_gianhap_error.Text = "Giá nhập không hợp lệ";
+            this.lb_gianhap_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_gianhap_error.Visible = false;
+            // 
+            // lb_sl_error
+            // 
+            this.lb_sl_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_sl_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_sl_error.Location = new System.Drawing.Point(51, 480);
+            this.lb_sl_error.Name = "lb_sl_error";
+            this.lb_sl_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_sl_error.TabIndex = 110;
+            this.lb_sl_error.Text = "Số lượng không hợp lệ";
+            this.lb_sl_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_sl_error.Visible = false;
+            this.lb_sl_error.Click += new System.EventHandler(this.lb_sl_Click);
+            // 
             // tb_gia_nhap
             // 
             this.tb_gia_nhap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -107,6 +132,7 @@
             this.tb_gia_nhap.Name = "tb_gia_nhap";
             this.tb_gia_nhap.Size = new System.Drawing.Size(414, 44);
             this.tb_gia_nhap.TabIndex = 104;
+            this.tb_gia_nhap.TextChanged += new System.EventHandler(this.tb_gia_nhap_TextChanged);
             // 
             // label6
             // 
@@ -267,31 +293,6 @@
             this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // lb_sl_error
-            // 
-            this.lb_sl_error.Font = new System.Drawing.Font("Arial", 10F);
-            this.lb_sl_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_sl_error.Location = new System.Drawing.Point(51, 480);
-            this.lb_sl_error.Name = "lb_sl_error";
-            this.lb_sl_error.Size = new System.Drawing.Size(417, 42);
-            this.lb_sl_error.TabIndex = 110;
-            this.lb_sl_error.Text = "Số lượng không hợp lệ";
-            this.lb_sl_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lb_sl_error.Visible = false;
-            this.lb_sl_error.Click += new System.EventHandler(this.lb_sl_Click);
-            // 
-            // lb_gianhap_error
-            // 
-            this.lb_gianhap_error.Font = new System.Drawing.Font("Arial", 10F);
-            this.lb_gianhap_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_gianhap_error.Location = new System.Drawing.Point(47, 480);
-            this.lb_gianhap_error.Name = "lb_gianhap_error";
-            this.lb_gianhap_error.Size = new System.Drawing.Size(417, 42);
-            this.lb_gianhap_error.TabIndex = 111;
-            this.lb_gianhap_error.Text = "Giá nhập không hợp lệ";
-            this.lb_gianhap_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lb_gianhap_error.Visible = false;
             // 
             // ImportProducts
             // 

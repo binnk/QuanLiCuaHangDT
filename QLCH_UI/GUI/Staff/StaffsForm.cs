@@ -64,7 +64,9 @@ namespace QLCH_UI
                 user = a.Rows[0]["username"].ToString();
                 DateTime ngay_sinhh = DateTime.Parse(ngay_sinh);
                 DataTable b = StaffDAO.Instance.viewuser(user);
-                EditStaff f = new EditStaff(ma_nv,ten_nv,ngay_sinhh,gioi_tinh,dien_thoai,dia_chi,user,b.Rows[0]["email"].ToString());
+                string email = "";
+                if (b.Rows.Count > 0) email = b.Rows[0]["email"].ToString();
+                EditStaff f = new EditStaff(ma_nv,ten_nv,ngay_sinhh,gioi_tinh,dien_thoai,dia_chi,user,email);
                 f.ShowDialog();
                 loadstaff();
             }
@@ -105,7 +107,8 @@ namespace QLCH_UI
                 string dienthoai = a.Rows[0]["dien_thoai"].ToString();
                 string gioitinh = a.Rows[0]["gioi_tinh"].ToString();
                 string user = a.Rows[0]["username"].ToString();
-                string email = b.Rows[0]["email"].ToString();
+                string email = "";
+                if(b.Rows.Count > 0 )  email = b.Rows[0]["email"].ToString();
                 lb_gioitinh f = new lb_gioitinh(manv,tennv,ngaysinh,gioitinh,dienthoai,user,email);
                 f.ShowDialog();
             }

@@ -26,6 +26,7 @@ namespace QLCH_UI
             else Radio_Nu.Checked = true;
             tb_user.Text = user;
             tb_email.Text = email;
+            if (email == "") tb_email.ReadOnly = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -36,7 +37,7 @@ namespace QLCH_UI
         // check_erro
         public bool check_erro()
         {
-            if ((tb_email.Text.LastIndexOf("@gmail.com") + 10) != tb_email.Text.Length || tb_email.Text == "")
+            if ((StaffBUS.Instance.Check_email(tb_email.Text) != "") && tb_email.ReadOnly == false)
             {
                 lb_email_error.Visible = true;
                 return (false);
@@ -95,6 +96,16 @@ namespace QLCH_UI
                 }
                 this.Close();
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void EditStaff_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

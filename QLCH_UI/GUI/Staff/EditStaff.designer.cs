@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lb_email_error = new System.Windows.Forms.Label();
             this.tb_email = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tb_user = new System.Windows.Forms.TextBox();
@@ -58,7 +59,6 @@
             this.lb_manv_error = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.lb_email_error = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -76,6 +76,18 @@
             this.groupBox2.Size = new System.Drawing.Size(280, 330);
             this.groupBox2.TabIndex = 119;
             this.groupBox2.TabStop = false;
+            // 
+            // lb_email_error
+            // 
+            this.lb_email_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_email_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_email_error.Location = new System.Drawing.Point(-6, 278);
+            this.lb_email_error.Name = "lb_email_error";
+            this.lb_email_error.Size = new System.Drawing.Size(280, 42);
+            this.lb_email_error.TabIndex = 121;
+            this.lb_email_error.Text = "email không hợp lệ";
+            this.lb_email_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_email_error.Visible = false;
             // 
             // tb_email
             // 
@@ -384,6 +396,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(945, 69);
             this.panel1.TabIndex = 113;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // bunifuDragControl1
             // 
@@ -391,18 +404,6 @@
             this.bunifuDragControl1.Horizontal = true;
             this.bunifuDragControl1.TargetControl = this.panel1;
             this.bunifuDragControl1.Vertical = true;
-            // 
-            // lb_email_error
-            // 
-            this.lb_email_error.Font = new System.Drawing.Font("Arial", 10F);
-            this.lb_email_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_email_error.Location = new System.Drawing.Point(-6, 278);
-            this.lb_email_error.Name = "lb_email_error";
-            this.lb_email_error.Size = new System.Drawing.Size(280, 42);
-            this.lb_email_error.TabIndex = 121;
-            this.lb_email_error.Text = "email không hợp lệ";
-            this.lb_email_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lb_email_error.Visible = false;
             // 
             // EditStaff
             // 
@@ -418,6 +419,7 @@
             this.Name = "EditStaff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditStaff";
+            this.Load += new System.EventHandler(this.EditStaff_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);

@@ -75,5 +75,33 @@ namespace QLCH_UI
             }
 
         }
+        private string GetFloat(string s)
+        {
+            string rs = "";
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] != ',') rs += s[i];
+            }
+            return rs;
+        }
+        string gianhap = "0";
+        private void tb_gia_nhap_TextChanged(object sender, EventArgs e)
+        {
+            if (tb_gia_nhap.Text.Length > 10) tb_gia_nhap.Text = Convert.ToDouble(gianhap).ToString("#,##0");
+            if (tb_gia_nhap.Text.Length > 0)
+            {
+                foreach (char i in tb_gia_nhap.Text)
+                {
+                    if ((i > '9' || i < '0') && (i != ','))
+                    {
+                        tb_gia_nhap.Text = Convert.ToDouble(gianhap).ToString("#,##0");
+                        break;
+                    }
+                }
+                gianhap = GetFloat(tb_gia_nhap.Text);
+                tb_gia_nhap.Text = Convert.ToDouble(GetFloat(tb_gia_nhap.Text)).ToString("#,##0");
+                tb_gia_nhap.SelectionStart = tb_gia_nhap.Text.Length;
+            }
+        }
     }
 }

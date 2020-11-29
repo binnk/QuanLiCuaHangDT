@@ -451,9 +451,9 @@
             // 
             this.lb_password_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_password_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_password_error.Location = new System.Drawing.Point(611, 498);
+            this.lb_password_error.Location = new System.Drawing.Point(546, 498);
             this.lb_password_error.Name = "lb_password_error";
-            this.lb_password_error.Size = new System.Drawing.Size(280, 147);
+            this.lb_password_error.Size = new System.Drawing.Size(399, 147);
             this.lb_password_error.TabIndex = 118;
             this.lb_password_error.Text = "Mật khẩu không hợp lệ";
             this.lb_password_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

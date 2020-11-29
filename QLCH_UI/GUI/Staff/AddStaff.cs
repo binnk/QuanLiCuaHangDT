@@ -24,7 +24,8 @@ namespace QLCH_UI
             if (StaffBUS.Instance.Check(tb_user.Text,tb_password.Text,tb_confirmpassword.Text,tb_email.Text) == "") lb_password_error.Visible = false;
             else
             {
-                MessageBox.Show(StaffBUS.Instance.Check(tb_user.Text, tb_password.Text, tb_confirmpassword.Text, tb_email.Text));
+                lb_password_error.Text = StaffBUS.Instance.Check(tb_user.Text, tb_password.Text, tb_confirmpassword.Text, tb_email.Text);
+                lb_password_error.Visible = true;
                 return (false);
             }
             if (CustomersBUS.Instance.makh(tb_manv.Text) == true) lb_manv_error.Visible = false;
@@ -89,12 +90,13 @@ namespace QLCH_UI
                 if (StaffBUS.Instance.insert_staff(b, tb_user.Text, tb_email.Text, tb_password.Text) == true)
                 {
                     MessageBox.Show("Thêm thành công");
+                    this.Close();
                 }
                 else
                 {
                     MessageBox.Show("Thêm không thành công");
                 }
-                this.Close();
+                //this.Close();
             }
         }
     }

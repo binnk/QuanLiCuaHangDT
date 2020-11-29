@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using QLCH_UI.DAO;
 using QLCH_UI.DTO;
 using System.Data;
+using System.Windows.Forms;
 
 namespace QLCH_UI.BUS
 {
@@ -34,13 +35,20 @@ namespace QLCH_UI.BUS
         public bool insert_staff(StaffDTO a, string username, string email, string password)
         {
             bool kt=StaffDAO.Instance.Insert(a);
-            Account.Instance.Register(username, email, password);
-            return (kt);
+            if (password != "")
+            {
+                Account.Instance.Register(username, email, password);
+            }
+            else
+            {
+                MessageBox.Show("Bạn đã không điền đầy đủ thông tin vui lòng đăng kí đầy đủ thông tin ở lần truy cập sau ở Phần đăng ký.");
+            }
+                return (kt);
         }
 
         public bool edit_staff(StaffDTO a, string username, string email)
         {
-            StaffDAO.Instance.edit_userr(username, email);
+           if(email != "") StaffDAO.Instance.edit_userr(username, email);
             bool kt = StaffDAO.Instance.Edit(a);
             return (kt);
         }
@@ -48,7 +56,8 @@ namespace QLCH_UI.BUS
         public string Check(string user, string password, string confirm, string email)
         {
             string result = "";
-
+            if (password == "" && confirm == "" && email == "")
+                return result;
 
             foreach (char i in user)
             {
@@ -62,13 +71,13 @@ namespace QLCH_UI.BUS
             {
                 if ((i < '0' || i > '9') && (i < 'a' || i > 'z') && (i < 'A' || i > 'Z'))
                 {
-                    result = "Please choose another password.";
+                    result = "Vui lòng chọn mật khẩu khác.";
                     return result;
                 }
             }
             if (user == "" || user == "Username")
             {
-                result = "Please fill username.";
+                result = "Vui lòng điền tên tài khoản.";
                 return result;
             }
             string query = "SELECT * FROM account WHERE username = @user ;";
@@ -77,9 +86,34 @@ namespace QLCH_UI.BUS
             DataTable rs_nv = ConnectSQL.Instance.ExecuteQuery(query_for_nv, new object[] { user });
             if (rs_ac.Rows.Count > 0 || rs_nv.Rows.Count > 1)
             {
-                result = "Username is already taken.Try another one.";
+                result = "Tên tài khoản đã tồn tại.";
                 return result;
             }
+            if (password != confirm || password == "")
+            {
+                result = "Xác nhận lại mật khẩu!";
+                return result;
+            }
+            string queryy = "SELECT * FROM account WHERE email = @email ;";
+            DataTable rss = ConnectSQL.Instance.ExecuteQuery(queryy, new object[] { email });
+
+            if ((email.LastIndexOf("@gmail.com") + 10) != email.Length || email == "")
+            {
+                result = "Đây không phải là gmail!.";
+                return result;
+            }
+            if (rss.Rows.Count > 0)
+            {
+                result = "Gmail đã tồn tại.";
+                return result;
+            }
+           
+
+            return result;
+        }
+        public string Check_email(string email)
+        {
+            string result = "";
             string queryy = "SELECT * FROM account WHERE email = @email ;";
             DataTable rss = ConnectSQL.Instance.ExecuteQuery(queryy, new object[] { email });
 
@@ -93,12 +127,6 @@ namespace QLCH_UI.BUS
                 result = "Email is already taken. Please choose another email.";
                 return result;
             }
-            if (password != confirm || password == "")
-            {
-                result = "Confirm your password!";
-                return result;
-            }
-
             return result;
         }
     }
