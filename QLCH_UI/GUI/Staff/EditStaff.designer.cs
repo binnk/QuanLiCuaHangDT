@@ -73,7 +73,7 @@
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Location = new System.Drawing.Point(615, 111);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(280, 330);
+            this.groupBox2.Size = new System.Drawing.Size(280, 221);
             this.groupBox2.TabIndex = 119;
             this.groupBox2.TabStop = false;
             // 
@@ -81,7 +81,7 @@
             // 
             this.lb_email_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_email_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_email_error.Location = new System.Drawing.Point(-6, 278);
+            this.lb_email_error.Location = new System.Drawing.Point(0, 177);
             this.lb_email_error.Name = "lb_email_error";
             this.lb_email_error.Size = new System.Drawing.Size(280, 42);
             this.lb_email_error.TabIndex = 121;

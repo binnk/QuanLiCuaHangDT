@@ -123,6 +123,8 @@
             // 
             this.dgvProducts.AllowUserToAddRows = false;
             this.dgvProducts.AllowUserToDeleteRows = false;
+            this.dgvProducts.AllowUserToResizeColumns = false;
+            this.dgvProducts.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvProducts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -138,7 +140,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvProducts.ColumnHeadersHeight = 37;
+            this.dgvProducts.ColumnHeadersHeight = 50;
             this.dgvProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.img,
             this.masp,
@@ -165,7 +167,7 @@
             this.dgvProducts.RowHeadersVisible = false;
             this.dgvProducts.RowHeadersWidth = 62;
             this.dgvProducts.RowTemplate.DividerHeight = 2;
-            this.dgvProducts.RowTemplate.Height = 35;
+            this.dgvProducts.RowTemplate.Height = 70;
             this.dgvProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProducts.Size = new System.Drawing.Size(929, 630);
             this.dgvProducts.TabIndex = 5;
@@ -187,7 +189,8 @@
             // 
             // img
             // 
-            this.img.HeaderText = "Ảnh";
+            this.img.FillWeight = 45F;
+            this.img.HeaderText = "";
             this.img.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.img.MinimumWidth = 8;
             this.img.Name = "img";

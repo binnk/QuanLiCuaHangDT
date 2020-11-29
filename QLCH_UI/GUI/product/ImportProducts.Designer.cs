@@ -128,7 +128,7 @@
             // 
             this.tb_gia_nhap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_gia_nhap.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_gia_nhap.Location = new System.Drawing.Point(54, 415);
+            this.tb_gia_nhap.Location = new System.Drawing.Point(49, 433);
             this.tb_gia_nhap.Name = "tb_gia_nhap";
             this.tb_gia_nhap.Size = new System.Drawing.Size(414, 44);
             this.tb_gia_nhap.TabIndex = 104;
@@ -138,7 +138,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(48, 380);
+            this.label6.Location = new System.Drawing.Point(43, 398);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(113, 32);
             this.label6.TabIndex = 103;
@@ -148,7 +148,7 @@
             // 
             this.tb_sl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_sl.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_sl.Location = new System.Drawing.Point(168, 333);
+            this.tb_sl.Location = new System.Drawing.Point(168, 349);
             this.tb_sl.Name = "tb_sl";
             this.tb_sl.Size = new System.Drawing.Size(133, 44);
             this.tb_sl.TabIndex = 102;
@@ -157,7 +157,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(49, 333);
+            this.label4.Location = new System.Drawing.Point(44, 349);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 32);
             this.label4.TabIndex = 101;
@@ -167,7 +167,7 @@
             // 
             this.tb_loai_sp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_loai_sp.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_loai_sp.Location = new System.Drawing.Point(50, 211);
+            this.tb_loai_sp.Location = new System.Drawing.Point(50, 227);
             this.tb_loai_sp.Name = "tb_loai_sp";
             this.tb_loai_sp.ReadOnly = true;
             this.tb_loai_sp.Size = new System.Drawing.Size(414, 44);
@@ -177,7 +177,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(44, 176);
+            this.label3.Location = new System.Drawing.Point(44, 192);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(173, 32);
             this.label3.TabIndex = 99;
@@ -187,7 +187,7 @@
             // 
             this.tb_masp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_masp.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_masp.Location = new System.Drawing.Point(50, 129);
+            this.tb_masp.Location = new System.Drawing.Point(50, 145);
             this.tb_masp.Name = "tb_masp";
             this.tb_masp.ReadOnly = true;
             this.tb_masp.Size = new System.Drawing.Size(414, 44);
@@ -197,7 +197,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(43, 251);
+            this.label5.Location = new System.Drawing.Point(43, 267);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(134, 32);
             this.label5.TabIndex = 87;
@@ -209,7 +209,7 @@
             this.date_sp.CustomFormat = "dd/MM/yyyy";
             this.date_sp.Font = new System.Drawing.Font("Arial", 16F);
             this.date_sp.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_sp.Location = new System.Drawing.Point(49, 286);
+            this.date_sp.Location = new System.Drawing.Point(49, 302);
             this.date_sp.Name = "date_sp";
             this.date_sp.Size = new System.Drawing.Size(325, 44);
             this.date_sp.TabIndex = 86;
@@ -218,7 +218,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(44, 94);
+            this.label1.Location = new System.Drawing.Point(44, 110);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(163, 32);
             this.label1.TabIndex = 84;
@@ -308,6 +308,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ImportProducts";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddProduct";
             this.Load += new System.EventHandler(this.AddProduct_Load);
             this.panel1.ResumeLayout(false);
