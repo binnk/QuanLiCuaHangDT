@@ -31,8 +31,8 @@ namespace QLCH_UI.DAO
         private ProductDAO() { }
         public DataTable Productlist()
         {
-            //string query = "select * from san_pham";
-            string query = "select masp as N'Mã sản phẩm',ten_sp as N'Tên sản phẩm',so_luong as N'Số lượng'  from san_pham";
+            string query = "select * from san_pham";
+            //string query = "select masp as N'Mã sản phẩm',ten_sp as N'Tên sản phẩm',so_luong as N'Số lượng'  from san_pham";
             DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
             return (dt);
         }
@@ -101,7 +101,7 @@ namespace QLCH_UI.DAO
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Mã sản phẩm đã tồn tại");
             }
             if (result == 0) return (false);
             else return (true);

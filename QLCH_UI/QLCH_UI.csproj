@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\BanhangBUS.cs" />
+    <Compile Include="BUS\StaffBUS.cs" />
     <Compile Include="DAO\BanhangDAO.cs" />
     <Compile Include="DAO\DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -84,6 +85,8 @@
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="DAO\Mail.cs" />
+    <Compile Include="DAO\StaffDAO.cs" />
+    <Compile Include="DTO\StaffDTO.cs" />
     <Compile Include="GUI\Sell\Printhd.cs">
       <SubType>Form</SubType>
     </Compile>

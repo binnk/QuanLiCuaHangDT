@@ -1,6 +1,6 @@
 ﻿namespace QLCH_UI
 {
-    partial class InfoStaff
+    partial class lb_gioitinh
     {
         /// <summary>
         /// Required designer variable.
@@ -29,38 +29,36 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoStaff));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lb_gioitinh));
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lb_gioi_tinh = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.icExit = new FontAwesome.Sharp.IconPictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lb_tennv = new System.Windows.Forms.Label();
+            this.lb_sdt = new System.Windows.Forms.Label();
+            this.lb_ngaysinh = new System.Windows.Forms.Label();
+            this.lb_manv = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lb_taikhoan = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lb_email = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label12.Location = new System.Drawing.Point(243, 501);
+            this.label12.Location = new System.Drawing.Point(243, 480);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(75, 30);
             this.label12.TabIndex = 120;
@@ -70,27 +68,27 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(36, 501);
+            this.label13.Location = new System.Drawing.Point(36, 478);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(89, 32);
             this.label13.TabIndex = 119;
             this.label13.Text = "Địa chỉ";
             // 
-            // label10
+            // lb_gioi_tinh
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label10.Location = new System.Drawing.Point(243, 368);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(91, 30);
-            this.label10.TabIndex = 118;
-            this.label10.Text = "giới tính";
+            this.lb_gioi_tinh.AutoSize = true;
+            this.lb_gioi_tinh.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_gioi_tinh.Location = new System.Drawing.Point(243, 337);
+            this.lb_gioi_tinh.Name = "lb_gioi_tinh";
+            this.lb_gioi_tinh.Size = new System.Drawing.Size(91, 30);
+            this.lb_gioi_tinh.TabIndex = 118;
+            this.lb_gioi_tinh.Text = "giới tính";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(36, 368);
+            this.label11.Location = new System.Drawing.Point(33, 335);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(109, 32);
             this.label11.TabIndex = 117;
@@ -128,6 +126,7 @@
             this.icExit.Size = new System.Drawing.Size(48, 48);
             this.icExit.TabIndex = 106;
             this.icExit.TabStop = false;
+            this.icExit.Click += new System.EventHandler(this.icExit_Click);
             // 
             // label7
             // 
@@ -140,51 +139,51 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Thông tin nhân viên";
             // 
-            // label6
+            // lb_tennv
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label6.Location = new System.Drawing.Point(243, 206);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(143, 30);
-            this.label6.TabIndex = 114;
-            this.label6.Text = "tên nhân viên";
+            this.lb_tennv.AutoSize = true;
+            this.lb_tennv.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_tennv.Location = new System.Drawing.Point(243, 206);
+            this.lb_tennv.Name = "lb_tennv";
+            this.lb_tennv.Size = new System.Drawing.Size(143, 30);
+            this.lb_tennv.TabIndex = 114;
+            this.lb_tennv.Text = "tên nhân viên";
             // 
-            // label9
+            // lb_sdt
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label9.Location = new System.Drawing.Point(243, 430);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(137, 30);
-            this.label9.TabIndex = 116;
-            this.label9.Text = "số điện thoại";
+            this.lb_sdt.AutoSize = true;
+            this.lb_sdt.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_sdt.Location = new System.Drawing.Point(243, 411);
+            this.lb_sdt.Name = "lb_sdt";
+            this.lb_sdt.Size = new System.Drawing.Size(137, 30);
+            this.lb_sdt.TabIndex = 116;
+            this.lb_sdt.Text = "số điện thoại";
             // 
-            // label8
+            // lb_ngaysinh
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label8.Location = new System.Drawing.Point(243, 310);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(104, 30);
-            this.label8.TabIndex = 115;
-            this.label8.Text = "ngày sinh";
+            this.lb_ngaysinh.AutoSize = true;
+            this.lb_ngaysinh.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_ngaysinh.Location = new System.Drawing.Point(243, 274);
+            this.lb_ngaysinh.Name = "lb_ngaysinh";
+            this.lb_ngaysinh.Size = new System.Drawing.Size(104, 30);
+            this.lb_ngaysinh.TabIndex = 115;
+            this.lb_ngaysinh.Text = "ngày sinh";
             // 
-            // label5
+            // lb_manv
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label5.Location = new System.Drawing.Point(243, 136);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 30);
-            this.label5.TabIndex = 113;
-            this.label5.Text = "mã nhân viên";
+            this.lb_manv.AutoSize = true;
+            this.lb_manv.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_manv.Location = new System.Drawing.Point(243, 136);
+            this.lb_manv.Name = "lb_manv";
+            this.lb_manv.Size = new System.Drawing.Size(142, 30);
+            this.lb_manv.TabIndex = 113;
+            this.lb_manv.Text = "mã nhân viên";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(36, 430);
+            this.label4.Location = new System.Drawing.Point(37, 409);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(160, 32);
             this.label4.TabIndex = 112;
@@ -204,7 +203,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(36, 310);
+            this.label3.Location = new System.Drawing.Point(36, 272);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 32);
             this.label3.TabIndex = 111;
@@ -220,26 +219,15 @@
             this.label1.TabIndex = 110;
             this.label1.Text = "Tên nhân viên";
             // 
-            // pictureBox1
+            // lb_taikhoan
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(651, 184);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(310, 365);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 123;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label16.Location = new System.Drawing.Point(793, 134);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(101, 30);
-            this.label16.TabIndex = 125;
-            this.label16.Text = "tài khoản";
+            this.lb_taikhoan.AutoSize = true;
+            this.lb_taikhoan.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_taikhoan.Location = new System.Drawing.Point(793, 134);
+            this.lb_taikhoan.Name = "lb_taikhoan";
+            this.lb_taikhoan.Size = new System.Drawing.Size(101, 30);
+            this.lb_taikhoan.TabIndex = 125;
+            this.lb_taikhoan.Text = "tài khoản";
             // 
             // label17
             // 
@@ -251,58 +239,56 @@
             this.label17.TabIndex = 124;
             this.label17.Text = "Tài khoản";
             // 
-            // label18
+            // label14
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label18.Location = new System.Drawing.Point(243, 260);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(67, 30);
-            this.label18.TabIndex = 129;
-            this.label18.Text = "cmnd";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(618, 206);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(73, 32);
+            this.label14.TabIndex = 126;
+            this.label14.Text = "Email";
             // 
-            // label19
+            // lb_email
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(33, 258);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(87, 32);
-            this.label19.TabIndex = 128;
-            this.label19.Text = "CMND";
+            this.lb_email.AutoSize = true;
+            this.lb_email.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_email.Location = new System.Drawing.Point(793, 206);
+            this.lb_email.Name = "lb_email";
+            this.lb_email.Size = new System.Drawing.Size(65, 30);
+            this.lb_email.TabIndex = 127;
+            this.lb_email.Text = "email";
             // 
-            // InfoStaff
+            // lb_gioitinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1093, 621);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label16);
+            this.Controls.Add(this.lb_email);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.lb_taikhoan);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lb_gioi_tinh);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lb_tennv);
+            this.Controls.Add(this.lb_sdt);
+            this.Controls.Add(this.lb_ngaysinh);
+            this.Controls.Add(this.lb_manv);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "InfoStaff";
+            this.Name = "lb_gioitinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InfoStaff";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,24 +297,23 @@
         #endregion
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lb_gioi_tinh;
         private System.Windows.Forms.Label label11;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconPictureBox icExit;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lb_tennv;
+        private System.Windows.Forms.Label lb_sdt;
+        private System.Windows.Forms.Label lb_ngaysinh;
+        private System.Windows.Forms.Label lb_manv;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lb_taikhoan;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lb_email;
     }
 }
