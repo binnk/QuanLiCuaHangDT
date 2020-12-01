@@ -337,9 +337,13 @@ namespace QLCH_UI
 
         private void itemWareHouseManage_Click(object sender, EventArgs e)
         {
+            openChildForm(new WareHouseManagentForm());
 
         }
 
-    
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ImportManagementForm());
+        }
     }
 }
