@@ -99,20 +99,7 @@ namespace QLCH_UI
 
         private void dgvProducts_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvProducts.SelectedRows.Count > 0)
-            {
-                DataGridViewRow row = dgvProducts.SelectedRows[0];
-                string masp = row.Cells[1].Value.ToString();
-                DataTable a = ProductDAO.Instance.viewinfo(masp);
-                string ma_sp = a.Rows[0]["masp"].ToString();
-                string ten_sp = a.Rows[0]["ten_sp"].ToString();
-                string loai_sp = a.Rows[0]["loai_sp"].ToString();
-                string gia = a.Rows[0]["gia_ban"].ToString();
-                Image anh = ProductBUS.Instance.ByteToImg(a.Rows[0]["img"].ToString());
-                InfoProduct f = new InfoProduct(ma_sp, ten_sp, loai_sp, gia, anh);
-                f.ShowDialog();
 
-            }
         }
 
         private void btn_ImportProduct_Click(object sender, EventArgs e)
@@ -130,6 +117,29 @@ namespace QLCH_UI
                 ImportProducts f = new ImportProducts(ma_sp, ten_sp, loai_sp, gia, anh);
                 f.ShowDialog();
                 load_product();
+            }
+        }
+
+        private void dgvProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvProducts_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvProducts.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = dgvProducts.SelectedRows[0];
+                string masp = row.Cells[1].Value.ToString();
+                DataTable a = ProductDAO.Instance.viewinfo(masp);
+                string ma_sp = a.Rows[0]["masp"].ToString();
+                string ten_sp = a.Rows[0]["ten_sp"].ToString();
+                string loai_sp = a.Rows[0]["loai_sp"].ToString();
+                string gia = a.Rows[0]["gia_ban"].ToString();
+                Image anh = ProductBUS.Instance.ByteToImg(a.Rows[0]["img"].ToString());
+                InfoProduct f = new InfoProduct(ma_sp, ten_sp, loai_sp, gia, anh);
+                f.ShowDialog();
+
             }
         }
     }
