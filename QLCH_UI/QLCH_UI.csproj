@@ -234,10 +234,10 @@
     <Compile Include="GUI\Staff\StaffsForm.designer.cs">
       <DependentUpon>StaffsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportForm.cs">
+    <Compile Include="GUI\ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportForm.Designer.cs">
+    <Compile Include="GUI\ReportForm.Designer.cs">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
@@ -326,7 +326,7 @@
     <EmbeddedResource Include="GUI\Manage\WareHouseManagentForm.resx">
       <DependentUpon>WareHouseManagentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportForm.resx">
+    <EmbeddedResource Include="GUI\ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DAO\DataSet1.xsc">
