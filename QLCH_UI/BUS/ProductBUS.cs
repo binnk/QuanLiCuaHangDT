@@ -75,7 +75,7 @@ namespace QLCH_UI.BUS
                 }
                 else
                 {
-                    if (value[i] < 48 || value[i] > 57) return (false);
+                    if ((value[i] < 48 || value[i] > 57) && (value[i] != ',')) return (false);
                 }
             return (true);
         }
@@ -94,7 +94,7 @@ namespace QLCH_UI.BUS
                 }
                 else
                 {
-                    if (value[i] < 48 || value[i] > 57) return (false);
+                    if ((value[i] < 48 || value[i] > 57) && (value[i] != ',')) return (false);
                 }
             return (true);
         }

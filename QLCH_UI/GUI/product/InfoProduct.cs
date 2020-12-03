@@ -18,7 +18,7 @@ namespace QLCH_UI
             lb_masp.Text = masp;
             lb_tensp.Text = tensp;
             lb_loaisp.Text = loaisp;
-            lb_giasp.Text = gia;
+            lb_giasp.Text = Convert.ToDouble(gia).ToString("#,##0");
             pictureBox1.Image = anh;
         }
 

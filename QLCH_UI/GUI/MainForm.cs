@@ -184,6 +184,7 @@ namespace QLCH_UI
         private void btnReport_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color7);
+            openChildForm(new ReportForm());
         }
 
         private void btnOrders_Click(object sender, EventArgs e)
@@ -337,9 +338,13 @@ namespace QLCH_UI
 
         private void itemWareHouseManage_Click(object sender, EventArgs e)
         {
+            openChildForm(new WareHouseManagentForm());
 
         }
 
-    
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ImportManagementForm());
+        }
     }
 }

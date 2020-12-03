@@ -28,7 +28,16 @@ namespace QLCH_UI
 
         public void load_product()
         {
-            dgvProducts.DataSource = ProductDAO.Instance.Productlist();
+            dgvProducts.Rows.Clear();
+            DataTable a = ProductDAO.Instance.Productlist();
+            for (int i=0;i<a.Rows.Count;i++)
+            {
+                string anh = a.Rows[i]["img"].ToString();
+                string masp = a.Rows[i]["masp"].ToString();
+                string tensp = a.Rows[i]["ten_sp"].ToString();
+                string soluong = a.Rows[i]["so_luong"].ToString();
+                dgvProducts.Rows.Add(ProductBUS.Instance.ByteToImg(anh), masp, tensp, soluong);
+            }
         }
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
@@ -46,7 +55,7 @@ namespace QLCH_UI
             if (dgvProducts.SelectedRows.Count>0)
             {
                 DataGridViewRow row = dgvProducts.SelectedRows[0];
-                String ID = row.Cells[0].Value.ToString();
+                String ID = row.Cells[1].Value.ToString();
                 string masp = "";
                 string ten_sp = "";
                 string loai_sp = "";
@@ -71,7 +80,7 @@ namespace QLCH_UI
             if (dgvProducts.SelectedRows.Count > 0)
             {
                 DataGridViewRow row = dgvProducts.SelectedRows[0];
-                string ID = row.Cells[0].Value.ToString();
+                string ID = row.Cells[1].Value.ToString();
                 if (ProductBUS.Instance.delete_product(ID))
                 {
                     MessageBox.Show("Xóa thành công");
@@ -90,20 +99,7 @@ namespace QLCH_UI
 
         private void dgvProducts_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvProducts.SelectedRows.Count > 0)
-            {
-                DataGridViewRow row = dgvProducts.SelectedRows[0];
-                string masp = row.Cells[0].Value.ToString();
-                DataTable a = ProductDAO.Instance.viewinfo(masp);
-                string ma_sp = a.Rows[0]["masp"].ToString();
-                string ten_sp = a.Rows[0]["ten_sp"].ToString();
-                string loai_sp = a.Rows[0]["loai_sp"].ToString();
-                string gia = a.Rows[0]["gia_ban"].ToString();
-                Image anh = ProductBUS.Instance.ByteToImg(a.Rows[0]["img"].ToString());
-                InfoProduct f = new InfoProduct(ma_sp, ten_sp, loai_sp, gia, anh);
-                f.ShowDialog();
 
-            }
         }
 
         private void btn_ImportProduct_Click(object sender, EventArgs e)
@@ -111,7 +107,7 @@ namespace QLCH_UI
             if (dgvProducts.SelectedRows.Count > 0)
             {
                 DataGridViewRow row = dgvProducts.SelectedRows[0];
-                string masp = row.Cells[0].Value.ToString();
+                string masp = row.Cells[1].Value.ToString();
                 DataTable a = ProductDAO.Instance.viewinfo(masp);
                 string ma_sp = a.Rows[0]["masp"].ToString();
                 string ten_sp = a.Rows[0]["ten_sp"].ToString();
@@ -121,6 +117,29 @@ namespace QLCH_UI
                 ImportProducts f = new ImportProducts(ma_sp, ten_sp, loai_sp, gia, anh);
                 f.ShowDialog();
                 load_product();
+            }
+        }
+
+        private void dgvProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvProducts_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvProducts.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = dgvProducts.SelectedRows[0];
+                string masp = row.Cells[1].Value.ToString();
+                DataTable a = ProductDAO.Instance.viewinfo(masp);
+                string ma_sp = a.Rows[0]["masp"].ToString();
+                string ten_sp = a.Rows[0]["ten_sp"].ToString();
+                string loai_sp = a.Rows[0]["loai_sp"].ToString();
+                string gia = a.Rows[0]["gia_ban"].ToString();
+                Image anh = ProductBUS.Instance.ByteToImg(a.Rows[0]["img"].ToString());
+                InfoProduct f = new InfoProduct(ma_sp, ten_sp, loai_sp, gia, anh);
+                f.ShowDialog();
+
             }
         }
     }

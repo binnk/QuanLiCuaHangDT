@@ -65,6 +65,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -77,6 +78,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\BanhangBUS.cs" />
+    <Compile Include="BUS\StaffBUS.cs" />
+    <Compile Include="GUI\HoaDon\CTHDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\HoaDon\CTHDForm.Designer.cs">
+      <DependentUpon>CTHDForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAO\BanhangDAO.cs" />
     <Compile Include="DAO\DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -84,6 +92,8 @@
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="DAO\Mail.cs" />
+    <Compile Include="DAO\StaffDAO.cs" />
+    <Compile Include="DTO\StaffDTO.cs" />
     <Compile Include="GUI\Sell\Printhd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,10 +157,10 @@
     <Compile Include="GUI\Customer\InfoCustomer.designer.cs">
       <DependentUpon>InfoCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\OrdersForm.cs">
+    <Compile Include="GUI\HoaDon\OrdersForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\OrdersForm.Designer.cs">
+    <Compile Include="GUI\HoaDon\OrdersForm.Designer.cs">
       <DependentUpon>OrdersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\product\EditProduct.cs">
@@ -204,6 +214,12 @@
     <Compile Include="GUI\Staff\InfoStaff.designer.cs">
       <DependentUpon>InfoStaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Manage\ImportManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Manage\ImportManagementForm.designer.cs">
+      <DependentUpon>ImportManagementForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GUI\RegisterForm.cs">
@@ -218,7 +234,22 @@
     <Compile Include="GUI\Staff\StaffsForm.designer.cs">
       <DependentUpon>StaffsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="GUI\Manage\WareHouseManagentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Manage\WareHouseManagentForm.designer.cs">
+      <DependentUpon>WareHouseManagentForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\HoaDon\CTHDForm.resx">
+      <DependentUpon>CTHDForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Sell\Printhd.resx">
       <DependentUpon>Printhd.cs</DependentUpon>
     </EmbeddedResource>
@@ -247,7 +278,7 @@
     <EmbeddedResource Include="GUI\Customer\InfoCustomer.resx">
       <DependentUpon>InfoCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\OrdersForm.resx">
+    <EmbeddedResource Include="GUI\HoaDon\OrdersForm.resx">
       <DependentUpon>OrdersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\product\EditProduct.resx">
@@ -274,6 +305,9 @@
     <EmbeddedResource Include="GUI\Staff\InfoStaff.resx">
       <DependentUpon>InfoStaff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Manage\ImportManagementForm.resx">
+      <DependentUpon>ImportManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -288,6 +322,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Staff\StaffsForm.resx">
       <DependentUpon>StaffsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Manage\WareHouseManagentForm.resx">
+      <DependentUpon>WareHouseManagentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DAO\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>

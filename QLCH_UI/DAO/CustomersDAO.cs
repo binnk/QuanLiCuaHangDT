@@ -49,7 +49,7 @@ namespace QLCH_UI.DAO
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Mã khách hàng đã tồn tại");
             }
             if (result == 0) return (false);
             else return (true);

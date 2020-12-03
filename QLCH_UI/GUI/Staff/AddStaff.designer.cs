@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddStaff));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lb_ten_nv_error = new System.Windows.Forms.Label();
             this.tb_dia_chi = new System.Windows.Forms.TextBox();
             this.tb_phone = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,22 +43,29 @@
             this.Radio_Nam = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.date_kh = new System.Windows.Forms.DateTimePicker();
+            this.date_nv = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tb_ten_kh = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lb_gioi_tinh_error = new System.Windows.Forms.Label();
+            this.lb_dia_chi_error = new System.Windows.Forms.Label();
+            this.lb_sdt_error = new System.Windows.Forms.Label();
+            this.lb_manv_error = new System.Windows.Forms.Label();
+            this.tb_manv = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.tb_ten_nv = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.tb_user = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tb_email = new System.Windows.Forms.TextBox();
+            this.tb_confirmpassword = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.tb_password = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lb_password_error = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,22 +97,23 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Thêm nhân viên";
             // 
-            // label8
+            // lb_ten_nv_error
             // 
-            this.label8.Font = new System.Drawing.Font("Arial", 10F);
-            this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(45, 564);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(417, 42);
-            this.label8.TabIndex = 98;
-            this.label8.Text = "Tên khách hàng không hợp lệ";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_ten_nv_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_ten_nv_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_ten_nv_error.Location = new System.Drawing.Point(45, 564);
+            this.lb_ten_nv_error.Name = "lb_ten_nv_error";
+            this.lb_ten_nv_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_ten_nv_error.TabIndex = 98;
+            this.lb_ten_nv_error.Text = "Tên nhân viên không hợp lệ";
+            this.lb_ten_nv_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_ten_nv_error.Visible = false;
             // 
             // tb_dia_chi
             // 
             this.tb_dia_chi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_dia_chi.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_dia_chi.Location = new System.Drawing.Point(48, 517);
+            this.tb_dia_chi.Location = new System.Drawing.Point(48, 488);
             this.tb_dia_chi.Name = "tb_dia_chi";
             this.tb_dia_chi.Size = new System.Drawing.Size(414, 44);
             this.tb_dia_chi.TabIndex = 97;
@@ -115,7 +122,7 @@
             // 
             this.tb_phone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_phone.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_phone.Location = new System.Drawing.Point(48, 435);
+            this.tb_phone.Location = new System.Drawing.Point(48, 387);
             this.tb_phone.Name = "tb_phone";
             this.tb_phone.Size = new System.Drawing.Size(414, 44);
             this.tb_phone.TabIndex = 96;
@@ -124,7 +131,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(42, 482);
+            this.label4.Location = new System.Drawing.Point(42, 440);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 32);
             this.label4.TabIndex = 94;
@@ -143,6 +150,7 @@
             this.button2.TabIndex = 41;
             this.button2.Text = "Hủy";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btn_luu_customer
             // 
@@ -157,12 +165,13 @@
             this.btn_luu_customer.TabIndex = 40;
             this.btn_luu_customer.Text = "Lưu";
             this.btn_luu_customer.UseVisualStyleBackColor = false;
+            this.btn_luu_customer.Click += new System.EventHandler(this.btn_luu_customer_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(43, 355);
+            this.label6.Location = new System.Drawing.Point(43, 283);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 32);
             this.label6.TabIndex = 92;
@@ -172,7 +181,7 @@
             // 
             this.Radio_Nu.AutoSize = true;
             this.Radio_Nu.Font = new System.Drawing.Font("Arial", 11F);
-            this.Radio_Nu.Location = new System.Drawing.Point(310, 358);
+            this.Radio_Nu.Location = new System.Drawing.Point(306, 287);
             this.Radio_Nu.Name = "Radio_Nu";
             this.Radio_Nu.Size = new System.Drawing.Size(68, 29);
             this.Radio_Nu.TabIndex = 91;
@@ -184,7 +193,7 @@
             // 
             this.Radio_Nam.AutoSize = true;
             this.Radio_Nam.Font = new System.Drawing.Font("Arial", 11F);
-            this.Radio_Nam.Location = new System.Drawing.Point(220, 358);
+            this.Radio_Nam.Location = new System.Drawing.Point(199, 286);
             this.Radio_Nam.Name = "Radio_Nam";
             this.Radio_Nam.Size = new System.Drawing.Size(83, 29);
             this.Radio_Nam.TabIndex = 90;
@@ -196,7 +205,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(43, 398);
+            this.label3.Location = new System.Drawing.Point(42, 335);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(160, 32);
             this.label3.TabIndex = 89;
@@ -206,22 +215,22 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(43, 270);
+            this.label5.Location = new System.Drawing.Point(44, 177);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 32);
             this.label5.TabIndex = 87;
             this.label5.Text = "Ngày sinh";
             // 
-            // date_kh
+            // date_nv
             // 
-            this.date_kh.CalendarFont = new System.Drawing.Font("Arial", 16F);
-            this.date_kh.CustomFormat = "dd/MM/yyyy";
-            this.date_kh.Font = new System.Drawing.Font("Arial", 16F);
-            this.date_kh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_kh.Location = new System.Drawing.Point(49, 305);
-            this.date_kh.Name = "date_kh";
-            this.date_kh.Size = new System.Drawing.Size(325, 44);
-            this.date_kh.TabIndex = 86;
+            this.date_nv.CalendarFont = new System.Drawing.Font("Arial", 16F);
+            this.date_nv.CustomFormat = "dd/MM/yyyy";
+            this.date_nv.Font = new System.Drawing.Font("Arial", 16F);
+            this.date_nv.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.date_nv.Location = new System.Drawing.Point(49, 224);
+            this.date_nv.Name = "date_nv";
+            this.date_nv.Size = new System.Drawing.Size(325, 44);
+            this.date_nv.TabIndex = 86;
             // 
             // label2
             // 
@@ -235,11 +244,13 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.lb_gioi_tinh_error);
+            this.groupBox1.Controls.Add(this.lb_dia_chi_error);
+            this.groupBox1.Controls.Add(this.lb_sdt_error);
+            this.groupBox1.Controls.Add(this.lb_manv_error);
+            this.groupBox1.Controls.Add(this.tb_manv);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.lb_ten_nv_error);
             this.groupBox1.Controls.Add(this.tb_dia_chi);
             this.groupBox1.Controls.Add(this.tb_phone);
             this.groupBox1.Controls.Add(this.label4);
@@ -248,8 +259,8 @@
             this.groupBox1.Controls.Add(this.Radio_Nam);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.date_kh);
-            this.groupBox1.Controls.Add(this.tb_ten_kh);
+            this.groupBox1.Controls.Add(this.date_nv);
+            this.groupBox1.Controls.Add(this.tb_ten_nv);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(28, 96);
             this.groupBox1.Name = "groupBox1";
@@ -257,93 +268,63 @@
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             // 
-            // textBox1
+            // lb_gioi_tinh_error
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 16F);
-            this.textBox1.Location = new System.Drawing.Point(49, 207);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(414, 44);
-            this.textBox1.TabIndex = 100;
+            this.lb_gioi_tinh_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_gioi_tinh_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_gioi_tinh_error.Location = new System.Drawing.Point(46, 564);
+            this.lb_gioi_tinh_error.Name = "lb_gioi_tinh_error";
+            this.lb_gioi_tinh_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_gioi_tinh_error.TabIndex = 117;
+            this.lb_gioi_tinh_error.Text = "Chọn giới tính";
+            this.lb_gioi_tinh_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_gioi_tinh_error.Visible = false;
+            this.lb_gioi_tinh_error.Click += new System.EventHandler(this.lb_gioi_tinh_error_Click);
             // 
-            // label1
+            // lb_dia_chi_error
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(44, 174);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 32);
-            this.label1.TabIndex = 99;
-            this.label1.Text = "CMND";
+            this.lb_dia_chi_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_dia_chi_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_dia_chi_error.Location = new System.Drawing.Point(46, 564);
+            this.lb_dia_chi_error.Name = "lb_dia_chi_error";
+            this.lb_dia_chi_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_dia_chi_error.TabIndex = 116;
+            this.lb_dia_chi_error.Text = "Địa chỉ không hợp lệ";
+            this.lb_dia_chi_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_dia_chi_error.Visible = false;
             // 
-            // tb_ten_kh
+            // lb_sdt_error
             // 
-            this.tb_ten_kh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb_ten_kh.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_ten_kh.Location = new System.Drawing.Point(49, 127);
-            this.tb_ten_kh.Name = "tb_ten_kh";
-            this.tb_ten_kh.Size = new System.Drawing.Size(414, 44);
-            this.tb_ten_kh.TabIndex = 83;
+            this.lb_sdt_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_sdt_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_sdt_error.Location = new System.Drawing.Point(46, 564);
+            this.lb_sdt_error.Name = "lb_sdt_error";
+            this.lb_sdt_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_sdt_error.TabIndex = 115;
+            this.lb_sdt_error.Text = "Số điện thoại không hợp lệ";
+            this.lb_sdt_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_sdt_error.Visible = false;
             // 
-            // label11
+            // lb_manv_error
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(696, 571);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(124, 32);
-            this.label11.TabIndex = 111;
-            this.label11.Text = "Thêm ảnh";
+            this.lb_manv_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_manv_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_manv_error.Location = new System.Drawing.Point(44, 571);
+            this.lb_manv_error.Name = "lb_manv_error";
+            this.lb_manv_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_manv_error.TabIndex = 114;
+            this.lb_manv_error.Text = "Mã nhân viên không hợp lệ";
+            this.lb_manv_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_manv_error.Visible = false;
             // 
-            // pictureBox1
+            // tb_manv
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(615, 273);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(280, 295);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 110;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(1, 34);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(120, 32);
-            this.label12.TabIndex = 103;
-            this.label12.Text = "Tài khoản";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Arial", 16F);
-            this.textBox4.Location = new System.Drawing.Point(6, 67);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(268, 44);
-            this.textBox4.TabIndex = 104;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Location = new System.Drawing.Point(615, 96);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(280, 134);
-            this.groupBox2.TabIndex = 112;
-            this.groupBox2.TabStop = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 16F);
-            this.textBox2.Location = new System.Drawing.Point(48, 48);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(414, 44);
-            this.textBox2.TabIndex = 102;
+            this.tb_manv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_manv.Font = new System.Drawing.Font("Arial", 16F);
+            this.tb_manv.Location = new System.Drawing.Point(48, 48);
+            this.tb_manv.Name = "tb_manv";
+            this.tb_manv.Size = new System.Drawing.Size(414, 44);
+            this.tb_manv.TabIndex = 102;
             // 
             // label9
             // 
@@ -355,14 +336,137 @@
             this.label9.TabIndex = 101;
             this.label9.Text = "Mã nhân viên";
             // 
+            // tb_ten_nv
+            // 
+            this.tb_ten_nv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_ten_nv.Font = new System.Drawing.Font("Arial", 16F);
+            this.tb_ten_nv.Location = new System.Drawing.Point(49, 127);
+            this.tb_ten_nv.Name = "tb_ten_nv";
+            this.tb_ten_nv.Size = new System.Drawing.Size(414, 44);
+            this.tb_ten_nv.TabIndex = 83;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(696, 571);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(0, 32);
+            this.label11.TabIndex = 111;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(6, 15);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(120, 32);
+            this.label12.TabIndex = 103;
+            this.label12.Text = "Tài khoản";
+            // 
+            // tb_user
+            // 
+            this.tb_user.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_user.Font = new System.Drawing.Font("Arial", 16F);
+            this.tb_user.Location = new System.Drawing.Point(6, 48);
+            this.tb_user.Name = "tb_user";
+            this.tb_user.Size = new System.Drawing.Size(268, 44);
+            this.tb_user.TabIndex = 104;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.tb_email);
+            this.groupBox2.Controls.Add(this.tb_confirmpassword);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.tb_password);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.tb_user);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Location = new System.Drawing.Point(615, 96);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(280, 399);
+            this.groupBox2.TabIndex = 112;
+            this.groupBox2.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(6, 282);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(73, 32);
+            this.label13.TabIndex = 110;
+            this.label13.Text = "Email";
+            // 
+            // tb_email
+            // 
+            this.tb_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_email.Font = new System.Drawing.Font("Arial", 16F);
+            this.tb_email.Location = new System.Drawing.Point(0, 323);
+            this.tb_email.Name = "tb_email";
+            this.tb_email.Size = new System.Drawing.Size(268, 44);
+            this.tb_email.TabIndex = 109;
+            // 
+            // tb_confirmpassword
+            // 
+            this.tb_confirmpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_confirmpassword.Font = new System.Drawing.Font("Arial", 16F);
+            this.tb_confirmpassword.Location = new System.Drawing.Point(0, 224);
+            this.tb_confirmpassword.Name = "tb_confirmpassword";
+            this.tb_confirmpassword.Size = new System.Drawing.Size(268, 44);
+            this.tb_confirmpassword.TabIndex = 108;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(6, 177);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(217, 32);
+            this.label10.TabIndex = 107;
+            this.label10.Text = "Nhập lại mật khẩu";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // tb_password
+            // 
+            this.tb_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_password.Font = new System.Drawing.Font("Arial", 16F);
+            this.tb_password.Location = new System.Drawing.Point(0, 130);
+            this.tb_password.Name = "tb_password";
+            this.tb_password.Size = new System.Drawing.Size(268, 44);
+            this.tb_password.TabIndex = 106;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 95);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 32);
+            this.label1.TabIndex = 105;
+            this.label1.Text = "Mật khẩu";
+            // 
+            // lb_password_error
+            // 
+            this.lb_password_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_password_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_password_error.Location = new System.Drawing.Point(546, 498);
+            this.lb_password_error.Name = "lb_password_error";
+            this.lb_password_error.Size = new System.Drawing.Size(399, 147);
+            this.lb_password_error.TabIndex = 118;
+            this.lb_password_error.Text = "Mật khẩu không hợp lệ";
+            this.lb_password_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_password_error.Visible = false;
+            // 
             // AddStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(945, 748);
+            this.Controls.Add(this.lb_password_error);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_luu_customer);
             this.Controls.Add(this.groupBox1);
@@ -375,7 +479,6 @@
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -388,7 +491,7 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lb_ten_nv_error;
         private System.Windows.Forms.TextBox tb_dia_chi;
         private System.Windows.Forms.TextBox tb_phone;
         private System.Windows.Forms.Label label4;
@@ -399,18 +502,26 @@
         private System.Windows.Forms.RadioButton Radio_Nam;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker date_kh;
+        private System.Windows.Forms.DateTimePicker date_nv;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox tb_ten_kh;
+        private System.Windows.Forms.TextBox tb_ten_nv;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_user;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_manv;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox tb_email;
+        private System.Windows.Forms.TextBox tb_confirmpassword;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox tb_password;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lb_gioi_tinh_error;
+        private System.Windows.Forms.Label lb_dia_chi_error;
+        private System.Windows.Forms.Label lb_sdt_error;
+        private System.Windows.Forms.Label lb_manv_error;
+        private System.Windows.Forms.Label lb_password_error;
     }
 }

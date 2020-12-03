@@ -130,6 +130,7 @@
             this.tb_giaban.Name = "tb_giaban";
             this.tb_giaban.Size = new System.Drawing.Size(414, 44);
             this.tb_giaban.TabIndex = 106;
+            this.tb_giaban.TextChanged += new System.EventHandler(this.tb_giaban_TextChanged);
             // 
             // label9
             // 
@@ -149,6 +150,7 @@
             this.tb_gianhap.Name = "tb_gianhap";
             this.tb_gianhap.Size = new System.Drawing.Size(414, 44);
             this.tb_gianhap.TabIndex = 104;
+            this.tb_gianhap.TextChanged += new System.EventHandler(this.tb_gianhap_TextChanged);
             // 
             // label6
             // 
