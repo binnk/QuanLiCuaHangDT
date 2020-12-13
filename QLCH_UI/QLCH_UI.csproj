@@ -39,6 +39,9 @@
     <Reference Include="FontAwesome.Sharp, Version=5.14.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.14.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>D:\HK3\LTTQ\UI\Guna.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>C:\Users\phamt\Downloads\Guna.UI2_WinForms_v2.0.1.1\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
@@ -79,6 +82,30 @@
   <ItemGroup>
     <Compile Include="BUS\BanhangBUS.cs" />
     <Compile Include="BUS\StaffBUS.cs" />
+    <Compile Include="GUI\SuaChua\fChonEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SuaChua\fChonEdit.Designer.cs">
+      <DependentUpon>fChonEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SuaChua\fEditSuaChua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SuaChua\fEditSuaChua.Designer.cs">
+      <DependentUpon>fEditSuaChua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SuaChua\fThemDonSuaChua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SuaChua\fThemDonSuaChua.Designer.cs">
+      <DependentUpon>fThemDonSuaChua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SuaChua\fUpdateInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SuaChua\fUpdateInfo.Designer.cs">
+      <DependentUpon>fUpdateInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\HoaDon\CTHDForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +247,18 @@
     <Compile Include="GUI\Manage\ImportManagementForm.designer.cs">
       <DependentUpon>ImportManagementForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\SuaChua\InfoSuaChua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SuaChua\InfoSuaChua.Designer.cs">
+      <DependentUpon>InfoSuaChua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SuaChua\MainSalesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SuaChua\MainSalesForm.Designer.cs">
+      <DependentUpon>MainSalesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GUI\RegisterForm.cs">
@@ -247,6 +286,36 @@
     <Compile Include="GUI\Manage\WareHouseManagentForm.designer.cs">
       <DependentUpon>WareHouseManagentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\SuaChua\SuaChuaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SuaChua\SuaChuaForm.Designer.cs">
+      <DependentUpon>SuaChuaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SuaChua\UC_UI_DS_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\SuaChua\UC_UI_DS_Item.Designer.cs">
+      <DependentUpon>UC_UI_DS_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SuaChua\UC_ItemNhanSuaChua.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\SuaChua\UC_ItemNhanSuaChua.designer.cs">
+      <DependentUpon>UC_ItemNhanSuaChua.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\SuaChua\fChonEdit.resx">
+      <DependentUpon>fChonEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SuaChua\fEditSuaChua.resx">
+      <DependentUpon>fEditSuaChua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SuaChua\fThemDonSuaChua.resx">
+      <DependentUpon>fThemDonSuaChua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SuaChua\fUpdateInfo.resx">
+      <DependentUpon>fUpdateInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\HoaDon\CTHDForm.resx">
       <DependentUpon>CTHDForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -308,6 +377,12 @@
     <EmbeddedResource Include="GUI\Manage\ImportManagementForm.resx">
       <DependentUpon>ImportManagementForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SuaChua\InfoSuaChua.resx">
+      <DependentUpon>InfoSuaChua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SuaChua\MainSalesForm.resx">
+      <DependentUpon>MainSalesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -328,6 +403,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SuaChua\SuaChuaForm.resx">
+      <DependentUpon>SuaChuaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SuaChua\UC_UI_DS_Item.resx">
+      <DependentUpon>UC_UI_DS_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SuaChua\UC_ItemNhanSuaChua.resx">
+      <DependentUpon>UC_ItemNhanSuaChua.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DAO\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>

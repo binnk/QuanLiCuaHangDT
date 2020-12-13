@@ -53,6 +53,7 @@
             this.tb_ten_kh = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -332,6 +333,11 @@
             this.bunifuDragControl1.TargetControl = this.panel1;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 15;
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // AddCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -381,5 +387,6 @@
         private System.Windows.Forms.Label lb_makh_error;
         private System.Windows.Forms.Label lb_SDT_error;
         private System.Windows.Forms.Label lb_diachi_error;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }
