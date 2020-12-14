@@ -1,6 +1,6 @@
 ﻿namespace QLCH_UI
 {
-    partial class fEditSuaChua
+    partial class fEditRepair
     {
         /// <summary>
         /// Required designer variable.
@@ -436,7 +436,7 @@
             this.gunaElipse1.Radius = 15;
             this.gunaElipse1.TargetControl = this;
             // 
-            // fEditSuaChua
+            // fEditRepair
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -444,9 +444,9 @@
             this.Controls.Add(this.gunaLinePanel1);
             this.Controls.Add(this.pnTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "fEditSuaChua";
+            this.Name = "fEditRepair";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fEditSuaChua";
+            this.Text = "fEditRepair";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);

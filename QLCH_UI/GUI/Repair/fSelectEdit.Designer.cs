@@ -1,6 +1,6 @@
 ﻿namespace QLCH_UI
 {
-    partial class fChonEdit
+    partial class fSelectEdit
     {
         /// <summary>
         /// Required designer variable.
@@ -132,7 +132,7 @@
             // 
             this.gunaDragControl1.TargetControl = this;
             // 
-            // fChonEdit
+            // fSelectEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -140,9 +140,9 @@
             this.ClientSize = new System.Drawing.Size(397, 228);
             this.Controls.Add(this.gunaLinePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "fChonEdit";
+            this.Name = "fSelectEdit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "fChonEdit";
+            this.Text = "fSelectEdit";
             this.gunaLinePanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -1,6 +1,6 @@
 ﻿namespace QLCH_UI
 {
-    partial class SuaChuaForm
+    partial class fRepair
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuaChuaForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fRepair));
             this.panel = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnThem = new Guna.UI.WinForms.GunaButton();
             this.gunaAdvenceButton4 = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -593,7 +593,7 @@
             this.guna2TextBox1.TabIndex = 0;
             this.guna2TextBox1.TextOffset = new System.Drawing.Point(15, -1);
             // 
-            // SuaChuaForm
+            // fRepair
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -601,8 +601,8 @@
             this.Controls.Add(this.panel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SuaChuaForm";
-            this.Text = "SuaChuaForm";
+            this.Name = "fRepair";
+            this.Text = "fRepair";
             this.panel.ResumeLayout(false);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);

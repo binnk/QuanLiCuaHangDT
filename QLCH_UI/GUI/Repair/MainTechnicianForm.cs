@@ -15,11 +15,11 @@ using Bunifu;
 
 namespace QLCH_UI
 {
-     partial class MainSalesForm : Form
+    partial class MainTechnicianForm : Form
     {
         private IconButton currentBtn;
         private Panel leftBorderBtn;
-        public MainSalesForm()
+        public MainTechnicianForm()
         {
             InitializeComponent();
 
@@ -214,7 +214,12 @@ namespace QLCH_UI
 
         private void btnSuaChua_Click(object sender, EventArgs e)
         {
-            openChildForm(new SuaChuaForm());   
+            openChildForm(new fRepair());   
+        }
+
+        private void btnLinhKien_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ViewProduct());
         }
     }
 }

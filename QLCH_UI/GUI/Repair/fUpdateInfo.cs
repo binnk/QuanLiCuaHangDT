@@ -27,6 +27,8 @@ namespace QLCH_UI
                 return handleParam;
             }
         }
+
+        //test
         public void load()
         {
             UC_UI_DS_Item item = new UC_UI_DS_Item();

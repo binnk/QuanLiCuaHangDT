@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLCH_UI
 {
-    public partial class fEditSuaChua : Form
+    public partial class fEditRepair : Form
     {
-        public fEditSuaChua()
+        public fEditRepair()
         {
             InitializeComponent();
         }

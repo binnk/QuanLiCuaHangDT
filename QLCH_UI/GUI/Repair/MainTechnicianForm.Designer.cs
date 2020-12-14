@@ -1,6 +1,6 @@
 ﻿namespace QLCH_UI
 {
-    public partial class MainSalesForm
+    public partial class MainTechnicianForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainSalesForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainTechnicianForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.btnMinimize = new FontAwesome.Sharp.IconButton();
@@ -163,6 +163,7 @@
             this.btnLinhKien.Size = new System.Drawing.Size(180, 64);
             this.btnLinhKien.TabIndex = 8;
             this.btnLinhKien.Text = "Linh kiện";
+            this.btnLinhKien.Click += new System.EventHandler(this.btnLinhKien_Click);
             // 
             // btnSuaChua
             // 
@@ -278,7 +279,7 @@
             this.guna2DragControl1.ContainerControl = this;
             this.guna2DragControl1.TargetControl = this.gunaPanel1;
             // 
-            // MainSalesForm
+            // MainTechnicianForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -287,7 +288,7 @@
             this.Controls.Add(this.panelMenu);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MainSalesForm";
+            this.Name = "MainTechnicianForm";
             this.Text = "Form1";
             this.panelMenu.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);

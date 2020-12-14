@@ -1,6 +1,6 @@
 ﻿namespace QLCH_UI
 {
-    partial class UC_ItemNhanSuaChua
+    partial class UC_ItemRepair
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_ItemNhanSuaChua));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_ItemRepair));
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
@@ -308,13 +308,13 @@
             this.lb_MaDon.TabIndex = 0;
             this.lb_MaDon.Text = "Mã đơn";
             // 
-            // UC_ItemNhanSuaChua
+            // UC_ItemRepair
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gunaLinePanel2);
             this.Controls.Add(this.gunaLinePanel1);
-            this.Name = "UC_ItemNhanSuaChua";
+            this.Name = "UC_ItemRepair";
             this.Size = new System.Drawing.Size(1515, 76);
             this.gunaLinePanel1.ResumeLayout(false);
             this.gunaLinePanel1.PerformLayout();

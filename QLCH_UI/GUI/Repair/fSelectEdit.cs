@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLCH_UI
 {
-    public partial class fChonEdit : Form
+    public partial class fSelectEdit : Form
     {
-        public fChonEdit()
+        public fSelectEdit()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace QLCH_UI
         private void btnThayDoi_Click(object sender, EventArgs e)
         {
             this.Hide();
-            fEditSuaChua form = new fEditSuaChua();
+            fEditRepair form = new fEditRepair();
             form.ShowDialog();
             this.Close();
 

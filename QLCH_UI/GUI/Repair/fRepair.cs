@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLCH_UI
 {
-    public partial class SuaChuaForm : Form
+    public partial class fRepair : Form
     {
-        public SuaChuaForm()
+        public fRepair()
         {
             InitializeComponent();
             LoadDonSuaChua();
@@ -32,7 +32,7 @@ namespace QLCH_UI
 
         public void LoadDonSuaChua()
         {
-            UC_ItemNhanSuaChua items = new UC_ItemNhanSuaChua();
+            UC_ItemRepair items = new UC_ItemRepair();
             items.MaDon = "MD01";
             items.NgayNhan = "03/07/2020";
             items.TenKH = "Pham Tan Khang";
@@ -43,7 +43,7 @@ namespace QLCH_UI
             items.DanhSachLinhKien.Add("Main samsung");
             items.setUC();
 
-            UC_ItemNhanSuaChua item2 = new UC_ItemNhanSuaChua();
+            UC_ItemRepair item2 = new UC_ItemRepair();
             item2.MaDon = "MD02";
             item2.NgayNhan = "19/07/2020";
             item2.TenKH = "Pham Tan Khang";
@@ -54,7 +54,7 @@ namespace QLCH_UI
             flowLayoutPanel1.Controls.Add(items);
             flowLayoutPanel1.Controls.Add(item2);
 
-            UC_ItemNhanSuaChua item3 = new UC_ItemNhanSuaChua();
+            UC_ItemRepair item3 = new UC_ItemRepair();
             item3.MaDon = "MD02";
             item3.NgayNhan = "19/07/2020";
             item3.TenKH = "Pham Tan Khang";
@@ -70,7 +70,7 @@ namespace QLCH_UI
 
         private void btnThem_Click_1(object sender, EventArgs e)
         {
-            fThemDonSuaChua form = new fThemDonSuaChua();
+            fAddRepair form = new fAddRepair();
             form.ShowDialog();
         }
     }

@@ -82,28 +82,28 @@
   <ItemGroup>
     <Compile Include="BUS\BanhangBUS.cs" />
     <Compile Include="BUS\StaffBUS.cs" />
-    <Compile Include="GUI\SuaChua\fChonEdit.cs">
+    <Compile Include="GUI\Repair\fSelectEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\SuaChua\fChonEdit.Designer.cs">
-      <DependentUpon>fChonEdit.cs</DependentUpon>
+    <Compile Include="GUI\Repair\fSelectEdit.Designer.cs">
+      <DependentUpon>fSelectEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\SuaChua\fEditSuaChua.cs">
+    <Compile Include="GUI\Repair\fEditRepair.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\SuaChua\fEditSuaChua.Designer.cs">
-      <DependentUpon>fEditSuaChua.cs</DependentUpon>
+    <Compile Include="GUI\Repair\fEditRepair.Designer.cs">
+      <DependentUpon>fEditRepair.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\SuaChua\fThemDonSuaChua.cs">
+    <Compile Include="GUI\Repair\fAddRepair.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\SuaChua\fThemDonSuaChua.Designer.cs">
-      <DependentUpon>fThemDonSuaChua.cs</DependentUpon>
+    <Compile Include="GUI\Repair\fAddRepair.Designer.cs">
+      <DependentUpon>fAddRepair.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\SuaChua\fUpdateInfo.cs">
+    <Compile Include="GUI\Repair\fUpdateInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\SuaChua\fUpdateInfo.Designer.cs">
+    <Compile Include="GUI\Repair\fUpdateInfo.Designer.cs">
       <DependentUpon>fUpdateInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\HoaDon\CTHDForm.cs">
@@ -247,17 +247,17 @@
     <Compile Include="GUI\Manage\ImportManagementForm.designer.cs">
       <DependentUpon>ImportManagementForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\SuaChua\InfoSuaChua.cs">
+    <Compile Include="GUI\Repair\fInfoRepair.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\SuaChua\InfoSuaChua.Designer.cs">
-      <DependentUpon>InfoSuaChua.cs</DependentUpon>
+    <Compile Include="GUI\Repair\fInfoRepair.Designer.cs">
+      <DependentUpon>fInfoRepair.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\SuaChua\MainSalesForm.cs">
+    <Compile Include="GUI\Repair\MainTechnicianForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\SuaChua\MainSalesForm.Designer.cs">
-      <DependentUpon>MainSalesForm.cs</DependentUpon>
+    <Compile Include="GUI\Repair\MainTechnicianForm.Designer.cs">
+      <DependentUpon>MainTechnicianForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -286,34 +286,46 @@
     <Compile Include="GUI\Manage\WareHouseManagentForm.designer.cs">
       <DependentUpon>WareHouseManagentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\SuaChua\SuaChuaForm.cs">
+    <Compile Include="GUI\Repair\fRepair.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\SuaChua\SuaChuaForm.Designer.cs">
-      <DependentUpon>SuaChuaForm.cs</DependentUpon>
+    <Compile Include="GUI\Repair\fRepair.Designer.cs">
+      <DependentUpon>fRepair.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\SuaChua\UC_UI_DS_Item.cs">
+    <Compile Include="GUI\Repair\UC_ItemLK.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\SuaChua\UC_UI_DS_Item.Designer.cs">
-      <DependentUpon>UC_UI_DS_Item.cs</DependentUpon>
+    <Compile Include="GUI\Repair\UC_ItemLK.Designer.cs">
+      <DependentUpon>UC_ItemLK.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\SuaChua\UC_ItemNhanSuaChua.cs">
+    <Compile Include="GUI\Repair\UC_ItemRepair.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\SuaChua\UC_ItemNhanSuaChua.designer.cs">
-      <DependentUpon>UC_ItemNhanSuaChua.cs</DependentUpon>
+    <Compile Include="GUI\Repair\UC_ItemRepair.designer.cs">
+      <DependentUpon>UC_ItemRepair.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="GUI\SuaChua\fChonEdit.resx">
-      <DependentUpon>fChonEdit.cs</DependentUpon>
+    <Compile Include="UC_ItemProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ItemProduct.Designer.cs">
+      <DependentUpon>UC_ItemProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProduct.Designer.cs">
+      <DependentUpon>ViewProduct.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\Repair\fSelectEdit.resx">
+      <DependentUpon>fSelectEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\SuaChua\fEditSuaChua.resx">
-      <DependentUpon>fEditSuaChua.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Repair\fEditRepair.resx">
+      <DependentUpon>fEditRepair.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\SuaChua\fThemDonSuaChua.resx">
-      <DependentUpon>fThemDonSuaChua.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Repair\fAddRepair.resx">
+      <DependentUpon>fAddRepair.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\SuaChua\fUpdateInfo.resx">
+    <EmbeddedResource Include="GUI\Repair\fUpdateInfo.resx">
       <DependentUpon>fUpdateInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\HoaDon\CTHDForm.resx">
@@ -377,11 +389,11 @@
     <EmbeddedResource Include="GUI\Manage\ImportManagementForm.resx">
       <DependentUpon>ImportManagementForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\SuaChua\InfoSuaChua.resx">
-      <DependentUpon>InfoSuaChua.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Repair\fInfoRepair.resx">
+      <DependentUpon>fInfoRepair.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\SuaChua\MainSalesForm.resx">
-      <DependentUpon>MainSalesForm.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Repair\MainTechnicianForm.resx">
+      <DependentUpon>MainTechnicianForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -404,14 +416,20 @@
     <EmbeddedResource Include="GUI\ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\SuaChua\SuaChuaForm.resx">
-      <DependentUpon>SuaChuaForm.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Repair\fRepair.resx">
+      <DependentUpon>fRepair.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\SuaChua\UC_UI_DS_Item.resx">
-      <DependentUpon>UC_UI_DS_Item.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Repair\UC_ItemLK.resx">
+      <DependentUpon>UC_ItemLK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\SuaChua\UC_ItemNhanSuaChua.resx">
-      <DependentUpon>UC_ItemNhanSuaChua.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Repair\UC_ItemRepair.resx">
+      <DependentUpon>UC_ItemRepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ItemProduct.resx">
+      <DependentUpon>UC_ItemProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProduct.resx">
+      <DependentUpon>ViewProduct.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DAO\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>

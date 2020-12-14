@@ -1,6 +1,6 @@
 ﻿namespace QLCH_UI
 {
-    partial class fThemDonSuaChua
+    partial class fAddRepair
     {
         /// <summary>
         /// Required designer variable.
@@ -410,7 +410,7 @@
             this.gunaButton2.Text = "Huỷ";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fThemDonSuaChua
+            // fAddRepair
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -420,9 +420,9 @@
             this.Controls.Add(this.pnTitle);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "fThemDonSuaChua";
+            this.Name = "fAddRepair";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "fThemDonSuaChua";
+            this.Text = "fAddRepair";
             this.pnTitle.ResumeLayout(false);
             this.pnTitle.PerformLayout();
             this.gunaLinePanel1.ResumeLayout(false);

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace QLCH_UI
 {
-    public partial class InfoSuaChua : Form
+    public partial class fAddRepair : Form
     {
-        public InfoSuaChua()
+        public fAddRepair()
         {
             InitializeComponent();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

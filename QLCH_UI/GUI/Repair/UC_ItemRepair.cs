@@ -11,10 +11,10 @@ using Guna.UI.WinForms;
 
 namespace QLCH_UI
 {
-    public partial class UC_ItemNhanSuaChua : UserControl
+    public partial class UC_ItemRepair : UserControl
     {
 
-        public UC_ItemNhanSuaChua()
+        public UC_ItemRepair()
         {
             InitializeComponent();
             DanhSachLinhKien = new List<string>();
@@ -68,7 +68,7 @@ namespace QLCH_UI
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            fChonEdit form = new fChonEdit();
+            fSelectEdit form = new fSelectEdit();
             form.ShowDialog();
         }
     }
