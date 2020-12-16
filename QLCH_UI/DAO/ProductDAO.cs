@@ -106,6 +106,17 @@ namespace QLCH_UI.DAO
             if (result == 0) return (false);
             else return (true);
         }
-      
+        public DataTable search_product_by_name(string ten_sp)
+        {
+            string query = string.Format("select * from san_pham where dbo.fuConvertToUnsign1(ten_sp) like N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", ten_sp);
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
+        public DataTable search_product_by_masp(string masp)
+        {
+            string query = string.Format("select * from san_pham where dbo.fuConvertToUnsign1(masp) like N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", masp);
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
     }
 }

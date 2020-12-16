@@ -102,23 +102,6 @@ namespace QLCH_UI
 
         }
 
-        private void btn_ImportProduct_Click(object sender, EventArgs e)
-        {
-            if (dgvProducts.SelectedRows.Count > 0)
-            {
-                DataGridViewRow row = dgvProducts.SelectedRows[0];
-                string masp = row.Cells[1].Value.ToString();
-                DataTable a = ProductDAO.Instance.viewinfo(masp);
-                string ma_sp = a.Rows[0]["masp"].ToString();
-                string ten_sp = a.Rows[0]["ten_sp"].ToString();
-                string loai_sp = a.Rows[0]["loai_sp"].ToString();
-                string gia = a.Rows[0]["gia_nhap"].ToString();
-                Image anh = ProductBUS.Instance.ByteToImg(a.Rows[0]["img"].ToString());
-                ImportProducts f = new ImportProducts(ma_sp, ten_sp, loai_sp, gia, anh);
-                f.ShowDialog();
-                load_product();
-            }
-        }
 
         private void dgvProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -141,6 +124,33 @@ namespace QLCH_UI
                 f.ShowDialog();
 
             }
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (tb_search.Text == "") load_product();
+            else
+            {
+                DataTable a = ProductDAO.Instance.search_product_by_masp(tb_search.Text);
+                DataTable b = ProductDAO.Instance.search_product_by_name(tb_search.Text);
+                dgvProducts.Rows.Clear();
+                for (int i = 0; i < a.Rows.Count; i++)
+                {
+                    Image img = ProductBUS.Instance.ByteToImg(a.Rows[i]["img"].ToString());
+                    string masp = a.Rows[i]["masp"].ToString();
+                    string tensp = a.Rows[i]["ten_sp"].ToString();
+                    string soluong = a.Rows[i]["so_luong"].ToString();
+                    dgvProducts.Rows.Add(img,masp,tensp,soluong);
+                }
+                for (int i = 0; i < b.Rows.Count; i++)
+                {
+                    Image img = ProductBUS.Instance.ByteToImg(b.Rows[i]["img"].ToString());
+                    string masp = b.Rows[i]["masp"].ToString();
+                    string tensp = b.Rows[i]["ten_sp"].ToString();
+                    string soluong = b.Rows[i]["so_luong"].ToString();
+                    dgvProducts.Rows.Add(img,masp, tensp, soluong);
+                }
+            }    
         }
     }
 }

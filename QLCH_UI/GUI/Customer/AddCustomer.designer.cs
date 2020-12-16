@@ -218,6 +218,7 @@
             this.tb_makh.Font = new System.Drawing.Font("Arial", 16F);
             this.tb_makh.Location = new System.Drawing.Point(50, 129);
             this.tb_makh.Name = "tb_makh";
+            this.tb_makh.ReadOnly = true;
             this.tb_makh.Size = new System.Drawing.Size(414, 44);
             this.tb_makh.TabIndex = 95;
             // 

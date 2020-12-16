@@ -107,9 +107,10 @@ namespace QLCH_UI
                 string dienthoai = a.Rows[0]["dien_thoai"].ToString();
                 string gioitinh = a.Rows[0]["gioi_tinh"].ToString();
                 string user = a.Rows[0]["username"].ToString();
+                string loainhanvien = a.Rows[0]["loainhanvien"].ToString();
                 string email = "";
                 if(b.Rows.Count > 0 )  email = b.Rows[0]["email"].ToString();
-                lb_gioitinh f = new lb_gioitinh(manv,tennv,ngaysinh,gioitinh,dienthoai,user,email);
+                lb_gioitinh f = new lb_gioitinh(manv,tennv,ngaysinh,gioitinh,dienthoai,user,email,diachi,loainhanvien);
                 f.ShowDialog();
             }
         }

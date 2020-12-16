@@ -8,7 +8,7 @@ namespace QLCH_UI.DTO
 {
     public class StaffDTO
     {
-        public StaffDTO(string username, string manv, string ten_nv, DateTime ngay_sinh, string dia_chi, string dien_thoai, string gioi_tinh)
+        public StaffDTO(string username, string manv, string ten_nv, DateTime ngay_sinh, string dia_chi, string dien_thoai, string gioi_tinh,string loainhanvien)
         {
             this.Username = username;
             this.Manv = manv;
@@ -17,7 +17,9 @@ namespace QLCH_UI.DTO
             this.Dia_chi = dia_chi;
             this.Dien_thoai = dien_thoai;
             this.Gioi_tinh = gioi_tinh;
+            this.Loainhanvien = loainhanvien;
         }
+        private string loainhanvien;
         private string username;
         private string manv;
         private string ten_nv;
@@ -33,5 +35,6 @@ namespace QLCH_UI.DTO
         public string Dia_chi { get => dia_chi; set => dia_chi = value; }
         public string Dien_thoai { get => dien_thoai; set => dien_thoai = value; }
         public string Gioi_tinh { get => gioi_tinh; set => gioi_tinh = value; }
+        public string Loainhanvien { get => loainhanvien; set => loainhanvien = value; }
     }
 }

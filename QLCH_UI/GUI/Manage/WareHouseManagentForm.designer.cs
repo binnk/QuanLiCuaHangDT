@@ -32,10 +32,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelBotProducts = new System.Windows.Forms.Panel();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.dgvProducts = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.img = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,42 +47,12 @@
             // 
             // panelBotProducts
             // 
-            this.panelBotProducts.Controls.Add(this.btnDelete);
-            this.panelBotProducts.Controls.Add(this.btnEdit);
             this.panelBotProducts.Controls.Add(this.btnAddProduct);
             this.panelBotProducts.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelBotProducts.Location = new System.Drawing.Point(0, 630);
             this.panelBotProducts.Name = "panelBotProducts";
             this.panelBotProducts.Size = new System.Drawing.Size(929, 47);
             this.panelBotProducts.TabIndex = 5;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDelete.Location = new System.Drawing.Point(392, 0);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(179, 47);
-            this.btnDelete.TabIndex = 2;
-            this.btnDelete.Text = "Xoá";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            this.btnEdit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEdit.Location = new System.Drawing.Point(571, 0);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(179, 47);
-            this.btnEdit.TabIndex = 1;
-            this.btnEdit.Text = "Sửa";
-            this.btnEdit.UseVisualStyleBackColor = true;
             // 
             // btnAddProduct
             // 
@@ -98,6 +67,7 @@
             this.btnAddProduct.TabIndex = 0;
             this.btnAddProduct.Text = "Nhập hàng";
             this.btnAddProduct.UseVisualStyleBackColor = true;
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // dgvProducts
             // 
@@ -118,8 +88,9 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvProducts.ColumnHeadersHeight = 37;
+            this.dgvProducts.ColumnHeadersHeight = 40;
             this.dgvProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.img,
             this.Column1,
             this.Column2,
             this.Column4,
@@ -151,6 +122,14 @@
             this.dgvProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProducts.Size = new System.Drawing.Size(929, 630);
             this.dgvProducts.TabIndex = 6;
+            // 
+            // img
+            // 
+            this.img.HeaderText = "";
+            this.img.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.img.MinimumWidth = 8;
+            this.img.Name = "img";
+            this.img.ReadOnly = true;
             // 
             // Column1
             // 
@@ -214,10 +193,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panelBotProducts;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAddProduct;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvProducts;
+        private System.Windows.Forms.DataGridViewImageColumn img;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;

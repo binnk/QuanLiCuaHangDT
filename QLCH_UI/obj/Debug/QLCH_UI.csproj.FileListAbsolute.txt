@@ -360,3 +360,8 @@ C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.CTHDForm.resour
 C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ImportManagementForm.resources
 C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.WareHouseManagentForm.resources
 C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ReportForm.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.CTHDForm.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ImportManagementForm.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.WareHouseManagentForm.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ReportForm.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.EditImportProduct.resources

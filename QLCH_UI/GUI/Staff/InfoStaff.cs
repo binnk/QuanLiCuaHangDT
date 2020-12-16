@@ -12,7 +12,7 @@ namespace QLCH_UI
 {
     public partial class lb_gioitinh : Form
     {
-        public lb_gioitinh(string manv,string tennv, string ngaysinh, string gioi_tinh, string sdt, string taikhoan, string email)
+        public lb_gioitinh(string manv,string tennv, string ngaysinh, string gioi_tinh, string sdt, string taikhoan, string email,string dia_chi,string loainhanvien)
         {
             InitializeComponent();
             string d = "", m = "", y = "";
@@ -37,11 +37,18 @@ namespace QLCH_UI
             lb_sdt.Text = sdt;
             lb_taikhoan.Text = taikhoan;
             lb_email.Text = email;
+            lb_diachi.Text = dia_chi;
+            lb_loainv.Text = loainhanvien;
         }
 
         private void icExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void lb_loainv_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
