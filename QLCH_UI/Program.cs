@@ -18,8 +18,10 @@ namespace QLCH_UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-             Application.Run(new LoginForm());
-            //Application.Run(new GUI.Sell.Printhd("HD03"));
+            Application.Run(new LoginForm());
+            //Application.Run(new  ReportForm());
+            //Application.Run(new MainTechnicianForm("NV02"));
+            
         }
     }
 }

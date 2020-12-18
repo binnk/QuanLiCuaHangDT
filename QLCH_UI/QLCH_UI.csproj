@@ -39,8 +39,20 @@
     <Reference Include="FontAwesome.Sharp, Version=5.14.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.14.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\Guna.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>C:\Users\phamt\Downloads\Guna.UI2_WinForms_v2.0.1.1\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
@@ -61,11 +73,14 @@
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -75,10 +90,16 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\BanhangBUS.cs" />
     <Compile Include="BUS\StaffBUS.cs" />
+    <Compile Include="BUS\SuachuaBUS.cs" />
+    <Compile Include="DAO\BaocaoDAO.cs" />
+    <Compile Include="DAO\HoadonDAO.cs" />
+    <Compile Include="DAO\Suachua.cs" />
     <Compile Include="GUI\HoaDon\CTHDForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +115,72 @@
     <Compile Include="DAO\Mail.cs" />
     <Compile Include="DAO\StaffDAO.cs" />
     <Compile Include="DTO\StaffDTO.cs" />
+    <Compile Include="GUI\product\UC_ItemProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\product\UC_ItemProduct.designer.cs">
+      <DependentUpon>UC_ItemProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\product\ViewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\product\ViewProduct.designer.cs">
+      <DependentUpon>ViewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\repair\fAddRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\repair\fAddRepair.designer.cs">
+      <DependentUpon>fAddRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\repair\fEditRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\repair\fEditRepair.designer.cs">
+      <DependentUpon>fEditRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\repair\fInfoRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\repair\fInfoRepair.designer.cs">
+      <DependentUpon>fInfoRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\repair\fRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\repair\fRepair.designer.cs">
+      <DependentUpon>fRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\repair\fSelectEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\repair\fSelectEdit.designer.cs">
+      <DependentUpon>fSelectEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\repair\fUpdateInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\repair\fUpdateInfo.designer.cs">
+      <DependentUpon>fUpdateInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\repair\MainTechnicianForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\repair\MainTechnicianForm.designer.cs">
+      <DependentUpon>MainTechnicianForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\repair\UC_ItemLK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\repair\UC_ItemLK.designer.cs">
+      <DependentUpon>UC_ItemLK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\repair\UC_ItemRepair.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\repair\UC_ItemRepair.designer.cs">
+      <DependentUpon>UC_ItemRepair.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Sell\Printhd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,6 +337,39 @@
     <EmbeddedResource Include="GUI\HoaDon\CTHDForm.resx">
       <DependentUpon>CTHDForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\product\UC_ItemProduct.resx">
+      <DependentUpon>UC_ItemProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\product\ViewProduct.resx">
+      <DependentUpon>ViewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\repair\fAddRepair.resx">
+      <DependentUpon>fAddRepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\repair\fEditRepair.resx">
+      <DependentUpon>fEditRepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\repair\fInfoRepair.resx">
+      <DependentUpon>fInfoRepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\repair\fRepair.resx">
+      <DependentUpon>fRepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\repair\fSelectEdit.resx">
+      <DependentUpon>fSelectEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\repair\fUpdateInfo.resx">
+      <DependentUpon>fUpdateInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\repair\MainTechnicianForm.resx">
+      <DependentUpon>MainTechnicianForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\repair\UC_ItemLK.resx">
+      <DependentUpon>UC_ItemLK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\repair\UC_ItemRepair.resx">
+      <DependentUpon>UC_ItemRepair.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Sell\Printhd.resx">
       <DependentUpon>Printhd.cs</DependentUpon>
     </EmbeddedResource>
@@ -316,6 +436,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="GUI\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>

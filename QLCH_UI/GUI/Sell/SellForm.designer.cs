@@ -104,7 +104,7 @@
             this.tbThemSP.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tbThemSP.Location = new System.Drawing.Point(51, 9);
             this.tbThemSP.Name = "tbThemSP";
-            this.tbThemSP.Size = new System.Drawing.Size(433, 28);
+            this.tbThemSP.Size = new System.Drawing.Size(433, 42);
             this.tbThemSP.TabIndex = 31;
             this.tbThemSP.TabStop = false;
             this.tbThemSP.Text = "Thêm sản phẩm vào đơn";
@@ -220,7 +220,7 @@
             this.tbThemKH.HideSelection = false;
             this.tbThemKH.Location = new System.Drawing.Point(35, 17);
             this.tbThemKH.Name = "tbThemKH";
-            this.tbThemKH.Size = new System.Drawing.Size(432, 28);
+            this.tbThemKH.Size = new System.Drawing.Size(432, 42);
             this.tbThemKH.TabIndex = 16;
             this.tbThemKH.TabStop = false;
             this.tbThemKH.Text = "Thêm khách hàng vào đơn";
@@ -244,7 +244,7 @@
             this.tbgiam_gia.HideSelection = false;
             this.tbgiam_gia.Location = new System.Drawing.Point(197, 273);
             this.tbgiam_gia.Name = "tbgiam_gia";
-            this.tbgiam_gia.Size = new System.Drawing.Size(325, 28);
+            this.tbgiam_gia.Size = new System.Drawing.Size(325, 42);
             this.tbgiam_gia.TabIndex = 31;
             this.tbgiam_gia.TabStop = false;
             this.tbgiam_gia.Text = "0";
@@ -269,7 +269,7 @@
             this.lbTienThua.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTienThua.Location = new System.Drawing.Point(19, 506);
             this.lbTienThua.Name = "lbTienThua";
-            this.lbTienThua.Size = new System.Drawing.Size(82, 19);
+            this.lbTienThua.Size = new System.Drawing.Size(123, 29);
             this.lbTienThua.TabIndex = 29;
             this.lbTienThua.Text = "Tiền thừa";
             // 
@@ -296,9 +296,9 @@
             this.tbtien_khach_dua.Font = new System.Drawing.Font("Arial", 18F);
             this.tbtien_khach_dua.ForeColor = System.Drawing.Color.Black;
             this.tbtien_khach_dua.HideSelection = false;
-            this.tbtien_khach_dua.Location = new System.Drawing.Point(206, 407);
+            this.tbtien_khach_dua.Location = new System.Drawing.Point(216, 416);
             this.tbtien_khach_dua.Name = "tbtien_khach_dua";
-            this.tbtien_khach_dua.Size = new System.Drawing.Size(316, 28);
+            this.tbtien_khach_dua.Size = new System.Drawing.Size(316, 42);
             this.tbtien_khach_dua.TabIndex = 27;
             this.tbtien_khach_dua.TabStop = false;
             this.tbtien_khach_dua.Text = "0";
@@ -319,7 +319,7 @@
             this.lbTKD.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTKD.Location = new System.Drawing.Point(19, 422);
             this.lbTKD.Name = "lbTKD";
-            this.lbTKD.Size = new System.Drawing.Size(115, 18);
+            this.lbTKD.Size = new System.Drawing.Size(178, 27);
             this.lbTKD.TabIndex = 26;
             this.lbTKD.Text = "Tiền khách đưa";
             // 
@@ -342,7 +342,7 @@
             this.lbKPT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbKPT.Location = new System.Drawing.Point(19, 359);
             this.lbKPT.Name = "lbKPT";
-            this.lbKPT.Size = new System.Drawing.Size(120, 19);
+            this.lbKPT.Size = new System.Drawing.Size(180, 29);
             this.lbKPT.TabIndex = 24;
             this.lbKPT.Text = "Khách phải trả";
             // 
@@ -360,7 +360,7 @@
             this.lbGiamGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGiamGia.Location = new System.Drawing.Point(19, 280);
             this.lbGiamGia.Name = "lbGiamGia";
-            this.lbGiamGia.Size = new System.Drawing.Size(72, 18);
+            this.lbGiamGia.Size = new System.Drawing.Size(108, 27);
             this.lbGiamGia.TabIndex = 22;
             this.lbGiamGia.Text = "Giảm giá";
             // 
@@ -383,7 +383,7 @@
             this.lbTT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTT.Location = new System.Drawing.Point(19, 219);
             this.lbTT.Name = "lbTT";
-            this.lbTT.Size = new System.Drawing.Size(72, 18);
+            this.lbTT.Size = new System.Drawing.Size(113, 27);
             this.lbTT.TabIndex = 20;
             this.lbTT.Text = "Tổng tiền";
             // 
@@ -405,7 +405,7 @@
             this.lbSLSP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSLSP.Location = new System.Drawing.Point(19, 158);
             this.lbSLSP.Name = "lbSLSP";
-            this.lbSLSP.Size = new System.Drawing.Size(146, 18);
+            this.lbSLSP.Size = new System.Drawing.Size(228, 27);
             this.lbSLSP.TabIndex = 18;
             this.lbSLSP.Text = "Số lượng sản phẩm";
             // 

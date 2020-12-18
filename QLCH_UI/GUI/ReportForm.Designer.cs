@@ -30,101 +30,95 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lb_doanh_thu = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lb_hoadon = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lb_sanpham = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lb_khachhang = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CustomGradientPanel5 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2CustomGradientPanel7 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
             this.label9 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel6 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label44 = new System.Windows.Forms.Label();
+            this.lb1_makh = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
+            this.lb1_doanhthu = new System.Windows.Forms.Label();
+            this.lb1_tenkh = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox9 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
+            this.lb2_doanhthu = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox10 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
+            this.lb2_makh = new System.Windows.Forms.Label();
+            this.lb2_tenkh = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
+            this.lb3_doanhthu = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox11 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
+            this.lb3_makh = new System.Windows.Forms.Label();
+            this.lb3_tenkh = new System.Windows.Forms.Label();
             this.guna2ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label10 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel8 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ptb1_sp = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lb1_doanhso = new System.Windows.Forms.Label();
+            this.lb1_tensp = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox5 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ptb2_sp = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lb2_doanhso = new System.Windows.Forms.Label();
+            this.lb2_tensp = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox6 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label22 = new System.Windows.Forms.Label();
+            this.ptb3_sp = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lb3_tensp = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lb3_doanhso = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox7 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label26 = new System.Windows.Forms.Label();
+            this.ptb4_sp = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lb4_tensp = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.lb4_doanhso = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox8 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2ProgressBar2 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2ProgressBar4 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.label42 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.datetime1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.datetime2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label43 = new System.Windows.Forms.Label();
             this.guna2ProgressBar3 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.guna2CustomGradientPanel7 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvOrders = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -138,6 +132,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).BeginInit();
             this.guna2CustomGradientPanel5.SuspendLayout();
+            this.guna2CustomGradientPanel7.SuspendLayout();
             this.guna2CustomGradientPanel6.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -149,19 +144,17 @@
             this.guna2CustomGradientPanel8.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb1_sp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb2_sp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox6)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb3_sp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox7)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb4_sp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox8)).BeginInit();
-            this.guna2CustomGradientPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -184,7 +177,7 @@
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.BorderRadius = 12;
-            this.guna2CustomGradientPanel1.Controls.Add(this.label5);
+            this.guna2CustomGradientPanel1.Controls.Add(this.lb_doanh_thu);
             this.guna2CustomGradientPanel1.Controls.Add(this.label1);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox1);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2CirclePictureBox1);
@@ -195,17 +188,18 @@
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(364, 155);
             this.guna2CustomGradientPanel1.TabIndex = 2;
             // 
-            // label5
+            // lb_doanh_thu
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(157, 65);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(175, 38);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "200,000,000";
+            this.lb_doanh_thu.AutoSize = true;
+            this.lb_doanh_thu.BackColor = System.Drawing.Color.White;
+            this.lb_doanh_thu.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
+            this.lb_doanh_thu.ForeColor = System.Drawing.Color.Black;
+            this.lb_doanh_thu.Location = new System.Drawing.Point(157, 65);
+            this.lb_doanh_thu.MinimumSize = new System.Drawing.Size(175, 38);
+            this.lb_doanh_thu.Name = "lb_doanh_thu";
+            this.lb_doanh_thu.Size = new System.Drawing.Size(175, 38);
+            this.lb_doanh_thu.TabIndex = 3;
+            this.lb_doanh_thu.Text = "200,000,000";
             // 
             // label1
             // 
@@ -234,7 +228,7 @@
             // guna2CustomGradientPanel2
             // 
             this.guna2CustomGradientPanel2.BorderRadius = 12;
-            this.guna2CustomGradientPanel2.Controls.Add(this.label6);
+            this.guna2CustomGradientPanel2.Controls.Add(this.lb_hoadon);
             this.guna2CustomGradientPanel2.Controls.Add(this.label2);
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2PictureBox2);
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2CirclePictureBox2);
@@ -245,17 +239,19 @@
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(364, 155);
             this.guna2CustomGradientPanel2.TabIndex = 3;
             // 
-            // label6
+            // lb_hoadon
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(157, 65);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(175, 38);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "200,000,000";
+            this.lb_hoadon.AutoSize = true;
+            this.lb_hoadon.BackColor = System.Drawing.Color.White;
+            this.lb_hoadon.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
+            this.lb_hoadon.ForeColor = System.Drawing.Color.Black;
+            this.lb_hoadon.Location = new System.Drawing.Point(157, 65);
+            this.lb_hoadon.MinimumSize = new System.Drawing.Size(175, 38);
+            this.lb_hoadon.Name = "lb_hoadon";
+            this.lb_hoadon.Size = new System.Drawing.Size(175, 38);
+            this.lb_hoadon.TabIndex = 4;
+            this.lb_hoadon.Text = "200,000,000";
+            this.lb_hoadon.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
             // 
@@ -297,7 +293,7 @@
             // guna2CustomGradientPanel3
             // 
             this.guna2CustomGradientPanel3.BorderRadius = 12;
-            this.guna2CustomGradientPanel3.Controls.Add(this.label7);
+            this.guna2CustomGradientPanel3.Controls.Add(this.lb_sanpham);
             this.guna2CustomGradientPanel3.Controls.Add(this.label3);
             this.guna2CustomGradientPanel3.Controls.Add(this.guna2PictureBox3);
             this.guna2CustomGradientPanel3.Controls.Add(this.guna2CirclePictureBox3);
@@ -308,17 +304,19 @@
             this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(364, 155);
             this.guna2CustomGradientPanel3.TabIndex = 4;
             // 
-            // label7
+            // lb_sanpham
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(157, 65);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(175, 38);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "200,000,000";
+            this.lb_sanpham.AutoSize = true;
+            this.lb_sanpham.BackColor = System.Drawing.Color.White;
+            this.lb_sanpham.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
+            this.lb_sanpham.ForeColor = System.Drawing.Color.Black;
+            this.lb_sanpham.Location = new System.Drawing.Point(157, 65);
+            this.lb_sanpham.MinimumSize = new System.Drawing.Size(175, 38);
+            this.lb_sanpham.Name = "lb_sanpham";
+            this.lb_sanpham.Size = new System.Drawing.Size(175, 38);
+            this.lb_sanpham.TabIndex = 5;
+            this.lb_sanpham.Text = "200,000,000";
+            this.lb_sanpham.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label3
             // 
@@ -360,7 +358,7 @@
             // guna2CustomGradientPanel4
             // 
             this.guna2CustomGradientPanel4.BorderRadius = 12;
-            this.guna2CustomGradientPanel4.Controls.Add(this.label8);
+            this.guna2CustomGradientPanel4.Controls.Add(this.lb_khachhang);
             this.guna2CustomGradientPanel4.Controls.Add(this.label4);
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2PictureBox4);
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2CirclePictureBox4);
@@ -371,17 +369,19 @@
             this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(364, 155);
             this.guna2CustomGradientPanel4.TabIndex = 5;
             // 
-            // label8
+            // lb_khachhang
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(157, 65);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(175, 38);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "200,000,000";
+            this.lb_khachhang.AutoSize = true;
+            this.lb_khachhang.BackColor = System.Drawing.Color.White;
+            this.lb_khachhang.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
+            this.lb_khachhang.ForeColor = System.Drawing.Color.Black;
+            this.lb_khachhang.Location = new System.Drawing.Point(157, 65);
+            this.lb_khachhang.MinimumSize = new System.Drawing.Size(175, 38);
+            this.lb_khachhang.Name = "lb_khachhang";
+            this.lb_khachhang.Size = new System.Drawing.Size(175, 38);
+            this.lb_khachhang.TabIndex = 4;
+            this.lb_khachhang.Text = "200,000,000";
+            this.lb_khachhang.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label4
             // 
@@ -423,13 +423,31 @@
             // guna2CustomGradientPanel5
             // 
             this.guna2CustomGradientPanel5.BorderRadius = 15;
+            this.guna2CustomGradientPanel5.Controls.Add(this.comboBox1);
             this.guna2CustomGradientPanel5.Controls.Add(this.guna2CustomGradientPanel7);
             this.guna2CustomGradientPanel5.Controls.Add(this.label9);
             this.guna2CustomGradientPanel5.Location = new System.Drawing.Point(23, 245);
             this.guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5";
             this.guna2CustomGradientPanel5.ShadowDecoration.Parent = this.guna2CustomGradientPanel5;
-            this.guna2CustomGradientPanel5.Size = new System.Drawing.Size(736, 592);
+            this.guna2CustomGradientPanel5.Size = new System.Drawing.Size(795, 592);
             this.guna2CustomGradientPanel5.TabIndex = 6;
+            // 
+            // guna2CustomGradientPanel7
+            // 
+            this.guna2CustomGradientPanel7.Controls.Add(this.cartesianChart1);
+            this.guna2CustomGradientPanel7.Location = new System.Drawing.Point(25, 84);
+            this.guna2CustomGradientPanel7.Name = "guna2CustomGradientPanel7";
+            this.guna2CustomGradientPanel7.ShadowDecoration.Parent = this.guna2CustomGradientPanel7;
+            this.guna2CustomGradientPanel7.Size = new System.Drawing.Size(743, 482);
+            this.guna2CustomGradientPanel7.TabIndex = 1;
+            // 
+            // cartesianChart1
+            // 
+            this.cartesianChart1.Location = new System.Drawing.Point(3, 0);
+            this.cartesianChart1.Name = "cartesianChart1";
+            this.cartesianChart1.Size = new System.Drawing.Size(740, 465);
+            this.cartesianChart1.TabIndex = 0;
+            this.cartesianChart1.Text = "cartesianChart1";
             // 
             // label9
             // 
@@ -439,9 +457,9 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label9.Location = new System.Drawing.Point(16, 10);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(148, 54);
+            this.label9.Size = new System.Drawing.Size(368, 54);
             this.label9.TabIndex = 0;
-            this.label9.Text = "Lịch sử";
+            this.label9.Text = "Biểu đồ doanh thu ";
             // 
             // guna2CustomGradientPanel6
             // 
@@ -449,7 +467,7 @@
             this.guna2CustomGradientPanel6.Controls.Add(this.flowLayoutPanel2);
             this.guna2CustomGradientPanel6.Controls.Add(this.guna2ProgressBar1);
             this.guna2CustomGradientPanel6.Controls.Add(this.label10);
-            this.guna2CustomGradientPanel6.Location = new System.Drawing.Point(793, 245);
+            this.guna2CustomGradientPanel6.Location = new System.Drawing.Point(838, 245);
             this.guna2CustomGradientPanel6.Name = "guna2CustomGradientPanel6";
             this.guna2CustomGradientPanel6.ShadowDecoration.Parent = this.guna2CustomGradientPanel6;
             this.guna2CustomGradientPanel6.Size = new System.Drawing.Size(340, 592);
@@ -469,29 +487,28 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.label44);
+            this.panel5.Controls.Add(this.lb1_makh);
             this.panel5.Controls.Add(this.label28);
-            this.panel5.Controls.Add(this.label29);
-            this.panel5.Controls.Add(this.label30);
+            this.panel5.Controls.Add(this.lb1_doanhthu);
+            this.panel5.Controls.Add(this.lb1_tenkh);
             this.panel5.Controls.Add(this.label31);
             this.panel5.Controls.Add(this.guna2CirclePictureBox9);
             this.panel5.Location = new System.Drawing.Point(3, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(334, 128);
             this.panel5.TabIndex = 4;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // label44
+            // lb1_makh
             // 
-            this.label44.AutoSize = true;
-            this.label44.BackColor = System.Drawing.Color.White;
-            this.label44.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label44.ForeColor = System.Drawing.Color.DimGray;
-            this.label44.Location = new System.Drawing.Point(84, 11);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(71, 32);
-            this.label44.TabIndex = 7;
-            this.label44.Text = "KH01";
+            this.lb1_makh.AutoSize = true;
+            this.lb1_makh.BackColor = System.Drawing.Color.White;
+            this.lb1_makh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lb1_makh.ForeColor = System.Drawing.Color.DimGray;
+            this.lb1_makh.Location = new System.Drawing.Point(84, 11);
+            this.lb1_makh.Name = "lb1_makh";
+            this.lb1_makh.Size = new System.Drawing.Size(71, 32);
+            this.lb1_makh.TabIndex = 7;
+            this.lb1_makh.Text = "KH01";
             // 
             // label28
             // 
@@ -505,29 +522,29 @@
             this.label28.TabIndex = 5;
             this.label28.Text = "$";
             // 
-            // label29
+            // lb1_doanhthu
             // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.White;
-            this.label29.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
-            this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(72, 79);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(159, 38);
-            this.label29.TabIndex = 5;
-            this.label29.Text = "15,490,000";
+            this.lb1_doanhthu.AutoSize = true;
+            this.lb1_doanhthu.BackColor = System.Drawing.Color.White;
+            this.lb1_doanhthu.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
+            this.lb1_doanhthu.ForeColor = System.Drawing.Color.Black;
+            this.lb1_doanhthu.Location = new System.Drawing.Point(83, 79);
+            this.lb1_doanhthu.Name = "lb1_doanhthu";
+            this.lb1_doanhthu.Size = new System.Drawing.Size(159, 38);
+            this.lb1_doanhthu.TabIndex = 5;
+            this.lb1_doanhthu.Text = "15,490,000";
             // 
-            // label30
+            // lb1_tenkh
             // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.White;
-            this.label30.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label30.ForeColor = System.Drawing.Color.DimGray;
-            this.label30.Location = new System.Drawing.Point(84, 46);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(208, 32);
-            this.label30.TabIndex = 6;
-            this.label30.Text = "Phạm Tấn Khang ";
+            this.lb1_tenkh.AutoSize = true;
+            this.lb1_tenkh.BackColor = System.Drawing.Color.White;
+            this.lb1_tenkh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lb1_tenkh.ForeColor = System.Drawing.Color.DimGray;
+            this.lb1_tenkh.Location = new System.Drawing.Point(84, 46);
+            this.lb1_tenkh.Name = "lb1_tenkh";
+            this.lb1_tenkh.Size = new System.Drawing.Size(208, 32);
+            this.lb1_tenkh.TabIndex = 6;
+            this.lb1_tenkh.Text = "Phạm Tấn Khang ";
             // 
             // label31
             // 
@@ -557,11 +574,11 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.label33);
-            this.panel6.Controls.Add(this.label34);
+            this.panel6.Controls.Add(this.lb2_doanhthu);
             this.panel6.Controls.Add(this.label36);
             this.panel6.Controls.Add(this.guna2CirclePictureBox10);
-            this.panel6.Controls.Add(this.label32);
-            this.panel6.Controls.Add(this.label35);
+            this.panel6.Controls.Add(this.lb2_makh);
+            this.panel6.Controls.Add(this.lb2_tenkh);
             this.panel6.Location = new System.Drawing.Point(3, 137);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(334, 128);
@@ -579,17 +596,17 @@
             this.label33.TabIndex = 10;
             this.label33.Text = "$";
             // 
-            // label34
+            // lb2_doanhthu
             // 
-            this.label34.AutoSize = true;
-            this.label34.BackColor = System.Drawing.Color.White;
-            this.label34.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
-            this.label34.ForeColor = System.Drawing.Color.Black;
-            this.label34.Location = new System.Drawing.Point(72, 81);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(159, 38);
-            this.label34.TabIndex = 11;
-            this.label34.Text = "15,490,000";
+            this.lb2_doanhthu.AutoSize = true;
+            this.lb2_doanhthu.BackColor = System.Drawing.Color.White;
+            this.lb2_doanhthu.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
+            this.lb2_doanhthu.ForeColor = System.Drawing.Color.Black;
+            this.lb2_doanhthu.Location = new System.Drawing.Point(83, 81);
+            this.lb2_doanhthu.Name = "lb2_doanhthu";
+            this.lb2_doanhthu.Size = new System.Drawing.Size(159, 38);
+            this.lb2_doanhthu.TabIndex = 11;
+            this.lb2_doanhthu.Text = "15,490,000";
             // 
             // label36
             // 
@@ -616,38 +633,38 @@
             this.guna2CirclePictureBox10.TabIndex = 8;
             this.guna2CirclePictureBox10.TabStop = false;
             // 
-            // label32
+            // lb2_makh
             // 
-            this.label32.AutoSize = true;
-            this.label32.BackColor = System.Drawing.Color.White;
-            this.label32.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label32.ForeColor = System.Drawing.Color.DimGray;
-            this.label32.Location = new System.Drawing.Point(84, 11);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(71, 32);
-            this.label32.TabIndex = 7;
-            this.label32.Text = "KH01";
+            this.lb2_makh.AutoSize = true;
+            this.lb2_makh.BackColor = System.Drawing.Color.White;
+            this.lb2_makh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lb2_makh.ForeColor = System.Drawing.Color.DimGray;
+            this.lb2_makh.Location = new System.Drawing.Point(84, 11);
+            this.lb2_makh.Name = "lb2_makh";
+            this.lb2_makh.Size = new System.Drawing.Size(71, 32);
+            this.lb2_makh.TabIndex = 7;
+            this.lb2_makh.Text = "KH01";
             // 
-            // label35
+            // lb2_tenkh
             // 
-            this.label35.AutoSize = true;
-            this.label35.BackColor = System.Drawing.Color.White;
-            this.label35.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label35.ForeColor = System.Drawing.Color.DimGray;
-            this.label35.Location = new System.Drawing.Point(84, 46);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(208, 32);
-            this.label35.TabIndex = 6;
-            this.label35.Text = "Phạm Tấn Khang ";
+            this.lb2_tenkh.AutoSize = true;
+            this.lb2_tenkh.BackColor = System.Drawing.Color.White;
+            this.lb2_tenkh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lb2_tenkh.ForeColor = System.Drawing.Color.DimGray;
+            this.lb2_tenkh.Location = new System.Drawing.Point(84, 46);
+            this.lb2_tenkh.Name = "lb2_tenkh";
+            this.lb2_tenkh.Size = new System.Drawing.Size(208, 32);
+            this.lb2_tenkh.TabIndex = 6;
+            this.lb2_tenkh.Text = "Phạm Tấn Khang ";
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.label38);
-            this.panel7.Controls.Add(this.label39);
+            this.panel7.Controls.Add(this.lb3_doanhthu);
             this.panel7.Controls.Add(this.label41);
             this.panel7.Controls.Add(this.guna2CirclePictureBox11);
-            this.panel7.Controls.Add(this.label37);
-            this.panel7.Controls.Add(this.label40);
+            this.panel7.Controls.Add(this.lb3_makh);
+            this.panel7.Controls.Add(this.lb3_tenkh);
             this.panel7.Location = new System.Drawing.Point(3, 271);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(334, 128);
@@ -665,17 +682,17 @@
             this.label38.TabIndex = 10;
             this.label38.Text = "$";
             // 
-            // label39
+            // lb3_doanhthu
             // 
-            this.label39.AutoSize = true;
-            this.label39.BackColor = System.Drawing.Color.White;
-            this.label39.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
-            this.label39.ForeColor = System.Drawing.Color.Black;
-            this.label39.Location = new System.Drawing.Point(72, 78);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(159, 38);
-            this.label39.TabIndex = 11;
-            this.label39.Text = "15,490,000";
+            this.lb3_doanhthu.AutoSize = true;
+            this.lb3_doanhthu.BackColor = System.Drawing.Color.White;
+            this.lb3_doanhthu.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
+            this.lb3_doanhthu.ForeColor = System.Drawing.Color.Black;
+            this.lb3_doanhthu.Location = new System.Drawing.Point(83, 78);
+            this.lb3_doanhthu.Name = "lb3_doanhthu";
+            this.lb3_doanhthu.Size = new System.Drawing.Size(159, 38);
+            this.lb3_doanhthu.TabIndex = 11;
+            this.lb3_doanhthu.Text = "15,490,000";
             // 
             // label41
             // 
@@ -702,29 +719,29 @@
             this.guna2CirclePictureBox11.TabIndex = 8;
             this.guna2CirclePictureBox11.TabStop = false;
             // 
-            // label37
+            // lb3_makh
             // 
-            this.label37.AutoSize = true;
-            this.label37.BackColor = System.Drawing.Color.White;
-            this.label37.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label37.ForeColor = System.Drawing.Color.DimGray;
-            this.label37.Location = new System.Drawing.Point(84, 11);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(71, 32);
-            this.label37.TabIndex = 7;
-            this.label37.Text = "KH01";
+            this.lb3_makh.AutoSize = true;
+            this.lb3_makh.BackColor = System.Drawing.Color.White;
+            this.lb3_makh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lb3_makh.ForeColor = System.Drawing.Color.DimGray;
+            this.lb3_makh.Location = new System.Drawing.Point(84, 11);
+            this.lb3_makh.Name = "lb3_makh";
+            this.lb3_makh.Size = new System.Drawing.Size(71, 32);
+            this.lb3_makh.TabIndex = 7;
+            this.lb3_makh.Text = "KH01";
             // 
-            // label40
+            // lb3_tenkh
             // 
-            this.label40.AutoSize = true;
-            this.label40.BackColor = System.Drawing.Color.White;
-            this.label40.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label40.ForeColor = System.Drawing.Color.DimGray;
-            this.label40.Location = new System.Drawing.Point(84, 46);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(208, 32);
-            this.label40.TabIndex = 6;
-            this.label40.Text = "Phạm Tấn Khang ";
+            this.lb3_tenkh.AutoSize = true;
+            this.lb3_tenkh.BackColor = System.Drawing.Color.White;
+            this.lb3_tenkh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lb3_tenkh.ForeColor = System.Drawing.Color.DimGray;
+            this.lb3_tenkh.Location = new System.Drawing.Point(84, 46);
+            this.lb3_tenkh.Name = "lb3_tenkh";
+            this.lb3_tenkh.Size = new System.Drawing.Size(208, 32);
+            this.lb3_tenkh.TabIndex = 6;
+            this.lb3_tenkh.Text = "Phạm Tấn Khang ";
             // 
             // guna2ProgressBar1
             // 
@@ -754,12 +771,11 @@
             this.guna2CustomGradientPanel8.Controls.Add(this.flowLayoutPanel1);
             this.guna2CustomGradientPanel8.Controls.Add(this.guna2ProgressBar2);
             this.guna2CustomGradientPanel8.Controls.Add(this.label11);
-            this.guna2CustomGradientPanel8.Location = new System.Drawing.Point(1175, 245);
+            this.guna2CustomGradientPanel8.Location = new System.Drawing.Point(1199, 245);
             this.guna2CustomGradientPanel8.Name = "guna2CustomGradientPanel8";
             this.guna2CustomGradientPanel8.ShadowDecoration.Parent = this.guna2CustomGradientPanel8;
             this.guna2CustomGradientPanel8.Size = new System.Drawing.Size(385, 592);
             this.guna2CustomGradientPanel8.TabIndex = 9;
-            this.guna2CustomGradientPanel8.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel8_Paint);
             // 
             // flowLayoutPanel1
             // 
@@ -776,28 +792,28 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.guna2PictureBox5);
+            this.panel1.Controls.Add(this.ptb1_sp);
             this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.lb1_doanhso);
+            this.panel1.Controls.Add(this.lb1_tensp);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.guna2CirclePictureBox5);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(379, 100);
+            this.panel1.Size = new System.Drawing.Size(379, 128);
             this.panel1.TabIndex = 0;
             // 
-            // guna2PictureBox5
+            // ptb1_sp
             // 
-            this.guna2PictureBox5.BackColor = System.Drawing.Color.White;
-            this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
-            this.guna2PictureBox5.Location = new System.Drawing.Point(280, 14);
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
-            this.guna2PictureBox5.Size = new System.Drawing.Size(96, 73);
-            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox5.TabIndex = 5;
-            this.guna2PictureBox5.TabStop = false;
+            this.ptb1_sp.BackColor = System.Drawing.Color.White;
+            this.ptb1_sp.Image = ((System.Drawing.Image)(resources.GetObject("ptb1_sp.Image")));
+            this.ptb1_sp.Location = new System.Drawing.Point(278, 44);
+            this.ptb1_sp.Name = "ptb1_sp";
+            this.ptb1_sp.ShadowDecoration.Parent = this.ptb1_sp;
+            this.ptb1_sp.Size = new System.Drawing.Size(96, 73);
+            this.ptb1_sp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb1_sp.TabIndex = 5;
+            this.ptb1_sp.TabStop = false;
             // 
             // label15
             // 
@@ -811,29 +827,30 @@
             this.label15.TabIndex = 5;
             this.label15.Text = "Doanh số";
             // 
-            // label14
+            // lb1_doanhso
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.White;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(208, 51);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(49, 38);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "20";
+            this.lb1_doanhso.AutoSize = true;
+            this.lb1_doanhso.BackColor = System.Drawing.Color.White;
+            this.lb1_doanhso.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
+            this.lb1_doanhso.ForeColor = System.Drawing.Color.Black;
+            this.lb1_doanhso.Location = new System.Drawing.Point(186, 50);
+            this.lb1_doanhso.Name = "lb1_doanhso";
+            this.lb1_doanhso.Size = new System.Drawing.Size(49, 38);
+            this.lb1_doanhso.TabIndex = 5;
+            this.lb1_doanhso.Text = "20";
             // 
-            // label13
+            // lb1_tensp
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.White;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.Color.DimGray;
-            this.label13.Location = new System.Drawing.Point(84, 3);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(191, 32);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "IPHONE XS PRO";
+            this.lb1_tensp.AutoSize = true;
+            this.lb1_tensp.BackColor = System.Drawing.Color.White;
+            this.lb1_tensp.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lb1_tensp.ForeColor = System.Drawing.Color.DimGray;
+            this.lb1_tensp.Location = new System.Drawing.Point(84, 3);
+            this.lb1_tensp.MaximumSize = new System.Drawing.Size(290, 32);
+            this.lb1_tensp.Name = "lb1_tensp";
+            this.lb1_tensp.Size = new System.Drawing.Size(191, 32);
+            this.lb1_tensp.TabIndex = 6;
+            this.lb1_tensp.Text = "IPHONE XS PRO";
             // 
             // label12
             // 
@@ -862,28 +879,28 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.guna2PictureBox6);
+            this.panel2.Controls.Add(this.ptb2_sp);
             this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label18);
+            this.panel2.Controls.Add(this.lb2_doanhso);
+            this.panel2.Controls.Add(this.lb2_tensp);
             this.panel2.Controls.Add(this.label19);
             this.panel2.Controls.Add(this.guna2CirclePictureBox6);
-            this.panel2.Location = new System.Drawing.Point(3, 109);
+            this.panel2.Location = new System.Drawing.Point(3, 137);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(379, 100);
+            this.panel2.Size = new System.Drawing.Size(379, 119);
             this.panel2.TabIndex = 1;
             // 
-            // guna2PictureBox6
+            // ptb2_sp
             // 
-            this.guna2PictureBox6.BackColor = System.Drawing.Color.White;
-            this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
-            this.guna2PictureBox6.Location = new System.Drawing.Point(280, 14);
-            this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
-            this.guna2PictureBox6.Size = new System.Drawing.Size(96, 73);
-            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox6.TabIndex = 7;
-            this.guna2PictureBox6.TabStop = false;
+            this.ptb2_sp.BackColor = System.Drawing.Color.White;
+            this.ptb2_sp.Image = ((System.Drawing.Image)(resources.GetObject("ptb2_sp.Image")));
+            this.ptb2_sp.Location = new System.Drawing.Point(274, 43);
+            this.ptb2_sp.Name = "ptb2_sp";
+            this.ptb2_sp.ShadowDecoration.Parent = this.ptb2_sp;
+            this.ptb2_sp.Size = new System.Drawing.Size(96, 73);
+            this.ptb2_sp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb2_sp.TabIndex = 7;
+            this.ptb2_sp.TabStop = false;
             // 
             // label16
             // 
@@ -897,29 +914,30 @@
             this.label16.TabIndex = 8;
             this.label16.Text = "Doanh số";
             // 
-            // label17
+            // lb2_doanhso
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.White;
-            this.label17.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(214, 51);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(49, 38);
-            this.label17.TabIndex = 9;
-            this.label17.Text = "20";
+            this.lb2_doanhso.AutoSize = true;
+            this.lb2_doanhso.BackColor = System.Drawing.Color.White;
+            this.lb2_doanhso.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
+            this.lb2_doanhso.ForeColor = System.Drawing.Color.Black;
+            this.lb2_doanhso.Location = new System.Drawing.Point(195, 50);
+            this.lb2_doanhso.Name = "lb2_doanhso";
+            this.lb2_doanhso.Size = new System.Drawing.Size(49, 38);
+            this.lb2_doanhso.TabIndex = 9;
+            this.lb2_doanhso.Text = "20";
             // 
-            // label18
+            // lb2_tensp
             // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.White;
-            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label18.ForeColor = System.Drawing.Color.DimGray;
-            this.label18.Location = new System.Drawing.Point(84, 3);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(191, 32);
-            this.label18.TabIndex = 6;
-            this.label18.Text = "IPHONE XS PRO";
+            this.lb2_tensp.AutoSize = true;
+            this.lb2_tensp.BackColor = System.Drawing.Color.White;
+            this.lb2_tensp.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lb2_tensp.ForeColor = System.Drawing.Color.DimGray;
+            this.lb2_tensp.Location = new System.Drawing.Point(84, 3);
+            this.lb2_tensp.MaximumSize = new System.Drawing.Size(290, 32);
+            this.lb2_tensp.Name = "lb2_tensp";
+            this.lb2_tensp.Size = new System.Drawing.Size(191, 32);
+            this.lb2_tensp.TabIndex = 6;
+            this.lb2_tensp.Text = "IPHONE XS PRO";
             // 
             // label19
             // 
@@ -948,40 +966,41 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.guna2PictureBox7);
-            this.panel3.Controls.Add(this.label22);
+            this.panel3.Controls.Add(this.ptb3_sp);
+            this.panel3.Controls.Add(this.lb3_tensp);
             this.panel3.Controls.Add(this.label20);
-            this.panel3.Controls.Add(this.label21);
+            this.panel3.Controls.Add(this.lb3_doanhso);
             this.panel3.Controls.Add(this.label23);
             this.panel3.Controls.Add(this.guna2CirclePictureBox7);
-            this.panel3.Location = new System.Drawing.Point(3, 215);
+            this.panel3.Location = new System.Drawing.Point(3, 262);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(379, 100);
+            this.panel3.Size = new System.Drawing.Size(379, 114);
             this.panel3.TabIndex = 2;
             // 
-            // guna2PictureBox7
+            // ptb3_sp
             // 
-            this.guna2PictureBox7.BackColor = System.Drawing.Color.White;
-            this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
-            this.guna2PictureBox7.Location = new System.Drawing.Point(281, 12);
-            this.guna2PictureBox7.Name = "guna2PictureBox7";
-            this.guna2PictureBox7.ShadowDecoration.Parent = this.guna2PictureBox7;
-            this.guna2PictureBox7.Size = new System.Drawing.Size(96, 73);
-            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox7.TabIndex = 10;
-            this.guna2PictureBox7.TabStop = false;
+            this.ptb3_sp.BackColor = System.Drawing.Color.White;
+            this.ptb3_sp.Image = ((System.Drawing.Image)(resources.GetObject("ptb3_sp.Image")));
+            this.ptb3_sp.Location = new System.Drawing.Point(274, 38);
+            this.ptb3_sp.Name = "ptb3_sp";
+            this.ptb3_sp.ShadowDecoration.Parent = this.ptb3_sp;
+            this.ptb3_sp.Size = new System.Drawing.Size(96, 73);
+            this.ptb3_sp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb3_sp.TabIndex = 10;
+            this.ptb3_sp.TabStop = false;
             // 
-            // label22
+            // lb3_tensp
             // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.White;
-            this.label22.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label22.ForeColor = System.Drawing.Color.DimGray;
-            this.label22.Location = new System.Drawing.Point(84, 3);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(191, 32);
-            this.label22.TabIndex = 6;
-            this.label22.Text = "IPHONE XS PRO";
+            this.lb3_tensp.AutoSize = true;
+            this.lb3_tensp.BackColor = System.Drawing.Color.White;
+            this.lb3_tensp.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lb3_tensp.ForeColor = System.Drawing.Color.DimGray;
+            this.lb3_tensp.Location = new System.Drawing.Point(84, 3);
+            this.lb3_tensp.MaximumSize = new System.Drawing.Size(290, 32);
+            this.lb3_tensp.Name = "lb3_tensp";
+            this.lb3_tensp.Size = new System.Drawing.Size(191, 32);
+            this.lb3_tensp.TabIndex = 6;
+            this.lb3_tensp.Text = "IPHONE XS PRO";
             // 
             // label20
             // 
@@ -995,17 +1014,17 @@
             this.label20.TabIndex = 11;
             this.label20.Text = "Doanh số";
             // 
-            // label21
+            // lb3_doanhso
             // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.White;
-            this.label21.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(217, 49);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(49, 38);
-            this.label21.TabIndex = 12;
-            this.label21.Text = "20";
+            this.lb3_doanhso.AutoSize = true;
+            this.lb3_doanhso.BackColor = System.Drawing.Color.White;
+            this.lb3_doanhso.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
+            this.lb3_doanhso.ForeColor = System.Drawing.Color.Black;
+            this.lb3_doanhso.Location = new System.Drawing.Point(195, 47);
+            this.lb3_doanhso.Name = "lb3_doanhso";
+            this.lb3_doanhso.Size = new System.Drawing.Size(49, 38);
+            this.lb3_doanhso.TabIndex = 12;
+            this.lb3_doanhso.Text = "20";
             // 
             // label23
             // 
@@ -1034,40 +1053,41 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.guna2PictureBox8);
-            this.panel4.Controls.Add(this.label26);
+            this.panel4.Controls.Add(this.ptb4_sp);
+            this.panel4.Controls.Add(this.lb4_tensp);
             this.panel4.Controls.Add(this.label24);
-            this.panel4.Controls.Add(this.label25);
+            this.panel4.Controls.Add(this.lb4_doanhso);
             this.panel4.Controls.Add(this.label27);
             this.panel4.Controls.Add(this.guna2CirclePictureBox8);
-            this.panel4.Location = new System.Drawing.Point(3, 321);
+            this.panel4.Location = new System.Drawing.Point(3, 382);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(379, 100);
+            this.panel4.Size = new System.Drawing.Size(379, 115);
             this.panel4.TabIndex = 3;
             // 
-            // guna2PictureBox8
+            // ptb4_sp
             // 
-            this.guna2PictureBox8.BackColor = System.Drawing.Color.White;
-            this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
-            this.guna2PictureBox8.Location = new System.Drawing.Point(280, 22);
-            this.guna2PictureBox8.Name = "guna2PictureBox8";
-            this.guna2PictureBox8.ShadowDecoration.Parent = this.guna2PictureBox8;
-            this.guna2PictureBox8.Size = new System.Drawing.Size(96, 73);
-            this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox8.TabIndex = 13;
-            this.guna2PictureBox8.TabStop = false;
+            this.ptb4_sp.BackColor = System.Drawing.Color.White;
+            this.ptb4_sp.Image = ((System.Drawing.Image)(resources.GetObject("ptb4_sp.Image")));
+            this.ptb4_sp.Location = new System.Drawing.Point(274, 39);
+            this.ptb4_sp.Name = "ptb4_sp";
+            this.ptb4_sp.ShadowDecoration.Parent = this.ptb4_sp;
+            this.ptb4_sp.Size = new System.Drawing.Size(96, 73);
+            this.ptb4_sp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb4_sp.TabIndex = 13;
+            this.ptb4_sp.TabStop = false;
             // 
-            // label26
+            // lb4_tensp
             // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.White;
-            this.label26.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label26.ForeColor = System.Drawing.Color.DimGray;
-            this.label26.Location = new System.Drawing.Point(84, 3);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(191, 32);
-            this.label26.TabIndex = 6;
-            this.label26.Text = "IPHONE XS PRO";
+            this.lb4_tensp.AutoSize = true;
+            this.lb4_tensp.BackColor = System.Drawing.Color.White;
+            this.lb4_tensp.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lb4_tensp.ForeColor = System.Drawing.Color.DimGray;
+            this.lb4_tensp.Location = new System.Drawing.Point(84, 3);
+            this.lb4_tensp.MaximumSize = new System.Drawing.Size(290, 32);
+            this.lb4_tensp.Name = "lb4_tensp";
+            this.lb4_tensp.Size = new System.Drawing.Size(191, 32);
+            this.lb4_tensp.TabIndex = 6;
+            this.lb4_tensp.Text = "IPHONE XS PRO";
             // 
             // label24
             // 
@@ -1081,17 +1101,17 @@
             this.label24.TabIndex = 14;
             this.label24.Text = "Doanh số";
             // 
-            // label25
+            // lb4_doanhso
             // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.White;
-            this.label25.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
-            this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(214, 59);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(49, 38);
-            this.label25.TabIndex = 15;
-            this.label25.Text = "20";
+            this.lb4_doanhso.AutoSize = true;
+            this.lb4_doanhso.BackColor = System.Drawing.Color.White;
+            this.lb4_doanhso.Font = new System.Drawing.Font("Segoe UI Symbol", 14F, System.Drawing.FontStyle.Bold);
+            this.lb4_doanhso.ForeColor = System.Drawing.Color.Black;
+            this.lb4_doanhso.Location = new System.Drawing.Point(195, 58);
+            this.lb4_doanhso.Name = "lb4_doanhso";
+            this.lb4_doanhso.Size = new System.Drawing.Size(49, 38);
+            this.lb4_doanhso.TabIndex = 15;
+            this.lb4_doanhso.Text = "20";
             // 
             // label27
             // 
@@ -1162,41 +1182,44 @@
             this.label42.TabIndex = 12;
             this.label42.Text = "Từ";
             // 
-            // guna2DateTimePicker1
+            // datetime1
             // 
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(924, 10);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 33);
-            this.guna2DateTimePicker1.TabIndex = 17;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2020, 12, 3, 13, 38, 23, 661);
+            this.datetime1.CheckedState.Parent = this.datetime1;
+            this.datetime1.CustomFormat = "dd/MM/yyyy";
+            this.datetime1.FillColor = System.Drawing.Color.White;
+            this.datetime1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datetime1.ForeColor = System.Drawing.Color.DimGray;
+            this.datetime1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datetime1.HoverState.Parent = this.datetime1;
+            this.datetime1.Location = new System.Drawing.Point(924, 10);
+            this.datetime1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.datetime1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.datetime1.Name = "datetime1";
+            this.datetime1.ShadowDecoration.Parent = this.datetime1;
+            this.datetime1.Size = new System.Drawing.Size(200, 33);
+            this.datetime1.TabIndex = 17;
+            this.datetime1.Value = new System.DateTime(2020, 10, 2, 0, 0, 0, 0);
+            this.datetime1.ValueChanged += new System.EventHandler(this.datetime1_ValueChanged);
             // 
-            // guna2DateTimePicker2
+            // datetime2
             // 
-            this.guna2DateTimePicker2.CheckedState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.CustomFormat = "dd/MM/yyyy";
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker2.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.guna2DateTimePicker2.HoverState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(1248, 10);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.ShadowDecoration.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(200, 33);
-            this.guna2DateTimePicker2.TabIndex = 20;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2020, 12, 3, 13, 38, 23, 661);
+            this.datetime2.CheckedState.Parent = this.datetime2;
+            this.datetime2.CustomFormat = "dd/MM/yyyy";
+            this.datetime2.FillColor = System.Drawing.Color.White;
+            this.datetime2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datetime2.ForeColor = System.Drawing.Color.DimGray;
+            this.datetime2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datetime2.HoverState.Parent = this.datetime2;
+            this.datetime2.Location = new System.Drawing.Point(1248, 10);
+            this.datetime2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.datetime2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.datetime2.Name = "datetime2";
+            this.datetime2.ShadowDecoration.Parent = this.datetime2;
+            this.datetime2.Size = new System.Drawing.Size(200, 33);
+            this.datetime2.TabIndex = 20;
+            this.datetime2.Value = new System.DateTime(2020, 12, 5, 0, 0, 0, 0);
+            this.datetime2.ValueChanged += new System.EventHandler(this.datetime2_ValueChanged);
+            this.datetime2.TextChanged += new System.EventHandler(this.datetime2_TextChanged);
             // 
             // label43
             // 
@@ -1220,104 +1243,42 @@
             this.guna2ProgressBar3.TabIndex = 18;
             this.guna2ProgressBar3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
-            // guna2CustomGradientPanel7
+            // comboBox1
             // 
-            this.guna2CustomGradientPanel7.Controls.Add(this.dgvOrders);
-            this.guna2CustomGradientPanel7.Location = new System.Drawing.Point(25, 84);
-            this.guna2CustomGradientPanel7.Name = "guna2CustomGradientPanel7";
-            this.guna2CustomGradientPanel7.ShadowDecoration.Parent = this.guna2CustomGradientPanel7;
-            this.guna2CustomGradientPanel7.Size = new System.Drawing.Size(682, 482);
-            this.guna2CustomGradientPanel7.TabIndex = 1;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Doanh thu";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 170;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Tên khách hàng";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 171;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Mã đơn hàng";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 170;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Ngày tạo đơn";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 171;
-            // 
-            // dgvOrders
-            // 
-            this.dgvOrders.AllowUserToAddRows = false;
-            this.dgvOrders.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvOrders.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvOrders.BackgroundColor = System.Drawing.Color.White;
-            this.dgvOrders.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvOrders.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvOrders.ColumnHeadersHeight = 37;
-            this.dgvOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn3,
-            this.Column2});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(224)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvOrders.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvOrders.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvOrders.DoubleBuffered = true;
-            this.dgvOrders.EnableHeadersVisualStyles = false;
-            this.dgvOrders.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvOrders.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            this.dgvOrders.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvOrders.Location = new System.Drawing.Point(0, 0);
-            this.dgvOrders.Name = "dgvOrders";
-            this.dgvOrders.ReadOnly = true;
-            this.dgvOrders.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvOrders.RowHeadersVisible = false;
-            this.dgvOrders.RowHeadersWidth = 62;
-            this.dgvOrders.RowTemplate.DividerHeight = 2;
-            this.dgvOrders.RowTemplate.Height = 35;
-            this.dgvOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvOrders.Size = new System.Drawing.Size(682, 482);
-            this.dgvOrders.TabIndex = 8;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ItemHeight = 32;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Năm này",
+            "Tháng 1",
+            "Tháng 2",
+            "Tháng 3",
+            "Tháng 3",
+            "Tháng 4",
+            "Tháng 5",
+            "Tháng 6",
+            "Tháng 7",
+            "Tháng 8",
+            "Tháng 9",
+            "Tháng 10",
+            "Tháng 11",
+            "Tháng 12"});
+            this.comboBox1.Location = new System.Drawing.Point(658, 24);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(110, 40);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // ReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1609, 848);
-            this.Controls.Add(this.guna2DateTimePicker2);
+            this.Controls.Add(this.datetime2);
             this.Controls.Add(this.label43);
             this.Controls.Add(this.guna2ProgressBar3);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.datetime1);
             this.Controls.Add(this.label42);
             this.Controls.Add(this.guna2ProgressBar4);
             this.Controls.Add(this.guna2CustomGradientPanel8);
@@ -1349,6 +1310,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).EndInit();
             this.guna2CustomGradientPanel5.ResumeLayout(false);
             this.guna2CustomGradientPanel5.PerformLayout();
+            this.guna2CustomGradientPanel7.ResumeLayout(false);
             this.guna2CustomGradientPanel6.ResumeLayout(false);
             this.guna2CustomGradientPanel6.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
@@ -1366,22 +1328,20 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb1_sp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb2_sp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox6)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb3_sp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox7)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb4_sp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox8)).EndInit();
-            this.guna2CustomGradientPanel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1406,10 +1366,10 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lb_doanh_thu;
+        private System.Windows.Forms.Label lb_hoadon;
+        private System.Windows.Forms.Label lb_sanpham;
+        private System.Windows.Forms.Label lb_khachhang;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel5;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel6;
@@ -1422,64 +1382,61 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lb1_doanhso;
+        private System.Windows.Forms.Label lb1_tensp;
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox5;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lb2_tensp;
         private System.Windows.Forms.Label label19;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox6;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label lb3_tensp;
         private System.Windows.Forms.Label label23;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox7;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label lb4_tensp;
         private System.Windows.Forms.Label label27;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox8;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
+        private Guna.UI2.WinForms.Guna2PictureBox ptb1_sp;
+        private Guna.UI2.WinForms.Guna2PictureBox ptb2_sp;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
+        private System.Windows.Forms.Label lb2_doanhso;
+        private Guna.UI2.WinForms.Guna2PictureBox ptb3_sp;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
+        private System.Windows.Forms.Label lb3_doanhso;
+        private Guna.UI2.WinForms.Guna2PictureBox ptb4_sp;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label lb4_doanhso;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label lb1_makh;
+        private System.Windows.Forms.Label lb1_tenkh;
         private System.Windows.Forms.Label label31;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox9;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label lb1_doanhthu;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label lb2_doanhthu;
         private System.Windows.Forms.Label label36;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox10;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label lb2_makh;
+        private System.Windows.Forms.Label lb2_tenkh;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label lb3_doanhthu;
         private System.Windows.Forms.Label label41;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox11;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label lb3_makh;
+        private System.Windows.Forms.Label lb3_tenkh;
         private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar4;
         private System.Windows.Forms.Label label42;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker datetime1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker datetime2;
         private System.Windows.Forms.Label label43;
         private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar3;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel7;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvOrders;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private LiveCharts.WinForms.CartesianChart cartesianChart1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

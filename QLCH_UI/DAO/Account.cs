@@ -98,5 +98,33 @@ namespace QLCH_UI.DAO
             
             return result;
         }
+        public string Get_Loai_NV(string username)
+        {
+            string query = "select NHAN_VIEN.loainhanvien from ACCOUNT,NHAN_VIEN"
+                    +" where ACCOUNT.username = NHAN_VIEN.username and ACCOUNT.username = '"+username+"'";
+            DataTable rs = ConnectSQL.Instance.ExecuteQuery(query);
+            try
+            {
+                return rs.Rows[0]["loainhanvien"].ToString();
+            }
+            catch
+            {
+                return "admin";
+            }
+        }
+        public string Get_Ma_NV(string username)
+        {
+            string query = "select NHAN_VIEN.manv from ACCOUNT,NHAN_VIEN"
+                    + " where ACCOUNT.username = NHAN_VIEN.username and ACCOUNT.username = '" + username + "'";
+            DataTable rs = ConnectSQL.Instance.ExecuteQuery(query);
+            try
+            {
+                return rs.Rows[0]["manv"].ToString();
+            }
+            catch
+            {
+                return "NV01";
+            }
+        }
     }
 }

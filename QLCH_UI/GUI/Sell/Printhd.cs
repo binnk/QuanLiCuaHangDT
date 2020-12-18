@@ -20,6 +20,7 @@ namespace QLCH_UI.GUI.Sell
         {
             InitializeComponent();
             ma = mahd;
+            //reportViewer1.Controls.PreviewKeyDown = true;
         }
 
         private void Printhd_Load(object sender, EventArgs e)

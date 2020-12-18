@@ -76,9 +76,26 @@ namespace LoginUI
         {
             if (Account.Instance.Login(textUser.Text.ToString(), textPass.Text.ToString()))
             {
-                this.Hide();
-                using (MainForm mainForm = new MainForm())
+                if (Account.Instance.Get_Loai_NV(textUser.Text) == "admin")
+                {
+                    this.Hide();
+                    using (MainForm mainForm = new MainForm())
+                        mainForm.ShowDialog();
+                }
+                if (Account.Instance.Get_Loai_NV(textUser.Text) == "Kỹ thuật")
+                {
+                    this.Hide();
+                    using (MainTechnicianForm mainForm = new MainTechnicianForm(Account.Instance.Get_Ma_NV(textUser.Text)))
                     mainForm.ShowDialog();
+                    
+
+                }
+                if (Account.Instance.Get_Loai_NV(textUser.Text) == "Bán hàng")
+                {
+                    this.Hide();
+                    using (MainForm mainForm = new MainForm())
+                        mainForm.ShowDialog();
+                }
             }
             else
             {

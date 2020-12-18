@@ -97,6 +97,8 @@ namespace QLCH_UI.DAO
             string query = "INSERT INTO HOA_DON (mahd, makh, ngay_ban, manv, tri_gia, giam_gia) " +
                            "VALUES ( @mahd , @makh , @ngay_ban , @manv , @tri_gia , @giam_gia );";
             int dem = ConnectSQL.Instance.ExecuteNonQuery(query, new object[] { mahd, makh, ngayban, manv, tri_gia, giam_gia });
+            string q = "UPDATE KHACH_HANG SET doanh_thu = doanh_thu +'" + tri_gia + "' WHERE makh ='" + makh + "'";
+             dem = ConnectSQL.Instance.ExecuteNonQuery(q);
             return dem;
         }
         public void SaveCTHD(string query)

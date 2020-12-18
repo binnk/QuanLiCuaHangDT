@@ -1,0 +1,59 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace QLCH_UI.DAO
+{
+    class HoadonDAO
+    {
+        private static HoadonDAO instance;
+
+        public static HoadonDAO Instance
+        {
+            get
+            {
+                if (instance == null) instance = new HoadonDAO();
+                return HoadonDAO.instance;
+            }
+            private set
+            {
+                HoadonDAO.instance = value;
+            }
+        }
+        private HoadonDAO() { }
+        public DataTable Hoadonlist()
+        {
+            string query = "select * from hoa_don";
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
+        public DataTable Hoadon(string mahd)
+        {
+            string query = "select * from hoa_don where mahd ='" + mahd + "'";
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
+        public DataTable CTHD(string mahd)
+        {
+            string query = "select CTHD.masp, SAN_PHAM.ten_sp, CTHD.so_luong, SAN_PHAM.gia_ban from CTHD, SAN_PHAM where mahd = '" + mahd + "' and CTHD.masp = SAN_PHAM.masp";
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
+        public DataTable Khach_hang(string makh)
+        {
+            string query = "select * from khach_hang where makh ='" + makh + "'";
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
+        public DataTable Nhan_vien(string manv)
+        {
+            string query = "select ten_nv from nhan_vien where manv ='" + manv + "'";
+            
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
+    }
+}
