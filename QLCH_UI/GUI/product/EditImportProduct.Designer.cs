@@ -1,6 +1,7 @@
-﻿namespace QLCH_UI
+﻿
+namespace QLCH_UI
 {
-    partial class ImportProducts
+    partial class EditImportProduct
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImportProducts));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditImportProduct));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -52,10 +52,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tb_ten_sp = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btn_luu_customer = new System.Windows.Forms.Button();
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_luu_customer = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,23 +68,23 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1024, 69);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 2;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(438, 9);
+            this.label7.Location = new System.Drawing.Point(314, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(183, 45);
+            this.label7.Size = new System.Drawing.Size(394, 45);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Nhập hàng";
+            this.label7.Text = " Sửa thông tin nhập hàng";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.lb_manguoinhap_error);
             this.groupBox1.Controls.Add(this.tb_manguoinhap);
+            this.groupBox1.Controls.Add(this.lb_manguoinhap_error);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.tb_manhaphang);
             this.groupBox1.Controls.Add(this.label8);
@@ -103,17 +102,17 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.tb_ten_sp);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(52, 84);
+            this.groupBox1.Location = new System.Drawing.Point(3, 75);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(512, 705);
-            this.groupBox1.TabIndex = 39;
+            this.groupBox1.TabIndex = 40;
             this.groupBox1.TabStop = false;
             // 
             // lb_manguoinhap_error
             // 
             this.lb_manguoinhap_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_manguoinhap_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_manguoinhap_error.Location = new System.Drawing.Point(43, 638);
+            this.lb_manguoinhap_error.Location = new System.Drawing.Point(44, 638);
             this.lb_manguoinhap_error.Name = "lb_manguoinhap_error";
             this.lb_manguoinhap_error.Size = new System.Drawing.Size(417, 42);
             this.lb_manguoinhap_error.TabIndex = 112;
@@ -183,7 +182,6 @@
             this.lb_sl_error.Text = "Số lượng không hợp lệ";
             this.lb_sl_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lb_sl_error.Visible = false;
-            this.lb_sl_error.Click += new System.EventHandler(this.lb_sl_Click);
             // 
             // tb_gia_nhap
             // 
@@ -305,20 +303,17 @@
             this.label2.TabIndex = 82;
             this.label2.Text = "Tên sản phẩm";
             // 
-            // button2
+            // pictureBox1
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(658, 715);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 59);
-            this.button2.TabIndex = 42;
-            this.button2.Text = "Hủy";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(626, 92);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(280, 445);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 41;
+            this.pictureBox1.TabStop = false;
             // 
             // btn_luu_customer
             // 
@@ -327,38 +322,33 @@
             this.btn_luu_customer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_luu_customer.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.btn_luu_customer.ForeColor = System.Drawing.Color.White;
-            this.btn_luu_customer.Location = new System.Drawing.Point(802, 715);
+            this.btn_luu_customer.Location = new System.Drawing.Point(770, 625);
             this.btn_luu_customer.Name = "btn_luu_customer";
             this.btn_luu_customer.Size = new System.Drawing.Size(136, 59);
-            this.btn_luu_customer.TabIndex = 41;
+            this.btn_luu_customer.TabIndex = 42;
             this.btn_luu_customer.Text = "Xác nhận";
             this.btn_luu_customer.UseVisualStyleBackColor = false;
             this.btn_luu_customer.Click += new System.EventHandler(this.btn_luu_customer_Click);
             // 
-            // bunifuDragControl1
+            // button2
             // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.panel1;
-            this.bunifuDragControl1.Vertical = true;
+            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(626, 625);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(138, 59);
+            this.button2.TabIndex = 43;
+            this.button2.Text = "Hủy";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pictureBox1
+            // EditImportProduct
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(658, 139);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(280, 445);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 40;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // ImportProducts
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 801);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_luu_customer);
@@ -368,10 +358,8 @@
             this.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "ImportProducts";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddProduct";
-            this.Load += new System.EventHandler(this.AddProduct_Load);
+            this.Name = "EditImportProduct";
+            this.Text = "EditImportProduct";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -386,28 +374,27 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox tb_masp;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tb_ten_sp;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb_manguoinhap_error;
+        private System.Windows.Forms.TextBox tb_manguoinhap;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox tb_manhaphang;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lb_gianhap_error;
+        private System.Windows.Forms.Label lb_sl_error;
         private System.Windows.Forms.TextBox tb_gia_nhap;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tb_sl;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tb_loai_sp;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tb_masp;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker date_sp;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btn_luu_customer;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tb_ten_sp;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lb_sl_error;
-        private System.Windows.Forms.Label lb_gianhap_error;
-        private System.Windows.Forms.TextBox tb_manhaphang;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lb_manguoinhap_error;
-        private System.Windows.Forms.TextBox tb_manguoinhap;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btn_luu_customer;
+        private System.Windows.Forms.Button button2;
     }
 }

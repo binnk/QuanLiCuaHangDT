@@ -61,7 +61,7 @@ namespace QLCH_UI.DAO
             int result = 0;
             try
             {
-                string query = string.Format("insert into nhan_vien(username,manv,ten_nv,ngay_sinh,dia_chi,dien_thoai,gioi_tinh) values ('{0}','{1}',N'{2}','{3}','{4}','{5}',N'{6}')", a.Username, a.Manv, a.Ten_nv, a.Ngay_sinh, a.Dia_chi, a.Dien_thoai, a.Gioi_tinh);
+                string query = string.Format("insert into nhan_vien(username,manv,ten_nv,ngay_sinh,dia_chi,dien_thoai,gioi_tinh,loainhanvien) values ('{0}','{1}',N'{2}','{3}','{4}','{5}',N'{6}',N'{7}')", a.Username, a.Manv, a.Ten_nv, a.Ngay_sinh, a.Dia_chi, a.Dien_thoai, a.Gioi_tinh,a.Loainhanvien);
                 result = ConnectSQL.Instance.ExecuteNonQuery(query);
             }
             catch (Exception ex)
@@ -78,7 +78,7 @@ namespace QLCH_UI.DAO
             int result = 0;
             try
             {
-                string query = string.Format("update nhan_vien set username='{0}', ten_nv= N'{1}', ngay_sinh= '{2}', dia_chi= N'{3}', dien_thoai= '{4}', gioi_tinh= N'{5}' where manv='{6}'", a.Username, a.Ten_nv, a.Ngay_sinh, a.Dia_chi, a.Dien_thoai, a.Gioi_tinh, a.Manv);
+                string query = string.Format("update nhan_vien set username='{0}', ten_nv= N'{1}', ngay_sinh= '{2}', dia_chi= N'{3}', dien_thoai= '{4}', gioi_tinh= N'{5}',loainhanvien= N'{6}' where manv='{7}'", a.Username, a.Ten_nv, a.Ngay_sinh, a.Dia_chi, a.Dien_thoai, a.Gioi_tinh, a.Loainhanvien, a.Manv);
                 result = ConnectSQL.Instance.ExecuteNonQuery(query);
             }
             catch (Exception ex)

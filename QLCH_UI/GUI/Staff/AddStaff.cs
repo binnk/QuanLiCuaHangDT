@@ -17,7 +17,21 @@ namespace QLCH_UI
     {
         public AddStaff()
         {
+            int rs = 0;
+            DataTable a = StaffDAO.Instance.Stafflist();
+            for (int i = 0; i < a.Rows.Count; i++)
+            {
+                string k = a.Rows[i]["manv"].ToString();
+                int l = k.Length;
+                int tg = int.Parse(k.Substring(2, l - 2));
+                if (tg > rs) rs = tg;
+            }
+            rs++;
+            string p = "";
+            if (rs > 9) p = "NV" + rs.ToString();
+            else p = "NV" + "0" + rs.ToString();
             InitializeComponent();
+            tb_manv.Text = p;
         }
         public bool check_erro()
         {
@@ -58,6 +72,12 @@ namespace QLCH_UI
                 lb_dia_chi_error.Visible = true;
                 return (false);
             }
+            if (cb_loainv.Text == "")
+            {
+                lb_loainv_error.Visible = true;
+                return (false);
+            }
+            else lb_loainv_error.Visible = false;
             return (true);
         }
 
@@ -86,7 +106,7 @@ namespace QLCH_UI
             {
                 if (Radio_Nam.Checked == true) a = Radio_Nam.Text;
                 else a = Radio_Nu.Text;
-                StaffDTO b = new StaffDTO(tb_user.Text, tb_manv.Text, tb_ten_nv.Text, date_nv.Value, tb_dia_chi.Text, tb_phone.Text, a);
+                StaffDTO b = new StaffDTO(tb_user.Text, tb_manv.Text, tb_ten_nv.Text, date_nv.Value, tb_dia_chi.Text, tb_phone.Text, a,cb_loainv.Text);
                 if (StaffBUS.Instance.insert_staff(b, tb_user.Text, tb_email.Text, tb_password.Text) == true)
                 {
                     MessageBox.Show("Thêm thành công");
@@ -98,6 +118,21 @@ namespace QLCH_UI
                 }
                 //this.Close();
             }
+        }
+
+        private void lb_dia_chi_error_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_sdt_error_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_dia_chi_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

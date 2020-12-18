@@ -1,5 +1,6 @@
 ﻿using QLCH_UI.BUS;
 using QLCH_UI.DTO;
+using QLCH_UI.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +17,22 @@ namespace QLCH_UI
     {
         public ImportProducts(string masp, string ten_sp, string loai_sp, string gia_nhap, Image anh)
         {
+
+            int rs = 0;
+            DataTable a = WarehouseDAO.Instance.list_nhap_kho();
+            for (int i = 0; i < a.Rows.Count; i++)
+            {
+                string k = a.Rows[i]["manhaphang"].ToString();
+                int l = k.Length;
+                int tg = int.Parse(k.Substring(2, l - 2));
+                if (tg > rs) rs = tg;
+            }
+            rs++;
+            string p = "";
+            if (rs > 9) p = "NH" + rs.ToString();
+            else p = "NH" + "0" + rs.ToString();
             InitializeComponent();
+            tb_manhaphang.Text = p;
             tb_masp.Text = masp;
             tb_loai_sp.Text = loai_sp;
             tb_gia_nhap.Text = gia_nhap;
@@ -44,6 +60,12 @@ namespace QLCH_UI
         }
         public bool check_error()
         {
+            if (WareHouseBUS.Instance.manguoinhap(tb_manguoinhap.Text) == true) lb_manguoinhap_error.Visible = false;
+            else
+            {
+                lb_manguoinhap_error.Visible = true;
+                return (false);
+            }
             if (ProductBUS.Instance.gia_nhap(tb_gia_nhap.Text) == true) lb_gianhap_error.Visible = false;
             else
             {
@@ -62,7 +84,8 @@ namespace QLCH_UI
         {
             if (check_error()==true)
             {
-                WarehouseDTO a = new WarehouseDTO(tb_masp.Text, tb_ten_sp.Text, tb_loai_sp.Text, date_sp.Value, double.Parse(tb_gia_nhap.Text), int.Parse(tb_sl.Text));
+                decimal tong_tien = (decimal)(double.Parse(tb_gia_nhap.Text) * int.Parse(tb_sl.Text));
+                WarehouseDTO a = new WarehouseDTO(tb_manhaphang.Text, tb_manguoinhap.Text, tb_masp.Text, tb_ten_sp.Text, tb_loai_sp.Text, date_sp.Value, double.Parse(tb_gia_nhap.Text), int.Parse(tb_sl.Text),tong_tien);
                 if (WareHouseBUS.Instance.ImportWarehouse(a))
                 {
                     MessageBox.Show("Nhập hàng thành công");

@@ -37,12 +37,14 @@ namespace QLCH_UI
         // check_erro
         public bool check_erro()
         {
-            if ((StaffBUS.Instance.Check_email(tb_email.Text) != "") && tb_email.ReadOnly == false)
+            string a = "";
+            a = StaffBUS.Instance.Check_email(tb_email.Text);
+            if ((a!= "" || a!= "Email is already taken. Please choose another email.") && tb_email.ReadOnly == false) lb_email_error.Visible = false;
+            else
             {
                 lb_email_error.Visible = true;
                 return (false);
             }
-            else lb_email_error.Visible = false;
 
             if (CustomersBUS.Instance.makh(tb_manv.Text) == true) lb_manv_error.Visible = false;
             else
@@ -74,6 +76,12 @@ namespace QLCH_UI
                 lb_dia_chi_error.Visible = true;
                 return (false);
             }
+            if (cb_loainv.Text == "")
+            {
+                lb_loainv_error.Visible = true;
+                return (false);
+            }
+            else lb_loainv_error.Visible = true;
             return (true);
         }
 
@@ -85,7 +93,7 @@ namespace QLCH_UI
                 string a;
                 if (Radio_Nam.Checked == true) a = Radio_Nam.Text;
                 else a = Radio_Nu.Text;
-                StaffDTO b = new StaffDTO(tb_user.Text,tb_manv.Text,tb_ten_nv.Text,date_nv.Value,tb_dia_chi.Text,tb_phone.Text,a);
+                StaffDTO b = new StaffDTO(tb_user.Text,tb_manv.Text,tb_ten_nv.Text,date_nv.Value,tb_dia_chi.Text,tb_phone.Text,a,cb_loainv.Text);
                 if (StaffBUS.Instance.edit_staff(b,tb_user.Text,tb_email.Text) == true)
                 {
                     MessageBox.Show("Sửa thành công");

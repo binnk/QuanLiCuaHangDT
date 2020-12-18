@@ -93,13 +93,13 @@ namespace QLCH_UI
                 ProductDTO a;
                 if (kt==true)
                 {
-                    a = new ProductDTO(imgg, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text, double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text), so_luong);
+                    a = new ProductDTO(imgg, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text, double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text), so_luong,1);
                 }
                 else
                 {
                     byte[] k = ProductBUS.Instance.ImageToByteArray(this.Text);
                     string l = Convert.ToBase64String(k);
-                    a = new ProductDTO(l, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text, double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text), so_luong);
+                    a = new ProductDTO(l, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text, double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text), so_luong,1);
                 }
                 if (ProductBUS.Instance.edit_product(a))
                 {

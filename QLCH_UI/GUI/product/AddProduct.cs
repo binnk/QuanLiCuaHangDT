@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QLCH_UI.DAO;
 
 namespace QLCH_UI
 {
@@ -76,11 +77,30 @@ namespace QLCH_UI
    
         private void btn_luu_customer_Click(object sender, EventArgs e)
         {
+            int rs = 0;
+            DataTable aa = ProductDAO.Instance.Productlist();
+            for (int i = 0; i < aa.Rows.Count; i++)
+            {
+                string k = aa.Rows[i]["masp"].ToString();
+                int l = k.Length;
+                int tg = int.Parse(k.Substring(2, l - 2));
+                if (tg > rs) rs = tg;
+            }
+            rs++;
+            string p = "";
+            if (cb_loaisp.Text == "Laptop") p = "LT";
+            if (cb_loaisp.Text == "Điện thoại") p = "DT";
+            if (cb_loaisp.Text == "Linh kiện") p = "LK";
+            if (cb_loaisp.Text == "Phụ kiện") p = "PK";
+            if (cb_loaisp.Text == "Khác") p = "SP";
+            if (rs > 9) p = p + rs.ToString();
+            else p = p + "0" + rs.ToString();
+            tb_masp.Text = p;
             if (check_error()==true)
             {
                 byte[] k = ProductBUS.Instance.ImageToByteArray(this.Text);
                 string l = Convert.ToBase64String(k);
-                ProductDTO a = new ProductDTO(l, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text ,double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text),int.Parse(tb_sl.Text));
+                ProductDTO a = new ProductDTO(l, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text ,double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text),int.Parse(tb_sl.Text),1);
                 if (ProductBUS.Instance.insert_product(a))
                 {
                     MessageBox.Show("Thêm thành công");

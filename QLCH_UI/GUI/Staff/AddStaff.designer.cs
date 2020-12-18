@@ -64,6 +64,9 @@
             this.tb_password = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lb_password_error = new System.Windows.Forms.Label();
+            this.cb_loainv = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lb_loainv_error = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -101,7 +104,7 @@
             // 
             this.lb_ten_nv_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_ten_nv_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_ten_nv_error.Location = new System.Drawing.Point(45, 564);
+            this.lb_ten_nv_error.Location = new System.Drawing.Point(44, 581);
             this.lb_ten_nv_error.Name = "lb_ten_nv_error";
             this.lb_ten_nv_error.Size = new System.Drawing.Size(417, 42);
             this.lb_ten_nv_error.TabIndex = 98;
@@ -113,16 +116,17 @@
             // 
             this.tb_dia_chi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_dia_chi.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_dia_chi.Location = new System.Drawing.Point(48, 488);
+            this.tb_dia_chi.Location = new System.Drawing.Point(48, 534);
             this.tb_dia_chi.Name = "tb_dia_chi";
             this.tb_dia_chi.Size = new System.Drawing.Size(414, 44);
             this.tb_dia_chi.TabIndex = 97;
+            this.tb_dia_chi.TextChanged += new System.EventHandler(this.tb_dia_chi_TextChanged);
             // 
             // tb_phone
             // 
             this.tb_phone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_phone.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_phone.Location = new System.Drawing.Point(48, 387);
+            this.tb_phone.Location = new System.Drawing.Point(49, 442);
             this.tb_phone.Name = "tb_phone";
             this.tb_phone.Size = new System.Drawing.Size(414, 44);
             this.tb_phone.TabIndex = 96;
@@ -131,7 +135,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(42, 440);
+            this.label4.Location = new System.Drawing.Point(44, 489);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 32);
             this.label4.TabIndex = 94;
@@ -205,7 +209,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(42, 335);
+            this.label3.Location = new System.Drawing.Point(42, 402);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(160, 32);
             this.label3.TabIndex = 89;
@@ -244,6 +248,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lb_loainv_error);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.cb_loainv);
             this.groupBox1.Controls.Add(this.lb_gioi_tinh_error);
             this.groupBox1.Controls.Add(this.lb_dia_chi_error);
             this.groupBox1.Controls.Add(this.lb_sdt_error);
@@ -264,7 +271,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(28, 96);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(512, 623);
+            this.groupBox1.Size = new System.Drawing.Size(512, 655);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             // 
@@ -272,7 +279,7 @@
             // 
             this.lb_gioi_tinh_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_gioi_tinh_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_gioi_tinh_error.Location = new System.Drawing.Point(46, 564);
+            this.lb_gioi_tinh_error.Location = new System.Drawing.Point(43, 581);
             this.lb_gioi_tinh_error.Name = "lb_gioi_tinh_error";
             this.lb_gioi_tinh_error.Size = new System.Drawing.Size(417, 42);
             this.lb_gioi_tinh_error.TabIndex = 117;
@@ -285,31 +292,33 @@
             // 
             this.lb_dia_chi_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_dia_chi_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_dia_chi_error.Location = new System.Drawing.Point(46, 564);
+            this.lb_dia_chi_error.Location = new System.Drawing.Point(43, 581);
             this.lb_dia_chi_error.Name = "lb_dia_chi_error";
             this.lb_dia_chi_error.Size = new System.Drawing.Size(417, 42);
             this.lb_dia_chi_error.TabIndex = 116;
             this.lb_dia_chi_error.Text = "Địa chỉ không hợp lệ";
             this.lb_dia_chi_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lb_dia_chi_error.Visible = false;
+            this.lb_dia_chi_error.Click += new System.EventHandler(this.lb_dia_chi_error_Click);
             // 
             // lb_sdt_error
             // 
             this.lb_sdt_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_sdt_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_sdt_error.Location = new System.Drawing.Point(46, 564);
+            this.lb_sdt_error.Location = new System.Drawing.Point(46, 581);
             this.lb_sdt_error.Name = "lb_sdt_error";
             this.lb_sdt_error.Size = new System.Drawing.Size(417, 42);
             this.lb_sdt_error.TabIndex = 115;
             this.lb_sdt_error.Text = "Số điện thoại không hợp lệ";
             this.lb_sdt_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lb_sdt_error.Visible = false;
+            this.lb_sdt_error.Click += new System.EventHandler(this.lb_sdt_error_Click);
             // 
             // lb_manv_error
             // 
             this.lb_manv_error.Font = new System.Drawing.Font("Arial", 10F);
             this.lb_manv_error.ForeColor = System.Drawing.Color.Red;
-            this.lb_manv_error.Location = new System.Drawing.Point(44, 571);
+            this.lb_manv_error.Location = new System.Drawing.Point(46, 581);
             this.lb_manv_error.Name = "lb_manv_error";
             this.lb_manv_error.Size = new System.Drawing.Size(417, 42);
             this.lb_manv_error.TabIndex = 114;
@@ -323,6 +332,7 @@
             this.tb_manv.Font = new System.Drawing.Font("Arial", 16F);
             this.tb_manv.Location = new System.Drawing.Point(48, 48);
             this.tb_manv.Name = "tb_manv";
+            this.tb_manv.ReadOnly = true;
             this.tb_manv.Size = new System.Drawing.Size(414, 44);
             this.tb_manv.TabIndex = 102;
             // 
@@ -358,7 +368,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(6, 15);
+            this.label12.Location = new System.Drawing.Point(-6, 41);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(120, 32);
             this.label12.TabIndex = 103;
@@ -368,7 +378,7 @@
             // 
             this.tb_user.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_user.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_user.Location = new System.Drawing.Point(6, 48);
+            this.tb_user.Location = new System.Drawing.Point(0, 76);
             this.tb_user.Name = "tb_user";
             this.tb_user.Size = new System.Drawing.Size(268, 44);
             this.tb_user.TabIndex = 104;
@@ -393,7 +403,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 282);
+            this.label13.Location = new System.Drawing.Point(-6, 287);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(73, 32);
             this.label13.TabIndex = 110;
@@ -403,7 +413,7 @@
             // 
             this.tb_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_email.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_email.Location = new System.Drawing.Point(0, 323);
+            this.tb_email.Location = new System.Drawing.Point(0, 325);
             this.tb_email.Name = "tb_email";
             this.tb_email.Size = new System.Drawing.Size(268, 44);
             this.tb_email.TabIndex = 109;
@@ -412,7 +422,7 @@
             // 
             this.tb_confirmpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_confirmpassword.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_confirmpassword.Location = new System.Drawing.Point(0, 224);
+            this.tb_confirmpassword.Location = new System.Drawing.Point(0, 240);
             this.tb_confirmpassword.Name = "tb_confirmpassword";
             this.tb_confirmpassword.Size = new System.Drawing.Size(268, 44);
             this.tb_confirmpassword.TabIndex = 108;
@@ -421,7 +431,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 177);
+            this.label10.Location = new System.Drawing.Point(-6, 205);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(217, 32);
             this.label10.TabIndex = 107;
@@ -432,7 +442,7 @@
             // 
             this.tb_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_password.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_password.Location = new System.Drawing.Point(0, 130);
+            this.tb_password.Location = new System.Drawing.Point(0, 158);
             this.tb_password.Name = "tb_password";
             this.tb_password.Size = new System.Drawing.Size(268, 44);
             this.tb_password.TabIndex = 106;
@@ -441,7 +451,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 95);
+            this.label1.Location = new System.Drawing.Point(-6, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 32);
             this.label1.TabIndex = 105;
@@ -458,6 +468,41 @@
             this.lb_password_error.Text = "Mật khẩu không hợp lệ";
             this.lb_password_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lb_password_error.Visible = false;
+            // 
+            // cb_loainv
+            // 
+            this.cb_loainv.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_loainv.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_loainv.FormattingEnabled = true;
+            this.cb_loainv.Items.AddRange(new object[] {
+            "Bán hàng",
+            "Kỹ thuật"});
+            this.cb_loainv.Location = new System.Drawing.Point(48, 350);
+            this.cb_loainv.Name = "cb_loainv";
+            this.cb_loainv.Size = new System.Drawing.Size(413, 40);
+            this.cb_loainv.TabIndex = 118;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(44, 315);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(174, 32);
+            this.label8.TabIndex = 119;
+            this.label8.Text = "Loại nhân viên";
+            // 
+            // lb_loainv_error
+            // 
+            this.lb_loainv_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_loainv_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_loainv_error.Location = new System.Drawing.Point(45, 592);
+            this.lb_loainv_error.Name = "lb_loainv_error";
+            this.lb_loainv_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_loainv_error.TabIndex = 119;
+            this.lb_loainv_error.Text = "Chọn loại nhân viên";
+            this.lb_loainv_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_loainv_error.Visible = false;
             // 
             // AddStaff
             // 
@@ -523,5 +568,8 @@
         private System.Windows.Forms.Label lb_sdt_error;
         private System.Windows.Forms.Label lb_manv_error;
         private System.Windows.Forms.Label lb_password_error;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cb_loainv;
+        private System.Windows.Forms.Label lb_loainv_error;
     }
 }

@@ -59,6 +59,9 @@
             this.lb_manv_error = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.label8 = new System.Windows.Forms.Label();
+            this.cb_loainv = new System.Windows.Forms.ComboBox();
+            this.lb_loainv_error = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -142,7 +145,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(44, 287);
+            this.label6.Location = new System.Drawing.Point(41, 357);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 32);
             this.label6.TabIndex = 92;
@@ -152,7 +155,7 @@
             // 
             this.Radio_Nu.AutoSize = true;
             this.Radio_Nu.Font = new System.Drawing.Font("Arial", 11F);
-            this.Radio_Nu.Location = new System.Drawing.Point(305, 291);
+            this.Radio_Nu.Location = new System.Drawing.Point(305, 357);
             this.Radio_Nu.Name = "Radio_Nu";
             this.Radio_Nu.Size = new System.Drawing.Size(68, 29);
             this.Radio_Nu.TabIndex = 91;
@@ -164,7 +167,7 @@
             // 
             this.Radio_Nam.AutoSize = true;
             this.Radio_Nam.Font = new System.Drawing.Font("Arial", 11F);
-            this.Radio_Nam.Location = new System.Drawing.Point(202, 291);
+            this.Radio_Nam.Location = new System.Drawing.Point(201, 357);
             this.Radio_Nam.Name = "Radio_Nam";
             this.Radio_Nam.Size = new System.Drawing.Size(83, 29);
             this.Radio_Nam.TabIndex = 90;
@@ -176,7 +179,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(43, 335);
+            this.label3.Location = new System.Drawing.Point(41, 389);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(160, 32);
             this.label3.TabIndex = 89;
@@ -198,7 +201,7 @@
             // 
             this.tb_dia_chi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_dia_chi.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_dia_chi.Location = new System.Drawing.Point(48, 470);
+            this.tb_dia_chi.Location = new System.Drawing.Point(48, 506);
             this.tb_dia_chi.Name = "tb_dia_chi";
             this.tb_dia_chi.Size = new System.Drawing.Size(414, 44);
             this.tb_dia_chi.TabIndex = 97;
@@ -207,7 +210,7 @@
             // 
             this.tb_phone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_phone.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_phone.Location = new System.Drawing.Point(48, 370);
+            this.tb_phone.Location = new System.Drawing.Point(47, 424);
             this.tb_phone.Name = "tb_phone";
             this.tb_phone.Size = new System.Drawing.Size(414, 44);
             this.tb_phone.TabIndex = 96;
@@ -216,7 +219,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(44, 417);
+            this.label4.Location = new System.Drawing.Point(42, 471);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 32);
             this.label4.TabIndex = 94;
@@ -236,7 +239,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(44, 177);
+            this.label5.Location = new System.Drawing.Point(41, 272);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 32);
             this.label5.TabIndex = 87;
@@ -248,7 +251,7 @@
             this.date_nv.CustomFormat = "dd/MM/yyyy";
             this.date_nv.Font = new System.Drawing.Font("Arial", 16F);
             this.date_nv.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_nv.Location = new System.Drawing.Point(48, 221);
+            this.date_nv.Location = new System.Drawing.Point(47, 307);
             this.date_nv.Name = "date_nv";
             this.date_nv.Size = new System.Drawing.Size(325, 44);
             this.date_nv.TabIndex = 86;
@@ -257,7 +260,7 @@
             // 
             this.tb_ten_nv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_ten_nv.Font = new System.Drawing.Font("Arial", 16F);
-            this.tb_ten_nv.Location = new System.Drawing.Point(49, 127);
+            this.tb_ten_nv.Location = new System.Drawing.Point(50, 130);
             this.tb_ten_nv.Name = "tb_ten_nv";
             this.tb_ten_nv.Size = new System.Drawing.Size(414, 44);
             this.tb_ten_nv.TabIndex = 83;
@@ -266,7 +269,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(44, 94);
+            this.label2.Location = new System.Drawing.Point(42, 95);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(167, 32);
             this.label2.TabIndex = 82;
@@ -315,6 +318,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lb_loainv_error);
+            this.groupBox1.Controls.Add(this.cb_loainv);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.lb_dia_chi_error);
             this.groupBox1.Controls.Add(this.lb_gioi_tinh_error);
             this.groupBox1.Controls.Add(this.lb_sdt_error);
@@ -405,6 +411,41 @@
             this.bunifuDragControl1.TargetControl = this.panel1;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(44, 177);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(174, 32);
+            this.label8.TabIndex = 121;
+            this.label8.Text = "Loại nhân viên";
+            // 
+            // cb_loainv
+            // 
+            this.cb_loainv.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_loainv.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_loainv.FormattingEnabled = true;
+            this.cb_loainv.Items.AddRange(new object[] {
+            "Bán hàng",
+            "Kỹ thuật"});
+            this.cb_loainv.Location = new System.Drawing.Point(48, 212);
+            this.cb_loainv.Name = "cb_loainv";
+            this.cb_loainv.Size = new System.Drawing.Size(413, 40);
+            this.cb_loainv.TabIndex = 122;
+            // 
+            // lb_loainv_error
+            // 
+            this.lb_loainv_error.Font = new System.Drawing.Font("Arial", 10F);
+            this.lb_loainv_error.ForeColor = System.Drawing.Color.Red;
+            this.lb_loainv_error.Location = new System.Drawing.Point(47, 564);
+            this.lb_loainv_error.Name = "lb_loainv_error";
+            this.lb_loainv_error.Size = new System.Drawing.Size(417, 42);
+            this.lb_loainv_error.TabIndex = 120;
+            this.lb_loainv_error.Text = "Chọn loại nhân viên";
+            this.lb_loainv_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_loainv_error.Visible = false;
+            // 
             // EditStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -461,5 +502,8 @@
         private System.Windows.Forms.Label lb_gioi_tinh_error;
         private System.Windows.Forms.Label lb_dia_chi_error;
         private System.Windows.Forms.Label lb_email_error;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cb_loainv;
+        private System.Windows.Forms.Label lb_loainv_error;
     }
 }

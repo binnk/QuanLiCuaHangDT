@@ -1,5 +1,6 @@
 ﻿using QLCH_UI.BUS;
 using QLCH_UI.DTO;
+using QLCH_UI.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +17,21 @@ namespace QLCH_UI
     {
         public AddCustomer()
         {
+            int rs = 0;
+            DataTable a = CustomersDAO.Instance.Customerslist();
+            for (int i = 0; i < a.Rows.Count; i++)
+            {
+                string k = a.Rows[i]["Mã khách hàng"].ToString();
+                int l = k.Length;
+                int tg = int.Parse(k.Substring(2, l - 2));
+                if (tg > rs) rs = tg;
+            }
+            rs++;
+            string p = "";
+            if (rs > 9) p = "KH" + rs.ToString();
+            else p = "KH" + "0" + rs.ToString();
             InitializeComponent();
+            tb_makh.Text = p;
         }
 
         private void AddCustomer_Load(object sender, EventArgs e)

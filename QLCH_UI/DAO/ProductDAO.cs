@@ -42,7 +42,7 @@ namespace QLCH_UI.DAO
             int result = 0;
             try
             {
-                string query = string.Format("delete from san_pham where masp= '{0}'", ID);
+                string query = string.Format("update san_pham set ton_tai = 0 where masp= '{0}'", ID);
                 result = ConnectSQL.Instance.ExecuteNonQuery(query);
             }
             catch (Exception ex)
@@ -96,7 +96,7 @@ namespace QLCH_UI.DAO
             int result = 0;
             try
             {
-                string query = string.Format("insert into san_pham(img,masp,ten_sp,loai_sp,so_luong,gia_nhap,gia_ban) values ('{0}','{1}',N'{2}',N'{3}','{4}','{5}','{6}')",a.Anh, a.Masp, a.Ten_sp, a.Loai_sp, a.So_luong, a.Gia_nhap, a.Gia_ban);
+                string query = string.Format("insert into san_pham(img,masp,ten_sp,loai_sp,so_luong,gia_nhap,gia_ban,ton_tai) values ('{0}','{1}',N'{2}',N'{3}','{4}','{5}','{6}','{7}')",a.Anh, a.Masp, a.Ten_sp, a.Loai_sp, a.So_luong, a.Gia_nhap, a.Gia_ban,a.Ton_tai);
                 result = ConnectSQL.Instance.ExecuteNonQuery(query);
             }
             catch (Exception ex)
@@ -106,6 +106,17 @@ namespace QLCH_UI.DAO
             if (result == 0) return (false);
             else return (true);
         }
-      
+        public DataTable search_product_by_name(string ten_sp)
+        {
+            string query = string.Format("select * from san_pham where dbo.fuConvertToUnsign1(ten_sp) like N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", ten_sp);
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
+        public DataTable search_product_by_masp(string masp)
+        {
+            string query = string.Format("select * from san_pham where dbo.fuConvertToUnsign1(masp) like N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", masp);
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
     }
 }

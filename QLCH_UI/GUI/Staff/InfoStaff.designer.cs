@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lb_gioitinh));
-            this.label12 = new System.Windows.Forms.Label();
+            this.lb_diachi = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.lb_gioi_tinh = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -50,25 +50,27 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.lb_email = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lb_loainv = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.icExit)).BeginInit();
             this.SuspendLayout();
             // 
-            // label12
+            // lb_diachi
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label12.Location = new System.Drawing.Point(243, 480);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 30);
-            this.label12.TabIndex = 120;
-            this.label12.Text = "địa chỉ";
+            this.lb_diachi.AutoSize = true;
+            this.lb_diachi.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_diachi.Location = new System.Drawing.Point(240, 554);
+            this.lb_diachi.Name = "lb_diachi";
+            this.lb_diachi.Size = new System.Drawing.Size(75, 30);
+            this.lb_diachi.TabIndex = 120;
+            this.lb_diachi.Text = "địa chỉ";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(36, 478);
+            this.label13.Location = new System.Drawing.Point(37, 554);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(89, 32);
             this.label13.TabIndex = 119;
@@ -78,7 +80,7 @@
             // 
             this.lb_gioi_tinh.AutoSize = true;
             this.lb_gioi_tinh.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lb_gioi_tinh.Location = new System.Drawing.Point(243, 337);
+            this.lb_gioi_tinh.Location = new System.Drawing.Point(240, 416);
             this.lb_gioi_tinh.Name = "lb_gioi_tinh";
             this.lb_gioi_tinh.Size = new System.Drawing.Size(91, 30);
             this.lb_gioi_tinh.TabIndex = 118;
@@ -88,7 +90,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(33, 335);
+            this.label11.Location = new System.Drawing.Point(33, 414);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(109, 32);
             this.label11.TabIndex = 117;
@@ -153,7 +155,7 @@
             // 
             this.lb_sdt.AutoSize = true;
             this.lb_sdt.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lb_sdt.Location = new System.Drawing.Point(243, 411);
+            this.lb_sdt.Location = new System.Drawing.Point(240, 486);
             this.lb_sdt.Name = "lb_sdt";
             this.lb_sdt.Size = new System.Drawing.Size(137, 30);
             this.lb_sdt.TabIndex = 116;
@@ -163,7 +165,7 @@
             // 
             this.lb_ngaysinh.AutoSize = true;
             this.lb_ngaysinh.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lb_ngaysinh.Location = new System.Drawing.Point(243, 274);
+            this.lb_ngaysinh.Location = new System.Drawing.Point(240, 344);
             this.lb_ngaysinh.Name = "lb_ngaysinh";
             this.lb_ngaysinh.Size = new System.Drawing.Size(104, 30);
             this.lb_ngaysinh.TabIndex = 115;
@@ -183,7 +185,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 409);
+            this.label4.Location = new System.Drawing.Point(33, 484);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(160, 32);
             this.label4.TabIndex = 112;
@@ -203,7 +205,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(36, 272);
+            this.label3.Location = new System.Drawing.Point(33, 344);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 32);
             this.label3.TabIndex = 111;
@@ -259,17 +261,40 @@
             this.lb_email.TabIndex = 127;
             this.lb_email.Text = "email";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(33, 274);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(174, 32);
+            this.label5.TabIndex = 128;
+            this.label5.Text = "Loại nhân viên";
+            // 
+            // lb_loainv
+            // 
+            this.lb_loainv.AutoSize = true;
+            this.lb_loainv.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_loainv.Location = new System.Drawing.Point(239, 276);
+            this.lb_loainv.Name = "lb_loainv";
+            this.lb_loainv.Size = new System.Drawing.Size(146, 30);
+            this.lb_loainv.TabIndex = 129;
+            this.lb_loainv.Text = "loại nhân viên";
+            this.lb_loainv.Click += new System.EventHandler(this.lb_loainv_Click);
+            // 
             // lb_gioitinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1093, 621);
+            this.Controls.Add(this.lb_loainv);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.lb_email);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.lb_taikhoan);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.lb_diachi);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.lb_gioi_tinh);
             this.Controls.Add(this.label11);
@@ -295,7 +320,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lb_diachi;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label lb_gioi_tinh;
         private System.Windows.Forms.Label label11;
@@ -315,5 +340,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lb_email;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lb_loainv;
     }
 }

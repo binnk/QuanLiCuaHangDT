@@ -100,6 +100,12 @@
     <Compile Include="DAO\BaocaoDAO.cs" />
     <Compile Include="DAO\HoadonDAO.cs" />
     <Compile Include="DAO\Suachua.cs" />
+    <Compile Include="GUI\product\EditImportProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\product\EditImportProduct.Designer.cs">
+      <DependentUpon>EditImportProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\HoaDon\CTHDForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -334,6 +340,9 @@
     <Compile Include="GUI\Manage\WareHouseManagentForm.designer.cs">
       <DependentUpon>WareHouseManagentForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\product\EditImportProduct.resx">
+      <DependentUpon>EditImportProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\HoaDon\CTHDForm.resx">
       <DependentUpon>CTHDForm.cs</DependentUpon>
     </EmbeddedResource>
