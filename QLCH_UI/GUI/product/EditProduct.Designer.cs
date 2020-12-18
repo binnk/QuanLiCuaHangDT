@@ -116,6 +116,8 @@
             this.cb_loaisp.Items.AddRange(new object[] {
             "Laptop",
             "Điện thoại",
+            "Linh kiện",
+            "Phụ kiện",
             "Khác"});
             this.cb_loaisp.Location = new System.Drawing.Point(50, 211);
             this.cb_loaisp.Name = "cb_loaisp";

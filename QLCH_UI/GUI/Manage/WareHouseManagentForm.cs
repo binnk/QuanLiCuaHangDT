@@ -36,7 +36,8 @@ namespace QLCH_UI
                 double giaban = double.Parse(a.Rows[i]["gia_ban"].ToString());
                 string gia_ban = Convert.ToDouble(giaban).ToString("#,##0");
                 Image imgg = ProductBUS.Instance.ByteToImg(img);
-                dgvProducts.Rows.Add(imgg, masp, tensp, loai, soluong, gia_nhap, gia_ban);
+                int ton_tai = int.Parse(a.Rows[i]["ton_tai"].ToString());
+                if (ton_tai==1) dgvProducts.Rows.Add(imgg, masp, tensp, loai, soluong, gia_nhap, gia_ban);
             }
         }
 

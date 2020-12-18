@@ -36,7 +36,8 @@ namespace QLCH_UI
                 string masp = a.Rows[i]["masp"].ToString();
                 string tensp = a.Rows[i]["ten_sp"].ToString();
                 string soluong = a.Rows[i]["so_luong"].ToString();
-                dgvProducts.Rows.Add(ProductBUS.Instance.ByteToImg(anh), masp, tensp, soluong);
+                int ton_tai = int.Parse(a.Rows[i]["ton_tai"].ToString());
+                if (ton_tai == 1) dgvProducts.Rows.Add(ProductBUS.Instance.ByteToImg(anh), masp, tensp, soluong);
             }
         }
         private void btnAddProduct_Click(object sender, EventArgs e)
@@ -140,7 +141,8 @@ namespace QLCH_UI
                     string masp = a.Rows[i]["masp"].ToString();
                     string tensp = a.Rows[i]["ten_sp"].ToString();
                     string soluong = a.Rows[i]["so_luong"].ToString();
-                    dgvProducts.Rows.Add(img,masp,tensp,soluong);
+                    int ton_tai = int.Parse(a.Rows[i]["ton_tai"].ToString());
+                    if (ton_tai == 1) dgvProducts.Rows.Add(img,masp,tensp,soluong);
                 }
                 for (int i = 0; i < b.Rows.Count; i++)
                 {
@@ -148,7 +150,8 @@ namespace QLCH_UI
                     string masp = b.Rows[i]["masp"].ToString();
                     string tensp = b.Rows[i]["ten_sp"].ToString();
                     string soluong = b.Rows[i]["so_luong"].ToString();
-                    dgvProducts.Rows.Add(img,masp, tensp, soluong);
+                    int ton_tai = int.Parse(b.Rows[i]["ton_tai"].ToString());
+                    if (ton_tai == 1)dgvProducts.Rows.Add(img,masp, tensp, soluong);
                 }
             }    
         }

@@ -48,6 +48,8 @@ namespace QLCH_UI.BUS
      
         public bool kiemtra(int soluong, string masp)
         {
+            DataTable c = ProductDAO.Instance.viewinfo(masp);
+            if (int.Parse(c.Rows[0]["ton_tai"].ToString()) == 0) return (true);
             DataTable a = ProductDAO.Instance.viewinfo(masp);
             if (a.Rows.Count > 0)
             {
@@ -64,6 +66,8 @@ namespace QLCH_UI.BUS
         }
             public bool kt_sl(int soluong,string masp)
             {
+                DataTable c = ProductDAO.Instance.viewinfo(masp);
+                if (int.Parse(c.Rows[0]["ton_tai"].ToString()) == 0) return (false);
                 DataTable a = ProductDAO.Instance.viewinfo(masp);
                 if (a.Rows.Count > 0)
                 {
@@ -80,6 +84,8 @@ namespace QLCH_UI.BUS
             }
         public bool edit(WarehouseDTO a)
         {
+            DataTable c = ProductDAO.Instance.viewinfo(a.Masp);
+            if (int.Parse(c.Rows[0]["ton_tai"].ToString()) == 0) return (false);
             if (WarehouseDAO.Instance.edit(a) && WarehouseDAO.Instance.update_ton_kho(a.Masp, sl_tonkho)) return (true);
             return (false);
         }
