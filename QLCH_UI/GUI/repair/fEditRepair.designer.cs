@@ -263,7 +263,7 @@
             this.gunaButton2.ForeColor = System.Drawing.Color.White;
             this.gunaButton2.Image = null;
             this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(172, 487);
+            this.gunaButton2.Location = new System.Drawing.Point(193, 487);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -282,7 +282,7 @@
             this.gunaLabel9.AutoSize = true;
             this.gunaLabel9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.gunaLabel9.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel9.Location = new System.Drawing.Point(12, 487);
+            this.gunaLabel9.Location = new System.Drawing.Point(45, 492);
             this.gunaLabel9.Name = "gunaLabel9";
             this.gunaLabel9.Size = new System.Drawing.Size(54, 32);
             this.gunaLabel9.TabIndex = 9;
@@ -293,7 +293,7 @@
             this.lb_MD.AutoSize = true;
             this.lb_MD.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.lb_MD.ForeColor = System.Drawing.Color.DimGray;
-            this.lb_MD.Location = new System.Drawing.Point(69, 487);
+            this.lb_MD.Location = new System.Drawing.Point(102, 494);
             this.lb_MD.Name = "lb_MD";
             this.lb_MD.Size = new System.Drawing.Size(46, 30);
             this.lb_MD.TabIndex = 10;

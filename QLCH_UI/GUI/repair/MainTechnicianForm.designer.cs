@@ -230,6 +230,7 @@
             this.btnTongQuan.Size = new System.Drawing.Size(180, 64);
             this.btnTongQuan.TabIndex = 4;
             this.btnTongQuan.Text = "Tổng quan";
+            this.btnTongQuan.Click += new System.EventHandler(this.btnTongQuan_Click);
             // 
             // bunifuElipse1
             // 

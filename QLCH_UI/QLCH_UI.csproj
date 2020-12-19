@@ -100,6 +100,24 @@
     <Compile Include="DAO\BaocaoDAO.cs" />
     <Compile Include="DAO\HoadonDAO.cs" />
     <Compile Include="DAO\Suachua.cs" />
+    <Compile Include="GUI\Sale\fReviewSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Sale\fReviewSale.Designer.cs">
+      <DependentUpon>fReviewSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\repair\fReviewTech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\repair\fReviewTech.Designer.cs">
+      <DependentUpon>fReviewTech.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Customer\fViewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Customer\fViewCustomer.Designer.cs">
+      <DependentUpon>fViewCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\product\EditImportProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -313,6 +331,12 @@
     <Compile Include="GUI\Manage\ImportManagementForm.designer.cs">
       <DependentUpon>ImportManagementForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Sale\MainSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Sale\MainSaleForm.Designer.cs">
+      <DependentUpon>MainSaleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GUI\RegisterForm.cs">
@@ -340,6 +364,21 @@
     <Compile Include="GUI\Manage\WareHouseManagentForm.designer.cs">
       <DependentUpon>WareHouseManagentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Customer\UC_ItemCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Customer\UC_ItemCustomer.Designer.cs">
+      <DependentUpon>UC_ItemCustomer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\Sale\fReviewSale.resx">
+      <DependentUpon>fReviewSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\repair\fReviewTech.resx">
+      <DependentUpon>fReviewTech.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Customer\fViewCustomer.resx">
+      <DependentUpon>fViewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\product\EditImportProduct.resx">
       <DependentUpon>EditImportProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -437,6 +476,9 @@
     <EmbeddedResource Include="GUI\Manage\ImportManagementForm.resx">
       <DependentUpon>ImportManagementForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Sale\MainSaleForm.resx">
+      <DependentUpon>MainSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -458,6 +500,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Customer\UC_ItemCustomer.resx">
+      <DependentUpon>UC_ItemCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DAO\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>

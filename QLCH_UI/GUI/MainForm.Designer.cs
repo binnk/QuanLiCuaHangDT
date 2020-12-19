@@ -411,7 +411,6 @@
             this.btnOrders.Size = new System.Drawing.Size(258, 60);
             this.btnOrders.TabIndex = 2;
             this.btnOrders.Text = "  Bán hàng";
-            this.btnOrders.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOrders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOrders.UseVisualStyleBackColor = true;
             this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
