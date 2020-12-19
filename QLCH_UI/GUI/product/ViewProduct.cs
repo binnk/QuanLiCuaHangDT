@@ -30,11 +30,11 @@ namespace QLCH_UI
 
         public void loadProduct()
         {
-            UC_ItemProduct uc = new UC_ItemProduct();
-            UC_ItemProduct u1 = new UC_ItemProduct();
-            UC_ItemProduct u2 = new UC_ItemProduct();
-            UC_ItemProduct u3 = new UC_ItemProduct();
-            UC_ItemProduct u4 = new UC_ItemProduct();
+            UC_ItemViewProduct uc = new UC_ItemViewProduct();
+            UC_ItemViewProduct u1 = new UC_ItemViewProduct();
+            UC_ItemViewProduct u2 = new UC_ItemViewProduct();
+            UC_ItemViewProduct u3 = new UC_ItemViewProduct();
+            UC_ItemViewProduct u4 = new UC_ItemViewProduct();
 
             this.flowLayoutPanel1.Controls.Add(uc);
             this.flowLayoutPanel1.Controls.Add(u1);

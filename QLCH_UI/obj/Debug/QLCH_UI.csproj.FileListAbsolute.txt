@@ -531,3 +531,13 @@ C:\Users\phamt\Desktop\19.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fViewCust
 C:\Users\phamt\Desktop\19.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.MainSaleForm.resources
 C:\Users\phamt\Desktop\19.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemCustomer.resources
 C:\Users\phamt\Desktop\19.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fReviewSale.resources
+C:\Users\phamt\Desktop\19.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fProduct.resources
+C:\Users\phamt\Desktop\19.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemViewProduct.resources
+C:\Users\phamt\Desktop\19.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fOrder.resources
+C:\Users\phamt\Desktop\19.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemOrder.resources
+C:\Users\phamt\Desktop\19.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fStaff.resources
+C:\Users\phamt\Desktop\19.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemStaff.resources
+C:\Users\phamt\Desktop\19.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fManageWH.resources
+C:\Users\phamt\Desktop\19.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_itemManageWH.resources
+C:\Users\phamt\Desktop\19.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fImportManage.resources
+C:\Users\phamt\Desktop\19.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemImport.resources

@@ -32,8 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnProducts = new FontAwesome.Sharp.IconButton();
-            this.iconTitleBox = new FontAwesome.Sharp.IconPictureBox();
-            this.lbTitle = new System.Windows.Forms.Label();
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.btnMinimize = new FontAwesome.Sharp.IconButton();
             this.btnMaximize = new FontAwesome.Sharp.IconButton();
@@ -50,13 +48,10 @@
             this.btnOrders = new FontAwesome.Sharp.IconButton();
             this.iconBtnHome = new FontAwesome.Sharp.IconButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelChildForm = new Bunifu.Framework.UI.BunifuGradientPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.iconTitleBox)).BeginInit();
             this.panelTitle.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelManage.SuspendLayout();
-            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -93,35 +88,10 @@
             this.btnProducts.UseVisualStyleBackColor = true;
             this.btnProducts.Click += new System.EventHandler(this.btnProduct_Click);
             // 
-            // iconTitleBox
-            // 
-            this.iconTitleBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
-            this.iconTitleBox.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.iconTitleBox.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconTitleBox.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.iconTitleBox.IconSize = 53;
-            this.iconTitleBox.Location = new System.Drawing.Point(6, 29);
-            this.iconTitleBox.Name = "iconTitleBox";
-            this.iconTitleBox.Size = new System.Drawing.Size(57, 53);
-            this.iconTitleBox.TabIndex = 7;
-            this.iconTitleBox.TabStop = false;
-            this.iconTitleBox.Click += new System.EventHandler(this.iconTitleBox_Click);
-            // 
-            // lbTitle
-            // 
-            this.lbTitle.AutoSize = true;
-            this.lbTitle.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitle.ForeColor = System.Drawing.Color.White;
-            this.lbTitle.Location = new System.Drawing.Point(69, 43);
-            this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(73, 23);
-            this.lbTitle.TabIndex = 8;
-            this.lbTitle.Text = "  Home";
-            // 
             // btnExit
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
+            this.btnExit.BackColor = System.Drawing.Color.White;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -130,7 +100,7 @@
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Times;
             this.btnExit.IconColor = System.Drawing.SystemColors.GrayText;
             this.btnExit.IconSize = 20;
-            this.btnExit.Location = new System.Drawing.Point(956, 3);
+            this.btnExit.Location = new System.Drawing.Point(1561, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.Rotation = 0D;
             this.btnExit.Size = new System.Drawing.Size(24, 24);
@@ -141,7 +111,7 @@
             // btnMinimize
             // 
             this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
+            this.btnMinimize.BackColor = System.Drawing.Color.White;
             this.btnMinimize.FlatAppearance.BorderSize = 0;
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -150,7 +120,7 @@
             this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
             this.btnMinimize.IconColor = System.Drawing.SystemColors.GrayText;
             this.btnMinimize.IconSize = 20;
-            this.btnMinimize.Location = new System.Drawing.Point(910, 1);
+            this.btnMinimize.Location = new System.Drawing.Point(1515, 1);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Rotation = 0D;
             this.btnMinimize.Size = new System.Drawing.Size(24, 24);
@@ -161,7 +131,7 @@
             // btnMaximize
             // 
             this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
+            this.btnMaximize.BackColor = System.Drawing.Color.White;
             this.btnMaximize.FlatAppearance.BorderSize = 0;
             this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximize.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -170,7 +140,7 @@
             this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
             this.btnMaximize.IconColor = System.Drawing.SystemColors.GrayText;
             this.btnMaximize.IconSize = 20;
-            this.btnMaximize.Location = new System.Drawing.Point(934, 2);
+            this.btnMaximize.Location = new System.Drawing.Point(1539, 2);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Rotation = 0D;
             this.btnMaximize.Size = new System.Drawing.Size(24, 24);
@@ -180,16 +150,14 @@
             // 
             // panelTitle
             // 
-            this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
-            this.panelTitle.Controls.Add(this.iconTitleBox);
+            this.panelTitle.BackColor = System.Drawing.Color.White;
             this.panelTitle.Controls.Add(this.btnMaximize);
             this.panelTitle.Controls.Add(this.btnMinimize);
             this.panelTitle.Controls.Add(this.btnExit);
-            this.panelTitle.Controls.Add(this.lbTitle);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle.Location = new System.Drawing.Point(258, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(988, 104);
+            this.panelTitle.Size = new System.Drawing.Size(1593, 73);
             this.panelTitle.TabIndex = 1;
             this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
@@ -444,67 +412,43 @@
             this.bunifuElipse1.ElipseRadius = 7;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // bunifuGradientPanel1
-            // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.panelChildForm);
-            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(258, 104);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(988, 749);
-            this.bunifuGradientPanel1.TabIndex = 3;
-            this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
-            // 
             // panelChildForm
             // 
-            this.panelChildForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelChildForm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelChildForm.BackgroundImage")));
             this.panelChildForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelChildForm.GradientBottomLeft = System.Drawing.Color.White;
-            this.panelChildForm.GradientBottomRight = System.Drawing.Color.White;
-            this.panelChildForm.GradientTopLeft = System.Drawing.Color.White;
-            this.panelChildForm.GradientTopRight = System.Drawing.Color.White;
-            this.panelChildForm.Location = new System.Drawing.Point(29, 19);
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
+            this.panelChildForm.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
+            this.panelChildForm.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
+            this.panelChildForm.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
+            this.panelChildForm.Location = new System.Drawing.Point(258, 73);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Quality = 10;
-            this.panelChildForm.Size = new System.Drawing.Size(929, 677);
-            this.panelChildForm.TabIndex = 4;
+            this.panelChildForm.Size = new System.Drawing.Size(1593, 780);
+            this.panelChildForm.TabIndex = 3;
+            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1246, 853);
-            this.Controls.Add(this.bunifuGradientPanel1);
+            this.ClientSize = new System.Drawing.Size(1851, 853);
+            this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Shown += new System.EventHandler(this.MainForm_Shown);
-            ((System.ComponentModel.ISupportInitialize)(this.iconTitleBox)).EndInit();
             this.panelTitle.ResumeLayout(false);
-            this.panelTitle.PerformLayout();
             this.panelMenu.ResumeLayout(false);
             this.panelManage.ResumeLayout(false);
-            this.bunifuGradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconPictureBox iconTitleBox;
-        private System.Windows.Forms.Label lbTitle;
         private FontAwesome.Sharp.IconButton btnExit;
         private FontAwesome.Sharp.IconButton btnMinimize;
         private FontAwesome.Sharp.IconButton btnMaximize;
@@ -521,7 +465,6 @@
         private FontAwesome.Sharp.IconButton itemWareHouseManage;
         private FontAwesome.Sharp.IconButton itemEmployeeManage;
         private FontAwesome.Sharp.IconButton btnReport;
-        private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuGradientPanel panelChildForm;
         private FontAwesome.Sharp.IconButton iconButton1;
     }

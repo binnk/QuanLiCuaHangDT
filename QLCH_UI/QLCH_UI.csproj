@@ -100,6 +100,36 @@
     <Compile Include="DAO\BaocaoDAO.cs" />
     <Compile Include="DAO\HoadonDAO.cs" />
     <Compile Include="DAO\Suachua.cs" />
+    <Compile Include="fImportManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fImportManage.Designer.cs">
+      <DependentUpon>fImportManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\newGUI\fManageWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\newGUI\fManageWH.Designer.cs">
+      <DependentUpon>fManageWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\newGUI\fOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\newGUI\fOrder.Designer.cs">
+      <DependentUpon>fOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\newGUI\fProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\newGUI\fProduct.Designer.cs">
+      <DependentUpon>fProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\newGUI\fStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\newGUI\fStaff.Designer.cs">
+      <DependentUpon>fStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Sale\fReviewSale.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,10 +142,10 @@
     <Compile Include="GUI\repair\fReviewTech.Designer.cs">
       <DependentUpon>fReviewTech.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Customer\fViewCustomer.cs">
+    <Compile Include="GUI\newGUI\fViewCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Customer\fViewCustomer.Designer.cs">
+    <Compile Include="GUI\newGUI\fViewCustomer.Designer.cs">
       <DependentUpon>fViewCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\product\EditImportProduct.cs">
@@ -139,11 +169,11 @@
     <Compile Include="DAO\Mail.cs" />
     <Compile Include="DAO\StaffDAO.cs" />
     <Compile Include="DTO\StaffDTO.cs" />
-    <Compile Include="GUI\product\UC_ItemProduct.cs">
+    <Compile Include="GUI\product\UC_ItemViewProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\product\UC_ItemProduct.designer.cs">
-      <DependentUpon>UC_ItemProduct.cs</DependentUpon>
+    <Compile Include="GUI\product\UC_ItemViewProduct.designer.cs">
+      <DependentUpon>UC_ItemViewProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\product\ViewProduct.cs">
       <SubType>Form</SubType>
@@ -364,19 +394,64 @@
     <Compile Include="GUI\Manage\WareHouseManagentForm.designer.cs">
       <DependentUpon>WareHouseManagentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Customer\UC_ItemCustomer.cs">
+    <Compile Include="GUI\newGUI\UC_ItemCustomer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\Customer\UC_ItemCustomer.Designer.cs">
+    <Compile Include="GUI\newGUI\UC_ItemCustomer.Designer.cs">
       <DependentUpon>UC_ItemCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\newGUI\UC_ItemOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\newGUI\UC_ItemOrder.Designer.cs">
+      <DependentUpon>UC_ItemOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\newGUI\UC_ItemProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\newGUI\UC_ItemProduct.Designer.cs">
+      <DependentUpon>UC_ItemProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\newGUI\UC_ItemStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\newGUI\UC_ItemStaff.Designer.cs">
+      <DependentUpon>UC_ItemStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\newGUI\UC_itemManageWH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\newGUI\UC_itemManageWH.Designer.cs">
+      <DependentUpon>UC_itemManageWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ItemImport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ItemImport.Designer.cs">
+      <DependentUpon>UC_ItemImport.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fImportManage.resx">
+      <DependentUpon>fImportManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\newGUI\fManageWH.resx">
+      <DependentUpon>fManageWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\newGUI\fOrder.resx">
+      <DependentUpon>fOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\newGUI\fProduct.resx">
+      <DependentUpon>fProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\newGUI\fStaff.resx">
+      <DependentUpon>fStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Sale\fReviewSale.resx">
       <DependentUpon>fReviewSale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\repair\fReviewTech.resx">
       <DependentUpon>fReviewTech.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Customer\fViewCustomer.resx">
+    <EmbeddedResource Include="GUI\newGUI\fViewCustomer.resx">
       <DependentUpon>fViewCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\product\EditImportProduct.resx">
@@ -385,8 +460,8 @@
     <EmbeddedResource Include="GUI\HoaDon\CTHDForm.resx">
       <DependentUpon>CTHDForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\product\UC_ItemProduct.resx">
-      <DependentUpon>UC_ItemProduct.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\product\UC_ItemViewProduct.resx">
+      <DependentUpon>UC_ItemViewProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\product\ViewProduct.resx">
       <DependentUpon>ViewProduct.cs</DependentUpon>
@@ -501,8 +576,23 @@
     <EmbeddedResource Include="GUI\ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Customer\UC_ItemCustomer.resx">
+    <EmbeddedResource Include="GUI\newGUI\UC_ItemCustomer.resx">
       <DependentUpon>UC_ItemCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\newGUI\UC_ItemOrder.resx">
+      <DependentUpon>UC_ItemOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\newGUI\UC_ItemProduct.resx">
+      <DependentUpon>UC_ItemProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\newGUI\UC_ItemStaff.resx">
+      <DependentUpon>UC_ItemStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\newGUI\UC_itemManageWH.resx">
+      <DependentUpon>UC_itemManageWH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ItemImport.resx">
+      <DependentUpon>UC_ItemImport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DAO\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>

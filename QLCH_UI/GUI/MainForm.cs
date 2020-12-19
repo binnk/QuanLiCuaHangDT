@@ -82,10 +82,6 @@ namespace QLCH_UI
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
 
-                iconTitleBox.IconChar = currentBtn.IconChar;
-                iconTitleBox.IconColor = color;
-
-                lbTitle.Text = currentBtn.Text;
 
                 //panelTitle.BackColor = color;
                 //btnExit.BackColor = color;
@@ -115,9 +111,7 @@ namespace QLCH_UI
         {
             DisableButton();
             leftBorderBtn.Visible = false;
-            iconTitleBox.IconChar = IconChar.Home;
-            iconTitleBox.IconColor = RGBColors.color8;
-            lbTitle.Text = "Home";
+
         }
 
      
@@ -145,13 +139,13 @@ namespace QLCH_UI
         private void btnCartP_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            openChildForm(new OrdersForm());
+            openChildForm(new fOrder());
         }
         private void btnProduct_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
             //dgvProducts.BringToFront();
-            openChildForm(new ProductsForm());
+            openChildForm(new fProduct());
 
 
         }
@@ -172,13 +166,13 @@ namespace QLCH_UI
 
         private void itemEmployeeManage_Click(object sender, EventArgs e)
         {
-            openChildForm(new StaffsForm());
+            openChildForm(new fStaff());
         }
 
         private void btnCustomers_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            openChildForm(new CustomersForm());
+            openChildForm(new fViewCustomer());
         }
 
         private void btnReport_Click(object sender, EventArgs e)
@@ -338,13 +332,13 @@ namespace QLCH_UI
 
         private void itemWareHouseManage_Click(object sender, EventArgs e)
         {
-            openChildForm(new WareHouseManagentForm());
+            openChildForm(new fManageWH());
 
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            openChildForm(new ImportManagementForm());
+            openChildForm(new fImportManage());
         }
     }
 }
