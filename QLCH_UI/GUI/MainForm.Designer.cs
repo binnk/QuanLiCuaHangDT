@@ -49,6 +49,10 @@
             this.iconBtnHome = new FontAwesome.Sharp.IconButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelChildForm = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.panelTitle.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelManage.SuspendLayout();
@@ -151,6 +155,10 @@
             // panelTitle
             // 
             this.panelTitle.BackColor = System.Drawing.Color.White;
+            this.panelTitle.Controls.Add(this.gunaLabel3);
+            this.panelTitle.Controls.Add(this.gunaLabel2);
+            this.panelTitle.Controls.Add(this.gunaLabel1);
+            this.panelTitle.Controls.Add(this.gunaLabel4);
             this.panelTitle.Controls.Add(this.btnMaximize);
             this.panelTitle.Controls.Add(this.btnMinimize);
             this.panelTitle.Controls.Add(this.btnExit);
@@ -428,6 +436,50 @@
             this.panelChildForm.TabIndex = 3;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
             // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
+            this.gunaLabel4.Location = new System.Drawing.Point(526, 8);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(60, 30);
+            this.gunaLabel4.TabIndex = 12;
+            this.gunaLabel4.Text = "User";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.DimGray;
+            this.gunaLabel1.Location = new System.Drawing.Point(627, 9);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(170, 28);
+            this.gunaLabel1.TabIndex = 13;
+            this.gunaLabel1.Text = "Phạm Tấn khang";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
+            this.gunaLabel2.Location = new System.Drawing.Point(529, 38);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(36, 30);
+            this.gunaLabel2.TabIndex = 14;
+            this.gunaLabel2.Text = "ID";
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel3.ForeColor = System.Drawing.Color.DimGray;
+            this.gunaLabel3.Location = new System.Drawing.Point(628, 39);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(65, 28);
+            this.gunaLabel3.TabIndex = 15;
+            this.gunaLabel3.Text = "NV01";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -441,6 +493,7 @@
             this.Text = "Form1";
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.panelTitle.ResumeLayout(false);
+            this.panelTitle.PerformLayout();
             this.panelMenu.ResumeLayout(false);
             this.panelManage.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -467,6 +520,10 @@
         private FontAwesome.Sharp.IconButton btnReport;
         private Bunifu.Framework.UI.BunifuGradientPanel panelChildForm;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel4;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
     }
 }
 

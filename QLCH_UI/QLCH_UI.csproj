@@ -100,10 +100,10 @@
     <Compile Include="DAO\BaocaoDAO.cs" />
     <Compile Include="DAO\HoadonDAO.cs" />
     <Compile Include="DAO\Suachua.cs" />
-    <Compile Include="fImportManage.cs">
+    <Compile Include="GUI\newGUI\fImportManage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fImportManage.Designer.cs">
+    <Compile Include="GUI\newGUI\fImportManage.Designer.cs">
       <DependentUpon>fImportManage.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\newGUI\fManageWH.cs">
@@ -424,13 +424,13 @@
     <Compile Include="GUI\newGUI\UC_itemManageWH.Designer.cs">
       <DependentUpon>UC_itemManageWH.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_ItemImport.cs">
+    <Compile Include="GUI\newGUI\UC_ItemImport.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_ItemImport.Designer.cs">
+    <Compile Include="GUI\newGUI\UC_ItemImport.Designer.cs">
       <DependentUpon>UC_ItemImport.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="fImportManage.resx">
+    <EmbeddedResource Include="GUI\newGUI\fImportManage.resx">
       <DependentUpon>fImportManage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\newGUI\fManageWH.resx">
@@ -591,7 +591,7 @@
     <EmbeddedResource Include="GUI\newGUI\UC_itemManageWH.resx">
       <DependentUpon>UC_itemManageWH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_ItemImport.resx">
+    <EmbeddedResource Include="GUI\newGUI\UC_ItemImport.resx">
       <DependentUpon>UC_ItemImport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DAO\DataSet1.xsc">

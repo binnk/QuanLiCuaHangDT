@@ -30,22 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainSaleForm));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.btnKhachHang = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnSanPham = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnBanHang = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnTongQuan = new Guna.UI.WinForms.GunaAdvenceButton();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelChildForm = new System.Windows.Forms.Panel();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.btnMaximize = new FontAwesome.Sharp.IconButton();
             this.btnMinimize = new FontAwesome.Sharp.IconButton();
             this.btnExit = new FontAwesome.Sharp.IconButton();
-            this.panelChildForm = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnKhachHang = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnSanPham = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnTongQuan = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnBanHang = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
@@ -63,139 +67,6 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1851, 853);
             this.bunifuGradientPanel1.TabIndex = 5;
-            // 
-            // btnKhachHang
-            // 
-            this.btnKhachHang.AnimationHoverSpeed = 0.07F;
-            this.btnKhachHang.AnimationSpeed = 0.03F;
-            this.btnKhachHang.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
-            this.btnKhachHang.BorderColor = System.Drawing.Color.Black;
-            this.btnKhachHang.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnKhachHang.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnKhachHang.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnKhachHang.CheckedForeColor = System.Drawing.Color.White;
-            this.btnKhachHang.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnKhachHang.CheckedImage")));
-            this.btnKhachHang.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnKhachHang.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnKhachHang.FocusedColor = System.Drawing.Color.Empty;
-            this.btnKhachHang.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.btnKhachHang.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("btnKhachHang.Image")));
-            this.btnKhachHang.ImageOffsetX = 4;
-            this.btnKhachHang.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnKhachHang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnKhachHang.Location = new System.Drawing.Point(40, 455);
-            this.btnKhachHang.Name = "btnKhachHang";
-            this.btnKhachHang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnKhachHang.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnKhachHang.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnKhachHang.OnHoverImage = null;
-            this.btnKhachHang.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnKhachHang.OnPressedColor = System.Drawing.Color.Black;
-            this.btnKhachHang.Size = new System.Drawing.Size(180, 64);
-            this.btnKhachHang.TabIndex = 9;
-            this.btnKhachHang.Text = "Khách hàng";
-            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
-            // 
-            // btnSanPham
-            // 
-            this.btnSanPham.AnimationHoverSpeed = 0.07F;
-            this.btnSanPham.AnimationSpeed = 0.03F;
-            this.btnSanPham.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
-            this.btnSanPham.BorderColor = System.Drawing.Color.Black;
-            this.btnSanPham.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnSanPham.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnSanPham.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnSanPham.CheckedForeColor = System.Drawing.Color.White;
-            this.btnSanPham.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnSanPham.CheckedImage")));
-            this.btnSanPham.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnSanPham.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnSanPham.FocusedColor = System.Drawing.Color.Empty;
-            this.btnSanPham.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.btnSanPham.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btnSanPham.Image")));
-            this.btnSanPham.ImageOffsetX = 4;
-            this.btnSanPham.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSanPham.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnSanPham.Location = new System.Drawing.Point(40, 369);
-            this.btnSanPham.Name = "btnSanPham";
-            this.btnSanPham.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnSanPham.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnSanPham.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnSanPham.OnHoverImage = null;
-            this.btnSanPham.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnSanPham.OnPressedColor = System.Drawing.Color.Black;
-            this.btnSanPham.Size = new System.Drawing.Size(180, 64);
-            this.btnSanPham.TabIndex = 8;
-            this.btnSanPham.Text = "Sản phẩm";
-            this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
-            // 
-            // btnBanHang
-            // 
-            this.btnBanHang.AnimationHoverSpeed = 0.07F;
-            this.btnBanHang.AnimationSpeed = 0.03F;
-            this.btnBanHang.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
-            this.btnBanHang.BorderColor = System.Drawing.Color.Black;
-            this.btnBanHang.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnBanHang.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnBanHang.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnBanHang.CheckedForeColor = System.Drawing.Color.White;
-            this.btnBanHang.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnBanHang.CheckedImage")));
-            this.btnBanHang.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnBanHang.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnBanHang.FocusedColor = System.Drawing.Color.Empty;
-            this.btnBanHang.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.btnBanHang.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnBanHang.Image = ((System.Drawing.Image)(resources.GetObject("btnBanHang.Image")));
-            this.btnBanHang.ImageOffsetX = 4;
-            this.btnBanHang.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnBanHang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnBanHang.Location = new System.Drawing.Point(40, 279);
-            this.btnBanHang.Name = "btnBanHang";
-            this.btnBanHang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnBanHang.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnBanHang.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnBanHang.OnHoverImage = null;
-            this.btnBanHang.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnBanHang.OnPressedColor = System.Drawing.Color.Black;
-            this.btnBanHang.Size = new System.Drawing.Size(180, 64);
-            this.btnBanHang.TabIndex = 7;
-            this.btnBanHang.Text = "Bán hàng";
-            this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
-            // 
-            // btnTongQuan
-            // 
-            this.btnTongQuan.AnimationHoverSpeed = 0.07F;
-            this.btnTongQuan.AnimationSpeed = 0.03F;
-            this.btnTongQuan.BaseColor = System.Drawing.Color.Empty;
-            this.btnTongQuan.BorderColor = System.Drawing.Color.Black;
-            this.btnTongQuan.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnTongQuan.Checked = true;
-            this.btnTongQuan.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnTongQuan.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnTongQuan.CheckedForeColor = System.Drawing.Color.White;
-            this.btnTongQuan.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnTongQuan.CheckedImage")));
-            this.btnTongQuan.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnTongQuan.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnTongQuan.FocusedColor = System.Drawing.Color.Empty;
-            this.btnTongQuan.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.btnTongQuan.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnTongQuan.Image = ((System.Drawing.Image)(resources.GetObject("btnTongQuan.Image")));
-            this.btnTongQuan.ImageOffsetX = 4;
-            this.btnTongQuan.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTongQuan.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnTongQuan.Location = new System.Drawing.Point(40, 188);
-            this.btnTongQuan.Name = "btnTongQuan";
-            this.btnTongQuan.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnTongQuan.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnTongQuan.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnTongQuan.OnHoverImage = null;
-            this.btnTongQuan.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnTongQuan.OnPressedColor = System.Drawing.Color.Black;
-            this.btnTongQuan.Size = new System.Drawing.Size(180, 64);
-            this.btnTongQuan.TabIndex = 4;
-            this.btnTongQuan.Text = "Tổng quan";
-            this.btnTongQuan.Click += new System.EventHandler(this.btnTongQuan_Click);
             // 
             // bunifuGradientPanel2
             // 
@@ -215,33 +86,22 @@
             this.bunifuGradientPanel2.Size = new System.Drawing.Size(1851, 853);
             this.bunifuGradientPanel2.TabIndex = 7;
             // 
-            // panel2
+            // panelChildForm
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
-            this.panel2.Controls.Add(this.btnKhachHang);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.btnSanPham);
-            this.panel2.Controls.Add(this.btnTongQuan);
-            this.panel2.Controls.Add(this.btnBanHang);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(258, 853);
-            this.panel2.TabIndex = 7;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.panel3.Size = new System.Drawing.Size(258, 145);
-            this.panel3.TabIndex = 6;
+            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(258, 71);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(1593, 782);
+            this.panelChildForm.TabIndex = 14;
             // 
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.White;
+            this.gunaPanel1.Controls.Add(this.gunaLabel3);
+            this.gunaPanel1.Controls.Add(this.gunaLabel2);
+            this.gunaPanel1.Controls.Add(this.gunaLabel1);
+            this.gunaPanel1.Controls.Add(this.gunaLabel4);
             this.gunaPanel1.Controls.Add(this.btnMaximize);
             this.gunaPanel1.Controls.Add(this.btnMinimize);
             this.gunaPanel1.Controls.Add(this.btnExit);
@@ -308,14 +168,206 @@
             this.btnExit.TabIndex = 2;
             this.btnExit.UseVisualStyleBackColor = false;
             // 
-            // panelChildForm
+            // panel2
             // 
-            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
-            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(258, 71);
-            this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(1593, 782);
-            this.panelChildForm.TabIndex = 14;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
+            this.panel2.Controls.Add(this.btnKhachHang);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.btnSanPham);
+            this.panel2.Controls.Add(this.btnTongQuan);
+            this.panel2.Controls.Add(this.btnBanHang);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(258, 853);
+            this.panel2.TabIndex = 7;
+            // 
+            // btnKhachHang
+            // 
+            this.btnKhachHang.AnimationHoverSpeed = 0.07F;
+            this.btnKhachHang.AnimationSpeed = 0.03F;
+            this.btnKhachHang.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
+            this.btnKhachHang.BorderColor = System.Drawing.Color.Black;
+            this.btnKhachHang.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnKhachHang.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnKhachHang.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnKhachHang.CheckedForeColor = System.Drawing.Color.White;
+            this.btnKhachHang.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnKhachHang.CheckedImage")));
+            this.btnKhachHang.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnKhachHang.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnKhachHang.FocusedColor = System.Drawing.Color.Empty;
+            this.btnKhachHang.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnKhachHang.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("btnKhachHang.Image")));
+            this.btnKhachHang.ImageOffsetX = 4;
+            this.btnKhachHang.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnKhachHang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnKhachHang.Location = new System.Drawing.Point(40, 455);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnKhachHang.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnKhachHang.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnKhachHang.OnHoverImage = null;
+            this.btnKhachHang.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnKhachHang.OnPressedColor = System.Drawing.Color.Black;
+            this.btnKhachHang.Size = new System.Drawing.Size(180, 64);
+            this.btnKhachHang.TabIndex = 9;
+            this.btnKhachHang.Text = "Khách hàng";
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.panel3.Size = new System.Drawing.Size(258, 145);
+            this.panel3.TabIndex = 6;
+            // 
+            // btnSanPham
+            // 
+            this.btnSanPham.AnimationHoverSpeed = 0.07F;
+            this.btnSanPham.AnimationSpeed = 0.03F;
+            this.btnSanPham.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
+            this.btnSanPham.BorderColor = System.Drawing.Color.Black;
+            this.btnSanPham.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnSanPham.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnSanPham.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnSanPham.CheckedForeColor = System.Drawing.Color.White;
+            this.btnSanPham.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnSanPham.CheckedImage")));
+            this.btnSanPham.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnSanPham.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSanPham.FocusedColor = System.Drawing.Color.Empty;
+            this.btnSanPham.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnSanPham.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btnSanPham.Image")));
+            this.btnSanPham.ImageOffsetX = 4;
+            this.btnSanPham.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSanPham.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnSanPham.Location = new System.Drawing.Point(40, 369);
+            this.btnSanPham.Name = "btnSanPham";
+            this.btnSanPham.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnSanPham.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnSanPham.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnSanPham.OnHoverImage = null;
+            this.btnSanPham.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnSanPham.OnPressedColor = System.Drawing.Color.Black;
+            this.btnSanPham.Size = new System.Drawing.Size(180, 64);
+            this.btnSanPham.TabIndex = 8;
+            this.btnSanPham.Text = "Sản phẩm";
+            this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
+            // 
+            // btnTongQuan
+            // 
+            this.btnTongQuan.AnimationHoverSpeed = 0.07F;
+            this.btnTongQuan.AnimationSpeed = 0.03F;
+            this.btnTongQuan.BaseColor = System.Drawing.Color.Empty;
+            this.btnTongQuan.BorderColor = System.Drawing.Color.Black;
+            this.btnTongQuan.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnTongQuan.Checked = true;
+            this.btnTongQuan.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnTongQuan.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnTongQuan.CheckedForeColor = System.Drawing.Color.White;
+            this.btnTongQuan.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnTongQuan.CheckedImage")));
+            this.btnTongQuan.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnTongQuan.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnTongQuan.FocusedColor = System.Drawing.Color.Empty;
+            this.btnTongQuan.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnTongQuan.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnTongQuan.Image = ((System.Drawing.Image)(resources.GetObject("btnTongQuan.Image")));
+            this.btnTongQuan.ImageOffsetX = 4;
+            this.btnTongQuan.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnTongQuan.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnTongQuan.Location = new System.Drawing.Point(40, 188);
+            this.btnTongQuan.Name = "btnTongQuan";
+            this.btnTongQuan.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnTongQuan.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnTongQuan.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnTongQuan.OnHoverImage = null;
+            this.btnTongQuan.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnTongQuan.OnPressedColor = System.Drawing.Color.Black;
+            this.btnTongQuan.Size = new System.Drawing.Size(180, 64);
+            this.btnTongQuan.TabIndex = 4;
+            this.btnTongQuan.Text = "Tổng quan";
+            this.btnTongQuan.Click += new System.EventHandler(this.btnTongQuan_Click);
+            // 
+            // btnBanHang
+            // 
+            this.btnBanHang.AnimationHoverSpeed = 0.07F;
+            this.btnBanHang.AnimationSpeed = 0.03F;
+            this.btnBanHang.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
+            this.btnBanHang.BorderColor = System.Drawing.Color.Black;
+            this.btnBanHang.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnBanHang.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnBanHang.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnBanHang.CheckedForeColor = System.Drawing.Color.White;
+            this.btnBanHang.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnBanHang.CheckedImage")));
+            this.btnBanHang.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnBanHang.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBanHang.FocusedColor = System.Drawing.Color.Empty;
+            this.btnBanHang.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnBanHang.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnBanHang.Image = ((System.Drawing.Image)(resources.GetObject("btnBanHang.Image")));
+            this.btnBanHang.ImageOffsetX = 4;
+            this.btnBanHang.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnBanHang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnBanHang.Location = new System.Drawing.Point(40, 279);
+            this.btnBanHang.Name = "btnBanHang";
+            this.btnBanHang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnBanHang.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnBanHang.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnBanHang.OnHoverImage = null;
+            this.btnBanHang.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnBanHang.OnPressedColor = System.Drawing.Color.Black;
+            this.btnBanHang.Size = new System.Drawing.Size(180, 64);
+            this.btnBanHang.TabIndex = 7;
+            this.btnBanHang.Text = "Bán hàng";
+            this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel3.ForeColor = System.Drawing.Color.DimGray;
+            this.gunaLabel3.Location = new System.Drawing.Point(642, 36);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(65, 28);
+            this.gunaLabel3.TabIndex = 19;
+            this.gunaLabel3.Text = "NV01";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
+            this.gunaLabel2.Location = new System.Drawing.Point(543, 35);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(36, 30);
+            this.gunaLabel2.TabIndex = 18;
+            this.gunaLabel2.Text = "ID";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.DimGray;
+            this.gunaLabel1.Location = new System.Drawing.Point(642, 5);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(170, 28);
+            this.gunaLabel1.TabIndex = 17;
+            this.gunaLabel1.Text = "Phạm Tấn khang";
+            // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
+            this.gunaLabel4.Location = new System.Drawing.Point(541, 4);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(60, 30);
+            this.gunaLabel4.TabIndex = 16;
+            this.gunaLabel4.Text = "User";
             // 
             // MainSaleForm
             // 
@@ -329,8 +381,9 @@
             this.Text = "MainSaleForm";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.gunaPanel1.ResumeLayout(false);
+            this.gunaPanel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -349,5 +402,9 @@
         private FontAwesome.Sharp.IconButton btnMinimize;
         private FontAwesome.Sharp.IconButton btnExit;
         private System.Windows.Forms.Panel panelChildForm;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel4;
     }
 }

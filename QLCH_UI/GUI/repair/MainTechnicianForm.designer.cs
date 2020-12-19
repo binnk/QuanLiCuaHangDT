@@ -43,6 +43,10 @@
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.panelMenu.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
@@ -266,6 +270,10 @@
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.White;
+            this.gunaPanel1.Controls.Add(this.gunaLabel3);
+            this.gunaPanel1.Controls.Add(this.gunaLabel2);
+            this.gunaPanel1.Controls.Add(this.gunaLabel1);
+            this.gunaPanel1.Controls.Add(this.gunaLabel4);
             this.gunaPanel1.Controls.Add(this.btnMaximize);
             this.gunaPanel1.Controls.Add(this.btnMinimize);
             this.gunaPanel1.Controls.Add(this.btnExit);
@@ -279,6 +287,50 @@
             // 
             this.guna2DragControl1.ContainerControl = this;
             this.guna2DragControl1.TargetControl = this.gunaPanel1;
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel3.ForeColor = System.Drawing.Color.DimGray;
+            this.gunaLabel3.Location = new System.Drawing.Point(618, 36);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(65, 28);
+            this.gunaLabel3.TabIndex = 19;
+            this.gunaLabel3.Text = "NV01";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
+            this.gunaLabel2.Location = new System.Drawing.Point(519, 35);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(36, 30);
+            this.gunaLabel2.TabIndex = 18;
+            this.gunaLabel2.Text = "ID";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.DimGray;
+            this.gunaLabel1.Location = new System.Drawing.Point(618, 5);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(170, 28);
+            this.gunaLabel1.TabIndex = 17;
+            this.gunaLabel1.Text = "Phạm Tấn khang";
+            // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
+            this.gunaLabel4.Location = new System.Drawing.Point(517, 4);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(60, 30);
+            this.gunaLabel4.TabIndex = 16;
+            this.gunaLabel4.Text = "User";
             // 
             // MainTechnicianForm
             // 
@@ -295,6 +347,7 @@
             this.panelMenu.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.gunaPanel1.ResumeLayout(false);
+            this.gunaPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -313,6 +366,10 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnLinhKien;
         private Guna.UI.WinForms.GunaAdvenceButton btnSuaChua;
         private System.Windows.Forms.Panel panelChildForm;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel4;
     }
 }
 
