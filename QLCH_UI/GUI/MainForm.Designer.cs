@@ -53,14 +53,30 @@
             this.iconBtnHome = new FontAwesome.Sharp.IconButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelChildForm = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnThem = new Guna.UI.WinForms.GunaButton();
+            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.panel1.SuspendLayout();
             this.panelTitle.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelManage.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
+            this.panel1.Controls.Add(this.progressBar1);
+            this.panel1.Controls.Add(this.gunaLabel6);
+            this.panel1.Controls.Add(this.gunaLabel5);
+            this.panel1.Controls.Add(this.gunaPictureBox2);
+            this.panel1.Controls.Add(this.gunaPictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -216,6 +232,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
+            this.panelMenu.Controls.Add(this.panel2);
             this.panelMenu.Controls.Add(this.btnReport);
             this.panelMenu.Controls.Add(this.panelManage);
             this.panelMenu.Controls.Add(this.btnManage);
@@ -480,6 +497,92 @@
             this.panelChildForm.TabIndex = 3;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel2.Controls.Add(this.btnThem);
+            this.panel2.Location = new System.Drawing.Point(3, 791);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(249, 59);
+            this.panel2.TabIndex = 15;
+            // 
+            // btnThem
+            // 
+            this.btnThem.AnimationHoverSpeed = 0.07F;
+            this.btnThem.AnimationSpeed = 0.03F;
+            this.btnThem.BackColor = System.Drawing.Color.Transparent;
+            this.btnThem.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
+            this.btnThem.BorderColor = System.Drawing.Color.Black;
+            this.btnThem.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnThem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnThem.FocusedColor = System.Drawing.Color.Empty;
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnThem.Location = new System.Drawing.Point(0, 0);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(37)))), ((int)(((byte)(55)))));
+            this.btnThem.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnThem.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnThem.OnHoverImage = null;
+            this.btnThem.OnPressedColor = System.Drawing.Color.Black;
+            this.btnThem.Radius = 10;
+            this.btnThem.Size = new System.Drawing.Size(249, 59);
+            this.btnThem.TabIndex = 20;
+            this.btnThem.Text = "Đăng xuất";
+            this.btnThem.TextOffsetX = -5;
+            // 
+            // gunaLabel6
+            // 
+            this.gunaLabel6.AutoSize = true;
+            this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel6.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel6.Location = new System.Drawing.Point(83, 115);
+            this.gunaLabel6.Name = "gunaLabel6";
+            this.gunaLabel6.Size = new System.Drawing.Size(86, 25);
+            this.gunaLabel6.TabIndex = 10;
+            this.gunaLabel6.Text = "S T O R E";
+            // 
+            // gunaLabel5
+            // 
+            this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.gunaLabel5.Location = new System.Drawing.Point(44, 89);
+            this.gunaLabel5.Name = "gunaLabel5";
+            this.gunaLabel5.Size = new System.Drawing.Size(171, 30);
+            this.gunaLabel5.TabIndex = 9;
+            this.gunaLabel5.Text = "MOBILE PHONE";
+            // 
+            // gunaPictureBox2
+            // 
+            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox2.Image")));
+            this.gunaPictureBox2.Location = new System.Drawing.Point(133, 37);
+            this.gunaPictureBox2.Name = "gunaPictureBox2";
+            this.gunaPictureBox2.Size = new System.Drawing.Size(38, 35);
+            this.gunaPictureBox2.TabIndex = 8;
+            this.gunaPictureBox2.TabStop = false;
+            // 
+            // gunaPictureBox1
+            // 
+            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
+            this.gunaPictureBox1.Location = new System.Drawing.Point(64, 4);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(128, 82);
+            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaPictureBox1.TabIndex = 7;
+            this.gunaPictureBox1.TabStop = false;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(23, 143);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(217, 1);
+            this.progressBar1.TabIndex = 12;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -492,10 +595,15 @@
             this.Name = "MainForm";
             this.Text = "Form1";
             this.Shown += new System.EventHandler(this.MainForm_Shown);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
             this.panelMenu.ResumeLayout(false);
             this.panelManage.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -524,6 +632,13 @@
         private FontAwesome.Sharp.IconButton btnMaximize;
         private FontAwesome.Sharp.IconButton btnMinimize;
         private FontAwesome.Sharp.IconButton btnExit;
+        private System.Windows.Forms.Panel panel2;
+        private Guna.UI.WinForms.GunaButton btnThem;
+        private Guna.UI.WinForms.GunaLabel gunaLabel6;
+        private Guna.UI.WinForms.GunaLabel gunaLabel5;
+        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
+        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 

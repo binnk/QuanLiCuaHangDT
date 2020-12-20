@@ -27,11 +27,11 @@ namespace QLCH_UI
             DataTable a = DAO.TongquanSC_DAO.Instance.History(manv);
             for(int  i = 0; i < a.Rows.Count; i++)
             {
-                string madh = a.Rows[i]["mahd"].ToString();
+                string masc = a.Rows[i]["masc"].ToString();
                 string ngay = DateTime.Parse(a.Rows[i]["ngay_nhan"].ToString()).ToString("dd-MM-yyyy");
                 string makh = a.Rows[i]["ten_kh"].ToString();
                 string trigia = Convert.ToDouble(a.Rows[i]["tri_gia"]).ToString("#,##0");
-                dgvOrders.Rows.Add(madh, ngay, makh, trigia);
+                dgvOrders.Rows.Add(masc, ngay, makh, trigia);
             }    
         }
     }
