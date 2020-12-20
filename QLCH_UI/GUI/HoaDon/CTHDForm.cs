@@ -26,7 +26,7 @@ namespace QLCH_UI
                 tb_sdt.Text = kh.Rows[0]["dien_thoai"].ToString();
             DataTable hd = DAO.HoadonDAO.Instance.Hoadon(mahd);
                 tbma_hd.Text = hd.Rows[0]["mahd"].ToString();
-                tbngay_ban.Text = hd.Rows[0]["ngay_ban"].ToString();
+                tbngay_ban.Text =DateTime.Parse(hd.Rows[0]["ngay_ban"].ToString()).ToString("dd - MM - yyyy");
                 lb_giam_gia.Text = "Giảm giá: " + Convert.ToDouble(hd.Rows[0]["giam_gia"]).ToString("#,##0");
                 lb_tong_tien.Text = "Tổng tiền: " + Convert.ToDouble(hd.Rows[0]["tri_gia"]).ToString("#,##0");
             DataTable nv = DAO.HoadonDAO.Instance.Nhan_vien(manv);

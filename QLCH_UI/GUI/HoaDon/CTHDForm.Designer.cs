@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CTHDForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.icExit = new FontAwesome.Sharp.IconPictureBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -140,6 +140,7 @@
             this.tb_sdt.ReadOnly = true;
             this.tb_sdt.Size = new System.Drawing.Size(285, 32);
             this.tb_sdt.TabIndex = 15;
+            this.tb_sdt.TabStop = false;
             // 
             // tbdia_chi
             // 
@@ -149,6 +150,7 @@
             this.tbdia_chi.ReadOnly = true;
             this.tbdia_chi.Size = new System.Drawing.Size(285, 32);
             this.tbdia_chi.TabIndex = 14;
+            this.tbdia_chi.TabStop = false;
             // 
             // tbten_kh
             // 
@@ -158,6 +160,7 @@
             this.tbten_kh.ReadOnly = true;
             this.tbten_kh.Size = new System.Drawing.Size(285, 32);
             this.tbten_kh.TabIndex = 13;
+            this.tbten_kh.TabStop = false;
             // 
             // tbma_kh
             // 
@@ -167,6 +170,7 @@
             this.tbma_kh.ReadOnly = true;
             this.tbma_kh.Size = new System.Drawing.Size(285, 32);
             this.tbma_kh.TabIndex = 12;
+            this.tbma_kh.TabStop = false;
             // 
             // label5
             // 
@@ -212,6 +216,7 @@
             this.tbten_nv.ReadOnly = true;
             this.tbten_nv.Size = new System.Drawing.Size(285, 32);
             this.tbten_nv.TabIndex = 7;
+            this.tbten_nv.TabStop = false;
             // 
             // tbma_nv
             // 
@@ -221,6 +226,7 @@
             this.tbma_nv.ReadOnly = true;
             this.tbma_nv.Size = new System.Drawing.Size(285, 32);
             this.tbma_nv.TabIndex = 6;
+            this.tbma_nv.TabStop = false;
             // 
             // tbngay_ban
             // 
@@ -230,6 +236,7 @@
             this.tbngay_ban.ReadOnly = true;
             this.tbngay_ban.Size = new System.Drawing.Size(285, 32);
             this.tbngay_ban.TabIndex = 5;
+            this.tbngay_ban.TabStop = false;
             // 
             // tbma_hd
             // 
@@ -239,6 +246,7 @@
             this.tbma_hd.ReadOnly = true;
             this.tbma_hd.Size = new System.Drawing.Size(285, 32);
             this.tbma_hd.TabIndex = 4;
+            this.tbma_hd.TabStop = false;
             // 
             // label4
             // 
@@ -290,21 +298,21 @@
             this.dgvCTHD.AllowUserToDeleteRows = false;
             this.dgvCTHD.AllowUserToResizeColumns = false;
             this.dgvCTHD.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvCTHD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvCTHD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvCTHD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCTHD.BackgroundColor = System.Drawing.Color.White;
             this.dgvCTHD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvCTHD.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvCTHD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCTHD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(125)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCTHD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvCTHD.ColumnHeadersHeight = 37;
             this.dgvCTHD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -312,14 +320,14 @@
             this.dataGridViewTextBoxColumn3,
             this.Column1,
             this.Column2});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(224)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCTHD.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(224)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCTHD.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvCTHD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCTHD.DoubleBuffered = true;
             this.dgvCTHD.EnableHeadersVisualStyles = false;

@@ -26,7 +26,8 @@ namespace QLCH_UI.DAO
         private HoadonDAO() { }
         public DataTable Hoadonlist()
         {
-            string query = "select * from hoa_don";
+            string query = "select d.mahd,d.makh,d.manv,d.ngay_ban,d.tri_gia,k.ten_kh,n.ten_nv from HOA_DON d,KHACH_HANG k,NHAN_VIEN n"
+                            + " where d.manv = n.manv and d.makh = k.makh";
             DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
             return (dt);
         }
@@ -52,6 +53,14 @@ namespace QLCH_UI.DAO
         {
             string query = "select ten_nv from nhan_vien where manv ='" + manv + "'";
             
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
+        public DataTable Search(string ss)
+        {
+            string query = "select d.mahd,d.makh,d.manv,d.ngay_ban,d.tri_gia,k.ten_kh,n.ten_nv from HOA_DON d,KHACH_HANG k,NHAN_VIEN n"
+                            +" where(d.manv = n.manv and d.makh = k.makh) and(k.ten_kh like N'%"+ss+"%' or n.ten_nv like N'%"+ss+"%' or d.mahd like N'%"+ss+"%' or k.dien_thoai like N'%"+ss+"%')";
+
             DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
             return (dt);
         }

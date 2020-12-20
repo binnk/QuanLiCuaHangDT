@@ -36,7 +36,7 @@ namespace QLCH_UI
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
-            openChildForm(new fReviewTech());
+            openChildForm(new fReviewTech(manv));
 
 
 
@@ -136,12 +136,12 @@ namespace QLCH_UI
 
         private void btnLinhKien_Click(object sender, EventArgs e)
         {
-            openChildForm(new ViewProduct());
+            openChildForm(new fProduct());
         }
 
         private void btnTongQuan_Click(object sender, EventArgs e)
         {
-            openChildForm(new fReviewTech());
+            openChildForm(new fReviewTech(manv));
         }
     }
 }

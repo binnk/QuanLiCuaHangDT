@@ -10,15 +10,17 @@ using System.Windows.Forms;
 
 namespace QLCH_UI
 {
-    public partial class fOrder : Form
+    public partial class fViewCustomer : Form
     {
-        public fOrder()
+        public fViewCustomer()
         {
             InitializeComponent();
-            this.flowLayoutPanel1.Controls.Add(new UC_ItemOrder());
-            this.flowLayoutPanel1.Controls.Add(new UC_ItemOrder());
-            this.flowLayoutPanel1.Controls.Add(new UC_ItemOrder());
+
+            flowLayoutPanel1.Controls.Add(new UC_ItemCustomer());
+            flowLayoutPanel1.Controls.Add(new UC_ItemCustomer());
+            flowLayoutPanel1.Controls.Add(new UC_ItemCustomer());
         }
+
         protected override CreateParams CreateParams
         {
             get
@@ -29,5 +31,9 @@ namespace QLCH_UI
             }
         }
 
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            (new AddCustomer()).ShowDialog();
+        }
     }
 }

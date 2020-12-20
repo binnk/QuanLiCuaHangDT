@@ -12,9 +12,27 @@ namespace QLCH_UI
 {
     public partial class fReviewTech : Form
     {
-        public fReviewTech()
+        private string manv;
+        public fReviewTech(string manvv)
         {
+            manv = manvv;
             InitializeComponent();
+            Load();
+        }
+        private void Load()
+        {
+            lb_sanpham.Text = DAO.TongquanSC_DAO.Instance.Get_dontrongngay(manv);
+            lb_hoadon.Text = DAO.TongquanSC_DAO.Instance.Get_sohoadon(manv);
+            lb_doanh_thu.Text = DAO.TongquanSC_DAO.Instance.Get_doanhthu(manv);
+            DataTable a = DAO.TongquanSC_DAO.Instance.History(manv);
+            for(int  i = 0; i < a.Rows.Count; i++)
+            {
+                string madh = a.Rows[i]["masc"].ToString();
+                string ngay = DateTime.Parse(a.Rows[i]["ngay_nhan"].ToString()).ToString("dd-MM-yyyy");
+                string makh = a.Rows[i]["ten_kh"].ToString();
+                string trigia = Convert.ToDouble(a.Rows[i]["tri_gia"]).ToString("#,##0");
+                dgvOrders.Rows.Add(madh, ngay, makh, trigia);
+            }    
         }
     }
 }

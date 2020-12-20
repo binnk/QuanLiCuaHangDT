@@ -54,7 +54,7 @@ namespace QLCH_UI
 
         private void btnSanPham_Click(object sender, EventArgs e)
         {
-            openChildForm(new ViewProduct());
+            openChildForm(new fProduct());
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)

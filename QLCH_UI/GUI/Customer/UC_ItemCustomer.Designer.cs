@@ -57,6 +57,8 @@
             this.gunaLinePanel1.Name = "gunaLinePanel1";
             this.gunaLinePanel1.Size = new System.Drawing.Size(1515, 50);
             this.gunaLinePanel1.TabIndex = 1;
+            this.gunaLinePanel1.Click += new System.EventHandler(this.gunaLinePanel1_Click);
+           // this.gunaLinePanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaLinePanel1_Paint);
             // 
             // gunaButton3
             // 
@@ -83,6 +85,7 @@
             this.gunaButton3.Size = new System.Drawing.Size(47, 33);
             this.gunaButton3.TabIndex = 17;
             this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton3.Click += new System.EventHandler(this.gunaButton3_Click);
             // 
             // btnEdit
             // 
@@ -109,6 +112,7 @@
             this.btnEdit.Size = new System.Drawing.Size(47, 33);
             this.btnEdit.TabIndex = 16;
             this.btnEdit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // gunaLabel7
             // 
@@ -120,6 +124,7 @@
             this.gunaLabel7.Size = new System.Drawing.Size(70, 25);
             this.gunaLabel7.TabIndex = 6;
             this.gunaLabel7.Text = "Địa chỉ";
+            this.gunaLabel7.Click += new System.EventHandler(this.gunaLabel7_Click);
             // 
             // gunaLabel5
             // 
@@ -131,6 +136,7 @@
             this.gunaLabel5.Size = new System.Drawing.Size(85, 25);
             this.gunaLabel5.TabIndex = 4;
             this.gunaLabel5.Text = "Giới tính";
+            this.gunaLabel5.Click += new System.EventHandler(this.gunaLabel5_Click);
             // 
             // gunaLabel4
             // 
@@ -142,6 +148,7 @@
             this.gunaLabel4.Size = new System.Drawing.Size(62, 25);
             this.gunaLabel4.TabIndex = 3;
             this.gunaLabel4.Text = "Số ĐT";
+            this.gunaLabel4.Click += new System.EventHandler(this.gunaLabel4_Click);
             // 
             // gunaLabel3
             // 
@@ -153,6 +160,7 @@
             this.gunaLabel3.Size = new System.Drawing.Size(146, 25);
             this.gunaLabel3.TabIndex = 2;
             this.gunaLabel3.Text = "Tên khách hàng";
+            this.gunaLabel3.Click += new System.EventHandler(this.gunaLabel3_Click);
             // 
             // gunaLabel2
             // 
@@ -164,6 +172,7 @@
             this.gunaLabel2.Size = new System.Drawing.Size(143, 25);
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "Mã khách hàng";
+            this.gunaLabel2.Click += new System.EventHandler(this.gunaLabel2_Click);
             // 
             // UC_ItemCustomer
             // 

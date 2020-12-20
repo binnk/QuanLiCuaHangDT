@@ -30,5 +30,10 @@ namespace QLCH_UI
                 return handleParam;
             }
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            (new AddProduct()).ShowDialog();
+        }
     }
 }
