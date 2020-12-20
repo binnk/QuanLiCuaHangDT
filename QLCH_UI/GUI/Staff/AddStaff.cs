@@ -99,26 +99,7 @@ namespace QLCH_UI
 
         }
 
-        private void btn_luu_customer_Click(object sender, EventArgs e)
-        {
-            string a;
-            if (check_erro() == true)
-            {
-                if (Radio_Nam.Checked == true) a = Radio_Nam.Text;
-                else a = Radio_Nu.Text;
-                StaffDTO b = new StaffDTO(tb_user.Text, tb_manv.Text, tb_ten_nv.Text, date_nv.Value, tb_dia_chi.Text, tb_phone.Text, a,cb_loainv.Text);
-                if (StaffBUS.Instance.insert_staff(b, tb_user.Text, tb_email.Text, tb_password.Text) == true)
-                {
-                    MessageBox.Show("Thêm thành công");
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Thêm không thành công");
-                }
-                //this.Close();
-            }
-        }
+
 
         private void lb_dia_chi_error_Click(object sender, EventArgs e)
         {
@@ -133,6 +114,67 @@ namespace QLCH_UI
         private void tb_dia_chi_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tb_user_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaLinePanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_luu_customer_Click_1(object sender, EventArgs e)
+        {
+            string a;
+            if (check_erro() == true)
+            {
+                if (Radio_Nam.Checked == true) a = Radio_Nam.Text;
+                else a = Radio_Nu.Text;
+                StaffDTO b = new StaffDTO(tb_user.Text, tb_manv.Text, tb_ten_nv.Text, date_nv.Value, tb_dia_chi.Text, tb_phone.Text, a, cb_loainv.Text);
+                if (StaffBUS.Instance.insert_staff(b, tb_user.Text, tb_email.Text, tb_password.Text) == true)
+                {
+                    MessageBox.Show("Thêm thành công");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm không thành công");
+                }
+                //this.Close();
+            }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -80,24 +80,7 @@ namespace QLCH_UI
             }
             return (true);
         }
-        private void btn_luu_customer_Click(object sender, EventArgs e)
-        {
-            if (check_error()==true)
-            {
-                decimal tong_tien = (decimal)(double.Parse(tb_gia_nhap.Text) * int.Parse(tb_sl.Text));
-                WarehouseDTO a = new WarehouseDTO(tb_manhaphang.Text, tb_manguoinhap.Text, tb_masp.Text, tb_ten_sp.Text, tb_loai_sp.Text, date_sp.Value, double.Parse(tb_gia_nhap.Text), int.Parse(tb_sl.Text),tong_tien);
-                if (WareHouseBUS.Instance.ImportWarehouse(a))
-                {
-                    MessageBox.Show("Nhập hàng thành công");
-                }
-                else
-                {
-                    MessageBox.Show("Không nhập hàng thành công");
-                }
-                this.Close();
-            }
 
-        }
         private string GetFloat(string s)
         {
             string rs = "";
@@ -125,6 +108,34 @@ namespace QLCH_UI
                 tb_gia_nhap.Text = Convert.ToDouble(GetFloat(tb_gia_nhap.Text)).ToString("#,##0");
                 tb_gia_nhap.SelectionStart = tb_gia_nhap.Text.Length;
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_luu_customer_Click_1(object sender, EventArgs e)
+        {
+            if (check_error() == true)
+            {
+                decimal tong_tien = (decimal)(double.Parse(tb_gia_nhap.Text) * int.Parse(tb_sl.Text));
+                WarehouseDTO a = new WarehouseDTO(tb_manhaphang.Text, tb_manguoinhap.Text, tb_masp.Text, tb_ten_sp.Text, tb_loai_sp.Text, date_sp.Value, double.Parse(tb_gia_nhap.Text), int.Parse(tb_sl.Text), tong_tien);
+                if (WareHouseBUS.Instance.ImportWarehouse(a))
+                {
+                    MessageBox.Show("Nhập hàng thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Không nhập hàng thành công");
+                }
+                this.Close();
+            }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

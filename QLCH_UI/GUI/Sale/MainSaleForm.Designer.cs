@@ -173,6 +173,7 @@
             this.btnMaximize.Size = new System.Drawing.Size(32, 32);
             this.btnMaximize.TabIndex = 11;
             this.btnMaximize.UseVisualStyleBackColor = false;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
             // btnMinimize
             // 
@@ -192,6 +193,7 @@
             this.btnMinimize.Size = new System.Drawing.Size(32, 32);
             this.btnMinimize.TabIndex = 10;
             this.btnMinimize.UseVisualStyleBackColor = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // btnExit
             // 

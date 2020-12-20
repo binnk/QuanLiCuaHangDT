@@ -71,48 +71,54 @@ namespace QLCH_UI
        
         
             // check_erro
-            public bool check_erro()
+        public bool check_erro()
+        {
+            if (CustomersBUS.Instance.makh(tb_makh.Text) == true) lb_makh_error.Visible = false;
+            else
             {
-                if (CustomersBUS.Instance.makh(tb_makh.Text) == true) lb_makh_error.Visible = false;
-                else
-                {
-                    lb_makh_error.Visible = true;
-                    return (false);
-                }
-                if (CustomersBUS.Instance.ten_kh(tb_ten_kh.Text) == true) lb_tenkh_error.Visible = false;
-                else
-                {
-                    lb_tenkh_error.Visible = true;
-                    return (false);
-                }
-                if (CustomersBUS.Instance.gioi_tinh(Radio_Nam.Checked,Radio_Nu.Checked) == true) lb_gioitinh_error.Visible = false;
-                else
-                {
-                    lb_gioitinh_error.Visible = true;
-                    return (false);
-                }
-                if (CustomersBUS.Instance.SDT(tb_phone.Text) == true) lb_SDT_error.Visible = false;
-                else
-                {
-                    lb_SDT_error.Visible = true;
-                    return (false);
-                }
-            if (CustomersBUS.Instance.dia_chi(tb_dia_chi.Text) == true) lb_diachi_error.Visible = false;
-                else
-                {
-                    lb_diachi_error.Visible = true;
-                    return (false);
-                }
-                return (true);
+                lb_makh_error.Visible = true;
+                return (false);
             }
-    private void btn_luu_customer_Click(object sender, EventArgs e)
+            if (CustomersBUS.Instance.ten_kh(tb_ten_kh.Text) == true) lb_tenkh_error.Visible = false;
+            else
+            {
+                lb_tenkh_error.Visible = true;
+                return (false);
+            }
+            if (CustomersBUS.Instance.gioi_tinh(Radio_Nam.Checked,Radio_Nu.Checked) == true) lb_gioitinh_error.Visible = false;
+            else
+            {
+                lb_gioitinh_error.Visible = true;
+                return (false);
+            }
+            if (CustomersBUS.Instance.SDT(tb_phone.Text) == true) lb_SDT_error.Visible = false;
+            else
+            {
+                lb_SDT_error.Visible = true;
+                return (false);
+            }
+            if (CustomersBUS.Instance.dia_chi(tb_dia_chi.Text) == true) lb_diachi_error.Visible = false;
+            else
+            {
+                lb_diachi_error.Visible = true;
+                return (false);
+            }
+            return (true);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_luu_customer_Click_1(object sender, EventArgs e)
         {
             string a;
             if (check_erro() == true)
             {
                 if (Radio_Nam.Checked == true) a = Radio_Nam.Text;
                 else a = Radio_Nu.Text;
-                CustomersDTO b = new CustomersDTO(tb_makh.Text, tb_ten_kh.Text, date_kh.Value, tb_dia_chi.Text,tb_phone.Text, a);
+                CustomersDTO b = new CustomersDTO(tb_makh.Text, tb_ten_kh.Text, date_kh.Value, tb_dia_chi.Text, tb_phone.Text, a);
                 if (CustomersBUS.Instance.insert_customer(b))
                 {
                     MessageBox.Show("Thêm thành công");
@@ -123,6 +129,11 @@ namespace QLCH_UI
                 }
                 this.Close();
             }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

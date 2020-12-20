@@ -81,7 +81,12 @@ namespace QLCH_UI
             }
         }
 
-        private void btn_luu_customer_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_luu_customer_Click_1(object sender, EventArgs e)
         {
             if (check_erro())
             {
@@ -99,7 +104,11 @@ namespace QLCH_UI
                 }
                 this.Close();
             }
+        }
 
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

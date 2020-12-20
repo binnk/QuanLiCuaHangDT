@@ -30,8 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddProduct));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lb_soluong_error = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,36 +50,42 @@
             this.lb_giaban_error = new System.Windows.Forms.Label();
             this.lb_gianhap_error = new System.Windows.Forms.Label();
             this.lb_loaisp_error = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btn_luu_customer = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
+            this.btnHuy = new Guna.UI.WinForms.GunaButton();
+            this.btn_luu_customer = new Guna.UI.WinForms.GunaButton();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.dragPnTitle = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.pnTitle = new Guna.UI.WinForms.GunaPanel();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.label11 = new System.Windows.Forms.Label();
+            this.gunaLinePanel2 = new Guna.UI.WinForms.GunaLinePanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.gunaLinePanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.pnTitle.SuspendLayout();
+            this.gunaLinePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // gunaLinePanel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(100)))), ((int)(((byte)(207)))));
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1014, 69);
-            this.panel1.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(403, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(253, 45);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Thêm sản phẩm";
+            this.gunaLinePanel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.gunaLinePanel1.Controls.Add(this.label11);
+            this.gunaLinePanel1.Controls.Add(this.gunaLinePanel2);
+            this.gunaLinePanel1.Controls.Add(this.groupBox1);
+            this.gunaLinePanel1.Controls.Add(this.btnHuy);
+            this.gunaLinePanel1.Controls.Add(this.btn_luu_customer);
+            this.gunaLinePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gunaLinePanel1.LineBottom = 6;
+            this.gunaLinePanel1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.gunaLinePanel1.LineLeft = 4;
+            this.gunaLinePanel1.LineRight = 6;
+            this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaLinePanel1.Location = new System.Drawing.Point(0, 61);
+            this.gunaLinePanel1.Name = "gunaLinePanel1";
+            this.gunaLinePanel1.Size = new System.Drawing.Size(1014, 621);
+            this.gunaLinePanel1.TabIndex = 9;
             // 
             // groupBox1
             // 
@@ -102,10 +107,10 @@
             this.groupBox1.Controls.Add(this.lb_giaban_error);
             this.groupBox1.Controls.Add(this.lb_gianhap_error);
             this.groupBox1.Controls.Add(this.lb_loaisp_error);
-            this.groupBox1.Location = new System.Drawing.Point(53, 77);
+            this.groupBox1.Location = new System.Drawing.Point(71, 21);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(512, 579);
-            this.groupBox1.TabIndex = 39;
+            this.groupBox1.TabIndex = 110;
             this.groupBox1.TabStop = false;
             // 
             // lb_soluong_error
@@ -129,7 +134,6 @@
             this.label4.Size = new System.Drawing.Size(205, 32);
             this.label4.TabIndex = 113;
             this.label4.Text = "Số lượng tồn kho";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // tb_sl
             // 
@@ -151,7 +155,6 @@
             this.lb_masp_error.Text = "Mã sản phẩm không hợp lệ";
             this.lb_masp_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lb_masp_error.Visible = false;
-            this.lb_masp_error.Click += new System.EventHandler(this.lb_masp_error_Click);
             // 
             // cb_loaisp
             // 
@@ -176,7 +179,6 @@
             this.tb_giaban.Name = "tb_giaban";
             this.tb_giaban.Size = new System.Drawing.Size(414, 44);
             this.tb_giaban.TabIndex = 106;
-            this.tb_giaban.TextChanged += new System.EventHandler(this.tb_giaban_TextChanged);
             // 
             // label9
             // 
@@ -196,7 +198,6 @@
             this.tb_gianhap.Name = "tb_gianhap";
             this.tb_gianhap.Size = new System.Drawing.Size(414, 44);
             this.tb_gianhap.TabIndex = 104;
-            this.tb_gianhap.TextChanged += new System.EventHandler(this.tb_gianhap_TextChanged);
             // 
             // label6
             // 
@@ -229,7 +230,6 @@
             this.lb_tensp_error.Text = "Tên sản phẩm không hợp lệ";
             this.lb_tensp_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lb_tensp_error.Visible = false;
-            this.lb_tensp_error.Click += new System.EventHandler(this.lb_tensp_error_Click);
             // 
             // tb_masp
             // 
@@ -307,63 +307,152 @@
             this.lb_loaisp_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lb_loaisp_error.Visible = false;
             // 
-            // button2
+            // btnHuy
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(646, 597);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 59);
-            this.button2.TabIndex = 42;
-            this.button2.Text = "Hủy";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnHuy.AnimationHoverSpeed = 0.07F;
+            this.btnHuy.AnimationSpeed = 0.03F;
+            this.btnHuy.BackColor = System.Drawing.Color.Transparent;
+            this.btnHuy.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.btnHuy.BorderColor = System.Drawing.Color.Black;
+            this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnHuy.FocusedColor = System.Drawing.Color.Empty;
+            this.btnHuy.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.btnHuy.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.Image = null;
+            this.btnHuy.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnHuy.Location = new System.Drawing.Point(666, 558);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.btnHuy.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnHuy.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnHuy.OnHoverImage = null;
+            this.btnHuy.OnPressedColor = System.Drawing.Color.Black;
+            this.btnHuy.Radius = 5;
+            this.btnHuy.Size = new System.Drawing.Size(136, 47);
+            this.btnHuy.TabIndex = 8;
+            this.btnHuy.Text = "Huỷ";
+            this.btnHuy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btn_luu_customer
             // 
-            this.btn_luu_customer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(100)))), ((int)(((byte)(207)))));
-            this.btn_luu_customer.FlatAppearance.BorderSize = 0;
-            this.btn_luu_customer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_luu_customer.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btn_luu_customer.AnimationHoverSpeed = 0.07F;
+            this.btn_luu_customer.AnimationSpeed = 0.03F;
+            this.btn_luu_customer.BackColor = System.Drawing.Color.Transparent;
+            this.btn_luu_customer.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.btn_luu_customer.BorderColor = System.Drawing.Color.Black;
+            this.btn_luu_customer.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_luu_customer.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_luu_customer.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.btn_luu_customer.ForeColor = System.Drawing.Color.White;
-            this.btn_luu_customer.Location = new System.Drawing.Point(790, 597);
+            this.btn_luu_customer.Image = null;
+            this.btn_luu_customer.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_luu_customer.Location = new System.Drawing.Point(808, 558);
             this.btn_luu_customer.Name = "btn_luu_customer";
-            this.btn_luu_customer.Size = new System.Drawing.Size(136, 59);
-            this.btn_luu_customer.TabIndex = 41;
-            this.btn_luu_customer.Text = "Lưu";
-            this.btn_luu_customer.UseVisualStyleBackColor = false;
-            this.btn_luu_customer.Click += new System.EventHandler(this.btn_luu_customer_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(729, 538);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(124, 32);
-            this.label11.TabIndex = 109;
-            this.label11.Text = "Thêm ảnh";
+            this.btn_luu_customer.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.btn_luu_customer.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_luu_customer.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_luu_customer.OnHoverImage = null;
+            this.btn_luu_customer.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_luu_customer.Radius = 5;
+            this.btn_luu_customer.Size = new System.Drawing.Size(136, 47);
+            this.btn_luu_customer.TabIndex = 7;
+            this.btn_luu_customer.Text = "Thêm";
+            this.btn_luu_customer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_luu_customer.Click += new System.EventHandler(this.btn_luu_customer_Click_1);
             // 
             // bunifuDragControl1
             // 
             this.bunifuDragControl1.Fixed = true;
             this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.TargetControl = null;
             this.bunifuDragControl1.Vertical = true;
+            // 
+            // dragPnTitle
+            // 
+            this.dragPnTitle.TargetControl = this.pnTitle;
+            // 
+            // pnTitle
+            // 
+            this.pnTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.pnTitle.Controls.Add(this.btnExit);
+            this.pnTitle.Controls.Add(this.gunaLabel1);
+            this.pnTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTitle.Location = new System.Drawing.Point(0, 0);
+            this.pnTitle.Name = "pnTitle";
+            this.pnTitle.Size = new System.Drawing.Size(1014, 61);
+            this.pnTitle.TabIndex = 8;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnExit.Font = new System.Drawing.Font("Century", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnExit.IconColor = System.Drawing.SystemColors.GrayText;
+            this.btnExit.IconSize = 32;
+            this.btnExit.Location = new System.Drawing.Point(967, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Rotation = 0D;
+            this.btnExit.Size = new System.Drawing.Size(32, 32);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel1.Location = new System.Drawing.Point(425, 7);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(253, 45);
+            this.gunaLabel1.TabIndex = 0;
+            this.gunaLabel1.Text = "Thêm sản phẩm";
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 15;
+            this.gunaElipse1.TargetControl = this;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(761, 437);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(124, 32);
+            this.label11.TabIndex = 120;
+            this.label11.Text = "Thêm ảnh";
+            // 
+            // gunaLinePanel2
+            // 
+            this.gunaLinePanel2.Controls.Add(this.pictureBox1);
+            this.gunaLinePanel2.LineBottom = 1;
+            this.gunaLinePanel2.LineColor = System.Drawing.Color.Black;
+            this.gunaLinePanel2.LineLeft = 1;
+            this.gunaLinePanel2.LineRight = 1;
+            this.gunaLinePanel2.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaLinePanel2.LineTop = 1;
+            this.gunaLinePanel2.Location = new System.Drawing.Point(666, 41);
+            this.gunaLinePanel2.Name = "gunaLinePanel2";
+            this.gunaLinePanel2.Size = new System.Drawing.Size(285, 393);
+            this.gunaLinePanel2.TabIndex = 121;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(646, 90);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(280, 445);
+            this.pictureBox1.Size = new System.Drawing.Size(280, 389);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabIndex = 117;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
@@ -372,55 +461,58 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1014, 682);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btn_luu_customer);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.gunaLinePanel1);
+            this.Controls.Add(this.pnTitle);
             this.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "AddProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddProduct";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.gunaLinePanel1.ResumeLayout(false);
+            this.gunaLinePanel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.pnTitle.ResumeLayout(false);
+            this.pnTitle.PerformLayout();
+            this.gunaLinePanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label7;
+        private Guna.UI.WinForms.GunaLinePanel gunaLinePanel1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lb_tensp_error;
-        private System.Windows.Forms.TextBox tb_masp;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tb_ten_sp;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb_soluong_error;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tb_sl;
+        private System.Windows.Forms.Label lb_masp_error;
+        private System.Windows.Forms.ComboBox cb_loaisp;
         private System.Windows.Forms.TextBox tb_giaban;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tb_gianhap;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btn_luu_customer;
-        private System.Windows.Forms.Label label11;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox cb_loaisp;
-        private System.Windows.Forms.Label lb_masp_error;
-        private System.Windows.Forms.Label lb_loaisp_error;
-        private System.Windows.Forms.Label lb_gianhap_error;
+        private System.Windows.Forms.Label lb_tensp_error;
+        private System.Windows.Forms.TextBox tb_masp;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tb_ten_sp;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lb_giaban_error;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tb_sl;
-        private System.Windows.Forms.Label lb_soluong_error;
+        private System.Windows.Forms.Label lb_gianhap_error;
+        private System.Windows.Forms.Label lb_loaisp_error;
+        private Guna.UI.WinForms.GunaButton btnHuy;
+        private Guna.UI.WinForms.GunaButton btn_luu_customer;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private Guna.UI.WinForms.GunaDragControl dragPnTitle;
+        private Guna.UI.WinForms.GunaPanel pnTitle;
+        private FontAwesome.Sharp.IconButton btnExit;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private System.Windows.Forms.Label label11;
+        private Guna.UI.WinForms.GunaLinePanel gunaLinePanel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

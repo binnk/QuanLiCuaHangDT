@@ -195,23 +195,22 @@ namespace QLCH_UI
             Reset();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnExit_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
-        private void btnMaximize_Click(object sender, EventArgs e)
+        private void btnMaximize_Click_1(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
                 WindowState = FormWindowState.Maximized;
             else
                 WindowState = FormWindowState.Normal;
+        }
+
+        private void btnMinimize_Click_1(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
         #endregion
 
@@ -342,5 +341,7 @@ namespace QLCH_UI
         {
             openChildForm(new fImportManage());
         }
+
+   
     }
 }
