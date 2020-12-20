@@ -12,9 +12,12 @@ namespace QLCH_UI
 {
     public partial class MainSaleForm : Form
     {
-        public MainSaleForm()
+        private string manv;
+        public MainSaleForm(string manvv)
         {
+            manv = manvv;
             InitializeComponent();
+            openChildForm(new fReviewSale(manv));
         }
 
         private Form activeForm = null;
@@ -43,12 +46,12 @@ namespace QLCH_UI
 
         private void btnTongQuan_Click(object sender, EventArgs e)
         {
-            openChildForm(new fReviewSale());
+            openChildForm(new fReviewSale(manv));
         }
 
         private void btnBanHang_Click(object sender, EventArgs e)
         {
-            SellForm f = new SellForm();
+            SellForm f = new SellForm(manv);
             f.ShowDialog();
         }
 
@@ -60,6 +63,11 @@ namespace QLCH_UI
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
             openChildForm(new fViewCustomer());
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

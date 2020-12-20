@@ -101,6 +101,7 @@
     <Compile Include="DAO\HoadonDAO.cs" />
     <Compile Include="DAO\Suachua.cs" />
     <Compile Include="DAO\TongquanSC_DAO.cs" />
+    <Compile Include="DAO\Tongquan_BH.cs" />
     <Compile Include="GUI\Manage\fImportManage.cs">
       <SubType>Form</SubType>
     </Compile>

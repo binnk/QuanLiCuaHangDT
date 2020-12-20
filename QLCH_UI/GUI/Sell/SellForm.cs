@@ -18,8 +18,10 @@ namespace QLCH_UI
     public partial class SellForm : Form
     {
         #region Khởi tạo
-        public SellForm()
+        private string manv ;
+        public SellForm(string manvv)
         {
+            manv = manvv;
             InitializeComponent();
         }
         //danh sach chua cac item da duoc them vao
@@ -203,7 +205,7 @@ namespace QLCH_UI
                 if (BanhangBUS.Instance.ExistKH(tbThemKH.Text) != "")
                 {
                     string Makh = BanhangBUS.Instance.ExistKH(tbThemKH.Text);
-                    mahd = BanhangBUS.Instance.SaveHD(Makh, "NV01",GetFloat(tbgiam_gia.Text), GetFloat(lbkhach_phai_tra.Text));
+                    mahd = BanhangBUS.Instance.SaveHD(Makh, manv,GetFloat(tbgiam_gia.Text), GetFloat(lbkhach_phai_tra.Text));
 
                 }
                 //Lưu chi tiết hóa đơn

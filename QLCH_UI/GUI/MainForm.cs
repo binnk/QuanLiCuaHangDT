@@ -19,8 +19,10 @@ namespace QLCH_UI
     {
         private IconButton currentBtn;
         private Panel leftBorderBtn;
-        public MainForm()
+        private string manv;
+        public MainForm(string manvv)
         {
+            manv = manvv;
             InitializeComponent();
 
            
@@ -184,7 +186,7 @@ namespace QLCH_UI
         private void btnOrders_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color9);
-            (new SellForm()).ShowDialog();
+            (new SellForm(manv)).ShowDialog();
 
         }
 
