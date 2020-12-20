@@ -16,5 +16,15 @@ namespace QLCH_UI
         {
             InitializeComponent();
         }
+
+        private void gunaLinePanel2_MouseEnter(object sender, EventArgs e)
+        {
+            gunaLinePanel2.BackColor = Color.FromArgb(220, 250, 252);
+        }
+
+        private void gunaLinePanel2_MouseLeave(object sender, EventArgs e)
+        {
+            gunaLinePanel2.BackColor = Color.White;
+        }
     }
 }

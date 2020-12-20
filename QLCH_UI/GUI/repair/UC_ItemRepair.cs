@@ -142,5 +142,15 @@ namespace QLCH_UI
             fInfoRepair form = new fInfoRepair(MaDon);
             form.ShowDialog();
         }
+
+        private void gunaLinePanel3_MouseEnter(object sender, EventArgs e)
+        {
+            gunaLinePanel3.BackColor = Color.FromArgb(220, 250, 252);
+        }
+
+        private void gunaLinePanel3_MouseLeave(object sender, EventArgs e)
+        {
+            gunaLinePanel3.BackColor = Color.White;
+        }
     }
 }

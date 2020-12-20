@@ -61,6 +61,8 @@
             this.gunaLinePanel1.Size = new System.Drawing.Size(1515, 75);
             this.gunaLinePanel1.TabIndex = 2;
             this.gunaLinePanel1.Click += new System.EventHandler(this.gunaLinePanel1_Click);
+            this.gunaLinePanel1.MouseEnter += new System.EventHandler(this.gunaLinePanel1_MouseEnter);
+            this.gunaLinePanel1.MouseLeave += new System.EventHandler(this.gunaLinePanel1_MouseLeave);
             // 
             // gunaButton2
             // 
@@ -194,6 +196,8 @@
             this.Controls.Add(this.gunaLinePanel1);
             this.Name = "UC_ItemProduct";
             this.Size = new System.Drawing.Size(1515, 75);
+            this.MouseEnter += new System.EventHandler(this.UC_ItemProduct_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.UC_ItemProduct_MouseLeave);
             this.gunaLinePanel1.ResumeLayout(false);
             this.gunaLinePanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();

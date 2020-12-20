@@ -58,7 +58,8 @@
             this.gunaLinePanel1.Size = new System.Drawing.Size(1515, 50);
             this.gunaLinePanel1.TabIndex = 1;
             this.gunaLinePanel1.Click += new System.EventHandler(this.gunaLinePanel1_Click);
-           // this.gunaLinePanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaLinePanel1_Paint);
+            this.gunaLinePanel1.MouseEnter += new System.EventHandler(this.gunaLinePanel1_MouseEnter);
+            this.gunaLinePanel1.MouseLeave += new System.EventHandler(this.gunaLinePanel1_MouseLeave);
             // 
             // gunaButton3
             // 

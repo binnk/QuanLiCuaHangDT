@@ -56,6 +56,15 @@ namespace QLCH_UI
         {
             (new InfoCustomer("", "", "", "", "", "")).ShowDialog();
         }
-    
+
+        private void gunaLinePanel1_MouseEnter(object sender, EventArgs e)
+        {
+            gunaLinePanel1.BackColor = Color.FromArgb(220, 250, 252);
+        }
+
+        private void gunaLinePanel1_MouseLeave(object sender, EventArgs e)
+        {
+            gunaLinePanel1.BackColor = Color.White;
+        }
     }
 }

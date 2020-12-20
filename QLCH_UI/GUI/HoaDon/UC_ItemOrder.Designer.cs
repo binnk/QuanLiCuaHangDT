@@ -53,6 +53,8 @@
             this.gunaLinePanel1.Size = new System.Drawing.Size(1515, 50);
             this.gunaLinePanel1.TabIndex = 1;
             this.gunaLinePanel1.Click += new System.EventHandler(this.gunaLinePanel1_Click);
+            this.gunaLinePanel1.MouseEnter += new System.EventHandler(this.gunaLinePanel1_MouseEnter);
+            this.gunaLinePanel1.MouseLeave += new System.EventHandler(this.gunaLinePanel1_MouseLeave);
             // 
             // lb_trigia
             // 
@@ -120,6 +122,7 @@
             this.Controls.Add(this.gunaLinePanel1);
             this.Name = "UC_ItemOrder";
             this.Size = new System.Drawing.Size(1515, 51);
+            this.MouseEnter += new System.EventHandler(this.UC_ItemOrder_MouseEnter);
             this.gunaLinePanel1.ResumeLayout(false);
             this.gunaLinePanel1.PerformLayout();
             this.ResumeLayout(false);

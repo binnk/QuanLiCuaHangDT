@@ -62,5 +62,23 @@ namespace QLCH_UI
         {
 
         }
+
+        private void UC_ItemProduct_MouseEnter(object sender, EventArgs e)
+        {
+        }
+
+        private void UC_ItemProduct_MouseLeave(object sender, EventArgs e)
+        {
+        }
+
+        private void gunaLinePanel1_MouseEnter(object sender, EventArgs e)
+        {
+            gunaLinePanel1.BackColor = Color.FromArgb(220, 250, 252);
+        }
+
+        private void gunaLinePanel1_MouseLeave(object sender, EventArgs e)
+        {
+            gunaLinePanel1.BackColor = Color.White;
+        }
     }
 }
