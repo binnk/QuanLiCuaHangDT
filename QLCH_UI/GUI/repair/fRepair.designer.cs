@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fRepair));
             this.panel = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bt_loi = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnThem = new Guna.UI.WinForms.GunaButton();
             this.btview_thanhtoan = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btview_daxong = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -58,7 +59,6 @@
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.bt_loi = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panel.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -91,6 +91,41 @@
             this.panel.Quality = 10;
             this.panel.Size = new System.Drawing.Size(1593, 853);
             this.panel.TabIndex = 4;
+            // 
+            // bt_loi
+            // 
+            this.bt_loi.AnimationHoverSpeed = 0.07F;
+            this.bt_loi.AnimationSpeed = 0.03F;
+            this.bt_loi.BackColor = System.Drawing.Color.Transparent;
+            this.bt_loi.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
+            this.bt_loi.BorderColor = System.Drawing.SystemColors.Control;
+            this.bt_loi.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.bt_loi.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.bt_loi.CheckedBorderColor = System.Drawing.Color.Black;
+            this.bt_loi.CheckedForeColor = System.Drawing.Color.White;
+            this.bt_loi.CheckedImage = null;
+            this.bt_loi.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.bt_loi.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bt_loi.FocusedColor = System.Drawing.Color.Empty;
+            this.bt_loi.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_loi.ForeColor = System.Drawing.Color.Gray;
+            this.bt_loi.Image = null;
+            this.bt_loi.ImageSize = new System.Drawing.Size(20, 20);
+            this.bt_loi.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.bt_loi.Location = new System.Drawing.Point(673, 64);
+            this.bt_loi.Name = "bt_loi";
+            this.bt_loi.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.bt_loi.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.bt_loi.OnHoverForeColor = System.Drawing.Color.White;
+            this.bt_loi.OnHoverImage = null;
+            this.bt_loi.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.bt_loi.OnPressedColor = System.Drawing.Color.Black;
+            this.bt_loi.Radius = 13;
+            this.bt_loi.Size = new System.Drawing.Size(111, 42);
+            this.bt_loi.TabIndex = 20;
+            this.bt_loi.Text = "Lỗi";
+            this.bt_loi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bt_loi.Click += new System.EventHandler(this.bt_loi_Click);
             // 
             // btnThem
             // 
@@ -320,9 +355,9 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Controls.Add(this.gunaLinePanel2);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 50);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1515, 588);
@@ -600,41 +635,6 @@
             this.guna2TextBox1.TabIndex = 0;
             this.guna2TextBox1.TextOffset = new System.Drawing.Point(15, -1);
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
-            // 
-            // bt_loi
-            // 
-            this.bt_loi.AnimationHoverSpeed = 0.07F;
-            this.bt_loi.AnimationSpeed = 0.03F;
-            this.bt_loi.BackColor = System.Drawing.Color.Transparent;
-            this.bt_loi.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
-            this.bt_loi.BorderColor = System.Drawing.SystemColors.Control;
-            this.bt_loi.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.bt_loi.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.bt_loi.CheckedBorderColor = System.Drawing.Color.Black;
-            this.bt_loi.CheckedForeColor = System.Drawing.Color.White;
-            this.bt_loi.CheckedImage = null;
-            this.bt_loi.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.bt_loi.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bt_loi.FocusedColor = System.Drawing.Color.Empty;
-            this.bt_loi.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_loi.ForeColor = System.Drawing.Color.Gray;
-            this.bt_loi.Image = null;
-            this.bt_loi.ImageSize = new System.Drawing.Size(20, 20);
-            this.bt_loi.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.bt_loi.Location = new System.Drawing.Point(673, 64);
-            this.bt_loi.Name = "bt_loi";
-            this.bt_loi.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.bt_loi.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.bt_loi.OnHoverForeColor = System.Drawing.Color.White;
-            this.bt_loi.OnHoverImage = null;
-            this.bt_loi.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.bt_loi.OnPressedColor = System.Drawing.Color.Black;
-            this.bt_loi.Radius = 13;
-            this.bt_loi.Size = new System.Drawing.Size(111, 42);
-            this.bt_loi.TabIndex = 20;
-            this.bt_loi.Text = "Lỗi";
-            this.bt_loi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.bt_loi.Click += new System.EventHandler(this.bt_loi_Click);
             // 
             // fRepair
             // 

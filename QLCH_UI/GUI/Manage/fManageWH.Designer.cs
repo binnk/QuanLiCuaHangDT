@@ -45,13 +45,13 @@
             this.lb_NgayNhan = new Guna.UI.WinForms.GunaLabel();
             this.lb_MaDon = new Guna.UI.WinForms.GunaLabel();
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.panel.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -130,9 +130,9 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Controls.Add(this.gunaLinePanel2);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 50);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1515, 614);
@@ -300,6 +300,17 @@
             this.gunaLinePanel1.Size = new System.Drawing.Size(1515, 50);
             this.gunaLinePanel1.TabIndex = 0;
             // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
+            this.gunaLabel1.Location = new System.Drawing.Point(1275, 12);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(77, 25);
+            this.gunaLabel1.TabIndex = 12;
+            this.gunaLabel1.Text = "Giá bán";
+            // 
             // gunaLabel7
             // 
             this.gunaLabel7.AutoSize = true;
@@ -386,17 +397,6 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(527, 53);
             this.guna2TextBox1.TabIndex = 0;
             this.guna2TextBox1.TextOffset = new System.Drawing.Point(15, -1);
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(1275, 12);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(77, 25);
-            this.gunaLabel1.TabIndex = 12;
-            this.gunaLabel1.Text = "Giá bán";
             // 
             // fManageWH
             // 

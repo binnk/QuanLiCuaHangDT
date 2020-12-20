@@ -228,7 +228,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(258, 853);
+            this.panelMenu.Size = new System.Drawing.Size(258, 875);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
@@ -476,7 +476,7 @@
             this.panelChildForm.Location = new System.Drawing.Point(258, 73);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Quality = 10;
-            this.panelChildForm.Size = new System.Drawing.Size(1593, 780);
+            this.panelChildForm.Size = new System.Drawing.Size(1593, 802);
             this.panelChildForm.TabIndex = 3;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
             // 
@@ -484,7 +484,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1851, 853);
+            this.ClientSize = new System.Drawing.Size(1851, 875);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
