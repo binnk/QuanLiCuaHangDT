@@ -29,20 +29,6 @@ namespace QLCH_UI
             cb_loaisp.Text = loai_sp;
             imgg = anh;
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "Pictures files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png)|*.jpg; *.jpeg; *.jpe; *.jfif; *.png|All files (*.*)|*.*";
-            openFile.FilterIndex = 1;
-            openFile.RestoreDirectory = true;
-            if (openFile.ShowDialog() == DialogResult.OK)
-            {
-                pictureBox1.Image = Image.FromFile(openFile.FileName);
-                this.Text = openFile.FileName;
-                kt = false;
-            }
-        }
-
         public bool check_error()
         {
             if (ProductBUS.Instance.ten_sp(tb_ten_sp.Text) == true) lb_tensp_error.Visible = false;
@@ -79,39 +65,9 @@ namespace QLCH_UI
             return (true);
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
-        private void btn_luu_customer_Click(object sender, EventArgs e)
-        {
-            if (check_error() == true)
-            {
-                DataTable c = ProductDAO.Instance.viewinfo(tb_masp.Text);
-                int so_luong = int.Parse(c.Rows[0]["so_luong"].ToString());
-                ProductDTO a;
-                if (kt==true)
-                {
-                    a = new ProductDTO(imgg, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text, double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text), so_luong,1);
-                }
-                else
-                {
-                    byte[] k = ProductBUS.Instance.ImageToByteArray(this.Text);
-                    string l = Convert.ToBase64String(k);
-                    a = new ProductDTO(l, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text, double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text), so_luong,1);
-                }
-                if (ProductBUS.Instance.edit_product(a))
-                {
-                    MessageBox.Show("Sửa thành công");
-                }
-                else
-                {
-                    MessageBox.Show("Không sửa thành công");
-                }
-                this.Close();
-            }
-        }
+
+
         private string GetFloat(string s)
         {
             string rs = "";
@@ -158,6 +114,54 @@ namespace QLCH_UI
                 tb_giaban.Text = Convert.ToDouble(GetFloat(tb_giaban.Text)).ToString("#,##0");
                 tb_giaban.SelectionStart = tb_giaban.Text.Length;
             }
+        }
+
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Pictures files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png)|*.jpg; *.jpeg; *.jpe; *.jfif; *.png|All files (*.*)|*.*";
+            openFile.FilterIndex = 1;
+            openFile.RestoreDirectory = true;
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image = Image.FromFile(openFile.FileName);
+                this.Text = openFile.FileName;
+            }
+        }
+
+        private void btn_luu_customer_Click_1(object sender, EventArgs e)
+        {
+            if (check_error() == true)
+            {
+                DataTable c = ProductDAO.Instance.viewinfo(tb_masp.Text);
+                int so_luong = int.Parse(c.Rows[0]["so_luong"].ToString());
+                ProductDTO a;
+                if (kt == true)
+                {
+                    a = new ProductDTO(imgg, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text, double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text), so_luong, 1);
+                }
+                else
+                {
+                    byte[] k = ProductBUS.Instance.ImageToByteArray(this.Text);
+                    string l = Convert.ToBase64String(k);
+                    a = new ProductDTO(l, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text, double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text), so_luong, 1);
+                }
+                if (ProductBUS.Instance.edit_product(a))
+                {
+                    MessageBox.Show("Sửa thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Không sửa thành công");
+                }
+                this.Close();
+            }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

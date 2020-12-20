@@ -91,14 +91,21 @@ namespace QLCH_UI
             }
             return (true);
         }
-        private void btn_luu_customer_Click(object sender, EventArgs e)
+
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_luu_customer_Click_1(object sender, EventArgs e)
         {
             if (check_erro() == true)
             {
                 string a;
                 if (Radio_Nam.Checked == true) a = Radio_Nam.Text;
                 else a = Radio_Nu.Text;
-                CustomersDTO b = new CustomersDTO(tb_makh.Text, tb_ten_kh.Text, date_kh.Value, tb_dia_chi.Text ,tb_phone.Text, a);
+                CustomersDTO b = new CustomersDTO(tb_makh.Text, tb_ten_kh.Text, date_kh.Value, tb_dia_chi.Text, tb_phone.Text, a);
                 if (CustomersBUS.Instance.edit_customer(b) == true)
                 {
                     MessageBox.Show("Sửa thành công");
@@ -111,7 +118,7 @@ namespace QLCH_UI
             }
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void btnHuy_Click(object sender, EventArgs e)
         {
             this.Close();
         }

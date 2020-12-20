@@ -160,7 +160,7 @@ namespace QLCH_UI.DAO
             }
             else
             {
-                query = "update SUA_CHUA set tinh_trang = '" + tinhtrang + "' where masc = '" + masc + "'";
+                query = "update SUA_CHUA set tinh_trang = '" + tinhtrang + "' , tri_gia = '"+ tri_gia +"' where masc = '" + masc + "'";
             }
             DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
             return;

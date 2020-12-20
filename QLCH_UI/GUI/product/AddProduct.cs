@@ -20,18 +20,7 @@ namespace QLCH_UI
         {
             InitializeComponent();
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "Pictures files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png)|*.jpg; *.jpeg; *.jpe; *.jfif; *.png|All files (*.*)|*.*";
-            openFile.FilterIndex = 1;
-            openFile.RestoreDirectory = true;
-            if (openFile.ShowDialog() == DialogResult.OK)
-            {
-                pictureBox1.Image = Image.FromFile(openFile.FileName);
-                this.Text = openFile.FileName;
-            }
-        }
+
        
         public bool check_error()
         {
@@ -75,43 +64,7 @@ namespace QLCH_UI
             return (true);
         }
    
-        private void btn_luu_customer_Click(object sender, EventArgs e)
-        {
-            int rs = 0;
-            DataTable aa = ProductDAO.Instance.Productlist();
-            for (int i = 0; i < aa.Rows.Count; i++)
-            {
-                string k = aa.Rows[i]["masp"].ToString();
-                int l = k.Length;
-                int tg = int.Parse(k.Substring(2, l - 2));
-                if (tg > rs) rs = tg;
-            }
-            rs++;
-            string p = "";
-            if (cb_loaisp.Text == "Laptop") p = "LT";
-            if (cb_loaisp.Text == "Điện thoại") p = "DT";
-            if (cb_loaisp.Text == "Linh kiện") p = "LK";
-            if (cb_loaisp.Text == "Phụ kiện") p = "PK";
-            if (cb_loaisp.Text == "Khác") p = "SP";
-            if (rs > 9) p = p + rs.ToString();
-            else p = p + "0" + rs.ToString();
-            tb_masp.Text = p;
-            if (check_error()==true)
-            {
-                byte[] k = ProductBUS.Instance.ImageToByteArray(this.Text);
-                string l = Convert.ToBase64String(k);
-                ProductDTO a = new ProductDTO(l, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text ,double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text),int.Parse(tb_sl.Text),1);
-                if (ProductBUS.Instance.insert_product(a))
-                {
-                    MessageBox.Show("Thêm thành công");
-                }    
-                else
-                {
-                    MessageBox.Show("Không thêm thành công");
-                }
-                this.Close();
-            }
-        }
+        
 
         private void lb_tensp_error_Click(object sender, EventArgs e)
         {
@@ -178,6 +131,68 @@ namespace QLCH_UI
                 giaban = GetFloat(tb_giaban.Text);
                 tb_giaban.Text = Convert.ToDouble(GetFloat(tb_giaban.Text)).ToString("#,##0");
                 tb_giaban.SelectionStart = tb_giaban.Text.Length;
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_luu_customer_Click_1(object sender, EventArgs e)
+        {
+            int rs = 0;
+            DataTable aa = ProductDAO.Instance.Productlist();
+            for (int i = 0; i < aa.Rows.Count; i++)
+            {
+                string k = aa.Rows[i]["masp"].ToString();
+                int l = k.Length;
+                int tg = int.Parse(k.Substring(2, l - 2));
+                if (tg > rs) rs = tg;
+            }
+            rs++;
+            string p = "";
+            if (cb_loaisp.Text == "Laptop") p = "LT";
+            if (cb_loaisp.Text == "Điện thoại") p = "DT";
+            if (cb_loaisp.Text == "Linh kiện") p = "LK";
+            if (cb_loaisp.Text == "Phụ kiện") p = "PK";
+            if (cb_loaisp.Text == "Khác") p = "SP";
+            if (rs > 9) p = p + rs.ToString();
+            else p = p + "0" + rs.ToString();
+            tb_masp.Text = p;
+            if (check_error() == true)
+            {
+                byte[] k = ProductBUS.Instance.ImageToByteArray(this.Text);
+                string l = Convert.ToBase64String(k);
+                ProductDTO a = new ProductDTO(l, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text, double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text), int.Parse(tb_sl.Text), 1);
+                if (ProductBUS.Instance.insert_product(a))
+                {
+                    MessageBox.Show("Thêm thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Không thêm thành công");
+                }
+                this.Close();
+            }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Pictures files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png)|*.jpg; *.jpeg; *.jpe; *.jfif; *.png|All files (*.*)|*.*";
+            openFile.FilterIndex = 1;
+            openFile.RestoreDirectory = true;
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image = Image.FromFile(openFile.FileName);
+                this.Text = openFile.FileName;
             }
         }
     }

@@ -224,7 +224,7 @@ namespace LoginUI
                 if (Account.Instance.Register(textUser.Text.ToString(), textEmail.Text.ToString(), textPass.Text.ToString()) == 1)
                 {
                     this.Hide();
-                    using (MainForm mainForm = new MainForm())
+                    using (LoginForm mainForm = new LoginForm())
                         mainForm.ShowDialog();
                 }
             }

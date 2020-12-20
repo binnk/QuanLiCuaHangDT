@@ -79,7 +79,7 @@ namespace LoginUI
                 if (Account.Instance.Get_Loai_NV(textUser.Text) == "admin")
                 {
                     this.Hide();
-                    using (MainForm mainForm = new MainForm())
+                    using (MainForm mainForm = new MainForm(Account.Instance.Get_Ma_NV(textUser.Text)))
                         mainForm.ShowDialog();
                 }
                 if (Account.Instance.Get_Loai_NV(textUser.Text) == "Kỹ thuật")
@@ -93,7 +93,7 @@ namespace LoginUI
                 if (Account.Instance.Get_Loai_NV(textUser.Text) == "Bán hàng")
                 {
                     this.Hide();
-                    using (MainForm mainForm = new MainForm())
+                    using (MainSaleForm mainForm = new MainSaleForm(Account.Instance.Get_Ma_NV(textUser.Text)))
                         mainForm.ShowDialog();
                 }
             }

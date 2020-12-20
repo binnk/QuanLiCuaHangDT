@@ -181,6 +181,8 @@
             this.gunaLinePanel3.Size = new System.Drawing.Size(1515, 76);
             this.gunaLinePanel3.TabIndex = 4;
             this.gunaLinePanel3.DoubleClick += new System.EventHandler(this.gunaLinePanel3_DoubleClick);
+            this.gunaLinePanel3.MouseEnter += new System.EventHandler(this.gunaLinePanel3_MouseEnter);
+            this.gunaLinePanel3.MouseLeave += new System.EventHandler(this.gunaLinePanel3_MouseLeave);
             // 
             // gunaButton2
             // 

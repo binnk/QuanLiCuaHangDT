@@ -29,15 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lb_gioitinh));
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.pnTitle = new Guna.UI.WinForms.GunaPanel();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.dragPnTitle = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
+            this.lb_loainv = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lb_email = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lb_taikhoan = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.lb_diachi = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.lb_gioi_tinh = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.icExit = new FontAwesome.Sharp.IconPictureBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.lb_tennv = new System.Windows.Forms.Label();
             this.lb_sdt = new System.Windows.Forms.Label();
             this.lb_ngaysinh = new System.Windows.Forms.Label();
@@ -46,241 +54,279 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lb_taikhoan = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.lb_email = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lb_loainv = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.icExit)).BeginInit();
+            this.pnTitle.SuspendLayout();
+            this.gunaLinePanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lb_diachi
+            // gunaElipse1
             // 
-            this.lb_diachi.AutoSize = true;
-            this.lb_diachi.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lb_diachi.Location = new System.Drawing.Point(240, 554);
-            this.lb_diachi.Name = "lb_diachi";
-            this.lb_diachi.Size = new System.Drawing.Size(75, 30);
-            this.lb_diachi.TabIndex = 120;
-            this.lb_diachi.Text = "địa chỉ";
+            this.gunaElipse1.Radius = 15;
+            this.gunaElipse1.TargetControl = this;
             // 
-            // label13
+            // pnTitle
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(37, 554);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(89, 32);
-            this.label13.TabIndex = 119;
-            this.label13.Text = "Địa chỉ";
+            this.pnTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.pnTitle.Controls.Add(this.btnExit);
+            this.pnTitle.Controls.Add(this.gunaLabel1);
+            this.pnTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTitle.Location = new System.Drawing.Point(0, 0);
+            this.pnTitle.Name = "pnTitle";
+            this.pnTitle.Size = new System.Drawing.Size(1093, 61);
+            this.pnTitle.TabIndex = 20;
             // 
-            // lb_gioi_tinh
+            // btnExit
             // 
-            this.lb_gioi_tinh.AutoSize = true;
-            this.lb_gioi_tinh.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lb_gioi_tinh.Location = new System.Drawing.Point(240, 416);
-            this.lb_gioi_tinh.Name = "lb_gioi_tinh";
-            this.lb_gioi_tinh.Size = new System.Drawing.Size(91, 30);
-            this.lb_gioi_tinh.TabIndex = 118;
-            this.lb_gioi_tinh.Text = "giới tính";
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnExit.Font = new System.Drawing.Font("Century", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnExit.IconColor = System.Drawing.SystemColors.GrayText;
+            this.btnExit.IconSize = 32;
+            this.btnExit.Location = new System.Drawing.Point(1046, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Rotation = 0D;
+            this.btnExit.Size = new System.Drawing.Size(32, 32);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // label11
+            // gunaLabel1
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(33, 414);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(109, 32);
-            this.label11.TabIndex = 117;
-            this.label11.Text = "Giới tính";
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel1.Location = new System.Drawing.Point(415, 9);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(314, 45);
+            this.gunaLabel1.TabIndex = 0;
+            this.gunaLabel1.Text = "Thông tin nhân viên";
+            // 
+            // dragPnTitle
+            // 
+            this.dragPnTitle.TargetControl = this.pnTitle;
             // 
             // bunifuDragControl1
             // 
             this.bunifuDragControl1.Fixed = true;
             this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.TargetControl = null;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // panel1
+            // gunaLinePanel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(100)))), ((int)(((byte)(207)))));
-            this.panel1.Controls.Add(this.icExit);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1093, 69);
-            this.panel1.TabIndex = 108;
+            this.gunaLinePanel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.gunaLinePanel1.Controls.Add(this.lb_loainv);
+            this.gunaLinePanel1.Controls.Add(this.label5);
+            this.gunaLinePanel1.Controls.Add(this.lb_email);
+            this.gunaLinePanel1.Controls.Add(this.label14);
+            this.gunaLinePanel1.Controls.Add(this.lb_taikhoan);
+            this.gunaLinePanel1.Controls.Add(this.label17);
+            this.gunaLinePanel1.Controls.Add(this.lb_diachi);
+            this.gunaLinePanel1.Controls.Add(this.label13);
+            this.gunaLinePanel1.Controls.Add(this.lb_gioi_tinh);
+            this.gunaLinePanel1.Controls.Add(this.label11);
+            this.gunaLinePanel1.Controls.Add(this.lb_tennv);
+            this.gunaLinePanel1.Controls.Add(this.lb_sdt);
+            this.gunaLinePanel1.Controls.Add(this.lb_ngaysinh);
+            this.gunaLinePanel1.Controls.Add(this.lb_manv);
+            this.gunaLinePanel1.Controls.Add(this.label4);
+            this.gunaLinePanel1.Controls.Add(this.label2);
+            this.gunaLinePanel1.Controls.Add(this.label3);
+            this.gunaLinePanel1.Controls.Add(this.label1);
+            this.gunaLinePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gunaLinePanel1.LineBottom = 6;
+            this.gunaLinePanel1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.gunaLinePanel1.LineLeft = 4;
+            this.gunaLinePanel1.LineRight = 6;
+            this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaLinePanel1.Location = new System.Drawing.Point(0, 0);
+            this.gunaLinePanel1.Name = "gunaLinePanel1";
+            this.gunaLinePanel1.Size = new System.Drawing.Size(1093, 621);
+            this.gunaLinePanel1.TabIndex = 21;
             // 
-            // icExit
+            // lb_loainv
             // 
-            this.icExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.icExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(100)))), ((int)(((byte)(207)))));
-            this.icExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("icExit.BackgroundImage")));
-            this.icExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.icExit.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.icExit.IconColor = System.Drawing.SystemColors.ControlText;
-            this.icExit.IconSize = 48;
-            this.icExit.Location = new System.Drawing.Point(1033, 9);
-            this.icExit.Name = "icExit";
-            this.icExit.Size = new System.Drawing.Size(48, 48);
-            this.icExit.TabIndex = 106;
-            this.icExit.TabStop = false;
-            this.icExit.Click += new System.EventHandler(this.icExit_Click);
+            this.lb_loainv.AutoSize = true;
+            this.lb_loainv.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_loainv.Location = new System.Drawing.Point(326, 227);
+            this.lb_loainv.Name = "lb_loainv";
+            this.lb_loainv.Size = new System.Drawing.Size(146, 30);
+            this.lb_loainv.TabIndex = 147;
+            this.lb_loainv.Text = "loại nhân viên";
             // 
-            // label7
+            // label5
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(386, 12);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(314, 45);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Thông tin nhân viên";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(116, 225);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 32);
+            this.label5.TabIndex = 146;
+            this.label5.Text = "Chức vụ";
             // 
-            // lb_tennv
+            // lb_email
             // 
-            this.lb_tennv.AutoSize = true;
-            this.lb_tennv.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lb_tennv.Location = new System.Drawing.Point(243, 206);
-            this.lb_tennv.Name = "lb_tennv";
-            this.lb_tennv.Size = new System.Drawing.Size(143, 30);
-            this.lb_tennv.TabIndex = 114;
-            this.lb_tennv.Text = "tên nhân viên";
+            this.lb_email.AutoSize = true;
+            this.lb_email.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_email.Location = new System.Drawing.Point(879, 157);
+            this.lb_email.Name = "lb_email";
+            this.lb_email.Size = new System.Drawing.Size(65, 30);
+            this.lb_email.TabIndex = 145;
+            this.lb_email.Text = "email";
             // 
-            // lb_sdt
+            // label14
             // 
-            this.lb_sdt.AutoSize = true;
-            this.lb_sdt.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lb_sdt.Location = new System.Drawing.Point(240, 486);
-            this.lb_sdt.Name = "lb_sdt";
-            this.lb_sdt.Size = new System.Drawing.Size(137, 30);
-            this.lb_sdt.TabIndex = 116;
-            this.lb_sdt.Text = "số điện thoại";
-            // 
-            // lb_ngaysinh
-            // 
-            this.lb_ngaysinh.AutoSize = true;
-            this.lb_ngaysinh.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lb_ngaysinh.Location = new System.Drawing.Point(240, 344);
-            this.lb_ngaysinh.Name = "lb_ngaysinh";
-            this.lb_ngaysinh.Size = new System.Drawing.Size(104, 30);
-            this.lb_ngaysinh.TabIndex = 115;
-            this.lb_ngaysinh.Text = "ngày sinh";
-            // 
-            // lb_manv
-            // 
-            this.lb_manv.AutoSize = true;
-            this.lb_manv.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lb_manv.Location = new System.Drawing.Point(243, 136);
-            this.lb_manv.Name = "lb_manv";
-            this.lb_manv.Size = new System.Drawing.Size(142, 30);
-            this.lb_manv.TabIndex = 113;
-            this.lb_manv.Text = "mã nhân viên";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(33, 484);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 32);
-            this.label4.TabIndex = 112;
-            this.label4.Text = "Số điện thoại";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 134);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 32);
-            this.label2.TabIndex = 109;
-            this.label2.Text = "Mã nhân viên";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(33, 344);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 32);
-            this.label3.TabIndex = 111;
-            this.label3.Text = "Ngày sinh";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 204);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 32);
-            this.label1.TabIndex = 110;
-            this.label1.Text = "Tên nhân viên";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(704, 157);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(73, 32);
+            this.label14.TabIndex = 144;
+            this.label14.Text = "Email";
             // 
             // lb_taikhoan
             // 
             this.lb_taikhoan.AutoSize = true;
             this.lb_taikhoan.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lb_taikhoan.Location = new System.Drawing.Point(793, 134);
+            this.lb_taikhoan.Location = new System.Drawing.Point(876, 85);
             this.lb_taikhoan.Name = "lb_taikhoan";
             this.lb_taikhoan.Size = new System.Drawing.Size(101, 30);
-            this.lb_taikhoan.TabIndex = 125;
+            this.lb_taikhoan.TabIndex = 143;
             this.lb_taikhoan.Text = "tài khoản";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(618, 132);
+            this.label17.Location = new System.Drawing.Point(701, 83);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(120, 32);
-            this.label17.TabIndex = 124;
+            this.label17.TabIndex = 142;
             this.label17.Text = "Tài khoản";
             // 
-            // label14
+            // lb_diachi
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(618, 206);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(73, 32);
-            this.label14.TabIndex = 126;
-            this.label14.Text = "Email";
+            this.lb_diachi.AutoSize = true;
+            this.lb_diachi.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_diachi.Location = new System.Drawing.Point(327, 505);
+            this.lb_diachi.Name = "lb_diachi";
+            this.lb_diachi.Size = new System.Drawing.Size(75, 30);
+            this.lb_diachi.TabIndex = 141;
+            this.lb_diachi.Text = "địa chỉ";
             // 
-            // lb_email
+            // label13
             // 
-            this.lb_email.AutoSize = true;
-            this.lb_email.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lb_email.Location = new System.Drawing.Point(793, 206);
-            this.lb_email.Name = "lb_email";
-            this.lb_email.Size = new System.Drawing.Size(65, 30);
-            this.lb_email.TabIndex = 127;
-            this.lb_email.Text = "email";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(120, 505);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(89, 32);
+            this.label13.TabIndex = 140;
+            this.label13.Text = "Địa chỉ";
             // 
-            // label5
+            // lb_gioi_tinh
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(33, 274);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(174, 32);
-            this.label5.TabIndex = 128;
-            this.label5.Text = "Loại nhân viên";
+            this.lb_gioi_tinh.AutoSize = true;
+            this.lb_gioi_tinh.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_gioi_tinh.Location = new System.Drawing.Point(327, 367);
+            this.lb_gioi_tinh.Name = "lb_gioi_tinh";
+            this.lb_gioi_tinh.Size = new System.Drawing.Size(91, 30);
+            this.lb_gioi_tinh.TabIndex = 139;
+            this.lb_gioi_tinh.Text = "giới tính";
             // 
-            // lb_loainv
+            // label11
             // 
-            this.lb_loainv.AutoSize = true;
-            this.lb_loainv.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lb_loainv.Location = new System.Drawing.Point(239, 276);
-            this.lb_loainv.Name = "lb_loainv";
-            this.lb_loainv.Size = new System.Drawing.Size(146, 30);
-            this.lb_loainv.TabIndex = 129;
-            this.lb_loainv.Text = "loại nhân viên";
-            this.lb_loainv.Click += new System.EventHandler(this.lb_loainv_Click);
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(116, 365);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(109, 32);
+            this.label11.TabIndex = 138;
+            this.label11.Text = "Giới tính";
+            // 
+            // lb_tennv
+            // 
+            this.lb_tennv.AutoSize = true;
+            this.lb_tennv.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_tennv.Location = new System.Drawing.Point(326, 157);
+            this.lb_tennv.Name = "lb_tennv";
+            this.lb_tennv.Size = new System.Drawing.Size(143, 30);
+            this.lb_tennv.TabIndex = 135;
+            this.lb_tennv.Text = "tên nhân viên";
+            // 
+            // lb_sdt
+            // 
+            this.lb_sdt.AutoSize = true;
+            this.lb_sdt.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_sdt.Location = new System.Drawing.Point(327, 437);
+            this.lb_sdt.Name = "lb_sdt";
+            this.lb_sdt.Size = new System.Drawing.Size(137, 30);
+            this.lb_sdt.TabIndex = 137;
+            this.lb_sdt.Text = "số điện thoại";
+            // 
+            // lb_ngaysinh
+            // 
+            this.lb_ngaysinh.AutoSize = true;
+            this.lb_ngaysinh.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_ngaysinh.Location = new System.Drawing.Point(327, 295);
+            this.lb_ngaysinh.Name = "lb_ngaysinh";
+            this.lb_ngaysinh.Size = new System.Drawing.Size(104, 30);
+            this.lb_ngaysinh.TabIndex = 136;
+            this.lb_ngaysinh.Text = "ngày sinh";
+            // 
+            // lb_manv
+            // 
+            this.lb_manv.AutoSize = true;
+            this.lb_manv.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lb_manv.Location = new System.Drawing.Point(326, 87);
+            this.lb_manv.Name = "lb_manv";
+            this.lb_manv.Size = new System.Drawing.Size(142, 30);
+            this.lb_manv.TabIndex = 134;
+            this.lb_manv.Text = "mã nhân viên";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(116, 435);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(160, 32);
+            this.label4.TabIndex = 133;
+            this.label4.Text = "Số điện thoại";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(116, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(164, 32);
+            this.label2.TabIndex = 130;
+            this.label2.Text = "Mã nhân viên";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(116, 295);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 32);
+            this.label3.TabIndex = 132;
+            this.label3.Text = "Ngày sinh";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(116, 155);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(167, 32);
+            this.label1.TabIndex = 131;
+            this.label1.Text = "Tên nhân viên";
             // 
             // lb_gioitinh
             // 
@@ -288,46 +334,37 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1093, 621);
-            this.Controls.Add(this.lb_loainv);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.lb_email);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.lb_taikhoan);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.lb_diachi);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.lb_gioi_tinh);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.lb_tennv);
-            this.Controls.Add(this.lb_sdt);
-            this.Controls.Add(this.lb_ngaysinh);
-            this.Controls.Add(this.lb_manv);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pnTitle);
+            this.Controls.Add(this.gunaLinePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "lb_gioitinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InfoStaff";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.icExit)).EndInit();
+            this.pnTitle.ResumeLayout(false);
+            this.pnTitle.PerformLayout();
+            this.gunaLinePanel1.ResumeLayout(false);
+            this.gunaLinePanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
+
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private Guna.UI.WinForms.GunaPanel pnTitle;
+        private FontAwesome.Sharp.IconButton btnExit;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaLinePanel gunaLinePanel1;
+        private System.Windows.Forms.Label lb_loainv;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lb_email;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lb_taikhoan;
+        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label lb_diachi;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label lb_gioi_tinh;
         private System.Windows.Forms.Label label11;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
-        private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconPictureBox icExit;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lb_tennv;
         private System.Windows.Forms.Label lb_sdt;
         private System.Windows.Forms.Label lb_ngaysinh;
@@ -336,11 +373,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lb_taikhoan;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label lb_email;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lb_loainv;
+        private Guna.UI.WinForms.GunaDragControl dragPnTitle;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

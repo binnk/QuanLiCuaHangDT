@@ -19,8 +19,10 @@ namespace QLCH_UI
     {
         private IconButton currentBtn;
         private Panel leftBorderBtn;
-        public MainForm()
+        private string manv;
+        public MainForm(string manvv)
         {
+            manv = manvv;
             InitializeComponent();
 
            
@@ -82,10 +84,6 @@ namespace QLCH_UI
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
 
-                iconTitleBox.IconChar = currentBtn.IconChar;
-                iconTitleBox.IconColor = color;
-
-                lbTitle.Text = currentBtn.Text;
 
                 //panelTitle.BackColor = color;
                 //btnExit.BackColor = color;
@@ -115,9 +113,7 @@ namespace QLCH_UI
         {
             DisableButton();
             leftBorderBtn.Visible = false;
-            iconTitleBox.IconChar = IconChar.Home;
-            iconTitleBox.IconColor = RGBColors.color8;
-            lbTitle.Text = "Home";
+
         }
 
      
@@ -145,13 +141,13 @@ namespace QLCH_UI
         private void btnCartP_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            openChildForm(new OrdersForm());
+            openChildForm(new fOrder());
         }
         private void btnProduct_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
             //dgvProducts.BringToFront();
-            openChildForm(new ProductsForm());
+            openChildForm(new fProduct());
 
 
         }
@@ -172,13 +168,13 @@ namespace QLCH_UI
 
         private void itemEmployeeManage_Click(object sender, EventArgs e)
         {
-            openChildForm(new StaffsForm());
+            openChildForm(new fStaff());
         }
 
         private void btnCustomers_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-            openChildForm(new CustomersForm());
+            openChildForm(new fViewCustomer());
         }
 
         private void btnReport_Click(object sender, EventArgs e)
@@ -190,7 +186,7 @@ namespace QLCH_UI
         private void btnOrders_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color9);
-            (new SellForm()).ShowDialog();
+            (new SellForm(manv)).ShowDialog();
 
         }
 
@@ -199,23 +195,22 @@ namespace QLCH_UI
             Reset();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnExit_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
-        private void btnMaximize_Click(object sender, EventArgs e)
+        private void btnMaximize_Click_1(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
                 WindowState = FormWindowState.Maximized;
             else
                 WindowState = FormWindowState.Normal;
+        }
+
+        private void btnMinimize_Click_1(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
         #endregion
 
@@ -338,13 +333,15 @@ namespace QLCH_UI
 
         private void itemWareHouseManage_Click(object sender, EventArgs e)
         {
-            openChildForm(new WareHouseManagentForm());
+            openChildForm(new fManageWH());
 
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            openChildForm(new ImportManagementForm());
+            openChildForm(new fImportManage());
         }
+
+   
     }
 }
