@@ -143,5 +143,10 @@ namespace QLCH_UI
         {
             openChildForm(new fReviewTech(manv));
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -603,10 +603,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+    <None Include="Resources\icons8_add_48.png" />
+    <None Include="Resources\icons8_cancel_32.png" />
+    <None Include="Resources\icons8_high_priority_32.png" />
+    <None Include="Resources\icons8_maintenance_32.png" />
+    <None Include="Resources\icons8_money_32.png" />
+    <None Include="Resources\icons8_ok_32.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

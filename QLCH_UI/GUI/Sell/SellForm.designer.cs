@@ -60,9 +60,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.flpItems = new System.Windows.Forms.FlowLayoutPanel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.btnTest = new System.Windows.Forms.Button();
             this.icExit = new FontAwesome.Sharp.IconPictureBox();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.btnTest = new Guna.UI.WinForms.GunaButton();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -453,20 +453,6 @@
             this.panel8.Size = new System.Drawing.Size(1300, 69);
             this.panel8.TabIndex = 6;
             // 
-            // btnTest
-            // 
-            this.btnTest.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnTest.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTest.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTest.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTest.Location = new System.Drawing.Point(534, 12);
-            this.btnTest.Name = "btnTest";
-            this.btnTest.Size = new System.Drawing.Size(81, 46);
-            this.btnTest.TabIndex = 33;
-            this.btnTest.Text = "THÊM";
-            this.btnTest.UseVisualStyleBackColor = false;
-            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
-            // 
             // icExit
             // 
             this.icExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -487,6 +473,32 @@
             // 
             this.bunifuElipse2.ElipseRadius = 10;
             this.bunifuElipse2.TargetControl = this;
+            // 
+            // btnTest
+            // 
+            this.btnTest.AnimationHoverSpeed = 0.07F;
+            this.btnTest.AnimationSpeed = 0.03F;
+            this.btnTest.BackColor = System.Drawing.Color.Transparent;
+            this.btnTest.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.btnTest.BorderColor = System.Drawing.Color.Black;
+            this.btnTest.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnTest.FocusedColor = System.Drawing.Color.Empty;
+            this.btnTest.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTest.ForeColor = System.Drawing.Color.White;
+            this.btnTest.Image = ((System.Drawing.Image)(resources.GetObject("btnTest.Image")));
+            this.btnTest.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnTest.Location = new System.Drawing.Point(538, 18);
+            this.btnTest.Name = "btnTest";
+            this.btnTest.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnTest.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnTest.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnTest.OnHoverImage = null;
+            this.btnTest.OnPressedColor = System.Drawing.Color.Black;
+            this.btnTest.Radius = 10;
+            this.btnTest.Size = new System.Drawing.Size(50, 40);
+            this.btnTest.TabIndex = 33;
+            this.btnTest.TextOffsetX = -5;
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
             // SellForm
             // 
@@ -550,8 +562,8 @@
         private FontAwesome.Sharp.IconPictureBox icExit;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private System.Windows.Forms.FlowLayoutPanel flpItems;
-        private System.Windows.Forms.Button btnTest;
         private System.Windows.Forms.Panel panel7;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private Guna.UI.WinForms.GunaButton btnTest;
     }
 }

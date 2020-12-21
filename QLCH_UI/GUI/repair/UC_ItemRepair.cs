@@ -62,6 +62,26 @@ namespace QLCH_UI
             lb_TenKH.Text = TenKH;
             lb_TenNV.Text = TenNV;
             lb_GhiChu.Text = TriGia;
+            switch (TinhTrang)
+            {
+                case "chuasua":
+                    this.ic_TinhTrang.Image = Properties.Resources.icons8_cancel_32;
+                    break;
+                case "dangsua":
+                    this.ic_TinhTrang.Image = Properties.Resources.icons8_maintenance_32;
+                    break;
+                case "daxong":
+                    this.ic_TinhTrang.Image = Properties.Resources.icons8_ok_32;
+                    break;
+                case "thanhtoan":
+                    this.ic_TinhTrang.Image = Properties.Resources.icons8_money_32;
+                    break;
+                case "loi":
+                    this.ic_TinhTrang.Image = Properties.Resources.icons8_high_priority_32;
+                    break;
+                default:
+                    break;
+            }
             addListFLPLinhKien();
         }
         private void gunaLinePanel2_Paint(object sender, PaintEventArgs e)

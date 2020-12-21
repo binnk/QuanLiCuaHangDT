@@ -31,16 +31,19 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.btnProducts = new FontAwesome.Sharp.IconButton();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.btnMaximize = new FontAwesome.Sharp.IconButton();
             this.btnMinimize = new FontAwesome.Sharp.IconButton();
             this.btnExit = new FontAwesome.Sharp.IconButton();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnThem = new Guna.UI.WinForms.GunaButton();
             this.btnReport = new FontAwesome.Sharp.IconButton();
             this.panelManage = new System.Windows.Forms.Panel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
@@ -53,20 +56,13 @@
             this.iconBtnHome = new FontAwesome.Sharp.IconButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelChildForm = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnThem = new Guna.UI.WinForms.GunaButton();
-            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel1.SuspendLayout();
-            this.panelTitle.SuspendLayout();
-            this.panelMenu.SuspendLayout();
-            this.panelManage.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
+            this.panelTitle.SuspendLayout();
+            this.panelMenu.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panelManage.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -81,8 +77,58 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.panel1.Size = new System.Drawing.Size(258, 145);
+            this.panel1.Size = new System.Drawing.Size(258, 195);
             this.panel1.TabIndex = 6;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(23, 171);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(217, 1);
+            this.progressBar1.TabIndex = 12;
+            // 
+            // gunaLabel6
+            // 
+            this.gunaLabel6.AutoSize = true;
+            this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel6.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel6.Location = new System.Drawing.Point(83, 130);
+            this.gunaLabel6.Name = "gunaLabel6";
+            this.gunaLabel6.Size = new System.Drawing.Size(86, 25);
+            this.gunaLabel6.TabIndex = 10;
+            this.gunaLabel6.Text = "S T O R E";
+            // 
+            // gunaLabel5
+            // 
+            this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.gunaLabel5.Location = new System.Drawing.Point(44, 104);
+            this.gunaLabel5.Name = "gunaLabel5";
+            this.gunaLabel5.Size = new System.Drawing.Size(171, 30);
+            this.gunaLabel5.TabIndex = 9;
+            this.gunaLabel5.Text = "MOBILE PHONE";
+            // 
+            // gunaPictureBox2
+            // 
+            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox2.Image")));
+            this.gunaPictureBox2.Location = new System.Drawing.Point(133, 52);
+            this.gunaPictureBox2.Name = "gunaPictureBox2";
+            this.gunaPictureBox2.Size = new System.Drawing.Size(38, 35);
+            this.gunaPictureBox2.TabIndex = 8;
+            this.gunaPictureBox2.TabStop = false;
+            // 
+            // gunaPictureBox1
+            // 
+            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
+            this.gunaPictureBox1.Location = new System.Drawing.Point(64, 19);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(128, 82);
+            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaPictureBox1.TabIndex = 7;
+            this.gunaPictureBox1.TabStop = false;
             // 
             // btnProducts
             // 
@@ -96,7 +142,7 @@
             this.btnProducts.IconColor = System.Drawing.Color.Gainsboro;
             this.btnProducts.IconSize = 35;
             this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProducts.Location = new System.Drawing.Point(0, 265);
+            this.btnProducts.Location = new System.Drawing.Point(0, 315);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnProducts.Rotation = 0D;
@@ -114,10 +160,6 @@
             this.panelTitle.Controls.Add(this.btnMaximize);
             this.panelTitle.Controls.Add(this.btnMinimize);
             this.panelTitle.Controls.Add(this.btnExit);
-            this.panelTitle.Controls.Add(this.gunaLabel3);
-            this.panelTitle.Controls.Add(this.gunaLabel2);
-            this.panelTitle.Controls.Add(this.gunaLabel1);
-            this.panelTitle.Controls.Add(this.gunaLabel4);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle.Location = new System.Drawing.Point(258, 0);
             this.panelTitle.Name = "panelTitle";
@@ -185,50 +227,6 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
             // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel3.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaLabel3.Location = new System.Drawing.Point(628, 39);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(65, 28);
-            this.gunaLabel3.TabIndex = 15;
-            this.gunaLabel3.Text = "NV01";
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
-            this.gunaLabel2.Location = new System.Drawing.Point(529, 38);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(36, 30);
-            this.gunaLabel2.TabIndex = 14;
-            this.gunaLabel2.Text = "ID";
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaLabel1.Location = new System.Drawing.Point(627, 9);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(170, 28);
-            this.gunaLabel1.TabIndex = 13;
-            this.gunaLabel1.Text = "Phạm Tấn khang";
-            // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
-            this.gunaLabel4.Location = new System.Drawing.Point(526, 8);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(60, 30);
-            this.gunaLabel4.TabIndex = 12;
-            this.gunaLabel4.Text = "User";
-            // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
@@ -249,6 +247,42 @@
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel2.Controls.Add(this.btnThem);
+            this.panel2.Location = new System.Drawing.Point(3, 791);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(249, 59);
+            this.panel2.TabIndex = 15;
+            // 
+            // btnThem
+            // 
+            this.btnThem.AnimationHoverSpeed = 0.07F;
+            this.btnThem.AnimationSpeed = 0.03F;
+            this.btnThem.BackColor = System.Drawing.Color.Transparent;
+            this.btnThem.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
+            this.btnThem.BorderColor = System.Drawing.Color.Black;
+            this.btnThem.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnThem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnThem.FocusedColor = System.Drawing.Color.Empty;
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnThem.Location = new System.Drawing.Point(0, 0);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(37)))), ((int)(((byte)(55)))));
+            this.btnThem.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnThem.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnThem.OnHoverImage = null;
+            this.btnThem.OnPressedColor = System.Drawing.Color.Black;
+            this.btnThem.Radius = 10;
+            this.btnThem.Size = new System.Drawing.Size(249, 59);
+            this.btnThem.TabIndex = 20;
+            this.btnThem.Text = "Đăng xuất";
+            this.btnThem.TextOffsetX = -5;
+            // 
             // btnReport
             // 
             this.btnReport.Dock = System.Windows.Forms.DockStyle.Top;
@@ -261,7 +295,7 @@
             this.btnReport.IconColor = System.Drawing.Color.Gainsboro;
             this.btnReport.IconSize = 35;
             this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReport.Location = new System.Drawing.Point(0, 685);
+            this.btnReport.Location = new System.Drawing.Point(0, 735);
             this.btnReport.Name = "btnReport";
             this.btnReport.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnReport.Rotation = 0D;
@@ -280,7 +314,7 @@
             this.panelManage.Controls.Add(this.itemWareHouseManage);
             this.panelManage.Controls.Add(this.itemEmployeeManage);
             this.panelManage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelManage.Location = new System.Drawing.Point(0, 505);
+            this.panelManage.Location = new System.Drawing.Point(0, 555);
             this.panelManage.Name = "panelManage";
             this.panelManage.Size = new System.Drawing.Size(258, 180);
             this.panelManage.TabIndex = 12;
@@ -369,7 +403,7 @@
             this.btnManage.IconColor = System.Drawing.Color.Gainsboro;
             this.btnManage.IconSize = 35;
             this.btnManage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManage.Location = new System.Drawing.Point(0, 445);
+            this.btnManage.Location = new System.Drawing.Point(0, 495);
             this.btnManage.Name = "btnManage";
             this.btnManage.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnManage.Rotation = 0D;
@@ -393,7 +427,7 @@
             this.btnCustomers.IconColor = System.Drawing.Color.Gainsboro;
             this.btnCustomers.IconSize = 35;
             this.btnCustomers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCustomers.Location = new System.Drawing.Point(0, 385);
+            this.btnCustomers.Location = new System.Drawing.Point(0, 435);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnCustomers.Rotation = 0D;
@@ -417,7 +451,7 @@
             this.btnCartP.IconColor = System.Drawing.Color.Gainsboro;
             this.btnCartP.IconSize = 35;
             this.btnCartP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCartP.Location = new System.Drawing.Point(0, 325);
+            this.btnCartP.Location = new System.Drawing.Point(0, 375);
             this.btnCartP.Name = "btnCartP";
             this.btnCartP.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnCartP.Rotation = 0D;
@@ -441,7 +475,7 @@
             this.btnOrders.IconColor = System.Drawing.Color.Gainsboro;
             this.btnOrders.IconSize = 35;
             this.btnOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrders.Location = new System.Drawing.Point(0, 205);
+            this.btnOrders.Location = new System.Drawing.Point(0, 255);
             this.btnOrders.Name = "btnOrders";
             this.btnOrders.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnOrders.Rotation = 0D;
@@ -464,7 +498,7 @@
             this.iconBtnHome.IconColor = System.Drawing.Color.Gainsboro;
             this.iconBtnHome.IconSize = 35;
             this.iconBtnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconBtnHome.Location = new System.Drawing.Point(0, 145);
+            this.iconBtnHome.Location = new System.Drawing.Point(0, 195);
             this.iconBtnHome.Name = "iconBtnHome";
             this.iconBtnHome.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconBtnHome.Rotation = 0D;
@@ -497,92 +531,6 @@
             this.panelChildForm.TabIndex = 3;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
             // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel2.Controls.Add(this.btnThem);
-            this.panel2.Location = new System.Drawing.Point(3, 791);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(249, 59);
-            this.panel2.TabIndex = 15;
-            // 
-            // btnThem
-            // 
-            this.btnThem.AnimationHoverSpeed = 0.07F;
-            this.btnThem.AnimationSpeed = 0.03F;
-            this.btnThem.BackColor = System.Drawing.Color.Transparent;
-            this.btnThem.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
-            this.btnThem.BorderColor = System.Drawing.Color.Black;
-            this.btnThem.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnThem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnThem.FocusedColor = System.Drawing.Color.Empty;
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
-            this.btnThem.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnThem.Location = new System.Drawing.Point(0, 0);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(37)))), ((int)(((byte)(55)))));
-            this.btnThem.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnThem.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnThem.OnHoverImage = null;
-            this.btnThem.OnPressedColor = System.Drawing.Color.Black;
-            this.btnThem.Radius = 10;
-            this.btnThem.Size = new System.Drawing.Size(249, 59);
-            this.btnThem.TabIndex = 20;
-            this.btnThem.Text = "Đăng xuất";
-            this.btnThem.TextOffsetX = -5;
-            // 
-            // gunaLabel6
-            // 
-            this.gunaLabel6.AutoSize = true;
-            this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel6.ForeColor = System.Drawing.Color.Black;
-            this.gunaLabel6.Location = new System.Drawing.Point(83, 115);
-            this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(86, 25);
-            this.gunaLabel6.TabIndex = 10;
-            this.gunaLabel6.Text = "S T O R E";
-            // 
-            // gunaLabel5
-            // 
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
-            this.gunaLabel5.Location = new System.Drawing.Point(44, 89);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(171, 30);
-            this.gunaLabel5.TabIndex = 9;
-            this.gunaLabel5.Text = "MOBILE PHONE";
-            // 
-            // gunaPictureBox2
-            // 
-            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox2.Image")));
-            this.gunaPictureBox2.Location = new System.Drawing.Point(133, 37);
-            this.gunaPictureBox2.Name = "gunaPictureBox2";
-            this.gunaPictureBox2.Size = new System.Drawing.Size(38, 35);
-            this.gunaPictureBox2.TabIndex = 8;
-            this.gunaPictureBox2.TabStop = false;
-            // 
-            // gunaPictureBox1
-            // 
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(64, 4);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(128, 82);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox1.TabIndex = 7;
-            this.gunaPictureBox1.TabStop = false;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(23, 143);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(217, 1);
-            this.progressBar1.TabIndex = 12;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -597,13 +545,12 @@
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panelTitle.ResumeLayout(false);
-            this.panelTitle.PerformLayout();
-            this.panelMenu.ResumeLayout(false);
-            this.panelManage.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
+            this.panelTitle.ResumeLayout(false);
+            this.panelMenu.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panelManage.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -625,10 +572,6 @@
         private FontAwesome.Sharp.IconButton btnReport;
         private Bunifu.Framework.UI.BunifuGradientPanel panelChildForm;
         private FontAwesome.Sharp.IconButton iconButton1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private FontAwesome.Sharp.IconButton btnMaximize;
         private FontAwesome.Sharp.IconButton btnMinimize;
         private FontAwesome.Sharp.IconButton btnExit;
