@@ -294,40 +294,44 @@
             // tb_sdt
             // 
             this.tb_sdt.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_sdt.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_sdt.Location = new System.Drawing.Point(727, 197);
             this.tb_sdt.Name = "tb_sdt";
             this.tb_sdt.ReadOnly = true;
-            this.tb_sdt.Size = new System.Drawing.Size(285, 32);
+            this.tb_sdt.Size = new System.Drawing.Size(285, 39);
             this.tb_sdt.TabIndex = 15;
             this.tb_sdt.TabStop = false;
             // 
             // tbdia_chi
             // 
             this.tbdia_chi.BackColor = System.Drawing.SystemColors.Window;
+            this.tbdia_chi.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbdia_chi.Location = new System.Drawing.Point(727, 150);
             this.tbdia_chi.Name = "tbdia_chi";
             this.tbdia_chi.ReadOnly = true;
-            this.tbdia_chi.Size = new System.Drawing.Size(285, 32);
+            this.tbdia_chi.Size = new System.Drawing.Size(285, 39);
             this.tbdia_chi.TabIndex = 14;
             this.tbdia_chi.TabStop = false;
             // 
             // tbten_kh
             // 
             this.tbten_kh.BackColor = System.Drawing.SystemColors.Window;
+            this.tbten_kh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbten_kh.Location = new System.Drawing.Point(727, 100);
             this.tbten_kh.Name = "tbten_kh";
             this.tbten_kh.ReadOnly = true;
-            this.tbten_kh.Size = new System.Drawing.Size(285, 32);
+            this.tbten_kh.Size = new System.Drawing.Size(285, 39);
             this.tbten_kh.TabIndex = 13;
             this.tbten_kh.TabStop = false;
             // 
             // tbma_kh
             // 
             this.tbma_kh.BackColor = System.Drawing.SystemColors.Window;
+            this.tbma_kh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbma_kh.Location = new System.Drawing.Point(727, 48);
             this.tbma_kh.Name = "tbma_kh";
             this.tbma_kh.ReadOnly = true;
-            this.tbma_kh.Size = new System.Drawing.Size(285, 32);
+            this.tbma_kh.Size = new System.Drawing.Size(285, 39);
             this.tbma_kh.TabIndex = 12;
             this.tbma_kh.TabStop = false;
             // 
@@ -370,40 +374,44 @@
             // tbten_nv
             // 
             this.tbten_nv.BackColor = System.Drawing.SystemColors.Window;
+            this.tbten_nv.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbten_nv.Location = new System.Drawing.Point(254, 197);
             this.tbten_nv.Name = "tbten_nv";
             this.tbten_nv.ReadOnly = true;
-            this.tbten_nv.Size = new System.Drawing.Size(285, 32);
+            this.tbten_nv.Size = new System.Drawing.Size(285, 39);
             this.tbten_nv.TabIndex = 7;
             this.tbten_nv.TabStop = false;
             // 
             // tbma_nv
             // 
             this.tbma_nv.BackColor = System.Drawing.SystemColors.Window;
+            this.tbma_nv.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbma_nv.Location = new System.Drawing.Point(254, 150);
             this.tbma_nv.Name = "tbma_nv";
             this.tbma_nv.ReadOnly = true;
-            this.tbma_nv.Size = new System.Drawing.Size(285, 32);
+            this.tbma_nv.Size = new System.Drawing.Size(285, 39);
             this.tbma_nv.TabIndex = 6;
             this.tbma_nv.TabStop = false;
             // 
             // tbngay_ban
             // 
             this.tbngay_ban.BackColor = System.Drawing.SystemColors.Window;
+            this.tbngay_ban.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbngay_ban.Location = new System.Drawing.Point(254, 100);
             this.tbngay_ban.Name = "tbngay_ban";
             this.tbngay_ban.ReadOnly = true;
-            this.tbngay_ban.Size = new System.Drawing.Size(285, 32);
+            this.tbngay_ban.Size = new System.Drawing.Size(285, 39);
             this.tbngay_ban.TabIndex = 5;
             this.tbngay_ban.TabStop = false;
             // 
             // tbma_hd
             // 
             this.tbma_hd.BackColor = System.Drawing.Color.White;
+            this.tbma_hd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbma_hd.Location = new System.Drawing.Point(254, 48);
             this.tbma_hd.Name = "tbma_hd";
             this.tbma_hd.ReadOnly = true;
-            this.tbma_hd.Size = new System.Drawing.Size(285, 32);
+            this.tbma_hd.Size = new System.Drawing.Size(285, 39);
             this.tbma_hd.TabIndex = 4;
             this.tbma_hd.TabStop = false;
             // 

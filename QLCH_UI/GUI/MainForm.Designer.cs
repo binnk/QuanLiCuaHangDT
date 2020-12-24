@@ -53,7 +53,6 @@
             this.btnCustomers = new FontAwesome.Sharp.IconButton();
             this.btnCartP = new FontAwesome.Sharp.IconButton();
             this.btnOrders = new FontAwesome.Sharp.IconButton();
-            this.iconBtnHome = new FontAwesome.Sharp.IconButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelChildForm = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panel1.SuspendLayout();
@@ -142,7 +141,7 @@
             this.btnProducts.IconColor = System.Drawing.Color.Gainsboro;
             this.btnProducts.IconSize = 35;
             this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProducts.Location = new System.Drawing.Point(0, 315);
+            this.btnProducts.Location = new System.Drawing.Point(0, 255);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnProducts.Rotation = 0D;
@@ -238,7 +237,6 @@
             this.panelMenu.Controls.Add(this.btnCartP);
             this.panelMenu.Controls.Add(this.btnProducts);
             this.panelMenu.Controls.Add(this.btnOrders);
-            this.panelMenu.Controls.Add(this.iconBtnHome);
             this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
@@ -295,7 +293,7 @@
             this.btnReport.IconColor = System.Drawing.Color.Gainsboro;
             this.btnReport.IconSize = 35;
             this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReport.Location = new System.Drawing.Point(0, 735);
+            this.btnReport.Location = new System.Drawing.Point(0, 675);
             this.btnReport.Name = "btnReport";
             this.btnReport.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnReport.Rotation = 0D;
@@ -314,7 +312,7 @@
             this.panelManage.Controls.Add(this.itemWareHouseManage);
             this.panelManage.Controls.Add(this.itemEmployeeManage);
             this.panelManage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelManage.Location = new System.Drawing.Point(0, 555);
+            this.panelManage.Location = new System.Drawing.Point(0, 495);
             this.panelManage.Name = "panelManage";
             this.panelManage.Size = new System.Drawing.Size(258, 180);
             this.panelManage.TabIndex = 12;
@@ -403,7 +401,7 @@
             this.btnManage.IconColor = System.Drawing.Color.Gainsboro;
             this.btnManage.IconSize = 35;
             this.btnManage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManage.Location = new System.Drawing.Point(0, 495);
+            this.btnManage.Location = new System.Drawing.Point(0, 435);
             this.btnManage.Name = "btnManage";
             this.btnManage.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnManage.Rotation = 0D;
@@ -427,7 +425,7 @@
             this.btnCustomers.IconColor = System.Drawing.Color.Gainsboro;
             this.btnCustomers.IconSize = 35;
             this.btnCustomers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCustomers.Location = new System.Drawing.Point(0, 435);
+            this.btnCustomers.Location = new System.Drawing.Point(0, 375);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnCustomers.Rotation = 0D;
@@ -451,7 +449,7 @@
             this.btnCartP.IconColor = System.Drawing.Color.Gainsboro;
             this.btnCartP.IconSize = 35;
             this.btnCartP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCartP.Location = new System.Drawing.Point(0, 375);
+            this.btnCartP.Location = new System.Drawing.Point(0, 315);
             this.btnCartP.Name = "btnCartP";
             this.btnCartP.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnCartP.Rotation = 0D;
@@ -475,7 +473,7 @@
             this.btnOrders.IconColor = System.Drawing.Color.Gainsboro;
             this.btnOrders.IconSize = 35;
             this.btnOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrders.Location = new System.Drawing.Point(0, 255);
+            this.btnOrders.Location = new System.Drawing.Point(0, 195);
             this.btnOrders.Name = "btnOrders";
             this.btnOrders.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnOrders.Rotation = 0D;
@@ -485,30 +483,6 @@
             this.btnOrders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOrders.UseVisualStyleBackColor = true;
             this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
-            // 
-            // iconBtnHome
-            // 
-            this.iconBtnHome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconBtnHome.FlatAppearance.BorderSize = 0;
-            this.iconBtnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconBtnHome.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconBtnHome.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconBtnHome.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconBtnHome.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconBtnHome.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconBtnHome.IconSize = 35;
-            this.iconBtnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconBtnHome.Location = new System.Drawing.Point(0, 195);
-            this.iconBtnHome.Name = "iconBtnHome";
-            this.iconBtnHome.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconBtnHome.Rotation = 0D;
-            this.iconBtnHome.Size = new System.Drawing.Size(258, 60);
-            this.iconBtnHome.TabIndex = 1;
-            this.iconBtnHome.Text = "  Tổng quan";
-            this.iconBtnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconBtnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconBtnHome.UseVisualStyleBackColor = true;
-            this.iconBtnHome.Click += new System.EventHandler(this.iconBtnHome_Click);
             // 
             // bunifuElipse1
             // 
@@ -541,6 +515,7 @@
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.panel1.ResumeLayout(false);
@@ -560,7 +535,6 @@
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.Panel panelMenu;
         private FontAwesome.Sharp.IconButton btnCartP;
-        private FontAwesome.Sharp.IconButton iconBtnHome;
         private FontAwesome.Sharp.IconButton btnCustomers;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private FontAwesome.Sharp.IconButton btnProducts;

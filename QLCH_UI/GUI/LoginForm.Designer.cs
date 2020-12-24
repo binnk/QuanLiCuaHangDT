@@ -38,9 +38,9 @@
             this.lCreateAcc = new System.Windows.Forms.LinkLabel();
             this.picUser = new System.Windows.Forms.PictureBox();
             this.picPass = new System.Windows.Forms.PictureBox();
-            this.picLogin = new System.Windows.Forms.PictureBox();
             this.xLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.picLogin = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogin)).BeginInit();
@@ -159,17 +159,6 @@
             this.picPass.TabIndex = 4;
             this.picPass.TabStop = false;
             // 
-            // picLogin
-            // 
-            this.picLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picLogin.BackgroundImage")));
-            this.picLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picLogin.Location = new System.Drawing.Point(132, 12);
-            this.picLogin.Name = "picLogin";
-            this.picLogin.Size = new System.Drawing.Size(116, 64);
-            this.picLogin.TabIndex = 0;
-            this.picLogin.TabStop = false;
-            this.picLogin.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picLogin_MouseDown);
-            // 
             // xLabel
             // 
             this.xLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -195,6 +184,17 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "username or password incorect\r\n";
             this.label2.Visible = false;
+            // 
+            // picLogin
+            // 
+            this.picLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picLogin.BackgroundImage")));
+            this.picLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picLogin.Location = new System.Drawing.Point(132, 12);
+            this.picLogin.Name = "picLogin";
+            this.picLogin.Size = new System.Drawing.Size(116, 64);
+            this.picLogin.TabIndex = 0;
+            this.picLogin.TabStop = false;
+            this.picLogin.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picLogin_MouseDown);
             // 
             // LoginForm
             // 
@@ -230,8 +230,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox picLogin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textPass;
@@ -243,6 +241,7 @@
         private System.Windows.Forms.LinkLabel lCreateAcc;
         private System.Windows.Forms.Label xLabel;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox picLogin;
     }
 }
 

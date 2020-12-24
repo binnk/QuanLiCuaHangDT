@@ -60,7 +60,7 @@
             this.lbRegister.AutoSize = true;
             this.lbRegister.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbRegister.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lbRegister.Location = new System.Drawing.Point(152, 66);
+            this.lbRegister.Location = new System.Drawing.Point(152, 68);
             this.lbRegister.Name = "lbRegister";
             this.lbRegister.Size = new System.Drawing.Size(151, 41);
             this.lbRegister.TabIndex = 7;
@@ -70,7 +70,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel2.Location = new System.Drawing.Point(309, 106);
+            this.panel2.Location = new System.Drawing.Point(309, 92);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(120, 1);
             this.panel2.TabIndex = 8;
@@ -166,7 +166,7 @@
             // panel
             // 
             this.panel.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel.Location = new System.Drawing.Point(26, 106);
+            this.panel.Location = new System.Drawing.Point(26, 92);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(120, 1);
             this.panel.TabIndex = 18;

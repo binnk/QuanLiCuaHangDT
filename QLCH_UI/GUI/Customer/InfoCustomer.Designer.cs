@@ -176,7 +176,7 @@
             // 
             this.lb_gioitinh.AutoSize = true;
             this.lb_gioitinh.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lb_gioitinh.Location = new System.Drawing.Point(797, 160);
+            this.lb_gioitinh.Location = new System.Drawing.Point(783, 160);
             this.lb_gioitinh.Name = "lb_gioitinh";
             this.lb_gioitinh.Size = new System.Drawing.Size(91, 30);
             this.lb_gioitinh.TabIndex = 117;
@@ -216,7 +216,7 @@
             // 
             this.lb_ngaysinh.AutoSize = true;
             this.lb_ngaysinh.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lb_ngaysinh.Location = new System.Drawing.Point(797, 83);
+            this.lb_ngaysinh.Location = new System.Drawing.Point(783, 83);
             this.lb_ngaysinh.Name = "lb_ngaysinh";
             this.lb_ngaysinh.Size = new System.Drawing.Size(104, 30);
             this.lb_ngaysinh.TabIndex = 114;
