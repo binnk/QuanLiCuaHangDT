@@ -30,23 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_ItemImport));
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
-            this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
+            this.btn_delete = new Guna.UI.WinForms.GunaButton();
             this.btnEdit = new Guna.UI.WinForms.GunaButton();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.lb_trigia = new Guna.UI.WinForms.GunaLabel();
+            this.lb_manv = new Guna.UI.WinForms.GunaLabel();
+            this.lb_mahd = new Guna.UI.WinForms.GunaLabel();
+            this.lb_ngaynhap = new Guna.UI.WinForms.GunaLabel();
             this.gunaLinePanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaLinePanel1
             // 
-            this.gunaLinePanel1.Controls.Add(this.gunaButton3);
+            this.gunaLinePanel1.Controls.Add(this.btn_delete);
             this.gunaLinePanel1.Controls.Add(this.btnEdit);
-            this.gunaLinePanel1.Controls.Add(this.gunaLabel1);
-            this.gunaLinePanel1.Controls.Add(this.gunaLabel4);
-            this.gunaLinePanel1.Controls.Add(this.gunaLabel3);
-            this.gunaLinePanel1.Controls.Add(this.gunaLabel2);
+            this.gunaLinePanel1.Controls.Add(this.lb_trigia);
+            this.gunaLinePanel1.Controls.Add(this.lb_manv);
+            this.gunaLinePanel1.Controls.Add(this.lb_mahd);
+            this.gunaLinePanel1.Controls.Add(this.lb_ngaynhap);
             this.gunaLinePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaLinePanel1.LineBottom = 2;
             this.gunaLinePanel1.LineColor = System.Drawing.Color.WhiteSmoke;
@@ -58,31 +58,32 @@
             this.gunaLinePanel1.MouseEnter += new System.EventHandler(this.gunaLinePanel1_MouseEnter);
             this.gunaLinePanel1.MouseLeave += new System.EventHandler(this.gunaLinePanel1_MouseLeave);
             // 
-            // gunaButton3
+            // btn_delete
             // 
-            this.gunaButton3.AnimationHoverSpeed = 0.07F;
-            this.gunaButton3.AnimationSpeed = 0.03F;
-            this.gunaButton3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.gunaButton3.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton3.ForeColor = System.Drawing.Color.White;
-            this.gunaButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton3.Image")));
-            this.gunaButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton3.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaButton3.Location = new System.Drawing.Point(1451, 11);
-            this.gunaButton3.Name = "gunaButton3";
-            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton3.OnHoverImage = null;
-            this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton3.Radius = 10;
-            this.gunaButton3.Size = new System.Drawing.Size(47, 33);
-            this.gunaButton3.TabIndex = 19;
-            this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_delete.AnimationHoverSpeed = 0.07F;
+            this.btn_delete.AnimationSpeed = 0.03F;
+            this.btn_delete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_delete.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.btn_delete.BorderColor = System.Drawing.Color.Black;
+            this.btn_delete.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_delete.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_delete.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_delete.ForeColor = System.Drawing.Color.White;
+            this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
+            this.btn_delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_delete.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_delete.Location = new System.Drawing.Point(1451, 11);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btn_delete.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_delete.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_delete.OnHoverImage = null;
+            this.btn_delete.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_delete.Radius = 10;
+            this.btn_delete.Size = new System.Drawing.Size(47, 33);
+            this.btn_delete.TabIndex = 19;
+            this.btn_delete.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btnEdit
             // 
@@ -109,50 +110,51 @@
             this.btnEdit.Size = new System.Drawing.Size(47, 33);
             this.btnEdit.TabIndex = 18;
             this.btnEdit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // gunaLabel1
+            // lb_trigia
             // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(1106, 15);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(65, 25);
-            this.gunaLabel1.TabIndex = 12;
-            this.gunaLabel1.Text = "Trị giá";
+            this.lb_trigia.AutoSize = true;
+            this.lb_trigia.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_trigia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
+            this.lb_trigia.Location = new System.Drawing.Point(1106, 15);
+            this.lb_trigia.Name = "lb_trigia";
+            this.lb_trigia.Size = new System.Drawing.Size(65, 25);
+            this.lb_trigia.TabIndex = 12;
+            this.lb_trigia.Text = "Trị giá";
             // 
-            // gunaLabel4
+            // lb_manv
             // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
-            this.gunaLabel4.Location = new System.Drawing.Point(760, 15);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(128, 25);
-            this.gunaLabel4.TabIndex = 9;
-            this.gunaLabel4.Text = "Mã nhân viên";
+            this.lb_manv.AutoSize = true;
+            this.lb_manv.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_manv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
+            this.lb_manv.Location = new System.Drawing.Point(760, 15);
+            this.lb_manv.Name = "lb_manv";
+            this.lb_manv.Size = new System.Drawing.Size(128, 25);
+            this.lb_manv.TabIndex = 9;
+            this.lb_manv.Text = "Mã nhân viên";
             // 
-            // gunaLabel3
+            // lb_mahd
             // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
-            this.gunaLabel3.Location = new System.Drawing.Point(466, 15);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(114, 25);
-            this.gunaLabel3.TabIndex = 8;
-            this.gunaLabel3.Text = "Mã hoá đơn";
+            this.lb_mahd.AutoSize = true;
+            this.lb_mahd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_mahd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
+            this.lb_mahd.Location = new System.Drawing.Point(466, 15);
+            this.lb_mahd.Name = "lb_mahd";
+            this.lb_mahd.Size = new System.Drawing.Size(114, 25);
+            this.lb_mahd.TabIndex = 8;
+            this.lb_mahd.Text = "Mã hoá đơn";
             // 
-            // gunaLabel2
+            // lb_ngaynhap
             // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
-            this.gunaLabel2.Location = new System.Drawing.Point(102, 15);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(153, 25);
-            this.gunaLabel2.TabIndex = 7;
-            this.gunaLabel2.Text = "Ngày nhập hàng";
+            this.lb_ngaynhap.AutoSize = true;
+            this.lb_ngaynhap.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ngaynhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
+            this.lb_ngaynhap.Location = new System.Drawing.Point(102, 15);
+            this.lb_ngaynhap.Name = "lb_ngaynhap";
+            this.lb_ngaynhap.Size = new System.Drawing.Size(153, 25);
+            this.lb_ngaynhap.TabIndex = 7;
+            this.lb_ngaynhap.Text = "Ngày nhập hàng";
             // 
             // UC_ItemImport
             // 
@@ -169,11 +171,11 @@
         #endregion
 
         private Guna.UI.WinForms.GunaLinePanel gunaLinePanel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI.WinForms.GunaButton gunaButton3;
+        private Guna.UI.WinForms.GunaLabel lb_trigia;
+        private Guna.UI.WinForms.GunaLabel lb_manv;
+        private Guna.UI.WinForms.GunaLabel lb_mahd;
+        private Guna.UI.WinForms.GunaLabel lb_ngaynhap;
+        private Guna.UI.WinForms.GunaButton btn_delete;
         private Guna.UI.WinForms.GunaButton btnEdit;
     }
 }

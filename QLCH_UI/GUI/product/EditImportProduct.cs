@@ -40,7 +40,7 @@ namespace QLCH_UI
                 lb_sl_error.Visible = true;
                 return (false);
             }
-            if (ProductBUS.Instance.gia_nhap(tb_gia_nhap.Text)) lb_gianhap_error.Visible = false;
+            if (ProductBUS.Instance.gia_nhap(GetFloat(tb_gia_nhap.Text))) lb_gianhap_error.Visible = false;
             else
             {
                 lb_gianhap_error.Visible = true;
@@ -94,8 +94,8 @@ namespace QLCH_UI
                 a = soluong1 - a;
                 if (WareHouseBUS.Instance.kt_sl(a, tb_masp.Text))
                 {
-                    decimal tongtien = (decimal)(double.Parse(gianhap) * int.Parse(tb_sl.Text));
-                    WarehouseDTO c = new WarehouseDTO(tb_manhaphang.Text, tb_manguoinhap.Text, tb_masp.Text, tb_ten_sp.Text, tb_loai_sp.Text, date_sp.Value, double.Parse(gianhap), int.Parse(tb_sl.Text), tongtien);
+                    decimal tongtien = (decimal)(double.Parse(tb_gia_nhap.Text) * int.Parse(tb_sl.Text));
+                    WarehouseDTO c = new WarehouseDTO(tb_manhaphang.Text, tb_manguoinhap.Text, tb_masp.Text, tb_ten_sp.Text, tb_loai_sp.Text, date_sp.Value, double.Parse(tb_gia_nhap.Text), int.Parse(tb_sl.Text), tongtien);
                     if (WareHouseBUS.Instance.edit(c)) MessageBox.Show("Sửa thành công");
                 }
                 else

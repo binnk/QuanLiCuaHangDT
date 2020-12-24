@@ -52,6 +52,7 @@
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CustomGradientPanel5 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.guna2CustomGradientPanel7 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
             this.label9 = new System.Windows.Forms.Label();
@@ -118,7 +119,7 @@
             this.datetime2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label43 = new System.Windows.Forms.Label();
             this.guna2ProgressBar3 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btn_thongke = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -431,6 +432,33 @@
             this.guna2CustomGradientPanel5.ShadowDecoration.Parent = this.guna2CustomGradientPanel5;
             this.guna2CustomGradientPanel5.Size = new System.Drawing.Size(795, 592);
             this.guna2CustomGradientPanel5.TabIndex = 6;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ItemHeight = 32;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Năm này",
+            "Tháng 1",
+            "Tháng 2",
+            "Tháng 3",
+            "Tháng 3",
+            "Tháng 4",
+            "Tháng 5",
+            "Tháng 6",
+            "Tháng 7",
+            "Tháng 8",
+            "Tháng 9",
+            "Tháng 10",
+            "Tháng 11",
+            "Tháng 12"});
+            this.comboBox1.Location = new System.Drawing.Point(658, 24);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(110, 40);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // guna2CustomGradientPanel7
             // 
@@ -1243,38 +1271,22 @@
             this.guna2ProgressBar3.TabIndex = 18;
             this.guna2ProgressBar3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
-            // comboBox1
+            // btn_thongke
             // 
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 32;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Năm này",
-            "Tháng 1",
-            "Tháng 2",
-            "Tháng 3",
-            "Tháng 3",
-            "Tháng 4",
-            "Tháng 5",
-            "Tháng 6",
-            "Tháng 7",
-            "Tháng 8",
-            "Tháng 9",
-            "Tháng 10",
-            "Tháng 11",
-            "Tháng 12"});
-            this.comboBox1.Location = new System.Drawing.Point(658, 24);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(110, 40);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.btn_thongke.Location = new System.Drawing.Point(1476, 9);
+            this.btn_thongke.Name = "btn_thongke";
+            this.btn_thongke.Size = new System.Drawing.Size(100, 34);
+            this.btn_thongke.TabIndex = 21;
+            this.btn_thongke.Text = "thong ke";
+            this.btn_thongke.UseVisualStyleBackColor = true;
+            this.btn_thongke.Click += new System.EventHandler(this.btn_thongke_Click);
             // 
             // ReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1609, 848);
+            this.Controls.Add(this.btn_thongke);
             this.Controls.Add(this.datetime2);
             this.Controls.Add(this.label43);
             this.Controls.Add(this.guna2ProgressBar3);
@@ -1438,5 +1450,6 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel7;
         private LiveCharts.WinForms.CartesianChart cartesianChart1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btn_thongke;
     }
 }

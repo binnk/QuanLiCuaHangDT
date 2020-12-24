@@ -64,8 +64,8 @@ namespace QLCH_UI.BUS
         public bool gia_nhap(string value)
         {
             int l = value.Length;
-            if (value[0] == '.') return (false);
             if (l == 0) return (false);
+            if (value[0] == '.') return (false);
             int d = 0;
             for (int i = 0; i < l; i++)
                 if (value[i] == '.')
@@ -83,8 +83,8 @@ namespace QLCH_UI.BUS
         public bool gia_ban(string value)
         {
             int l = value.Length;
-            if (value[0] == '.') return (false);
             if (l == 0) return (false);
+            if (value[0] == '.') return (false);
             int d = 0;
             for (int i = 0; i < l; i++)
                 if (value[i] == '.')

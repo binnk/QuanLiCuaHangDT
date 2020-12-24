@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using QLCH_UI.DAO;
+using QLCH_UI.BUS;
 namespace QLCH_UI
 {
     public partial class fManageWH : Form
@@ -15,10 +16,31 @@ namespace QLCH_UI
         public fManageWH()
         {
             InitializeComponent();
-            flowLayoutPanel1.Controls.Add(new UC_itemManageWH());
-            flowLayoutPanel1.Controls.Add(new UC_itemManageWH());
-            flowLayoutPanel1.Controls.Add(new UC_itemManageWH());
+            loadkho();
         }
+        public void loadkho()
+        {
+            flowLayoutPanel1.Controls.Clear();
+            DataTable a = ProductDAO.Instance.Productlist();
+            for (int i=0;i<a.Rows.Count;i++)
+            {
+                int tontai = int.Parse(a.Rows[i]["ton_tai"].ToString());
+                if (tontai == 1)
+                {
+                    UC_itemManageWH item = new UC_itemManageWH(this);
+                    item.img = a.Rows[i]["img"].ToString();
+                    item.masp = a.Rows[i]["masp"].ToString();
+                    item.tensp = a.Rows[i]["ten_sp"].ToString();
+                    item.loai = a.Rows[i]["loai_sp"].ToString();
+                    item.soluong = a.Rows[i]["so_luong"].ToString();
+                    item.gianhap = decimal.Parse(a.Rows[i]["gia_nhap"].ToString());
+                    item.giaban = decimal.Parse(a.Rows[i]["gia_ban"].ToString());
+                    item.set_UC();
+                    flowLayoutPanel1.Controls.Add(item);
+                }
+            }
+        }
+
         protected override CreateParams CreateParams
         {
             get
@@ -29,5 +51,31 @@ namespace QLCH_UI
             }
         }
 
+        private void tb_search_TextChanged(object sender, EventArgs e)
+        {
+            if (tb_search.Text == "") loadkho();
+            else
+            {
+                flowLayoutPanel1.Controls.Clear();
+                DataTable a = ProductDAO.Instance.search_product_by_name(tb_search.Text);
+                for (int i = 0; i < a.Rows.Count; i++)
+                {
+                    int tontai = int.Parse(a.Rows[i]["ton_tai"].ToString());
+                    if (tontai == 1)
+                    {
+                        UC_itemManageWH item = new UC_itemManageWH(this);
+                        item.img = a.Rows[i]["img"].ToString();
+                        item.masp = a.Rows[i]["masp"].ToString();
+                        item.tensp = a.Rows[i]["ten_sp"].ToString();
+                        item.loai = a.Rows[i]["loai_sp"].ToString();
+                        item.soluong = a.Rows[i]["so_luong"].ToString();
+                        item.gianhap = decimal.Parse(a.Rows[i]["gia_nhap"].ToString());
+                        item.giaban = decimal.Parse(a.Rows[i]["gia_ban"].ToString());
+                        item.set_UC();
+                        flowLayoutPanel1.Controls.Add(item);
+                    }
+                }
+            }
+        }
     }
 }

@@ -12,6 +12,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PdfSharp.Pdf;
+using PdfSharp.Drawing;
+using System.Diagnostics;
 
 namespace QLCH_UI
 {
@@ -263,6 +266,21 @@ namespace QLCH_UI
 
 
 
+        }
+
+        private void btn_thongke_Click(object sender, EventArgs e)
+        {
+            int ypoint = 0;
+            PdfDocument pdf = new PdfDocument();
+           pdf.Info.Title = "datbase";
+            PdfPage pdfpage = pdf.AddPage();
+            XGraphics graph = XGraphics.FromPdfPage(pdfpage);
+            XFont font = new XFont("Verdana", 10, XFontStyle.Regular);
+            ypoint = ypoint + 10;
+            graph.DrawString("swadad", font, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+            string pdfFilename = "abc.pdf";
+            pdf.Save(pdfFilename);
+            Process.Start(pdfFilename);
         }
     }
 }

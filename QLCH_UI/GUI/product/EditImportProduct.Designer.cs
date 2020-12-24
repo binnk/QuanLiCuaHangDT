@@ -36,8 +36,10 @@ namespace QLCH_UI
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
-            this.dragPnTitle = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.btnHuy = new Guna.UI.WinForms.GunaButton();
+            this.btn_luu_customer = new Guna.UI.WinForms.GunaButton();
+            this.gunaLinePanel2 = new Guna.UI.WinForms.GunaLinePanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tb_manguoinhap = new System.Windows.Forms.TextBox();
             this.lb_manguoinhap_error = new System.Windows.Forms.Label();
@@ -58,15 +60,13 @@ namespace QLCH_UI
             this.label1 = new System.Windows.Forms.Label();
             this.tb_ten_sp = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.gunaLinePanel2 = new Guna.UI.WinForms.GunaLinePanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnHuy = new Guna.UI.WinForms.GunaButton();
-            this.btn_luu_customer = new Guna.UI.WinForms.GunaButton();
+            this.dragPnTitle = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnTitle.SuspendLayout();
             this.gunaLinePanel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.gunaLinePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -134,16 +134,85 @@ namespace QLCH_UI
             this.gunaLinePanel1.Size = new System.Drawing.Size(1024, 801);
             this.gunaLinePanel1.TabIndex = 13;
             // 
-            // dragPnTitle
+            // btnHuy
             // 
-            this.dragPnTitle.TargetControl = this.pnTitle;
+            this.btnHuy.AnimationHoverSpeed = 0.07F;
+            this.btnHuy.AnimationSpeed = 0.03F;
+            this.btnHuy.BackColor = System.Drawing.Color.Transparent;
+            this.btnHuy.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.btnHuy.BorderColor = System.Drawing.Color.Black;
+            this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnHuy.FocusedColor = System.Drawing.Color.Empty;
+            this.btnHuy.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.btnHuy.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.Image = null;
+            this.btnHuy.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnHuy.Location = new System.Drawing.Point(684, 700);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.btnHuy.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnHuy.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnHuy.OnHoverImage = null;
+            this.btnHuy.OnPressedColor = System.Drawing.Color.Black;
+            this.btnHuy.Radius = 5;
+            this.btnHuy.Size = new System.Drawing.Size(136, 47);
+            this.btnHuy.TabIndex = 126;
+            this.btnHuy.Text = "Huỷ";
+            this.btnHuy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
-            // bunifuDragControl1
+            // btn_luu_customer
             // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = null;
-            this.bunifuDragControl1.Vertical = true;
+            this.btn_luu_customer.AnimationHoverSpeed = 0.07F;
+            this.btn_luu_customer.AnimationSpeed = 0.03F;
+            this.btn_luu_customer.BackColor = System.Drawing.Color.Transparent;
+            this.btn_luu_customer.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.btn_luu_customer.BorderColor = System.Drawing.Color.Black;
+            this.btn_luu_customer.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_luu_customer.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_luu_customer.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_luu_customer.ForeColor = System.Drawing.Color.White;
+            this.btn_luu_customer.Image = null;
+            this.btn_luu_customer.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_luu_customer.Location = new System.Drawing.Point(833, 700);
+            this.btn_luu_customer.Name = "btn_luu_customer";
+            this.btn_luu_customer.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.btn_luu_customer.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_luu_customer.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_luu_customer.OnHoverImage = null;
+            this.btn_luu_customer.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_luu_customer.Radius = 5;
+            this.btn_luu_customer.Size = new System.Drawing.Size(136, 47);
+            this.btn_luu_customer.TabIndex = 125;
+            this.btn_luu_customer.Text = "Xác nhận";
+            this.btn_luu_customer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_luu_customer.Click += new System.EventHandler(this.btn_luu_customer_Click_1);
+            // 
+            // gunaLinePanel2
+            // 
+            this.gunaLinePanel2.Controls.Add(this.pictureBox1);
+            this.gunaLinePanel2.LineBottom = 1;
+            this.gunaLinePanel2.LineColor = System.Drawing.Color.Black;
+            this.gunaLinePanel2.LineLeft = 1;
+            this.gunaLinePanel2.LineRight = 1;
+            this.gunaLinePanel2.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaLinePanel2.LineTop = 1;
+            this.gunaLinePanel2.Location = new System.Drawing.Point(684, 169);
+            this.gunaLinePanel2.Name = "gunaLinePanel2";
+            this.gunaLinePanel2.Size = new System.Drawing.Size(285, 393);
+            this.gunaLinePanel2.TabIndex = 124;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(280, 389);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 117;
+            this.pictureBox1.TabStop = false;
             // 
             // groupBox1
             // 
@@ -366,85 +435,16 @@ namespace QLCH_UI
             this.label2.TabIndex = 82;
             this.label2.Text = "Tên sản phẩm";
             // 
-            // gunaLinePanel2
+            // dragPnTitle
             // 
-            this.gunaLinePanel2.Controls.Add(this.pictureBox1);
-            this.gunaLinePanel2.LineBottom = 1;
-            this.gunaLinePanel2.LineColor = System.Drawing.Color.Black;
-            this.gunaLinePanel2.LineLeft = 1;
-            this.gunaLinePanel2.LineRight = 1;
-            this.gunaLinePanel2.LineStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaLinePanel2.LineTop = 1;
-            this.gunaLinePanel2.Location = new System.Drawing.Point(684, 169);
-            this.gunaLinePanel2.Name = "gunaLinePanel2";
-            this.gunaLinePanel2.Size = new System.Drawing.Size(285, 393);
-            this.gunaLinePanel2.TabIndex = 124;
+            this.dragPnTitle.TargetControl = this.pnTitle;
             // 
-            // pictureBox1
+            // bunifuDragControl1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(280, 389);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 117;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.AnimationHoverSpeed = 0.07F;
-            this.btnHuy.AnimationSpeed = 0.03F;
-            this.btnHuy.BackColor = System.Drawing.Color.Transparent;
-            this.btnHuy.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
-            this.btnHuy.BorderColor = System.Drawing.Color.Black;
-            this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnHuy.FocusedColor = System.Drawing.Color.Empty;
-            this.btnHuy.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnHuy.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.Image = null;
-            this.btnHuy.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnHuy.Location = new System.Drawing.Point(684, 700);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
-            this.btnHuy.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnHuy.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnHuy.OnHoverImage = null;
-            this.btnHuy.OnPressedColor = System.Drawing.Color.Black;
-            this.btnHuy.Radius = 5;
-            this.btnHuy.Size = new System.Drawing.Size(136, 47);
-            this.btnHuy.TabIndex = 126;
-            this.btnHuy.Text = "Huỷ";
-            this.btnHuy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
-            // 
-            // btn_luu_customer
-            // 
-            this.btn_luu_customer.AnimationHoverSpeed = 0.07F;
-            this.btn_luu_customer.AnimationSpeed = 0.03F;
-            this.btn_luu_customer.BackColor = System.Drawing.Color.Transparent;
-            this.btn_luu_customer.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
-            this.btn_luu_customer.BorderColor = System.Drawing.Color.Black;
-            this.btn_luu_customer.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_luu_customer.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_luu_customer.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_luu_customer.ForeColor = System.Drawing.Color.White;
-            this.btn_luu_customer.Image = null;
-            this.btn_luu_customer.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_luu_customer.Location = new System.Drawing.Point(833, 700);
-            this.btn_luu_customer.Name = "btn_luu_customer";
-            this.btn_luu_customer.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
-            this.btn_luu_customer.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_luu_customer.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_luu_customer.OnHoverImage = null;
-            this.btn_luu_customer.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_luu_customer.Radius = 5;
-            this.btn_luu_customer.Size = new System.Drawing.Size(136, 47);
-            this.btn_luu_customer.TabIndex = 125;
-            this.btn_luu_customer.Text = "Thêm";
-            this.btn_luu_customer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_luu_customer.Click += new System.EventHandler(this.btn_luu_customer_Click_1);
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = null;
+            this.bunifuDragControl1.Vertical = true;
             // 
             // EditImportProduct
             // 
@@ -461,10 +461,10 @@ namespace QLCH_UI
             this.pnTitle.ResumeLayout(false);
             this.pnTitle.PerformLayout();
             this.gunaLinePanel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.gunaLinePanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
