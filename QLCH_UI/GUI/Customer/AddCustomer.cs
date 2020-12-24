@@ -21,7 +21,7 @@ namespace QLCH_UI
             DataTable a = CustomersDAO.Instance.Customerslist();
             for (int i = 0; i < a.Rows.Count; i++)
             {
-                string k = a.Rows[i]["Mã khách hàng"].ToString();
+                string k = a.Rows[i]["makh"].ToString();
                 int l = k.Length;
                 int tg = int.Parse(k.Substring(2, l - 2));
                 if (tg > rs) rs = tg;

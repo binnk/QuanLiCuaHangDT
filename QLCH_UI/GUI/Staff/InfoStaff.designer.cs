@@ -35,7 +35,7 @@
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.dragPnTitle = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
+            this.InfoStaff = new Guna.UI.WinForms.GunaLinePanel();
             this.lb_loainv = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lb_email = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnTitle.SuspendLayout();
-            this.gunaLinePanel1.SuspendLayout();
+            this.InfoStaff.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -116,37 +116,37 @@
             this.bunifuDragControl1.TargetControl = null;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // gunaLinePanel1
+            // InfoStaff
             // 
-            this.gunaLinePanel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.gunaLinePanel1.Controls.Add(this.lb_loainv);
-            this.gunaLinePanel1.Controls.Add(this.label5);
-            this.gunaLinePanel1.Controls.Add(this.lb_email);
-            this.gunaLinePanel1.Controls.Add(this.label14);
-            this.gunaLinePanel1.Controls.Add(this.lb_taikhoan);
-            this.gunaLinePanel1.Controls.Add(this.label17);
-            this.gunaLinePanel1.Controls.Add(this.lb_diachi);
-            this.gunaLinePanel1.Controls.Add(this.label13);
-            this.gunaLinePanel1.Controls.Add(this.lb_gioi_tinh);
-            this.gunaLinePanel1.Controls.Add(this.label11);
-            this.gunaLinePanel1.Controls.Add(this.lb_tennv);
-            this.gunaLinePanel1.Controls.Add(this.lb_sdt);
-            this.gunaLinePanel1.Controls.Add(this.lb_ngaysinh);
-            this.gunaLinePanel1.Controls.Add(this.lb_manv);
-            this.gunaLinePanel1.Controls.Add(this.label4);
-            this.gunaLinePanel1.Controls.Add(this.label2);
-            this.gunaLinePanel1.Controls.Add(this.label3);
-            this.gunaLinePanel1.Controls.Add(this.label1);
-            this.gunaLinePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaLinePanel1.LineBottom = 6;
-            this.gunaLinePanel1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.gunaLinePanel1.LineLeft = 4;
-            this.gunaLinePanel1.LineRight = 6;
-            this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaLinePanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaLinePanel1.Name = "gunaLinePanel1";
-            this.gunaLinePanel1.Size = new System.Drawing.Size(1093, 621);
-            this.gunaLinePanel1.TabIndex = 21;
+            this.InfoStaff.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.InfoStaff.Controls.Add(this.lb_loainv);
+            this.InfoStaff.Controls.Add(this.label5);
+            this.InfoStaff.Controls.Add(this.lb_email);
+            this.InfoStaff.Controls.Add(this.label14);
+            this.InfoStaff.Controls.Add(this.lb_taikhoan);
+            this.InfoStaff.Controls.Add(this.label17);
+            this.InfoStaff.Controls.Add(this.lb_diachi);
+            this.InfoStaff.Controls.Add(this.label13);
+            this.InfoStaff.Controls.Add(this.lb_gioi_tinh);
+            this.InfoStaff.Controls.Add(this.label11);
+            this.InfoStaff.Controls.Add(this.lb_tennv);
+            this.InfoStaff.Controls.Add(this.lb_sdt);
+            this.InfoStaff.Controls.Add(this.lb_ngaysinh);
+            this.InfoStaff.Controls.Add(this.lb_manv);
+            this.InfoStaff.Controls.Add(this.label4);
+            this.InfoStaff.Controls.Add(this.label2);
+            this.InfoStaff.Controls.Add(this.label3);
+            this.InfoStaff.Controls.Add(this.label1);
+            this.InfoStaff.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.InfoStaff.LineBottom = 6;
+            this.InfoStaff.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.InfoStaff.LineLeft = 4;
+            this.InfoStaff.LineRight = 6;
+            this.InfoStaff.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.InfoStaff.Location = new System.Drawing.Point(0, 0);
+            this.InfoStaff.Name = "InfoStaff";
+            this.InfoStaff.Size = new System.Drawing.Size(1093, 621);
+            this.InfoStaff.TabIndex = 21;
             // 
             // lb_loainv
             // 
@@ -335,15 +335,15 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1093, 621);
             this.Controls.Add(this.pnTitle);
-            this.Controls.Add(this.gunaLinePanel1);
+            this.Controls.Add(this.InfoStaff);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "lb_gioitinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InfoStaff";
             this.pnTitle.ResumeLayout(false);
             this.pnTitle.PerformLayout();
-            this.gunaLinePanel1.ResumeLayout(false);
-            this.gunaLinePanel1.PerformLayout();
+            this.InfoStaff.ResumeLayout(false);
+            this.InfoStaff.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -354,7 +354,7 @@
         private Guna.UI.WinForms.GunaPanel pnTitle;
         private FontAwesome.Sharp.IconButton btnExit;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaLinePanel gunaLinePanel1;
+        private Guna.UI.WinForms.GunaLinePanel InfoStaff;
         private System.Windows.Forms.Label lb_loainv;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lb_email;

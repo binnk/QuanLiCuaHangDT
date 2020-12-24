@@ -27,7 +27,7 @@ namespace QLCH_UI.DAO
         private CustomersDAO() { }
         public DataTable Customerslist()
         {
-            string query = "select makh as N'Mã khách hàng', ten_kh as N'Tên khách hàng', dien_thoai as 'SDT' from khach_hang";
+            string query = "select * from khach_hang";
             DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
             return (dt);
         }
@@ -86,6 +86,18 @@ namespace QLCH_UI.DAO
             }
             if (result == 0) return (false);
             else return (true);
+        }
+        public DataTable search_customer_by_name(string ten_kh)
+        {
+            string query = string.Format("select * from khach_hang where dbo.fuConvertToUnsign1(ten_kh) like N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", ten_kh);
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
+        public DataTable search_customer_by_makh(string makh)
+        {
+            string query = string.Format("select * from khach_hang where dbo.fuConvertToUnsign1(makh) like N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", makh);
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
         }
     }
 }

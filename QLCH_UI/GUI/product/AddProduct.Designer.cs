@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddProduct));
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.gunaLinePanel2 = new Guna.UI.WinForms.GunaLinePanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lb_soluong_error = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -58,14 +61,11 @@
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.label11 = new System.Windows.Forms.Label();
-            this.gunaLinePanel2 = new Guna.UI.WinForms.GunaLinePanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gunaLinePanel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.pnTitle.SuspendLayout();
             this.gunaLinePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.pnTitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaLinePanel1
@@ -86,6 +86,43 @@
             this.gunaLinePanel1.Name = "gunaLinePanel1";
             this.gunaLinePanel1.Size = new System.Drawing.Size(1014, 621);
             this.gunaLinePanel1.TabIndex = 9;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(761, 437);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(124, 32);
+            this.label11.TabIndex = 120;
+            this.label11.Text = "Thêm ảnh";
+            // 
+            // gunaLinePanel2
+            // 
+            this.gunaLinePanel2.Controls.Add(this.pictureBox1);
+            this.gunaLinePanel2.LineBottom = 1;
+            this.gunaLinePanel2.LineColor = System.Drawing.Color.Black;
+            this.gunaLinePanel2.LineLeft = 1;
+            this.gunaLinePanel2.LineRight = 1;
+            this.gunaLinePanel2.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaLinePanel2.LineTop = 1;
+            this.gunaLinePanel2.Location = new System.Drawing.Point(666, 41);
+            this.gunaLinePanel2.Name = "gunaLinePanel2";
+            this.gunaLinePanel2.Size = new System.Drawing.Size(285, 393);
+            this.gunaLinePanel2.TabIndex = 121;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(280, 389);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 117;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // groupBox1
             // 
@@ -179,6 +216,7 @@
             this.tb_giaban.Name = "tb_giaban";
             this.tb_giaban.Size = new System.Drawing.Size(414, 44);
             this.tb_giaban.TabIndex = 106;
+            this.tb_giaban.TextChanged += new System.EventHandler(this.tb_giaban_TextChanged);
             // 
             // label9
             // 
@@ -198,6 +236,7 @@
             this.tb_gianhap.Name = "tb_gianhap";
             this.tb_gianhap.Size = new System.Drawing.Size(414, 44);
             this.tb_gianhap.TabIndex = 104;
+            this.tb_gianhap.TextChanged += new System.EventHandler(this.tb_gianhap_TextChanged);
             // 
             // label6
             // 
@@ -237,10 +276,8 @@
             this.tb_masp.Font = new System.Drawing.Font("Arial", 16F);
             this.tb_masp.Location = new System.Drawing.Point(50, 129);
             this.tb_masp.Name = "tb_masp";
-            this.tb_masp.ReadOnly = true;
             this.tb_masp.Size = new System.Drawing.Size(414, 44);
             this.tb_masp.TabIndex = 95;
-            this.tb_masp.Text = "unknown";
             // 
             // label1
             // 
@@ -419,43 +456,6 @@
             this.gunaElipse1.Radius = 15;
             this.gunaElipse1.TargetControl = this;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(761, 437);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(124, 32);
-            this.label11.TabIndex = 120;
-            this.label11.Text = "Thêm ảnh";
-            // 
-            // gunaLinePanel2
-            // 
-            this.gunaLinePanel2.Controls.Add(this.pictureBox1);
-            this.gunaLinePanel2.LineBottom = 1;
-            this.gunaLinePanel2.LineColor = System.Drawing.Color.Black;
-            this.gunaLinePanel2.LineLeft = 1;
-            this.gunaLinePanel2.LineRight = 1;
-            this.gunaLinePanel2.LineStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaLinePanel2.LineTop = 1;
-            this.gunaLinePanel2.Location = new System.Drawing.Point(666, 41);
-            this.gunaLinePanel2.Name = "gunaLinePanel2";
-            this.gunaLinePanel2.Size = new System.Drawing.Size(285, 393);
-            this.gunaLinePanel2.TabIndex = 121;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(280, 389);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 117;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -471,12 +471,12 @@
             this.Text = "AddProduct";
             this.gunaLinePanel1.ResumeLayout(false);
             this.gunaLinePanel1.PerformLayout();
+            this.gunaLinePanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.pnTitle.ResumeLayout(false);
             this.pnTitle.PerformLayout();
-            this.gunaLinePanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -159,7 +159,7 @@ namespace QLCH_UI
             if (cb_loaisp.Text == "Khác") p = "SP";
             if (rs > 9) p = p + rs.ToString();
             else p = p + "0" + rs.ToString();
-            tb_masp.Text = p;
+            if (tb_masp.Text=="") tb_masp.Text = p;
             if (check_error() == true)
             {
                 byte[] k = ProductBUS.Instance.ImageToByteArray(this.Text);

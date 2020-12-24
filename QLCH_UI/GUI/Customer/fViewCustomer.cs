@@ -7,20 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using QLCH_UI.DAO;
 namespace QLCH_UI
 {
     public partial class fViewCustomer : Form
     {
+   
         public fViewCustomer()
         {
             InitializeComponent();
-
-            flowLayoutPanel1.Controls.Add(new UC_ItemCustomer());
-            flowLayoutPanel1.Controls.Add(new UC_ItemCustomer());
-            flowLayoutPanel1.Controls.Add(new UC_ItemCustomer());
+            loadcustomer();
         }
-
+        public void loadcustomer()
+        {
+            flowLayoutPanel1.Controls.Clear();
+            DataTable a = CustomersDAO.Instance.Customerslist();
+            for (int i=0;i<a.Rows.Count;i++)
+            {
+                UC_ItemCustomer item = new UC_ItemCustomer(this);
+                item.makh = a.Rows[i]["makh"].ToString();
+                item.tenkh = a.Rows[i]["ten_kh"].ToString();
+                item.sdt = a.Rows[i]["dien_thoai"].ToString();
+                item.gioitinh = a.Rows[i]["gioi_tinh"].ToString();
+                item.diachi = a.Rows[i]["dia_chi"].ToString();
+                item.set_UC();
+                flowLayoutPanel1.Controls.Add(item);
+            }
+        }
         protected override CreateParams CreateParams
         {
             get
@@ -34,6 +47,29 @@ namespace QLCH_UI
         private void btnThem_Click(object sender, EventArgs e)
         {
             (new AddCustomer()).ShowDialog();
+            loadcustomer();
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (tb_search.Text == "") loadcustomer();
+            else
+            {
+                flowLayoutPanel1.Controls.Clear();
+                DataTable a = CustomersDAO.Instance.search_customer_by_name(tb_search.Text);
+                for (int i = 0; i < a.Rows.Count; i++)
+                {
+                    UC_ItemCustomer item = new UC_ItemCustomer(this);
+                    item.makh = a.Rows[i]["makh"].ToString();
+                    item.tenkh = a.Rows[i]["ten_kh"].ToString();
+                    item.sdt = a.Rows[i]["dien_thoai"].ToString();
+                    item.gioitinh = a.Rows[i]["gioi_tinh"].ToString();
+                    item.diachi = a.Rows[i]["dia_chi"].ToString();
+                    item.set_UC();
+                    flowLayoutPanel1.Controls.Add(item);
+                }
+            }
+
         }
     }
 }

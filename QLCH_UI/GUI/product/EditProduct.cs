@@ -127,6 +127,7 @@ namespace QLCH_UI
             {
                 pictureBox1.Image = Image.FromFile(openFile.FileName);
                 this.Text = openFile.FileName;
+                kt = false;
             }
         }
 
@@ -162,6 +163,49 @@ namespace QLCH_UI
         private void btnHuy_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void tb_gianhap_TextChanged_1(object sender, EventArgs e)
+        {
+            if (tb_gianhap.Text.Length > 10) tb_gianhap.Text = Convert.ToDouble(gianhap).ToString("#,##0");
+            if (tb_gianhap.Text.Length > 0)
+            {
+                foreach (char i in tb_gianhap.Text)
+                {
+                    if ((i > '9' || i < '0') && (i != ','))
+                    {
+                        tb_gianhap.Text = Convert.ToDouble(gianhap).ToString("#,##0");
+                        break;
+                    }
+                }
+                gianhap = GetFloat(tb_gianhap.Text);
+                tb_gianhap.Text = Convert.ToDouble(GetFloat(tb_gianhap.Text)).ToString("#,##0");
+                tb_gianhap.SelectionStart = tb_gianhap.Text.Length;
+            }
+        }
+
+        private void tb_giaban_TextChanged_1(object sender, EventArgs e)
+        {
+            if (tb_giaban.Text.Length > 10) tb_giaban.Text = Convert.ToDouble(giaban).ToString("#,##0");
+            if (tb_giaban.Text.Length > 0)
+            {
+                foreach (char i in tb_giaban.Text)
+                {
+                    if ((i > '9' || i < '0') && (i != ','))
+                    {
+                        tb_giaban.Text = Convert.ToDouble(giaban).ToString("#,##0");
+                        break;
+                    }
+                }
+                giaban = GetFloat(tb_giaban.Text);
+                tb_giaban.Text = Convert.ToDouble(GetFloat(tb_giaban.Text)).ToString("#,##0");
+                tb_giaban.SelectionStart = tb_giaban.Text.Length;
+            }
         }
     }
 }

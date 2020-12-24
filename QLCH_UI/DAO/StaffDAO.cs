@@ -126,5 +126,12 @@ namespace QLCH_UI.DAO
             if (result == 0) return (false);
             else return (true);
         }
+
+        public DataTable search_staff_by_name(string ten_nv)
+        {
+            string query = string.Format("select * from nhan_vien where dbo.fuConvertToUnsign1(ten_nv) like N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", ten_nv);
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
     }
 }

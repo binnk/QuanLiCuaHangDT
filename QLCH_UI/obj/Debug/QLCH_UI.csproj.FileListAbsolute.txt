@@ -400,7 +400,6 @@ E:\QuanLiCuaHangDT\QLCH_UI\bin\Debug\LiveCharts.WinForms.xml
 E:\QuanLiCuaHangDT\QLCH_UI\bin\Debug\LiveCharts.Wpf.pdb
 E:\QuanLiCuaHangDT\QLCH_UI\bin\Debug\LiveCharts.Wpf.xml
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemProduct.resources
-E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ViewProduct.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fAddRepair.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fEditRepair.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fInfoRepair.resources
@@ -914,3 +913,17 @@ C:\Users\phamt\Desktop\21.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.csproj.Co
 C:\Users\phamt\Desktop\21.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.csproj.CopyComplete
 C:\Users\phamt\Desktop\21.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.exe
 C:\Users\phamt\Desktop\21.12\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.pdb
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fImportManage.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fManageWH.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fOrder.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fProduct.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fStaff.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fReviewSale.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fReviewTech.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fViewCustomer.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.MainSaleForm.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemCustomer.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemOrder.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemStaff.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_itemManageWH.resources
+E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemImport.resources
