@@ -61,7 +61,7 @@
             this.pnTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTitle.Location = new System.Drawing.Point(0, 0);
             this.pnTitle.Name = "pnTitle";
-            this.pnTitle.Size = new System.Drawing.Size(933, 61);
+            this.pnTitle.Size = new System.Drawing.Size(978, 61);
             this.pnTitle.TabIndex = 6;
             // 
             // btnExit
@@ -76,7 +76,7 @@
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Times;
             this.btnExit.IconColor = System.Drawing.SystemColors.GrayText;
             this.btnExit.IconSize = 32;
-            this.btnExit.Location = new System.Drawing.Point(886, 12);
+            this.btnExit.Location = new System.Drawing.Point(931, 12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Rotation = 0D;
             this.btnExit.Size = new System.Drawing.Size(32, 32);
@@ -129,7 +129,7 @@
             this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaLinePanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaLinePanel1.Name = "gunaLinePanel1";
-            this.gunaLinePanel1.Size = new System.Drawing.Size(933, 456);
+            this.gunaLinePanel1.Size = new System.Drawing.Size(978, 456);
             this.gunaLinePanel1.TabIndex = 7;
             // 
             // label14
@@ -276,7 +276,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(933, 456);
+            this.ClientSize = new System.Drawing.Size(978, 456);
             this.Controls.Add(this.pnTitle);
             this.Controls.Add(this.gunaLinePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
