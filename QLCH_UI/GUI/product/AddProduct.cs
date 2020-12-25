@@ -162,8 +162,11 @@ namespace QLCH_UI
             if (tb_masp.Text=="") tb_masp.Text = p;
             if (check_error() == true)
             {
-                byte[] k = ProductBUS.Instance.ImageToByteArray(this.Text);
-                string l = Convert.ToBase64String(k);
+                if (kt == true)
+                {
+                    byte[] k = ProductBUS.Instance.ImageToByteArray(this.Text);
+                    l = Convert.ToBase64String(k);
+                }
                 ProductDTO a = new ProductDTO(l, tb_masp.Text, tb_ten_sp.Text, cb_loaisp.Text, double.Parse(tb_gianhap.Text), double.Parse(tb_giaban.Text), int.Parse(tb_sl.Text), 1);
                 if (ProductBUS.Instance.insert_product(a))
                 {
@@ -182,7 +185,8 @@ namespace QLCH_UI
             this.Close();
         }
 
-
+        private bool kt = false;
+        string l= "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAC3ElEQVR4Xu2aO2gUURSGv2Sz2VWxCIg2sVVBQSws7bTSRlQSsLUUHwHBQmy0sLAQbMRCUgi21rHQymbZJg8VCyFgIwiKiUtikl2bO7B7c2fOmXHe3g9 + CJNz7tz / 353XnQWPx+PxeDyeUWaBFWAHGFRcfeCj8aRiRjFoVTUjmQdYVgxUVS3bZsccAWwDDcf2OtDXeLNTewBMSk0lpAU8cvgRsRuqaD5gSgpg3N03wh+poMRsSQWaAGpNlQJoA3NAF9gw6gK3zfHuQnXM28Q+aeTAYeHyvARMO/r2JfETuyFj2sp7kyXHN2FvEj+xGzJmTmE+0C2rtxYBdBXGA3Ws3loEsKEwHqhn9e6R/FTpKpAJVQhgRSoYIk4tVCSAl1LBEHZtokM4i3NAI+TJU0PLXOKk43/RcRlsJ/ETuyGCNvAC2ATWgIcJg5gWQlgMuREqPIBXjvEeS00htMx1vmPO9j3z982IW+FWEj+xG0K4F/GJ3ZWaU6KwAC6a1ZewAAbANWmQFJhM4id2g8VJYF0wPzBLb5ekwf6R3AM4BKwqzAfaBM5KgwJNo7jkGkALeK8wbWsNOB0x7nVTs57gsGkm8RO7wTCvMBum78Axa7wJ4JlV1weuhuzfRW4B3FGYlPQVOGHGOwgshNRtAReE+QTkEsD5FF+hbZsbnt9CXQ84I03MfIvi+onVcBz4pTCWhX4Cp4T5ZRrAAeCLYqJZ6htwJGKODUePiKahCbxTTDAPrYY8B5BlAM8VE8tTH8w30iaTAG4oJlSEOsB+a67jjjqRqIZz5kwtTaYovTWPwAGpBnAU+KGYRNF6PfQKPLUApoDPip2XRfNm4WXM8T8Ru2ECeKPYadn0JK0Anip2Vlbdd2wbwbU+t6uoZox4rsKyeKb4AKSCuuMDkArqjiuAvmNbXdjlzRXAJ8e2uqB6e1znH0tflswHzJpn7LTW+orUjvnkr0imPR6Px+Px/F/8BbXhWSFnrGbjAAAAAElFTkSuQmCC";
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFile = new OpenFileDialog();
@@ -193,6 +197,7 @@ namespace QLCH_UI
             {
                 pictureBox1.Image = Image.FromFile(openFile.FileName);
                 this.Text = openFile.FileName;
+                kt = true;
             }
         }
     }

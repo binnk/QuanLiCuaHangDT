@@ -47,5 +47,24 @@ namespace QLCH_UI
             }
         }
 
+        private void tb_search_TextChanged(object sender, EventArgs e)
+        {
+            if (tb_search.Text == "") loadImportManagement();
+            else
+            {
+                flowLayoutPanel1.Controls.Clear();
+                DataTable a = WarehouseDAO.Instance.search_hoadon_by_mahd(tb_search.Text);
+                for (int i = 0; i < a.Rows.Count; i++)
+                {
+                    UC_ItemImport item = new UC_ItemImport(this);
+                    item.ngaynhap = DateTime.Parse(a.Rows[i]["ngay_nhap"].ToString()).ToString("dd - MM - yyyy");
+                    item.mahd = a.Rows[i]["manhaphang"].ToString();
+                    item.manv = a.Rows[i]["manguoinhap"].ToString();
+                    item.tongtien = decimal.Parse(a.Rows[i]["tong_tien"].ToString());
+                    item.set_UC();
+                    flowLayoutPanel1.Controls.Add(item);
+                }
+            }
+        }
     }
 }

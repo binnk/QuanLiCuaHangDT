@@ -14,6 +14,8 @@ namespace QLCH_UI
 {
     public partial class fProduct : Form
     {
+        private string manv;
+        int d = 0;
         public void loadproduct()
         {
             flowLayoutPanel1.Controls.Clear();
@@ -32,13 +34,21 @@ namespace QLCH_UI
                     item.giaban = double.Parse(a.Rows[i]["gia_ban"].ToString());
                     item.img = a.Rows[i]["img"].ToString();
                     item.set_UC();
-                    flowLayoutPanel1.Controls.Add(item);
+                    if (d == 0) flowLayoutPanel1.Controls.Add(item);
+                    if (d == 2 && item.loaisp != "Linh kiện") flowLayoutPanel1.Controls.Add(item);
+                    if (d == 1 && item.loaisp == "Linh kiện") flowLayoutPanel1.Controls.Add(item);
                 }
             }    
         }
-        public fProduct()
+        public fProduct(string manvv)
         {
+            manv = manvv;
             InitializeComponent();
+            DataTable p = StaffDAO.Instance.ViewStaff(manv);
+            string loainv = p.Rows[0]["loainhanvien"].ToString();
+            if (loainv == "admin") d = 0;
+            if (loainv == "Kỹ thuật") d = 1;
+            if (loainv == "Bán hàng") d = 2;
             loadproduct();
         }
 
@@ -79,7 +89,10 @@ namespace QLCH_UI
                         item.giaban = double.Parse(a.Rows[i]["gia_ban"].ToString());
                         item.img = a.Rows[i]["img"].ToString();
                         item.set_UC();
-                        flowLayoutPanel1.Controls.Add(item);
+                        //flowLayoutPanel1.Controls.Add(item);
+                        if (d == 0) flowLayoutPanel1.Controls.Add(item);
+                        if (d == 2 && item.loaisp != "Linh kiện") flowLayoutPanel1.Controls.Add(item);
+                        if (d == 1 && item.loaisp == "Linh kiện") flowLayoutPanel1.Controls.Add(item);
                     }
                 }
             }

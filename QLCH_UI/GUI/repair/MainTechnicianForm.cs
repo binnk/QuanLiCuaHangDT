@@ -136,7 +136,7 @@ namespace QLCH_UI
 
         private void btnLinhKien_Click(object sender, EventArgs e)
         {
-            openChildForm(new fProduct());
+            openChildForm(new fProduct(manv));
         }
 
         private void btnTongQuan_Click(object sender, EventArgs e)

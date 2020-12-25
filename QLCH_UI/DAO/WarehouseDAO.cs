@@ -103,6 +103,11 @@ namespace QLCH_UI.DAO
             if (result == 0) return (false);
             else return (true);
         }
-
+        public DataTable search_hoadon_by_mahd(string manhaphang)
+        {
+            string query = string.Format("select * from nhap_kho where dbo.fuConvertToUnsign1(manhaphang) like N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", manhaphang);
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace QLCH_UI
     {
         private IconButton currentBtn;
         private Panel leftBorderBtn;
-        private string manv;
+        public string manv;
         public MainForm(string manvv)
         {
             manv = manvv;
@@ -147,7 +147,7 @@ namespace QLCH_UI
         {
             ActivateButton(sender, RGBColors.color3);
             //dgvProducts.BringToFront();
-            openChildForm(new fProduct());
+            openChildForm(new fProduct(this.manv));
 
 
         }
