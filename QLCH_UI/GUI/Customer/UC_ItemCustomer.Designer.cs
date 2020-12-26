@@ -42,6 +42,8 @@
             // 
             // gunaLinePanel1
             // 
+            this.gunaLinePanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLinePanel1.Controls.Add(this.btn_delete);
             this.gunaLinePanel1.Controls.Add(this.btnEdit);
             this.gunaLinePanel1.Controls.Add(this.lb_diachi);
@@ -49,7 +51,6 @@
             this.gunaLinePanel1.Controls.Add(this.lb_SDT);
             this.gunaLinePanel1.Controls.Add(this.lb_tenkh);
             this.gunaLinePanel1.Controls.Add(this.lb_makh);
-            this.gunaLinePanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaLinePanel1.LineBottom = 2;
             this.gunaLinePanel1.LineColor = System.Drawing.Color.WhiteSmoke;
             this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;

@@ -21,8 +21,10 @@ namespace QLCH_UI
         public decimal gianhap;
         public decimal giaban;
         fManageWH _parent;
-        public UC_itemManageWH(fManageWH parent)
+        public string manv;
+        public UC_itemManageWH(fManageWH parent,string manvv)
         {
+            manv = manvv;
             InitializeComponent();
             _parent = parent;
         }
@@ -50,7 +52,7 @@ namespace QLCH_UI
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            (new  ImportProducts(masp, tensp, loai, gianhap.ToString(), gunaPictureBox1.Image)).ShowDialog();
+            (new  ImportProducts(masp, tensp, loai, gianhap.ToString(), gunaPictureBox1.Image,manv)).ShowDialog();
             _parent.loadkho();
         }
 

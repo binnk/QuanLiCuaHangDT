@@ -18,6 +18,7 @@ namespace QLCH_UI
             manv = manvv;
             InitializeComponent();
             openChildForm(new fReviewSale(manv));
+            pnInfo.Visible = false;
         }
 
         private Form activeForm = null;
@@ -81,6 +82,25 @@ namespace QLCH_UI
                 WindowState = FormWindowState.Maximized;
             else
                 WindowState = FormWindowState.Normal;
+        }
+
+        private void btnDown_Click(object sender, EventArgs e)
+        {
+            if (pnInfo.Visible == false)
+            {
+                pnInfo.Visible = true;
+                pnInfo.BringToFront();
+            }
+            else
+            {
+                pnInfo.Visible = false;
+            }
+        }
+
+        private void btnChangePW_Click(object sender, EventArgs e)
+        {
+            fChangePassword f = new fChangePassword();
+            f.ShowDialog();
         }
     }
 }

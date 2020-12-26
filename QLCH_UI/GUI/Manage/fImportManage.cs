@@ -31,7 +31,8 @@ namespace QLCH_UI
                 UC_ItemImport item = new UC_ItemImport(this);
                 item.ngaynhap = DateTime.Parse(a.Rows[i]["ngay_nhap"].ToString()).ToString("dd - MM - yyyy");
                 item.mahd = a.Rows[i]["manhaphang"].ToString();
-                item.manv = a.Rows[i]["manguoinhap"].ToString();
+                item.masp = a.Rows[i]["masp"].ToString();
+                item.soluong = a.Rows[i]["so_luong"].ToString();
                 item.tongtien = decimal.Parse(a.Rows[i]["tong_tien"].ToString());
                 item.set_UC();
                 flowLayoutPanel1.Controls.Add(item);
@@ -59,11 +60,24 @@ namespace QLCH_UI
                     UC_ItemImport item = new UC_ItemImport(this);
                     item.ngaynhap = DateTime.Parse(a.Rows[i]["ngay_nhap"].ToString()).ToString("dd - MM - yyyy");
                     item.mahd = a.Rows[i]["manhaphang"].ToString();
-                    item.manv = a.Rows[i]["manguoinhap"].ToString();
+                    item.masp = a.Rows[i]["masp"].ToString();
+                    item.soluong = a.Rows[i]["so_luong"].ToString();
                     item.tongtien = decimal.Parse(a.Rows[i]["tong_tien"].ToString());
                     item.set_UC();
                     flowLayoutPanel1.Controls.Add(item);
                 }
+            }
+        }
+
+        private void fImportManage_Resize(object sender, EventArgs e)
+        {
+            if (this.panel.Size.Height > 805)
+            {
+                this.guna2ShadowPanel1.Size = new Size(1600, 825);
+            }
+            else
+            {
+                this.guna2ShadowPanel1.Size = new Size(1525, 653);
             }
         }
     }

@@ -105,6 +105,12 @@
     <Compile Include="DAO\Suachua.cs" />
     <Compile Include="DAO\TongquanSC_DAO.cs" />
     <Compile Include="DAO\Tongquan_BH.cs" />
+    <Compile Include="GUI\fChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fChangePassword.Designer.cs">
+      <DependentUpon>fChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Manage\fImportManage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -423,6 +429,9 @@
     <Compile Include="GUI\Manage\UC_ItemImport.Designer.cs">
       <DependentUpon>UC_ItemImport.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\fChangePassword.resx">
+      <DependentUpon>fChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Manage\fImportManage.resx">
       <DependentUpon>fImportManage.cs</DependentUpon>
     </EmbeddedResource>

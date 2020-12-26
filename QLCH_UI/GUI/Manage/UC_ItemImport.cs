@@ -20,14 +20,18 @@ namespace QLCH_UI
         }
         public string ngaynhap;
         public string mahd;
-        public string manv;
+        //public string manv;
         public decimal tongtien;
+        public string masp;
+        public string soluong;
         fImportManage _parent;
         public void set_UC()
         {
             lb_ngaynhap.Text = ngaynhap;
             lb_mahd.Text = mahd;
-            lb_manv.Text = manv;
+            lb_masp.Text = masp;
+            lb_soluong.Text = soluong;
+            //lb_manv.Text = manv;
             lb_trigia.Text =Convert.ToDecimal(tongtien).ToString("#,##0");
         }
         private void gunaLinePanel1_MouseEnter(object sender, EventArgs e)

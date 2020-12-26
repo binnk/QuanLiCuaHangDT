@@ -15,7 +15,7 @@ using Bunifu;
 
 namespace QLCH_UI
 {
-     partial class MainForm : Form
+    partial class MainForm : Form
     {
         private IconButton currentBtn;
         private Panel leftBorderBtn;
@@ -25,8 +25,8 @@ namespace QLCH_UI
             manv = manvv;
             InitializeComponent();
 
-           
-        
+
+            openChildForm(new ReportForm());
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
@@ -38,7 +38,7 @@ namespace QLCH_UI
 
             customizeDesing();
 
-       
+
 
         }
 
@@ -55,7 +55,7 @@ namespace QLCH_UI
             public static Color color7 = Color.FromArgb(231, 125, 108);
             public static Color color8 = Color.FromArgb(108, 125, 231);
             public static Color color9 = Color.FromArgb(70, 213, 161);
-           
+
         }
 
         // Click button ở panel Menu thì button thay đổi
@@ -63,9 +63,9 @@ namespace QLCH_UI
         {
             if (senderBtn != null)
             {
-                
+
                 DisableButton();
-                
+
 
                 currentBtn = (IconButton)senderBtn;
                 currentBtn.BackColor = Color.FromArgb(37, 36, 81);
@@ -74,13 +74,13 @@ namespace QLCH_UI
                 currentBtn.IconColor = color;
                 currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                 currentBtn.ImageAlign = ContentAlignment.MiddleRight;
-          
+
                 leftBorderBtn.BackColor = color;
-             
-                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y );
-             
-              
-                
+
+                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
+
+
+
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
 
@@ -89,7 +89,7 @@ namespace QLCH_UI
                 //btnExit.BackColor = color;
                 //btnMaximize.BackColor = color;
                 //btnMinimize.BackColor = color;
-                
+
             }
         }
 
@@ -98,7 +98,7 @@ namespace QLCH_UI
         {
             if (currentBtn != null)
             {
-         
+
                 currentBtn.BackColor = Color.FromArgb(32, 45, 63);
                 currentBtn.ForeColor = Color.Gainsboro;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -116,14 +116,14 @@ namespace QLCH_UI
 
         }
 
-     
+
 
         private void panelLogo_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-   
+
 
         private void panelMenu_Paint(object sender, PaintEventArgs e)
         {
@@ -159,7 +159,7 @@ namespace QLCH_UI
             //panelBotCustomers.BringToFront();
         }
 
-    
+
         private void btnManage_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
@@ -234,7 +234,7 @@ namespace QLCH_UI
         {
             //panelProducts.Visible = false;
             panelManage.Visible = false;
-
+            pnInfo.Visible = false;
         }
 
         private void hideMenu()
@@ -249,7 +249,7 @@ namespace QLCH_UI
             }
         }
 
-        
+
         private void showMenu(Panel subMenu)
         {
             if (subMenu.Visible == false)
@@ -316,7 +316,7 @@ namespace QLCH_UI
 
         private void openChildForm(Form childForm)
         {
-            if (activeForm !=null)
+            if (activeForm != null)
             {
                 activeForm.Close();
             }
@@ -333,7 +333,7 @@ namespace QLCH_UI
 
         private void itemWareHouseManage_Click(object sender, EventArgs e)
         {
-            openChildForm(new fManageWH());
+            openChildForm(new fManageWH(this.manv));
 
         }
 
@@ -342,6 +342,37 @@ namespace QLCH_UI
             openChildForm(new fImportManage());
         }
 
-   
+        private void panelTitle_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void btnDown_Click(object sender, EventArgs e)
+        {
+            if (pnInfo.Visible == false)
+            {
+                pnInfo.Visible = true;
+                pnInfo.BringToFront();
+            }
+            else
+            {
+                pnInfo.Visible = false;
+            }
+        }
+
+        private void pnInfo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gunaCirclePictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChangePW_Click(object sender, EventArgs e)
+        {
+            fChangePassword f = new fChangePassword();
+            f.ShowDialog();      
+        }
     }
 }

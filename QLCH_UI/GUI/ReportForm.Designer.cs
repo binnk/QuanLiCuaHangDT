@@ -177,12 +177,13 @@
             // 
             // guna2CustomGradientPanel1
             // 
+            this.guna2CustomGradientPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2CustomGradientPanel1.BorderRadius = 12;
             this.guna2CustomGradientPanel1.Controls.Add(this.lb_doanh_thu);
             this.guna2CustomGradientPanel1.Controls.Add(this.label1);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox1);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2CirclePictureBox1);
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(23, 61);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(23, 73);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.ShadowDecoration.BorderRadius = 10;
             this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
@@ -228,12 +229,13 @@
             // 
             // guna2CustomGradientPanel2
             // 
+            this.guna2CustomGradientPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2CustomGradientPanel2.BorderRadius = 12;
             this.guna2CustomGradientPanel2.Controls.Add(this.lb_hoadon);
             this.guna2CustomGradientPanel2.Controls.Add(this.label2);
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2PictureBox2);
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2CirclePictureBox2);
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(427, 61);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(427, 73);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.ShadowDecoration.BorderRadius = 10;
             this.guna2CustomGradientPanel2.ShadowDecoration.Parent = this.guna2CustomGradientPanel2;
@@ -293,12 +295,13 @@
             // 
             // guna2CustomGradientPanel3
             // 
+            this.guna2CustomGradientPanel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2CustomGradientPanel3.BorderRadius = 12;
             this.guna2CustomGradientPanel3.Controls.Add(this.lb_sanpham);
             this.guna2CustomGradientPanel3.Controls.Add(this.label3);
             this.guna2CustomGradientPanel3.Controls.Add(this.guna2PictureBox3);
             this.guna2CustomGradientPanel3.Controls.Add(this.guna2CirclePictureBox3);
-            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(825, 61);
+            this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(825, 73);
             this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
             this.guna2CustomGradientPanel3.ShadowDecoration.BorderRadius = 10;
             this.guna2CustomGradientPanel3.ShadowDecoration.Parent = this.guna2CustomGradientPanel3;
@@ -358,12 +361,13 @@
             // 
             // guna2CustomGradientPanel4
             // 
+            this.guna2CustomGradientPanel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2CustomGradientPanel4.BorderRadius = 12;
             this.guna2CustomGradientPanel4.Controls.Add(this.lb_khachhang);
             this.guna2CustomGradientPanel4.Controls.Add(this.label4);
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2PictureBox4);
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2CirclePictureBox4);
-            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(1220, 61);
+            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(1220, 73);
             this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
             this.guna2CustomGradientPanel4.ShadowDecoration.BorderRadius = 10;
             this.guna2CustomGradientPanel4.ShadowDecoration.Parent = this.guna2CustomGradientPanel4;
@@ -423,6 +427,7 @@
             // 
             // guna2CustomGradientPanel5
             // 
+            this.guna2CustomGradientPanel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2CustomGradientPanel5.BorderRadius = 15;
             this.guna2CustomGradientPanel5.Controls.Add(this.comboBox1);
             this.guna2CustomGradientPanel5.Controls.Add(this.guna2CustomGradientPanel7);
@@ -491,6 +496,7 @@
             // 
             // guna2CustomGradientPanel6
             // 
+            this.guna2CustomGradientPanel6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2CustomGradientPanel6.BorderRadius = 15;
             this.guna2CustomGradientPanel6.Controls.Add(this.flowLayoutPanel2);
             this.guna2CustomGradientPanel6.Controls.Add(this.guna2ProgressBar1);
@@ -795,6 +801,7 @@
             // 
             // guna2CustomGradientPanel8
             // 
+            this.guna2CustomGradientPanel8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2CustomGradientPanel8.BorderRadius = 15;
             this.guna2CustomGradientPanel8.Controls.Add(this.flowLayoutPanel1);
             this.guna2CustomGradientPanel8.Controls.Add(this.guna2ProgressBar2);
@@ -1190,8 +1197,9 @@
             // 
             // guna2ProgressBar4
             // 
+            this.guna2ProgressBar4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.guna2ProgressBar4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.guna2ProgressBar4.Location = new System.Drawing.Point(927, 47);
+            this.guna2ProgressBar4.Location = new System.Drawing.Point(940, 39);
             this.guna2ProgressBar4.Name = "guna2ProgressBar4";
             this.guna2ProgressBar4.ShadowDecoration.Parent = this.guna2ProgressBar4;
             this.guna2ProgressBar4.Size = new System.Drawing.Size(198, 2);
@@ -1200,11 +1208,12 @@
             // 
             // label42
             // 
+            this.label42.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label42.AutoSize = true;
             this.label42.BackColor = System.Drawing.SystemColors.Control;
             this.label42.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label42.ForeColor = System.Drawing.Color.DimGray;
-            this.label42.Location = new System.Drawing.Point(860, 9);
+            this.label42.Location = new System.Drawing.Point(873, 1);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(43, 32);
             this.label42.TabIndex = 12;
@@ -1212,6 +1221,7 @@
             // 
             // datetime1
             // 
+            this.datetime1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.datetime1.CheckedState.Parent = this.datetime1;
             this.datetime1.CustomFormat = "dd/MM/yyyy";
             this.datetime1.FillColor = System.Drawing.Color.White;
@@ -1219,7 +1229,7 @@
             this.datetime1.ForeColor = System.Drawing.Color.DimGray;
             this.datetime1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datetime1.HoverState.Parent = this.datetime1;
-            this.datetime1.Location = new System.Drawing.Point(924, 10);
+            this.datetime1.Location = new System.Drawing.Point(937, 2);
             this.datetime1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.datetime1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.datetime1.Name = "datetime1";
@@ -1231,6 +1241,7 @@
             // 
             // datetime2
             // 
+            this.datetime2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.datetime2.CheckedState.Parent = this.datetime2;
             this.datetime2.CustomFormat = "dd/MM/yyyy";
             this.datetime2.FillColor = System.Drawing.Color.White;
@@ -1238,7 +1249,7 @@
             this.datetime2.ForeColor = System.Drawing.Color.DimGray;
             this.datetime2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datetime2.HoverState.Parent = this.datetime2;
-            this.datetime2.Location = new System.Drawing.Point(1248, 10);
+            this.datetime2.Location = new System.Drawing.Point(1261, 2);
             this.datetime2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.datetime2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.datetime2.Name = "datetime2";
@@ -1251,11 +1262,12 @@
             // 
             // label43
             // 
+            this.label43.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label43.AutoSize = true;
             this.label43.BackColor = System.Drawing.SystemColors.Control;
             this.label43.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.label43.ForeColor = System.Drawing.Color.DimGray;
-            this.label43.Location = new System.Drawing.Point(1172, 9);
+            this.label43.Location = new System.Drawing.Point(1185, 1);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(59, 32);
             this.label43.TabIndex = 19;
@@ -1263,8 +1275,9 @@
             // 
             // guna2ProgressBar3
             // 
+            this.guna2ProgressBar3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.guna2ProgressBar3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.guna2ProgressBar3.Location = new System.Drawing.Point(1251, 47);
+            this.guna2ProgressBar3.Location = new System.Drawing.Point(1264, 39);
             this.guna2ProgressBar3.Name = "guna2ProgressBar3";
             this.guna2ProgressBar3.ShadowDecoration.Parent = this.guna2ProgressBar3;
             this.guna2ProgressBar3.Size = new System.Drawing.Size(198, 2);
@@ -1273,7 +1286,8 @@
             // 
             // btn_thongke
             // 
-            this.btn_thongke.Location = new System.Drawing.Point(1476, 9);
+            this.btn_thongke.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_thongke.Location = new System.Drawing.Point(1480, 3);
             this.btn_thongke.Name = "btn_thongke";
             this.btn_thongke.Size = new System.Drawing.Size(100, 34);
             this.btn_thongke.TabIndex = 21;

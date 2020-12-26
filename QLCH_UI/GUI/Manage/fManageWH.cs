@@ -13,8 +13,10 @@ namespace QLCH_UI
 {
     public partial class fManageWH : Form
     {
-        public fManageWH()
+        private string manv;
+        public fManageWH(string manvv)
         {
+            manv = manvv;
             InitializeComponent();
             loadkho();
         }
@@ -27,7 +29,7 @@ namespace QLCH_UI
                 int tontai = int.Parse(a.Rows[i]["ton_tai"].ToString());
                 if (tontai == 1)
                 {
-                    UC_itemManageWH item = new UC_itemManageWH(this);
+                    UC_itemManageWH item = new UC_itemManageWH(this,manv);
                     item.img = a.Rows[i]["img"].ToString();
                     item.masp = a.Rows[i]["masp"].ToString();
                     item.tensp = a.Rows[i]["ten_sp"].ToString();
@@ -63,7 +65,7 @@ namespace QLCH_UI
                     int tontai = int.Parse(a.Rows[i]["ton_tai"].ToString());
                     if (tontai == 1)
                     {
-                        UC_itemManageWH item = new UC_itemManageWH(this);
+                        UC_itemManageWH item = new UC_itemManageWH(this,manv);
                         item.img = a.Rows[i]["img"].ToString();
                         item.masp = a.Rows[i]["masp"].ToString();
                         item.tensp = a.Rows[i]["ten_sp"].ToString();
@@ -75,6 +77,18 @@ namespace QLCH_UI
                         flowLayoutPanel1.Controls.Add(item);
                     }
                 }
+            }
+        }
+
+        private void fManageWH_Resize(object sender, EventArgs e)
+        {
+            if (this.panel.Size.Height > 805)
+            {
+                this.guna2ShadowPanel1.Size = new Size(1600, 825);
+            }
+            else
+            {
+                this.guna2ShadowPanel1.Size = new Size(1525, 653);
             }
         }
     }

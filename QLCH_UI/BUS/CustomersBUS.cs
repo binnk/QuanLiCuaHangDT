@@ -45,6 +45,11 @@ namespace QLCH_UI.BUS
         // kiem tra SDT
         public bool SDT(string value)
         {
+            DataTable a = CustomersDAO.Instance.Customerslist();
+            for (int i=0;i<a.Rows.Count;i++)
+            {
+                if (a.Rows[i]["dien_thoai"].ToString() == value) return (false);
+            }    
             int l = value.Length;
             for (int i = 0; i < l; i++) if (value[i] < 48 || value[i] > 57) return (false);
             if (l > 12 || l == 0) return (false);

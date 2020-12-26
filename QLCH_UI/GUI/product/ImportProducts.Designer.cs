@@ -35,12 +35,6 @@
             this.btnHuy = new Guna.UI.WinForms.GunaButton();
             this.gunaLinePanel2 = new Guna.UI.WinForms.GunaLinePanel();
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
-            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.pnTitle = new Guna.UI.WinForms.GunaPanel();
-            this.btnExit = new FontAwesome.Sharp.IconButton();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.dragPnTitle = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lb_manguoinhap_error = new System.Windows.Forms.Label();
             this.tb_manguoinhap = new System.Windows.Forms.TextBox();
@@ -61,11 +55,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tb_ten_sp = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.pnTitle = new Guna.UI.WinForms.GunaPanel();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.dragPnTitle = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gunaLinePanel2.SuspendLayout();
             this.gunaLinePanel1.SuspendLayout();
-            this.pnTitle.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.pnTitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_luu_customer
@@ -166,64 +166,6 @@
             this.gunaLinePanel1.Size = new System.Drawing.Size(1024, 740);
             this.gunaLinePanel1.TabIndex = 15;
             // 
-            // gunaElipse1
-            // 
-            this.gunaElipse1.Radius = 15;
-            this.gunaElipse1.TargetControl = this;
-            // 
-            // pnTitle
-            // 
-            this.pnTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
-            this.pnTitle.Controls.Add(this.btnExit);
-            this.pnTitle.Controls.Add(this.gunaLabel1);
-            this.pnTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnTitle.Location = new System.Drawing.Point(0, 0);
-            this.pnTitle.Name = "pnTitle";
-            this.pnTitle.Size = new System.Drawing.Size(1024, 61);
-            this.pnTitle.TabIndex = 14;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnExit.Font = new System.Drawing.Font("Century", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnExit.IconColor = System.Drawing.SystemColors.GrayText;
-            this.btnExit.IconSize = 32;
-            this.btnExit.Location = new System.Drawing.Point(977, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Rotation = 0D;
-            this.btnExit.Size = new System.Drawing.Size(32, 32);
-            this.btnExit.TabIndex = 3;
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel1.Location = new System.Drawing.Point(447, 9);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(183, 45);
-            this.gunaLabel1.TabIndex = 0;
-            this.gunaLabel1.Text = "Nhập hàng";
-            // 
-            // dragPnTitle
-            // 
-            this.dragPnTitle.TargetControl = this.pnTitle;
-            // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = null;
-            this.bunifuDragControl1.Vertical = true;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lb_manguoinhap_error);
@@ -269,6 +211,7 @@
             this.tb_manguoinhap.Font = new System.Drawing.Font("Arial", 16F);
             this.tb_manguoinhap.Location = new System.Drawing.Point(48, 585);
             this.tb_manguoinhap.Name = "tb_manguoinhap";
+            this.tb_manguoinhap.ReadOnly = true;
             this.tb_manguoinhap.Size = new System.Drawing.Size(414, 44);
             this.tb_manguoinhap.TabIndex = 115;
             // 
@@ -445,6 +388,64 @@
             this.label2.TabIndex = 82;
             this.label2.Text = "Tên sản phẩm";
             // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 15;
+            this.gunaElipse1.TargetControl = this;
+            // 
+            // pnTitle
+            // 
+            this.pnTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.pnTitle.Controls.Add(this.btnExit);
+            this.pnTitle.Controls.Add(this.gunaLabel1);
+            this.pnTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTitle.Location = new System.Drawing.Point(0, 0);
+            this.pnTitle.Name = "pnTitle";
+            this.pnTitle.Size = new System.Drawing.Size(1024, 61);
+            this.pnTitle.TabIndex = 14;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(218)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnExit.Font = new System.Drawing.Font("Century", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnExit.IconColor = System.Drawing.SystemColors.GrayText;
+            this.btnExit.IconSize = 32;
+            this.btnExit.Location = new System.Drawing.Point(977, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Rotation = 0D;
+            this.btnExit.Size = new System.Drawing.Size(32, 32);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel1.Location = new System.Drawing.Point(447, 9);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(183, 45);
+            this.gunaLabel1.TabIndex = 0;
+            this.gunaLabel1.Text = "Nhập hàng";
+            // 
+            // dragPnTitle
+            // 
+            this.dragPnTitle.TargetControl = this.pnTitle;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = null;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // ImportProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -462,10 +463,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gunaLinePanel2.ResumeLayout(false);
             this.gunaLinePanel1.ResumeLayout(false);
-            this.pnTitle.ResumeLayout(false);
-            this.pnTitle.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.pnTitle.ResumeLayout(false);
+            this.pnTitle.PerformLayout();
             this.ResumeLayout(false);
 
         }

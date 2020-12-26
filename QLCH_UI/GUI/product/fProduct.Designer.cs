@@ -62,6 +62,8 @@
             // 
             // tb_search
             // 
+            this.tb_search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
             this.tb_search.BorderRadius = 20;
             this.tb_search.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -177,6 +179,7 @@
             // 
             // btnThem
             // 
+            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThem.AnimationHoverSpeed = 0.07F;
             this.btnThem.AnimationSpeed = 0.03F;
             this.btnThem.BackColor = System.Drawing.Color.Transparent;
@@ -201,9 +204,12 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.TextOffsetX = -5;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            this.btnThem.Resize += new System.EventHandler(this.btnThem_Resize);
             // 
             // guna2ShadowPanel1
             // 
+            this.guna2ShadowPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.guna2Panel1);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
@@ -234,6 +240,7 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1515, 614);
             this.flowLayoutPanel1.TabIndex = 1;
+            this.flowLayoutPanel1.Resize += new System.EventHandler(this.flowLayoutPanel1_Resize);
             // 
             // gunaLinePanel2
             // 
@@ -395,6 +402,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fProduct";
             this.Text = "fProduct";
+            this.Resize += new System.EventHandler(this.fProduct_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.ic_TinhTrang)).EndInit();
             this.panel.ResumeLayout(false);
             this.guna2ShadowPanel1.ResumeLayout(false);

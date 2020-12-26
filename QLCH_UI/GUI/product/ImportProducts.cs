@@ -15,7 +15,7 @@ namespace QLCH_UI
 {
     public partial class ImportProducts : Form
     {
-        public ImportProducts(string masp, string ten_sp, string loai_sp, string gia_nhap, Image anh)
+        public ImportProducts(string masp, string ten_sp, string loai_sp, string gia_nhap, Image anh,string manvv)
         {
 
             int rs = 0;
@@ -38,6 +38,7 @@ namespace QLCH_UI
             tb_gia_nhap.Text = gia_nhap;
             tb_ten_sp.Text = ten_sp;
             pictureBox1.Image = anh;
+            tb_manguoinhap.Text = manvv;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

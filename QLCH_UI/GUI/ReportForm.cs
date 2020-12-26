@@ -591,6 +591,11 @@ namespace QLCH_UI
                 MessageBox.Show("loi tran so hoac file pdf dang duoc mo");
             }
         }
+
+        private void ReportForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
  

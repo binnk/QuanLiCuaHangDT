@@ -225,7 +225,7 @@
             this.lb_SDT_error.Name = "lb_SDT_error";
             this.lb_SDT_error.Size = new System.Drawing.Size(417, 42);
             this.lb_SDT_error.TabIndex = 102;
-            this.lb_SDT_error.Text = "Số điện thoại không hợp lệ";
+            this.lb_SDT_error.Text = "Số điện thoại không hợp lệ hoặc đã tồn tại";
             this.lb_SDT_error.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lb_SDT_error.Visible = false;
             // 

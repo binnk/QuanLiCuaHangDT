@@ -53,7 +53,7 @@ namespace QLCH_UI
                 string loai_sp = a.Rows[0]["loai_sp"].ToString();
                 string gia = a.Rows[0]["gia_nhap"].ToString();
                 Image anh = ProductBUS.Instance.ByteToImg(a.Rows[0]["img"].ToString());
-                ImportProducts f = new ImportProducts(ma_sp, ten_sp, loai_sp, gia, anh);
+                ImportProducts f = new ImportProducts(ma_sp, ten_sp, loai_sp, gia, anh,"1");
                 f.ShowDialog();
                 load_kho();
             }

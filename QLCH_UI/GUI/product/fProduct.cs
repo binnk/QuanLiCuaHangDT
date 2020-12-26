@@ -97,5 +97,34 @@ namespace QLCH_UI
                 }
             }
         }
+
+        private void btnThem_Resize(object sender, EventArgs e)
+        {
+            if (this.panel.Size.Height > 805)
+            {
+                this.guna2ShadowPanel1.Size = new Size(1600, 825);
+            }
+            else
+            {
+                this.guna2ShadowPanel1.Size = new Size(1525, 653);
+            }
+        }
+
+        private void flowLayoutPanel1_Resize(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fProduct_Resize(object sender, EventArgs e)
+        {
+            if (this.panel.Size.Height > 805)
+            {
+                this.guna2ShadowPanel1.Size = new Size(1600, 825);
+            }
+            else
+            {
+                this.guna2ShadowPanel1.Size = new Size(1525, 653);
+            }
+        }
     }
 }

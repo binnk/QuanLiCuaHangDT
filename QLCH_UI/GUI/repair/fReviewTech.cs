@@ -34,5 +34,17 @@ namespace QLCH_UI
                 dgvOrders.Rows.Add(masc, ngay, makh, trigia);
             }    
         }
+
+        private void fReviewTech_Resize(object sender, EventArgs e)
+        {
+            if (this.Height > 805)
+            {
+                this.guna2CustomGradientPanel5.Size = new Size(1600, 695);
+            }
+            else
+            {
+                this.guna2CustomGradientPanel5.Size = new Size(1529, 500);
+            }
+        }
     }
 }

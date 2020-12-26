@@ -247,6 +247,7 @@ namespace QLCH_UI
             this.tb_manguoinhap.Font = new System.Drawing.Font("Arial", 16F);
             this.tb_manguoinhap.Location = new System.Drawing.Point(48, 585);
             this.tb_manguoinhap.Name = "tb_manguoinhap";
+            this.tb_manguoinhap.ReadOnly = true;
             this.tb_manguoinhap.Size = new System.Drawing.Size(414, 44);
             this.tb_manguoinhap.TabIndex = 115;
             // 
