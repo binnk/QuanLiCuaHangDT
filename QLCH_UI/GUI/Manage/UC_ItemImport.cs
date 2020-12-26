@@ -27,7 +27,7 @@ namespace QLCH_UI
         {
             lb_ngaynhap.Text = ngaynhap;
             lb_mahd.Text = mahd;
-            lb_manv.Text = manv;
+            //lb_manv.Text = manv;
             lb_trigia.Text =Convert.ToDecimal(tongtien).ToString("#,##0");
         }
         private void gunaLinePanel1_MouseEnter(object sender, EventArgs e)

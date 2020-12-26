@@ -79,7 +79,7 @@
             this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
             this.btn_delete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_delete.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_delete.Location = new System.Drawing.Point(1420, 15);
+            this.btn_delete.Location = new System.Drawing.Point(1412, 15);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
             this.btn_delete.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -106,7 +106,7 @@
             this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
             this.btnEdit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEdit.ImageSize = new System.Drawing.Size(22, 22);
-            this.btnEdit.Location = new System.Drawing.Point(1347, 15);
+            this.btnEdit.Location = new System.Drawing.Point(1339, 15);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(227)))), ((int)(((byte)(247)))));
             this.btnEdit.OnHoverBorderColor = System.Drawing.Color.Black;
