@@ -109,5 +109,11 @@ namespace QLCH_UI.DAO
             DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
             return (dt);
         }
+        public DataTable list_nhap_kho_date_to_date(string ngay1,string ngay2)
+        {
+            string query = string.Format("select * from nhap_kho where ngay_nhap>='{0}' and ngay_nhap<='{1}'", ngay1,ngay2);
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
     }
 }

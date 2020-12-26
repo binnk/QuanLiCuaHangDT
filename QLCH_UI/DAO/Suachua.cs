@@ -253,6 +253,12 @@ namespace QLCH_UI.DAO
             DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
             return;
         }
-    }
 
+        public DataTable list_sua_chua_date_to_date(string ngay1, string ngay2)
+        {
+            string query = string.Format("select * from sua_chua where ngay_giao>='{0}' and ngay_giao<='{1}' and tinh_trang = 'thanhtoan' order by ngay_nhan asc", ngay1, ngay2);
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return dt;
+        }
+    }
 }

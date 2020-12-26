@@ -270,17 +270,327 @@ namespace QLCH_UI
 
         private void btn_thongke_Click(object sender, EventArgs e)
         {
-            int ypoint = 0;
-            PdfDocument pdf = new PdfDocument();
-           pdf.Info.Title = "datbase";
-            PdfPage pdfpage = pdf.AddPage();
-            XGraphics graph = XGraphics.FromPdfPage(pdfpage);
-            XFont font = new XFont("Verdana", 10, XFontStyle.Regular);
-            ypoint = ypoint + 10;
-            graph.DrawString("swadad", font, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
-            string pdfFilename = "abc.pdf";
-            pdf.Save(pdfFilename);
-            Process.Start(pdfFilename);
+            try
+            {
+                string ngay1 = datetime1.Value.ToString();
+                string ngay2 = datetime2.Value.ToString();
+                int ypoint = 0;
+                int sotrang = 0;
+                PdfDocument pdf = new PdfDocument();
+                pdf.Info.Title = "datbase";
+                PdfPage pdfpage = pdf.AddPage();
+                XGraphics graph = XGraphics.FromPdfPage(pdfpage);
+                XFont font_nho = new XFont("Arial", 5, XFontStyle.Italic);
+                XFont font_to = new XFont("Arial", 15, XFontStyle.Bold);
+                XFont font_thuong = new XFont("Arial", 10, XFontStyle.Regular);
+                XFont font_thuong_dam = new XFont("Arial", 10, XFontStyle.Bold);
+                ypoint = ypoint + 10;
+                if (ypoint / 790 > sotrang)
+                {
+                    sotrang++;
+                    pdfpage = pdf.AddPage();
+                    graph = XGraphics.FromPdfPage(pdfpage);
+                    ypoint = 20;
+                }
+                graph.DrawString("Chi tiết doanh thu", font_to, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopCenter);
+                graph.DrawString("Từ ngày " + datetime1.Value.ToString("dd/MM/yyyy") + " Đến ngày "+ datetime2.Value.ToString("dd/MM/yyyy"), font_nho, XBrushes.Black, new XRect(40, 30, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopCenter);
+                ypoint = ypoint + 30;
+                graph.DrawString("Báo cáo bán hàng ", font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                ypoint = ypoint + 30;
+                if (ypoint / 790 > sotrang)
+                {
+                    sotrang++;
+                    pdfpage = pdf.AddPage();
+                    graph = XGraphics.FromPdfPage(pdfpage);
+                    ypoint = 20;
+                }
+                DataTable a = HoadonDAO.Instance.listHD_date_to_date(ngay1,ngay2);
+                int dem = a.Rows.Count;
+                string ngay = "";
+                decimal tien = 0;
+                decimal tong_tien = 0;
+                int dd = 0;
+                for (int i = 0; i < a.Rows.Count; i++)
+                {
+                    if (ngay != a.Rows[i]["ngay_ban"].ToString())
+                    {
+                        if (dd != 0)
+                        {
+                            graph.DrawString("Tổng giá trị ngày " + DateTime.Parse(ngay).ToString("dd/MM/yyyy"), font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                            graph.DrawString(Convert.ToDecimal(tien).ToString("#,##0"), font_thuong_dam, XBrushes.Black, new XRect(540, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                            tien = 0;
+                            ypoint = ypoint + 30;
+                            if (ypoint / 790 > sotrang)
+                            {
+                                sotrang++;
+                                pdfpage = pdf.AddPage();
+                                graph = XGraphics.FromPdfPage(pdfpage);
+                                ypoint = 20;
+                            }
+                        }
+                        ngay = a.Rows[i]["ngay_ban"].ToString();
+                        graph.DrawString("Ngày " + DateTime.Parse(a.Rows[i]["ngay_ban"].ToString()).ToString("dd/MM/yyyy"), font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                        ypoint = ypoint + 30;
+                        if (ypoint / 790 > sotrang)
+                        {
+                            sotrang++;
+                            pdfpage = pdf.AddPage();
+                            graph = XGraphics.FromPdfPage(pdfpage);
+                            ypoint = 20;
+                        }
+
+                    }
+                    graph.DrawString("Mã hóa đơn", font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString("Ngày bán", font_thuong_dam, XBrushes.Black, new XRect(140, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString("Người bán", font_thuong_dam, XBrushes.Black, new XRect(240, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString("Khách hàng", font_thuong_dam, XBrushes.Black, new XRect(340, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString("Giảm giá", font_thuong_dam, XBrushes.Black, new XRect(440, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString("Trị giá", font_thuong_dam, XBrushes.Black, new XRect(540, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    ypoint = ypoint + 30;
+                    if (ypoint / 790 > sotrang)
+                    {
+                        sotrang++;
+                        pdfpage = pdf.AddPage();
+                        graph = XGraphics.FromPdfPage(pdfpage);
+                        ypoint = 20;
+                    }
+                    graph.DrawString(a.Rows[i]["mahd"].ToString(), font_thuong, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString(DateTime.Parse(a.Rows[i]["ngay_ban"].ToString()).ToString("dd/MM/yyyy"), font_thuong, XBrushes.Black, new XRect(140, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    DataTable b;
+                    b = StaffDAO.Instance.ViewStaff(a.Rows[i]["manv"].ToString());
+                    graph.DrawString(b.Rows[0]["ten_nv"].ToString(), font_thuong, XBrushes.Black, new XRect(240, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    b = CustomersDAO.Instance.ViewCustomer(a.Rows[i]["makh"].ToString());
+                    graph.DrawString(b.Rows[0]["ten_kh"].ToString(), font_thuong, XBrushes.Black, new XRect(340, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString(a.Rows[i]["giam_gia"].ToString(), font_thuong, XBrushes.Black, new XRect(440, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString(Convert.ToDouble(Double.Parse(a.Rows[i]["tri_gia"].ToString())).ToString("#,##0"), font_thuong, XBrushes.Black, new XRect(540, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    ypoint = ypoint + 30;
+                    if (ypoint / 790 > sotrang)
+                    {
+                        sotrang++;
+                        pdfpage = pdf.AddPage();
+                        graph = XGraphics.FromPdfPage(pdfpage);
+                        ypoint = 20;
+                    }
+                    tien = tien + (decimal)(Double.Parse(a.Rows[i]["tri_gia"].ToString()));
+                    dd = 1;
+                }
+
+                if (a.Rows.Count == 1)
+                {
+                    graph.DrawString("Tổng giá trị ngày " + DateTime.Parse(a.Rows[0]["ngay_ban"].ToString()).ToString("dd/MM/yyyy"), font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString(Convert.ToDecimal(tien).ToString("#,##0"), font_thuong_dam, XBrushes.Black, new XRect(540, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                }
+                else
+                    if (a.Rows.Count == 0) dd = 1;
+                    else
+                    {
+                        graph.DrawString("Tổng giá trị ngày " + DateTime.Parse(ngay).ToString("dd/MM/yyyy"), font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width, pdfpage.Height), XStringFormat.TopLeft);
+                        graph.DrawString(Convert.ToDecimal(tien).ToString("#,##0"), font_thuong_dam, XBrushes.Black, new XRect(540, ypoint, pdfpage.Width, pdfpage.Height), XStringFormat.TopLeft);
+                    }
+                dd = 0;
+                //--------------------------------------------
+                dd = 0;
+                ngay = "";
+                ypoint = ypoint + 30;
+                tien = 0;
+                if (ypoint / 790 > sotrang)
+                {
+                    sotrang++;
+                    pdfpage = pdf.AddPage();
+                    graph = XGraphics.FromPdfPage(pdfpage);
+                    ypoint = 20;
+                }
+                graph.DrawString("Báo cáo sửa chửa ", font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                ypoint = ypoint + 30;
+                a = SuachuaDAO.Instance.list_sua_chua_date_to_date(ngay1, ngay2);
+                if (ypoint / 790 > sotrang)
+                {
+                    sotrang++;
+                    pdfpage = pdf.AddPage();
+                    graph = XGraphics.FromPdfPage(pdfpage);
+                    ypoint = 20;
+                }
+                for (int i = 0; i < a.Rows.Count; i++)
+                {
+                    if (ngay != a.Rows[i]["ngay_nhan"].ToString())
+                    {
+                        if (dd != 0)
+                        {
+                            graph.DrawString("Tổng giá trị ngày " + DateTime.Parse(ngay).ToString("dd/MM/yyyy"), font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                            graph.DrawString(Convert.ToDecimal(tien).ToString("#,##0"), font_thuong_dam, XBrushes.Black, new XRect(540, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                            tien = 0;
+                            ypoint = ypoint + 30;
+                            if (ypoint / 790 > sotrang)
+                            {
+                                sotrang++;
+                                pdfpage = pdf.AddPage();
+                                graph = XGraphics.FromPdfPage(pdfpage);
+                                ypoint = 20;
+                            }
+                        }
+                        ngay = a.Rows[i]["ngay_nhan"].ToString();
+                        graph.DrawString("Ngày " + DateTime.Parse(a.Rows[i]["ngay_nhan"].ToString()).ToString("dd/MM/yyyy"), font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                        ypoint = ypoint + 30;
+                        if (ypoint / 790 > sotrang)
+                        {
+                            sotrang++;
+                            pdfpage = pdf.AddPage();
+                            graph = XGraphics.FromPdfPage(pdfpage);
+                            ypoint = 20;
+                        }
+                    }
+                    graph.DrawString("Mã hóa đơn", font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString("Ngày nhận", font_thuong_dam, XBrushes.Black, new XRect(140, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString("Ngày giao", font_thuong_dam, XBrushes.Black, new XRect(240, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString("Người nhận", font_thuong_dam, XBrushes.Black, new XRect(340, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString("Khách hàng", font_thuong_dam, XBrushes.Black, new XRect(440, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString("Trị giá", font_thuong_dam, XBrushes.Black, new XRect(540, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    ypoint = ypoint + 30;
+                    if (ypoint / 790 > sotrang)
+                    {
+                        sotrang++;
+                        pdfpage = pdf.AddPage();
+                        graph = XGraphics.FromPdfPage(pdfpage);
+                        ypoint = 20;
+                    }
+                    graph.DrawString(a.Rows[i]["masc"].ToString(), font_thuong, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString(DateTime.Parse(a.Rows[i]["ngay_giao"].ToString()).ToString("dd/MM/yyyy"), font_thuong, XBrushes.Black, new XRect(140, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString(DateTime.Parse(a.Rows[i]["ngay_nhan"].ToString()).ToString("dd/MM/yyyy"), font_thuong, XBrushes.Black, new XRect(240, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    DataTable b;
+                    b = StaffDAO.Instance.ViewStaff(a.Rows[i]["manv"].ToString());
+                    graph.DrawString(b.Rows[0]["ten_nv"].ToString(), font_thuong, XBrushes.Black, new XRect(340, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    b = CustomersDAO.Instance.ViewCustomer(a.Rows[i]["makh"].ToString());
+                    graph.DrawString(b.Rows[0]["ten_kh"].ToString(), font_thuong, XBrushes.Black, new XRect(440, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString(Convert.ToDouble(Double.Parse(a.Rows[i]["tri_gia"].ToString())).ToString("#,##0"), font_thuong, XBrushes.Black, new XRect(540, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    ypoint = ypoint + 30;
+                    if (ypoint / 790 > sotrang)
+                    {
+                        sotrang++;
+                        pdfpage = pdf.AddPage();
+                        graph = XGraphics.FromPdfPage(pdfpage);
+                        ypoint = 20;
+                    }
+                    tien = tien + (decimal)(Double.Parse(a.Rows[i]["tri_gia"].ToString()));
+                    dd = 1;
+                }
+                
+                if (a.Rows.Count==1)
+                {
+                    graph.DrawString("Tổng giá trị ngày " + DateTime.Parse(a.Rows[0]["ngay_nhan"].ToString()).ToString("dd/MM/yyyy"), font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString(Convert.ToDecimal(tien).ToString("#,##0"), font_thuong_dam, XBrushes.Black, new XRect(540, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                }    
+                else
+                    if (a.Rows.Count == 0) dd = 1;
+                    else
+                    {
+                        graph.DrawString("Tổng giá trị ngày " + DateTime.Parse(ngay).ToString("dd/MM/yyyy"), font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                        graph.DrawString(Convert.ToDecimal(tien).ToString("#,##0"), font_thuong_dam, XBrushes.Black, new XRect(540, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
+                    }
+                string pdfFilename = "phieu_thu.pdf";
+                pdf.Save(pdfFilename);
+                Process.Start(pdfFilename);
+                //--------------------------------
+                PdfDocument pdf1 = new PdfDocument();
+                pdf1.Info.Title = ".....";
+                sotrang = 0;
+                tien = 0;
+                ngay = "";
+                dd = 0;
+                PdfPage pdfpage1 = pdf1.AddPage();
+                graph = XGraphics.FromPdfPage(pdfpage1);
+                ypoint = 10;
+                graph.DrawString("Chi tiết doanh thu", font_to, XBrushes.Black, new XRect(40, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopCenter);
+                graph.DrawString("Từ ngày " + datetime1.Value.ToString("dd/MM/yyyy") + " Đến ngày " + datetime2.Value.ToString("dd/MM/yyyy"), font_nho, XBrushes.Black, new XRect(40, 30, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopCenter);
+                ypoint = ypoint + 30;
+                graph.DrawString("Báo cáo nhập hàng ", font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                ypoint = ypoint + 30;
+                if (ypoint / 790 > sotrang)
+                {
+                    sotrang++;
+                    pdfpage = pdf.AddPage();
+                    graph = XGraphics.FromPdfPage(pdfpage);
+                    ypoint = 20;
+                }
+                a = WarehouseDAO.Instance.list_nhap_kho_date_to_date(ngay1, ngay2);
+                for (int i=0;i<a.Rows.Count;i++)
+                {
+                    if (ngay != a.Rows[i]["ngay_nhap"].ToString())
+                    {
+                        if (dd != 0)
+                        {
+                            graph.DrawString("Tổng giá trị ngày " + DateTime.Parse(ngay).ToString("dd/MM/yyyy"), font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                            graph.DrawString(Convert.ToDecimal(tien).ToString("#,##0"), font_thuong_dam, XBrushes.Black, new XRect(340, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                            tien = 0;
+                            ypoint = ypoint + 30;
+                            if (ypoint / 790 > sotrang)
+                            {
+                                sotrang++;
+                                pdfpage1 = pdf1.AddPage();
+                                graph = XGraphics.FromPdfPage(pdfpage1);
+                                ypoint = 20;
+                            }
+                        }
+                        ngay = a.Rows[i]["ngay_nhap"].ToString();
+                        graph.DrawString("Ngày " + DateTime.Parse(a.Rows[i]["ngay_nhap"].ToString()).ToString("dd/MM/yyyy"), font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                        ypoint = ypoint + 30;
+                        if (ypoint / 790 > sotrang)
+                        {
+                            sotrang++;
+                            pdfpage1 = pdf1.AddPage();
+                            graph = XGraphics.FromPdfPage(pdfpage1);
+                            ypoint = 20;
+                        }
+                    }
+                    graph.DrawString("Mã nhập hàng", font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString("Ngày nhập", font_thuong_dam, XBrushes.Black, new XRect(140, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString("Người nhập", font_thuong_dam, XBrushes.Black, new XRect(240, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString("Trị giá", font_thuong_dam, XBrushes.Black, new XRect(340, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                    ypoint = ypoint + 30;
+                    if (ypoint / 790 > sotrang)
+                    {
+                        sotrang++;
+                        pdfpage1 = pdf1.AddPage();
+                        graph = XGraphics.FromPdfPage(pdfpage1);
+                        ypoint = 20;
+                    }
+                    graph.DrawString(a.Rows[i]["manhaphang"].ToString(), font_thuong, XBrushes.Black, new XRect(40, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString(DateTime.Parse(a.Rows[i]["ngay_nhap"].ToString()).ToString("dd/MM/yyyy"), font_thuong, XBrushes.Black, new XRect(140, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                    DataTable b = StaffDAO.Instance.ViewStaff(a.Rows[i]["manguoinhap"].ToString());
+                    graph.DrawString(b.Rows[0]["ten_nv"].ToString(), font_thuong, XBrushes.Black, new XRect(240, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString(Convert.ToDecimal(decimal.Parse(a.Rows[i]["tong_tien"].ToString())).ToString("#,##0"), font_thuong, XBrushes.Black, new XRect(340, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                    tien = tien + decimal.Parse(a.Rows[i]["tong_tien"].ToString());
+                    ypoint = ypoint + 30;
+                    if (ypoint / 790 > sotrang)
+                    {
+                        sotrang++;
+                        pdfpage1 = pdf1.AddPage();
+                        graph = XGraphics.FromPdfPage(pdfpage1);
+                        ypoint = 20;
+                    }
+                    dd = 1;
+                }
+                if (a.Rows.Count == 1)
+                {
+                    graph.DrawString("Tổng giá trị ngày " + DateTime.Parse(a.Rows[0]["ngay_nhap"].ToString()).ToString("dd/MM/yyyy"), font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString(Convert.ToDecimal(tien).ToString("#,##0"), font_thuong_dam, XBrushes.Black, new XRect(340, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                }
+                else
+                    if (a.Rows.Count == 0) dd = 1;
+                else
+                {
+                    graph.DrawString("Tổng giá trị ngày " + DateTime.Parse(ngay).ToString("dd/MM/yyyy"), font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                    graph.DrawString(Convert.ToDecimal(tien).ToString("#,##0"), font_thuong_dam, XBrushes.Black, new XRect(340, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
+                }
+                string pdfFilename1 = "phieu_chi.pdf";
+                pdf1.Save(pdfFilename1);
+                Process.Start(pdfFilename1);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("loi tran so hoac file pdf dang duoc mo");
+            }
         }
     }
 }
+ 

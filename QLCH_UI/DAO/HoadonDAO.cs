@@ -64,5 +64,11 @@ namespace QLCH_UI.DAO
             DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
             return (dt);
         }
+        public DataTable listHD_date_to_date(string ngay1, string ngay2)
+        { 
+            string query = string.Format("select * from hoa_don where ngay_ban>='{0}' and ngay_ban<='{1}' order by ngay_ban asc",ngay1,ngay2);
+            DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
+            return (dt);
+        }
     }
 }
