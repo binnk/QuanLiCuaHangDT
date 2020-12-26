@@ -40,6 +40,7 @@
             this.btnThem = new Guna.UI.WinForms.GunaButton();
             this.btnKhachHang = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
@@ -47,7 +48,6 @@
             this.btnSanPham = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnTongQuan = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnBanHang = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
@@ -234,7 +234,7 @@
             this.btnKhachHang.ImageOffsetX = 4;
             this.btnKhachHang.ImageSize = new System.Drawing.Size(30, 30);
             this.btnKhachHang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnKhachHang.Location = new System.Drawing.Point(40, 482);
+            this.btnKhachHang.Location = new System.Drawing.Point(40, 485);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
             this.btnKhachHang.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -261,6 +261,13 @@
             this.panel3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.panel3.Size = new System.Drawing.Size(258, 187);
             this.panel3.TabIndex = 6;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(18, 183);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(217, 1);
+            this.progressBar1.TabIndex = 12;
             // 
             // gunaLabel6
             // 
@@ -404,13 +411,6 @@
             this.btnBanHang.TabIndex = 7;
             this.btnBanHang.Text = "Bán hàng";
             this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(18, 183);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(217, 1);
-            this.progressBar1.TabIndex = 12;
             // 
             // MainSaleForm
             // 

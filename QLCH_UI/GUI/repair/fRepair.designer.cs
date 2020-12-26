@@ -650,6 +650,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fRepair";
             this.Text = "fRepair";
+            this.Resize += new System.EventHandler(this.fRepair_Resize);
             this.panel.ResumeLayout(false);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);

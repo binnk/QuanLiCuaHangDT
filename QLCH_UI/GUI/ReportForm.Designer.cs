@@ -177,8 +177,6 @@
             // 
             // guna2CustomGradientPanel1
             // 
-            this.guna2CustomGradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel1.BorderRadius = 12;
             this.guna2CustomGradientPanel1.Controls.Add(this.lb_doanh_thu);
             this.guna2CustomGradientPanel1.Controls.Add(this.label1);
@@ -230,8 +228,6 @@
             // 
             // guna2CustomGradientPanel2
             // 
-            this.guna2CustomGradientPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel2.BorderRadius = 12;
             this.guna2CustomGradientPanel2.Controls.Add(this.lb_hoadon);
             this.guna2CustomGradientPanel2.Controls.Add(this.label2);
@@ -297,8 +293,6 @@
             // 
             // guna2CustomGradientPanel3
             // 
-            this.guna2CustomGradientPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel3.BorderRadius = 12;
             this.guna2CustomGradientPanel3.Controls.Add(this.lb_sanpham);
             this.guna2CustomGradientPanel3.Controls.Add(this.label3);
@@ -364,8 +358,6 @@
             // 
             // guna2CustomGradientPanel4
             // 
-            this.guna2CustomGradientPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel4.BorderRadius = 12;
             this.guna2CustomGradientPanel4.Controls.Add(this.lb_khachhang);
             this.guna2CustomGradientPanel4.Controls.Add(this.label4);
@@ -1201,8 +1193,6 @@
             // 
             // guna2ProgressBar4
             // 
-            this.guna2ProgressBar4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ProgressBar4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.guna2ProgressBar4.Location = new System.Drawing.Point(927, 47);
             this.guna2ProgressBar4.Name = "guna2ProgressBar4";
@@ -1213,8 +1203,6 @@
             // 
             // label42
             // 
-            this.label42.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label42.AutoSize = true;
             this.label42.BackColor = System.Drawing.SystemColors.Control;
             this.label42.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
@@ -1227,8 +1215,6 @@
             // 
             // datetime1
             // 
-            this.datetime1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.datetime1.CheckedState.Parent = this.datetime1;
             this.datetime1.CustomFormat = "dd/MM/yyyy";
             this.datetime1.FillColor = System.Drawing.Color.White;
@@ -1248,8 +1234,6 @@
             // 
             // datetime2
             // 
-            this.datetime2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.datetime2.CheckedState.Parent = this.datetime2;
             this.datetime2.CustomFormat = "dd/MM/yyyy";
             this.datetime2.FillColor = System.Drawing.Color.White;
@@ -1270,8 +1254,6 @@
             // 
             // label43
             // 
-            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label43.AutoSize = true;
             this.label43.BackColor = System.Drawing.SystemColors.Control;
             this.label43.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
@@ -1284,8 +1266,6 @@
             // 
             // guna2ProgressBar3
             // 
-            this.guna2ProgressBar3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ProgressBar3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.guna2ProgressBar3.Location = new System.Drawing.Point(1251, 47);
             this.guna2ProgressBar3.Name = "guna2ProgressBar3";
@@ -1296,8 +1276,6 @@
             // 
             // btn_thongke
             // 
-            this.btn_thongke.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_thongke.Location = new System.Drawing.Point(1476, 9);
             this.btn_thongke.Name = "btn_thongke";
             this.btn_thongke.Size = new System.Drawing.Size(100, 34);

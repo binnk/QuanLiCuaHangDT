@@ -44,6 +44,9 @@
             // 
             // gunaLinePanel1
             // 
+            this.gunaLinePanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLinePanel1.AutoSize = true;
             this.gunaLinePanel1.Controls.Add(this.btn_delete);
             this.gunaLinePanel1.Controls.Add(this.btnEdit);
             this.gunaLinePanel1.Controls.Add(this.gunaPictureBox1);
@@ -52,7 +55,6 @@
             this.gunaLinePanel1.Controls.Add(this.lb_loai);
             this.gunaLinePanel1.Controls.Add(this.lb_tensp);
             this.gunaLinePanel1.Controls.Add(this.lb_masp);
-            this.gunaLinePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaLinePanel1.LineBottom = 2;
             this.gunaLinePanel1.LineColor = System.Drawing.Color.WhiteSmoke;
             this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;
@@ -203,6 +205,7 @@
             this.gunaLinePanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
