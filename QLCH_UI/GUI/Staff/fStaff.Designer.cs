@@ -299,6 +299,7 @@
             // 
             // btnThem
             // 
+            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThem.AnimationHoverSpeed = 0.07F;
             this.btnThem.AnimationSpeed = 0.03F;
             this.btnThem.BackColor = System.Drawing.Color.Transparent;
@@ -326,6 +327,8 @@
             // 
             // guna2ShadowPanel1
             // 
+            this.guna2ShadowPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.guna2Panel1);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
@@ -335,9 +338,12 @@
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(1525, 670);
             this.guna2ShadowPanel1.TabIndex = 13;
+            this.guna2ShadowPanel1.Resize += new System.EventHandler(this.guna2ShadowPanel1_Resize);
             // 
             // tb_search
             // 
+            this.tb_search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
             this.tb_search.BorderRadius = 20;
             this.tb_search.Cursor = System.Windows.Forms.Cursors.IBeam;

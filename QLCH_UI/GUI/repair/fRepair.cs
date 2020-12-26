@@ -127,6 +127,16 @@ namespace QLCH_UI
             }
         }
 
-       
+        private void flowLayoutPanel1_Resize(object sender, EventArgs e)
+        {
+            if (this.panel.Size.Height > 805)
+            {
+                this.guna2ShadowPanel1.Size = new Size(1600, 825);
+            }
+            else
+            {
+                this.guna2ShadowPanel1.Size = new Size(1525, 653);
+            }
+        }
     }
 }
