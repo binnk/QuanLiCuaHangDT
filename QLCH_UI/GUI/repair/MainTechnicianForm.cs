@@ -25,13 +25,8 @@ namespace QLCH_UI
             manv = manvv;
             InitializeComponent();
 
-           
-        
-            leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 60);
-            panelMenu.Controls.Add(leftBorderBtn);
+            pnInfo.Visible = false;
 
-            this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
@@ -152,6 +147,25 @@ namespace QLCH_UI
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
             openChildForm(new fViewCustomer());
+        }
+
+        private void btnDown_Click(object sender, EventArgs e)
+        {
+            if (pnInfo.Visible == false)
+            {
+                pnInfo.Visible = true;
+                pnInfo.BringToFront();
+            }
+            else
+            {
+                pnInfo.Visible = false;
+            }
+        }
+
+        private void btnChangePW_Click(object sender, EventArgs e)
+        {
+            fChangePassword f = new fChangePassword();
+            f.ShowDialog();
         }
     }
 }

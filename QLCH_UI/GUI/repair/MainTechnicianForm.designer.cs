@@ -34,6 +34,7 @@
             this.btnMinimize = new FontAwesome.Sharp.IconButton();
             this.btnMaximize = new FontAwesome.Sharp.IconButton();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnKhachHang = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnThem = new Guna.UI.WinForms.GunaButton();
             this.btnLinhKien = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnSuaChua = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -47,15 +48,31 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.pnInfo = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Info = new Guna.UI.WinForms.GunaElipsePanel();
+            this.btnChangePW = new Guna.UI.WinForms.GunaButton();
+            this.gunaElipsePanel3 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.btnDown = new Guna.UI.WinForms.GunaButton();
+            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.btnKhachHang = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
+            this.panelChildForm.SuspendLayout();
+            this.pnInfo.SuspendLayout();
+            this.Info.SuspendLayout();
+            this.gunaElipsePanel3.SuspendLayout();
+            this.gunaElipsePanel2.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
@@ -133,6 +150,39 @@
             this.panelMenu.Size = new System.Drawing.Size(258, 853);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
+            // 
+            // btnKhachHang
+            // 
+            this.btnKhachHang.AnimationHoverSpeed = 0.07F;
+            this.btnKhachHang.AnimationSpeed = 0.03F;
+            this.btnKhachHang.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
+            this.btnKhachHang.BorderColor = System.Drawing.Color.Black;
+            this.btnKhachHang.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnKhachHang.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnKhachHang.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnKhachHang.CheckedForeColor = System.Drawing.Color.White;
+            this.btnKhachHang.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnKhachHang.CheckedImage")));
+            this.btnKhachHang.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnKhachHang.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnKhachHang.FocusedColor = System.Drawing.Color.Empty;
+            this.btnKhachHang.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnKhachHang.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("btnKhachHang.Image")));
+            this.btnKhachHang.ImageOffsetX = 4;
+            this.btnKhachHang.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnKhachHang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnKhachHang.Location = new System.Drawing.Point(38, 494);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnKhachHang.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnKhachHang.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnKhachHang.OnHoverImage = null;
+            this.btnKhachHang.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnKhachHang.OnPressedColor = System.Drawing.Color.Black;
+            this.btnKhachHang.Size = new System.Drawing.Size(180, 64);
+            this.btnKhachHang.TabIndex = 22;
+            this.btnKhachHang.Text = "Khách hàng";
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // btnThem
             // 
@@ -352,61 +402,193 @@
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(248)))));
+            this.panelChildForm.Controls.Add(this.pnInfo);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(0, 71);
+            this.panelChildForm.Location = new System.Drawing.Point(0, 78);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(1593, 782);
+            this.panelChildForm.Size = new System.Drawing.Size(1593, 775);
             this.panelChildForm.TabIndex = 13;
+            // 
+            // pnInfo
+            // 
+            this.pnInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnInfo.BackColor = System.Drawing.Color.Transparent;
+            this.pnInfo.Controls.Add(this.Info);
+            this.pnInfo.FillColor = System.Drawing.Color.White;
+            this.pnInfo.Location = new System.Drawing.Point(1290, 6);
+            this.pnInfo.Name = "pnInfo";
+            this.pnInfo.Padding = new System.Windows.Forms.Padding(5, 1, 5, 5);
+            this.pnInfo.Radius = 15;
+            this.pnInfo.ShadowColor = System.Drawing.Color.Black;
+            this.pnInfo.Size = new System.Drawing.Size(271, 155);
+            this.pnInfo.TabIndex = 24;
+            // 
+            // Info
+            // 
+            this.Info.BackColor = System.Drawing.Color.Transparent;
+            this.Info.BaseColor = System.Drawing.Color.White;
+            this.Info.Controls.Add(this.btnChangePW);
+            this.Info.Controls.Add(this.gunaElipsePanel3);
+            this.Info.Controls.Add(this.gunaElipsePanel2);
+            this.Info.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Info.Location = new System.Drawing.Point(5, 1);
+            this.Info.Name = "Info";
+            this.Info.Radius = 15;
+            this.Info.Size = new System.Drawing.Size(261, 149);
+            this.Info.TabIndex = 0;
+            // 
+            // btnChangePW
+            // 
+            this.btnChangePW.AnimationHoverSpeed = 0.07F;
+            this.btnChangePW.AnimationSpeed = 0.03F;
+            this.btnChangePW.BackColor = System.Drawing.Color.Transparent;
+            this.btnChangePW.BaseColor = System.Drawing.Color.White;
+            this.btnChangePW.BorderColor = System.Drawing.Color.Black;
+            this.btnChangePW.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnChangePW.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChangePW.FocusedColor = System.Drawing.Color.Empty;
+            this.btnChangePW.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePW.ForeColor = System.Drawing.Color.Black;
+            this.btnChangePW.Image = null;
+            this.btnChangePW.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnChangePW.Location = new System.Drawing.Point(0, 94);
+            this.btnChangePW.Name = "btnChangePW";
+            this.btnChangePW.OnHoverBaseColor = System.Drawing.Color.LightGray;
+            this.btnChangePW.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnChangePW.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnChangePW.OnHoverImage = null;
+            this.btnChangePW.OnPressedColor = System.Drawing.Color.Black;
+            this.btnChangePW.Radius = 15;
+            this.btnChangePW.Size = new System.Drawing.Size(261, 55);
+            this.btnChangePW.TabIndex = 2;
+            this.btnChangePW.Text = "Đổi mật khẩu";
+            this.btnChangePW.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnChangePW.Click += new System.EventHandler(this.btnChangePW_Click);
+            // 
+            // gunaElipsePanel3
+            // 
+            this.gunaElipsePanel3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaElipsePanel3.BaseColor = System.Drawing.Color.White;
+            this.gunaElipsePanel3.Controls.Add(this.gunaLabel3);
+            this.gunaElipsePanel3.Controls.Add(this.gunaLabel4);
+            this.gunaElipsePanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaElipsePanel3.Location = new System.Drawing.Point(0, 47);
+            this.gunaElipsePanel3.Name = "gunaElipsePanel3";
+            this.gunaElipsePanel3.Radius = 15;
+            this.gunaElipsePanel3.Size = new System.Drawing.Size(261, 47);
+            this.gunaElipsePanel3.TabIndex = 1;
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.ForeColor = System.Drawing.Color.DimGray;
+            this.gunaLabel3.Location = new System.Drawing.Point(77, 8);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(156, 30);
+            this.gunaLabel3.TabIndex = 1;
+            this.gunaLabel3.Text = "Nguyễn Văn A";
+            // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.Location = new System.Drawing.Point(14, 8);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(57, 30);
+            this.gunaLabel4.TabIndex = 0;
+            this.gunaLabel4.Text = "User";
+            // 
+            // gunaElipsePanel2
+            // 
+            this.gunaElipsePanel2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaElipsePanel2.BaseColor = System.Drawing.Color.White;
+            this.gunaElipsePanel2.Controls.Add(this.gunaLabel2);
+            this.gunaElipsePanel2.Controls.Add(this.gunaLabel1);
+            this.gunaElipsePanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaElipsePanel2.Location = new System.Drawing.Point(0, 0);
+            this.gunaElipsePanel2.Name = "gunaElipsePanel2";
+            this.gunaElipsePanel2.Radius = 15;
+            this.gunaElipsePanel2.Size = new System.Drawing.Size(261, 47);
+            this.gunaElipsePanel2.TabIndex = 0;
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.ForeColor = System.Drawing.Color.DimGray;
+            this.gunaLabel2.Location = new System.Drawing.Point(77, 8);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(74, 30);
+            this.gunaLabel2.TabIndex = 1;
+            this.gunaLabel2.Text = "KTV01";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Location = new System.Drawing.Point(14, 8);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(35, 30);
+            this.gunaLabel1.TabIndex = 0;
+            this.gunaLabel1.Text = "ID";
             // 
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.White;
+            this.gunaPanel1.Controls.Add(this.btnDown);
+            this.gunaPanel1.Controls.Add(this.gunaCirclePictureBox1);
             this.gunaPanel1.Controls.Add(this.btnMaximize);
             this.gunaPanel1.Controls.Add(this.btnMinimize);
             this.gunaPanel1.Controls.Add(this.btnExit);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(1593, 71);
+            this.gunaPanel1.Size = new System.Drawing.Size(1593, 78);
             this.gunaPanel1.TabIndex = 12;
+            // 
+            // btnDown
+            // 
+            this.btnDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDown.AnimationHoverSpeed = 0.07F;
+            this.btnDown.AnimationSpeed = 0.03F;
+            this.btnDown.BaseColor = System.Drawing.Color.White;
+            this.btnDown.BorderColor = System.Drawing.Color.Black;
+            this.btnDown.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnDown.FocusedColor = System.Drawing.Color.Empty;
+            this.btnDown.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDown.ForeColor = System.Drawing.Color.White;
+            this.btnDown.Image = ((System.Drawing.Image)(resources.GetObject("btnDown.Image")));
+            this.btnDown.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnDown.Location = new System.Drawing.Point(1525, 38);
+            this.btnDown.Name = "btnDown";
+            this.btnDown.OnHoverBaseColor = System.Drawing.Color.White;
+            this.btnDown.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnDown.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnDown.OnHoverImage = null;
+            this.btnDown.OnPressedColor = System.Drawing.Color.Black;
+            this.btnDown.Size = new System.Drawing.Size(36, 34);
+            this.btnDown.TabIndex = 26;
+            this.btnDown.Text = "gunaButton1";
+            this.btnDown.Click += new System.EventHandler(this.btnDown_Click);
+            // 
+            // gunaCirclePictureBox1
+            // 
+            this.gunaCirclePictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(1482, 35);
+            this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(47, 37);
+            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaCirclePictureBox1.TabIndex = 25;
+            this.gunaCirclePictureBox1.TabStop = false;
+            this.gunaCirclePictureBox1.UseTransfarantBackground = false;
             // 
             // guna2DragControl1
             // 
             this.guna2DragControl1.ContainerControl = this;
             this.guna2DragControl1.TargetControl = this.gunaPanel1;
-            // 
-            // btnKhachHang
-            // 
-            this.btnKhachHang.AnimationHoverSpeed = 0.07F;
-            this.btnKhachHang.AnimationSpeed = 0.03F;
-            this.btnKhachHang.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(63)))));
-            this.btnKhachHang.BorderColor = System.Drawing.Color.Black;
-            this.btnKhachHang.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnKhachHang.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnKhachHang.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnKhachHang.CheckedForeColor = System.Drawing.Color.White;
-            this.btnKhachHang.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnKhachHang.CheckedImage")));
-            this.btnKhachHang.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnKhachHang.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnKhachHang.FocusedColor = System.Drawing.Color.Empty;
-            this.btnKhachHang.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.btnKhachHang.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("btnKhachHang.Image")));
-            this.btnKhachHang.ImageOffsetX = 4;
-            this.btnKhachHang.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnKhachHang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnKhachHang.Location = new System.Drawing.Point(38, 494);
-            this.btnKhachHang.Name = "btnKhachHang";
-            this.btnKhachHang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnKhachHang.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnKhachHang.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnKhachHang.OnHoverImage = null;
-            this.btnKhachHang.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnKhachHang.OnPressedColor = System.Drawing.Color.Black;
-            this.btnKhachHang.Size = new System.Drawing.Size(180, 64);
-            this.btnKhachHang.TabIndex = 22;
-            this.btnKhachHang.Text = "Khách hàng";
-            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // MainTechnicianForm
             // 
@@ -426,7 +608,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
+            this.panelChildForm.ResumeLayout(false);
+            this.pnInfo.ResumeLayout(false);
+            this.Info.ResumeLayout(false);
+            this.gunaElipsePanel3.ResumeLayout(false);
+            this.gunaElipsePanel3.PerformLayout();
+            this.gunaElipsePanel2.ResumeLayout(false);
+            this.gunaElipsePanel2.PerformLayout();
             this.gunaPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -452,6 +642,17 @@
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI.WinForms.GunaAdvenceButton btnKhachHang;
+        private Guna.UI2.WinForms.Guna2ShadowPanel pnInfo;
+        private Guna.UI.WinForms.GunaElipsePanel Info;
+        private Guna.UI.WinForms.GunaButton btnChangePW;
+        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel3;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel gunaLabel4;
+        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel2;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaButton btnDown;
+        private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
     }
 }
 

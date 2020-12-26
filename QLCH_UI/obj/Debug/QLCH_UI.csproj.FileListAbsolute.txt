@@ -962,3 +962,4 @@ C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemStaff.re
 C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_itemManageWH.resources
 C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemImport.resources
 E:\QuanLiCuaHangDT\QLCH_UI\bin\Debug\PdfSharp.dll
+C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fChangePassword.resources

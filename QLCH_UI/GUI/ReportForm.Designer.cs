@@ -423,7 +423,6 @@
             // 
             // guna2CustomGradientPanel5
             // 
-            this.guna2CustomGradientPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel5.BorderRadius = 15;
             this.guna2CustomGradientPanel5.Controls.Add(this.comboBox1);
             this.guna2CustomGradientPanel5.Controls.Add(this.guna2CustomGradientPanel7);
@@ -492,7 +491,6 @@
             // 
             // guna2CustomGradientPanel6
             // 
-            this.guna2CustomGradientPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel6.BorderRadius = 15;
             this.guna2CustomGradientPanel6.Controls.Add(this.flowLayoutPanel2);
             this.guna2CustomGradientPanel6.Controls.Add(this.guna2ProgressBar1);
@@ -797,7 +795,6 @@
             // 
             // guna2CustomGradientPanel8
             // 
-            this.guna2CustomGradientPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel8.BorderRadius = 15;
             this.guna2CustomGradientPanel8.Controls.Add(this.flowLayoutPanel1);
             this.guna2CustomGradientPanel8.Controls.Add(this.guna2ProgressBar2);
