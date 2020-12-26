@@ -282,5 +282,10 @@ namespace QLCH_UI
             pdf.Save(pdfFilename);
             Process.Start(pdfFilename);
         }
+
+        private void ReportForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
