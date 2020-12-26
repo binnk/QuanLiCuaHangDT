@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainSaleForm));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -59,6 +60,7 @@
             this.btnSanPham = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnTongQuan = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnBanHang = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             this.panelChildForm.SuspendLayout();
@@ -594,6 +596,10 @@
             this.btnBanHang.Text = "Bán hàng";
             this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
             // 
+            // gunaDragControl1
+            // 
+            this.gunaDragControl1.TargetControl = this.gunaPanel1;
+            // 
             // MainSaleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -655,5 +661,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaButton btnDown;
         private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
+        private Guna.UI.WinForms.GunaDragControl gunaDragControl1;
     }
 }
