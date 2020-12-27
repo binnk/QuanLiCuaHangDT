@@ -73,28 +73,32 @@ namespace LoginUI
 
         // tạo main form, ẩn form Login
         private void btnLogin_Click(object sender, EventArgs e)
-        {
+        {  
+
             if (Account.Instance.Login(textUser.Text.ToString(), textPass.Text.ToString()))
             {
                 if (Account.Instance.Get_Loai_NV(textUser.Text) == "admin")
                 {
-                    this.Hide();
-                    using (MainForm mainForm = new MainForm(Account.Instance.Get_Ma_NV(textUser.Text)))
-                        mainForm.ShowDialog();
+                    
+                    Program.SetMainForm(new MainForm(Account.Instance.Get_Ma_NV(textUser.Text)));
+                    Program.ShowMainForm();
+                    this.Close();
                 }
                 if (Account.Instance.Get_Loai_NV(textUser.Text) == "Kỹ thuật")
                 {
-                    this.Hide();
-                    using (MainTechnicianForm mainForm = new MainTechnicianForm(Account.Instance.Get_Ma_NV(textUser.Text)))
-                    mainForm.ShowDialog();
-                    
+
+                    Program.SetMainForm(new MainTechnicianForm(Account.Instance.Get_Ma_NV(textUser.Text)));
+                     Program.ShowMainForm();
+                     this.Close();
+
 
                 }
                 if (Account.Instance.Get_Loai_NV(textUser.Text) == "Bán hàng")
                 {
-                    this.Hide();
-                    using (MainSaleForm mainForm = new MainSaleForm(Account.Instance.Get_Ma_NV(textUser.Text)))
-                        mainForm.ShowDialog();
+                    //this.Hide();
+                    Program.SetMainForm(new MainSaleForm(Account.Instance.Get_Ma_NV(textUser.Text)));
+                    Program.ShowMainForm();
+                    this.Close();
                 }
             }
             else
@@ -174,7 +178,7 @@ namespace LoginUI
         // Đóng form
         private void xLabel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -190,6 +194,22 @@ namespace LoginUI
                // label1.Visible = false;
                 label2.Text = "User not exist in system.";
                 label2.Visible = true;
+            }
+        }
+
+        private void LoginForm_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(sender, e);
+            }
+        }
+
+        private void textPass_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(sender, e);
             }
         }
     }

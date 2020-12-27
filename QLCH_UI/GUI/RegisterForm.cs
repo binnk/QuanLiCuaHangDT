@@ -223,9 +223,8 @@ namespace LoginUI
             {
                 if (Account.Instance.Register(textUser.Text.ToString(), textEmail.Text.ToString(), textPass.Text.ToString()) == 1)
                 {
-                    this.Hide();
-                    using (LoginForm mainForm = new LoginForm())
-                        mainForm.ShowDialog();
+                    this.Close();
+                    (new LoginForm()).Show();
                 }
             }
         }
@@ -237,6 +236,14 @@ namespace LoginUI
             (new LoginForm()).Show();
         }
 
-      
+        private void textCPass_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+
+            {
+                this.Close();
+                (new LoginForm()).Show();
+            }
+        }
     }
 }

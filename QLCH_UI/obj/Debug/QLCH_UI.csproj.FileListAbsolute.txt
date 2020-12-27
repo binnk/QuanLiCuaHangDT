@@ -149,9 +149,7 @@ D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.AddCustomer.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.CustomersForm.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.EditCustomer.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.InfoCustomer.resources
-D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.OrdersForm.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.EditProduct.resources
-D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ProductsForm.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\LoginUI.LoginForm.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.MainForm.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.AddProduct.resources
@@ -361,8 +359,6 @@ C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ImportManagemen
 C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.WareHouseManagentForm.resources
 C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ReportForm.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.CTHDForm.resources
-D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ImportManagementForm.resources
-D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.WareHouseManagentForm.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ReportForm.resources
 D:\QuanLiCuaHangDT\QLCH_UI\bin\Debug\LiveCharts.dll
 D:\QuanLiCuaHangDT\QLCH_UI\bin\Debug\LiveCharts.WinForms.dll
@@ -384,7 +380,6 @@ D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.MainTechnicianForm.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_UI_DS_Item.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemRepair.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemProduct.resources
-D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ViewProduct.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.CTHDForm.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ImportManagementForm.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.WareHouseManagentForm.resources
@@ -964,3 +959,19 @@ C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemImport.r
 E:\QuanLiCuaHangDT\QLCH_UI\bin\Debug\PdfSharp.dll
 C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fChangePassword.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fChangePassword.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fChangePassword.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fImportManage.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fManageWH.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fOrder.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fProduct.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fStaff.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fReviewSale.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fReviewTech.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.fViewCustomer.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.EditImportProduct.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.MainSaleForm.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemCustomer.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemOrder.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemStaff.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_itemManageWH.resources
+D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemImport.resources

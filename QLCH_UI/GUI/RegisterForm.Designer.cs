@@ -84,7 +84,7 @@
             this.btnRegister.Location = new System.Drawing.Point(69, 446);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(300, 55);
-            this.btnRegister.TabIndex = 17;
+            this.btnRegister.TabIndex = 4;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
@@ -108,8 +108,7 @@
             this.textEmail.Location = new System.Drawing.Point(105, 219);
             this.textEmail.Name = "textEmail";
             this.textEmail.Size = new System.Drawing.Size(251, 26);
-            this.textEmail.TabIndex = 15;
-            this.textEmail.TabStop = false;
+            this.textEmail.TabIndex = 1;
             this.textEmail.Text = "Email";
             this.textEmail.Click += new System.EventHandler(this.textEmail_Click);
             this.textEmail.TextChanged += new System.EventHandler(this.textEmail_TextChanged);
@@ -134,8 +133,7 @@
             this.textUser.Location = new System.Drawing.Point(105, 161);
             this.textUser.Name = "textUser";
             this.textUser.Size = new System.Drawing.Size(251, 26);
-            this.textUser.TabIndex = 12;
-            this.textUser.TabStop = false;
+            this.textUser.TabIndex = 0;
             this.textUser.Text = "Username";
             this.textUser.Click += new System.EventHandler(this.textUser_Click);
             this.textUser.TextChanged += new System.EventHandler(this.textUser_TextChanged);
@@ -190,8 +188,7 @@
             this.textPass.Location = new System.Drawing.Point(105, 279);
             this.textPass.Name = "textPass";
             this.textPass.Size = new System.Drawing.Size(251, 26);
-            this.textPass.TabIndex = 20;
-            this.textPass.TabStop = false;
+            this.textPass.TabIndex = 2;
             this.textPass.Text = "Password";
             this.textPass.Click += new System.EventHandler(this.textPass_Click);
             this.textPass.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -227,12 +224,12 @@
             this.textCPass.Location = new System.Drawing.Point(105, 337);
             this.textCPass.Name = "textCPass";
             this.textCPass.Size = new System.Drawing.Size(251, 26);
-            this.textCPass.TabIndex = 23;
-            this.textCPass.TabStop = false;
+            this.textCPass.TabIndex = 3;
             this.textCPass.Text = "Confirm password";
             this.textCPass.Click += new System.EventHandler(this.textCPass_Click);
             this.textCPass.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textCPass.Enter += new System.EventHandler(this.textCPass_Enter);
+            this.textCPass.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textCPass_KeyUp);
             this.textCPass.Leave += new System.EventHandler(this.textCPass_Leave);
             // 
             // pictureBox2

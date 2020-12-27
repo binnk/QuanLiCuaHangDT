@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LoginUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,8 @@ namespace QLCH_UI
         {
             manv = manvv;
             InitializeComponent();
+            lb_manv.Text = manv;
+            lb_tennv.Text = DAO.Account.Instance.Get_Ten(manv);
             openChildForm(new fReviewSale(manv));
             pnInfo.Visible = false;
         }
@@ -99,8 +102,29 @@ namespace QLCH_UI
 
         private void btnChangePW_Click(object sender, EventArgs e)
         {
-            fChangePassword f = new fChangePassword();
+            fChangePassword f = new fChangePassword(manv);
             f.ShowDialog();
+            pnInfo.Visible = false;
+        }
+
+        private void gunaCirclePictureBox1_Click(object sender, EventArgs e)
+        {
+            if (pnInfo.Visible == false)
+            {
+                pnInfo.Visible = true;
+                pnInfo.BringToFront();
+            }
+            else
+            {
+                pnInfo.Visible = false;
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            Program.SetMainForm(new LoginForm());
+            Program.ShowMainForm();
+            this.Close();
         }
     }
 }

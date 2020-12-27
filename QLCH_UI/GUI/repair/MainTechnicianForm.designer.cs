@@ -52,10 +52,10 @@
             this.Info = new Guna.UI.WinForms.GunaElipsePanel();
             this.btnChangePW = new Guna.UI.WinForms.GunaButton();
             this.gunaElipsePanel3 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.lb_tennv = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.lb_manv = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.btnDown = new Guna.UI.WinForms.GunaButton();
@@ -210,6 +210,7 @@
             this.btnThem.TabIndex = 21;
             this.btnThem.Text = "Đăng xuất";
             this.btnThem.TextOffsetX = -5;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnLinhKien
             // 
@@ -469,7 +470,7 @@
             // 
             this.gunaElipsePanel3.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel3.BaseColor = System.Drawing.Color.White;
-            this.gunaElipsePanel3.Controls.Add(this.gunaLabel3);
+            this.gunaElipsePanel3.Controls.Add(this.lb_tennv);
             this.gunaElipsePanel3.Controls.Add(this.gunaLabel4);
             this.gunaElipsePanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaElipsePanel3.Location = new System.Drawing.Point(0, 47);
@@ -478,16 +479,16 @@
             this.gunaElipsePanel3.Size = new System.Drawing.Size(261, 47);
             this.gunaElipsePanel3.TabIndex = 1;
             // 
-            // gunaLabel3
+            // lb_tennv
             // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaLabel3.Location = new System.Drawing.Point(77, 8);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(156, 30);
-            this.gunaLabel3.TabIndex = 1;
-            this.gunaLabel3.Text = "Nguyễn Văn A";
+            this.lb_tennv.AutoSize = true;
+            this.lb_tennv.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tennv.ForeColor = System.Drawing.Color.DimGray;
+            this.lb_tennv.Location = new System.Drawing.Point(77, 8);
+            this.lb_tennv.Name = "lb_tennv";
+            this.lb_tennv.Size = new System.Drawing.Size(156, 30);
+            this.lb_tennv.TabIndex = 1;
+            this.lb_tennv.Text = "Nguyễn Văn A";
             // 
             // gunaLabel4
             // 
@@ -503,7 +504,7 @@
             // 
             this.gunaElipsePanel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel2.BaseColor = System.Drawing.Color.White;
-            this.gunaElipsePanel2.Controls.Add(this.gunaLabel2);
+            this.gunaElipsePanel2.Controls.Add(this.lb_manv);
             this.gunaElipsePanel2.Controls.Add(this.gunaLabel1);
             this.gunaElipsePanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaElipsePanel2.Location = new System.Drawing.Point(0, 0);
@@ -512,16 +513,16 @@
             this.gunaElipsePanel2.Size = new System.Drawing.Size(261, 47);
             this.gunaElipsePanel2.TabIndex = 0;
             // 
-            // gunaLabel2
+            // lb_manv
             // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaLabel2.Location = new System.Drawing.Point(77, 8);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(74, 30);
-            this.gunaLabel2.TabIndex = 1;
-            this.gunaLabel2.Text = "KTV01";
+            this.lb_manv.AutoSize = true;
+            this.lb_manv.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_manv.ForeColor = System.Drawing.Color.DimGray;
+            this.lb_manv.Location = new System.Drawing.Point(77, 8);
+            this.lb_manv.Name = "lb_manv";
+            this.lb_manv.Size = new System.Drawing.Size(74, 30);
+            this.lb_manv.TabIndex = 1;
+            this.lb_manv.Text = "KTV01";
             // 
             // gunaLabel1
             // 
@@ -584,6 +585,7 @@
             this.gunaCirclePictureBox1.TabIndex = 25;
             this.gunaCirclePictureBox1.TabStop = false;
             this.gunaCirclePictureBox1.UseTransfarantBackground = false;
+            this.gunaCirclePictureBox1.Click += new System.EventHandler(this.gunaCirclePictureBox1_Click);
             // 
             // guna2DragControl1
             // 
@@ -646,10 +648,10 @@
         private Guna.UI.WinForms.GunaElipsePanel Info;
         private Guna.UI.WinForms.GunaButton btnChangePW;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel3;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel lb_tennv;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel2;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel lb_manv;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaButton btnDown;
         private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;

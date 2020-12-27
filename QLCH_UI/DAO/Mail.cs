@@ -34,17 +34,17 @@ namespace QLCH_UI.DAO
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
-                mail.From = new MailAddress("buiminhhuyqnam@gmail.com");
+                mail.From = new MailAddress(rs.Rows[0]["email"].ToString());
                 mail.To.Add(rs.Rows[0][1].ToString());
                 mail.Subject = "OTP FROM APP QUAN LI CUA HANG DIEN THOAI";
                 mail.Body = "This is OTP for username " + user +" " + OTP;
 
                 SmtpServer.Port = 587;
-                SmtpServer.Credentials = new System.Net.NetworkCredential("buiminhhuyqnam@gmail.com", "password");
+                SmtpServer.Credentials = new System.Net.NetworkCredential("quanlicuahangdt@gmail.com", "buiminhhuy");
                 SmtpServer.EnableSsl = true;
 
                 SmtpServer.Send(mail);
-                MessageBox.Show("mail Send");
+                MessageBox.Show("Mail Send. Get your OTP from email.");
             }
             catch (Exception ex)
             {

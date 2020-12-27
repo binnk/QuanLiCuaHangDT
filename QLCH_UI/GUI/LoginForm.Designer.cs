@@ -73,11 +73,11 @@
             this.textPass.Location = new System.Drawing.Point(88, 195);
             this.textPass.Name = "textPass";
             this.textPass.Size = new System.Drawing.Size(251, 26);
-            this.textPass.TabIndex = 5;
-            this.textPass.TabStop = false;
+            this.textPass.TabIndex = 1;
             this.textPass.Text = "Password";
             this.textPass.Click += new System.EventHandler(this.textPass_Click);
             this.textPass.Enter += new System.EventHandler(this.textPass_Enter);
+            this.textPass.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textPass_KeyUp);
             this.textPass.Leave += new System.EventHandler(this.textPass_Leave);
             // 
             // textUser
@@ -90,8 +90,7 @@
             this.textUser.Location = new System.Drawing.Point(88, 122);
             this.textUser.Name = "textUser";
             this.textUser.Size = new System.Drawing.Size(251, 26);
-            this.textUser.TabIndex = 2;
-            this.textUser.TabStop = false;
+            this.textUser.TabIndex = 0;
             this.textUser.Text = "Username";
             this.textUser.Click += new System.EventHandler(this.textUser_Click);
             this.textUser.TextChanged += new System.EventHandler(this.textUser_TextChanged);
@@ -107,7 +106,7 @@
             this.btnLogin.Location = new System.Drawing.Point(39, 298);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(300, 55);
-            this.btnLogin.TabIndex = 10;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -133,7 +132,6 @@
             this.lCreateAcc.Name = "lCreateAcc";
             this.lCreateAcc.Size = new System.Drawing.Size(140, 20);
             this.lCreateAcc.TabIndex = 13;
-            this.lCreateAcc.TabStop = true;
             this.lCreateAcc.Text = "Create an account";
             this.lCreateAcc.VisitedLinkColor = System.Drawing.Color.White;
             this.lCreateAcc.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lCreateAcc_LinkClicked);
@@ -178,7 +176,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Brown;
-            this.label2.Location = new System.Drawing.Point(59, 256);
+            this.label2.Location = new System.Drawing.Point(39, 256);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(260, 22);
             this.label2.TabIndex = 16;
@@ -221,6 +219,7 @@
             this.Text = "LoginForm";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.LoginForm_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogin)).EndInit();

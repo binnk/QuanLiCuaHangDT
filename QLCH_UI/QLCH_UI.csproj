@@ -297,23 +297,11 @@
     <Compile Include="GUI\Customer\InfoCustomer.designer.cs">
       <DependentUpon>InfoCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\HoaDon\OrdersForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\HoaDon\OrdersForm.Designer.cs">
-      <DependentUpon>OrdersForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\product\EditProduct.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\product\EditProduct.Designer.cs">
       <DependentUpon>EditProduct.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\product\ProductsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\product\ProductsForm.Designer.cs">
-      <DependentUpon>ProductsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\Account.cs" />
     <Compile Include="DAO\ConnectSQL.cs" />
@@ -354,12 +342,6 @@
     <Compile Include="GUI\Staff\InfoStaff.designer.cs">
       <DependentUpon>InfoStaff.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Manage\ImportManagementForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Manage\ImportManagementForm.designer.cs">
-      <DependentUpon>ImportManagementForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\Sale\MainSaleForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -387,12 +369,6 @@
       <DependentUpon>ReportForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="GUI\Manage\WareHouseManagentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Manage\WareHouseManagentForm.designer.cs">
-      <DependentUpon>WareHouseManagentForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\Customer\UC_ItemCustomer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -517,14 +493,8 @@
     <EmbeddedResource Include="GUI\Customer\InfoCustomer.resx">
       <DependentUpon>InfoCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\HoaDon\OrdersForm.resx">
-      <DependentUpon>OrdersForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\product\EditProduct.resx">
       <DependentUpon>EditProduct.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\product\ProductsForm.resx">
-      <DependentUpon>ProductsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -544,9 +514,6 @@
     <EmbeddedResource Include="GUI\Staff\InfoStaff.resx">
       <DependentUpon>InfoStaff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Manage\ImportManagementForm.resx">
-      <DependentUpon>ImportManagementForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Sale\MainSaleForm.resx">
       <DependentUpon>MainSaleForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -565,9 +532,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Staff\StaffsForm.resx">
       <DependentUpon>StaffsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Manage\WareHouseManagentForm.resx">
-      <DependentUpon>WareHouseManagentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>

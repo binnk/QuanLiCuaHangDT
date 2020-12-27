@@ -10,6 +10,8 @@ namespace QLCH_UI
 {
     static class Program
     {
+        static ApplicationContext MainContext = new ApplicationContext();
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -18,10 +20,21 @@ namespace QLCH_UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
-            //Application.Run(new  ReportForm());
-            //Application.Run(new MainTechnicianForm("NV02"));
-            
+
+            MainContext.MainForm = new LoginForm();
+            Application.Run(MainContext);
+        }
+
+        public static void SetMainForm(Form MainForm)
+        {
+            MainContext.MainForm = MainForm;
+        }
+
+        public static void ShowMainForm()
+        {
+            MainContext.MainForm.Show();
         }
     }
+
 }
+    

@@ -37,7 +37,7 @@ namespace QLCH_UI.DAO
             }
             catch ( Exception e)
             {
-                return "0";
+                return Convert.ToDouble(dt.Rows[0]["summ"]).ToString("#,##0");
             }
             
         }

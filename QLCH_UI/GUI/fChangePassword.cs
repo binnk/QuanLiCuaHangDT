@@ -12,8 +12,10 @@ namespace QLCH_UI
 {
     public partial class fChangePassword : Form
     {
-        public fChangePassword()
+        private string manv;
+        public fChangePassword(string manvv)
         {
+            manv = manvv;
             InitializeComponent();
         }
 
@@ -25,6 +27,31 @@ namespace QLCH_UI
         private void gunaButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+            if(tbcmk.Text == tbmk.Text)
+            {
+                if(DAO.Account.Instance.Change_PW(DAO.Account.Instance.Get_Username(manv), DAO.Encrypt.Instance.Hash(tbcmk.Text)))
+                {
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Không thành công");
+                }
+            }
+            else
+            {
+                label3.Visible = true;
+                label3.Text = "Xác nhận lại mật khẩu.";
+            }
+        }
+
+        private void gunaLinePanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

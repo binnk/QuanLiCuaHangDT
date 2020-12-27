@@ -126,5 +126,48 @@ namespace QLCH_UI.DAO
                 return "NV01";
             }
         }
+        public bool Change_PW(string usermane,string pw)
+        {
+            string query = "update account set mat_khau = '"+pw+"'"+
+                           " where username = '"+usermane+"' ";
+           
+            try
+            {
+                DataTable rs = ConnectSQL.Instance.ExecuteQuery(query);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public string Get_Username(string manv)
+        {
+            string query = "select ACCOUNT.username from ACCOUNT,NHAN_VIEN"
+                    + " where ACCOUNT.username = NHAN_VIEN.username and  NHAN_VIEN.manv = '" + manv + "'";
+            DataTable rs = ConnectSQL.Instance.ExecuteQuery(query);
+            try
+            {
+                return rs.Rows[0]["username"].ToString();
+            }
+            catch
+            {
+                return "huy";
+            }
+        }
+        public string Get_Ten(string manv)
+        {
+            string query = "select NHAN_VIEN.ten_nv from NHAN_VIEN"
+                    + " where NHAN_VIEN.manv = '" + manv + "'";
+            DataTable rs = ConnectSQL.Instance.ExecuteQuery(query);
+            try
+            {
+                return rs.Rows[0]["ten_nv"].ToString();
+            }
+            catch
+            {
+                return "";
+            }
+        }
     }
 }

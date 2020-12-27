@@ -1098,6 +1098,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(379, 115);
             this.panel4.TabIndex = 3;
+            this.panel4.Visible = false;
             // 
             // ptb4_sp
             // 

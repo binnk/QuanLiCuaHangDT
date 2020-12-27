@@ -272,10 +272,12 @@
             // 
             // tb_masp
             // 
+            this.tb_masp.BackColor = System.Drawing.SystemColors.Window;
             this.tb_masp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_masp.Font = new System.Drawing.Font("Arial", 16F);
             this.tb_masp.Location = new System.Drawing.Point(50, 129);
             this.tb_masp.Name = "tb_masp";
+            this.tb_masp.ReadOnly = true;
             this.tb_masp.Size = new System.Drawing.Size(414, 44);
             this.tb_masp.TabIndex = 95;
             // 
