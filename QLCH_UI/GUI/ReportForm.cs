@@ -486,7 +486,7 @@ namespace QLCH_UI
                         graph.DrawString("Tổng giá trị ngày " + DateTime.Parse(ngay).ToString("dd/MM/yyyy"), font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
                         graph.DrawString(Convert.ToDecimal(tien).ToString("#,##0"), font_thuong_dam, XBrushes.Black, new XRect(540, ypoint, pdfpage.Width.Point, pdfpage.Height.Point), XStringFormat.TopLeft);
                     }
-                string pdfFilename = "phieu_thu.pdf";
+                string pdfFilename = @"D:\\phieu_thu.pdf";
                 pdf.Save(pdfFilename);
                 Process.Start(pdfFilename);
                 //--------------------------------
@@ -581,14 +581,14 @@ namespace QLCH_UI
                     graph.DrawString("Tổng giá trị ngày " + DateTime.Parse(ngay).ToString("dd/MM/yyyy"), font_thuong_dam, XBrushes.Black, new XRect(40, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
                     graph.DrawString(Convert.ToDecimal(tien).ToString("#,##0"), font_thuong_dam, XBrushes.Black, new XRect(340, ypoint, pdfpage1.Width.Point, pdfpage1.Height.Point), XStringFormat.TopLeft);
                 }
-                string pdfFilename1 = "phieu_chi.pdf";
+                string pdfFilename1 = @"D:\\phieu_chi.pdf";
                 pdf1.Save(pdfFilename1);
                 Process.Start(pdfFilename1);
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("loi tran so hoac file pdf dang duoc mo");
+                MessageBox.Show(ex.Message);
             }
         }
 
