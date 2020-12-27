@@ -1288,12 +1288,15 @@
             // btn_thongke
             // 
             this.btn_thongke.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_thongke.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_thongke.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_thongke.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_thongke.Location = new System.Drawing.Point(1480, 3);
             this.btn_thongke.Name = "btn_thongke";
             this.btn_thongke.Size = new System.Drawing.Size(100, 34);
             this.btn_thongke.TabIndex = 21;
-            this.btn_thongke.Text = "thong ke";
-            this.btn_thongke.UseVisualStyleBackColor = true;
+            this.btn_thongke.Text = "Xuất file";
+            this.btn_thongke.UseVisualStyleBackColor = false;
             this.btn_thongke.Click += new System.EventHandler(this.btn_thongke_Click);
             // 
             // ReportForm
@@ -1315,6 +1318,7 @@
             this.Controls.Add(this.guna2CustomGradientPanel3);
             this.Controls.Add(this.guna2CustomGradientPanel2);
             this.Controls.Add(this.guna2CustomGradientPanel1);
+            this.ForeColor = System.Drawing.Color.Gray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReportForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

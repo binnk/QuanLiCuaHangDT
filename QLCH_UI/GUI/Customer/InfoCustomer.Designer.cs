@@ -141,6 +141,7 @@
             this.label14.Size = new System.Drawing.Size(111, 30);
             this.label14.TabIndex = 121;
             this.label14.Text = "doanh thu";
+            this.label14.Visible = false;
             // 
             // label15
             // 
@@ -151,6 +152,7 @@
             this.label15.Size = new System.Drawing.Size(131, 32);
             this.label15.TabIndex = 120;
             this.label15.Text = "Doanh thu";
+            this.label15.Visible = false;
             // 
             // lb_diachi
             // 

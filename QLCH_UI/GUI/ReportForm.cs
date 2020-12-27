@@ -117,7 +117,7 @@ namespace QLCH_UI
             // sản phẩm 4
             if (sp.Rows.Count > 3)
             {
-
+                panel4.Visible = false;
                 lb4_tensp.Text = sp.Rows[3]["ten_sp"].ToString();
                 lb4_doanhso.Text = sp.Rows[3]["sum"].ToString();
                 ptb4_sp.Image = ProductBUS.Instance.ByteToImg(sp.Rows[3]["img"].ToString());

@@ -257,6 +257,7 @@
             this.tb_confirmpassword.Font = new System.Drawing.Font("Arial", 16F);
             this.tb_confirmpassword.Location = new System.Drawing.Point(8, 240);
             this.tb_confirmpassword.Name = "tb_confirmpassword";
+            this.tb_confirmpassword.PasswordChar = '*';
             this.tb_confirmpassword.Size = new System.Drawing.Size(268, 44);
             this.tb_confirmpassword.TabIndex = 108;
             // 
@@ -276,6 +277,7 @@
             this.tb_password.Font = new System.Drawing.Font("Arial", 16F);
             this.tb_password.Location = new System.Drawing.Point(8, 158);
             this.tb_password.Name = "tb_password";
+            this.tb_password.PasswordChar = '*';
             this.tb_password.Size = new System.Drawing.Size(268, 44);
             this.tb_password.TabIndex = 106;
             this.tb_password.TextChanged += new System.EventHandler(this.tb_password_TextChanged);

@@ -79,6 +79,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
@@ -279,12 +280,6 @@
     <Compile Include="GUI\Customer\AddCustomer.designer.cs">
       <DependentUpon>AddCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Customer\CustomersForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Customer\CustomersForm.Designer.cs">
-      <DependentUpon>CustomersForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\Customer\EditCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -355,12 +350,6 @@
     </Compile>
     <Compile Include="GUI\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Staff\StaffsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Staff\StaffsForm.designer.cs">
-      <DependentUpon>StaffsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ReportForm.cs">
       <SubType>Form</SubType>
@@ -484,9 +473,6 @@
     <EmbeddedResource Include="GUI\Customer\AddCustomer.resx">
       <DependentUpon>AddCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Customer\CustomersForm.resx">
-      <DependentUpon>CustomersForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Customer\EditCustomer.resx">
       <DependentUpon>EditCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -529,9 +515,6 @@
     </Compile>
     <EmbeddedResource Include="GUI\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Staff\StaffsForm.resx">
-      <DependentUpon>StaffsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -18,11 +19,29 @@ namespace QLCH_UI.DAO
             get { if (instance == null) instance = new ConnectSQL(); return instance; }
             private set => instance = value;
         }
-        private string connectionSTR = @"Data Source=LAPTOP-0096GMC1;Initial Catalog=QL_CHDT;User ID=sa; PassWord=buiminhhuy;";
-        //private string connectionSTR =@"Data Source=.\SQLEXPRESS;Initial Catalog=QL_CHDT;Integrated Security=True";
-        //@"Data Source=LAPTOP-4CIHSEK9\SQLEXPRESS;Initial Catalog=QL_CHDT;Integrated Security=True";
+        private string connectionSTR;
+        public bool TestConnString()
+        {
+            //connectionSTR = @"Data Source=LAPTOP-0096GMC1;Initial Catalog=QL_CHDT;User ID=sa; PassWord=buiminhhuy;";
+            connectionSTR = ConfigurationManager.ConnectionStrings["Con"].ConnectionString;
+
+            //MessageBox.Show(connectionSTR);
+            bool isValidConnectionString = true;
+            try
+            {
+                var con = new SqlConnectionStringBuilder(connectionSTR);
+            }
+            catch (Exception)
+            {
+                // can be KeyNotFoundException, FormatException, ArgumentException
+                //MessageBox.Show(connectionSTR);
+                isValidConnectionString = false;
+            }
+            return isValidConnectionString;
+        }
         public DataTable ExecuteQuery(string query, object[] paramater = null)
         {
+            connectionSTR = ConfigurationManager.ConnectionStrings["Con"].ConnectionString;
             DataTable data = new DataTable();
             using (SqlConnection connection = new SqlConnection(connectionSTR))
             {
@@ -49,6 +68,7 @@ namespace QLCH_UI.DAO
         }
         public int ExecuteNonQuery(string query, object[] paramater = null)
         {
+            connectionSTR = ConfigurationManager.ConnectionStrings["Con"].ConnectionString;
             int data = 0;
             using (SqlConnection connection = new SqlConnection(connectionSTR))
             {
@@ -75,6 +95,7 @@ namespace QLCH_UI.DAO
 
         public object ExecuteScalar(string query, object[] paramater = null)
         {
+            connectionSTR = ConfigurationManager.ConnectionStrings["Con"].ConnectionString;
             object data = 0;
             using (SqlConnection connection = new SqlConnection(connectionSTR))
             {

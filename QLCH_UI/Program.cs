@@ -20,9 +20,15 @@ namespace QLCH_UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            MainContext.MainForm = new LoginForm();
-            Application.Run(MainContext);
+            if (DAO.ConnectSQL.Instance.TestConnString())
+            {
+                MainContext.MainForm = new LoginForm();
+                Application.Run(MainContext);
+            }
+            else
+            {
+                MessageBox.Show("Can't connect to database. Please contact Provider.");
+            }
         }
 
         public static void SetMainForm(Form MainForm)
