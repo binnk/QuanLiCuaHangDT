@@ -116,11 +116,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(60, 375);
+            this.label1.Location = new System.Drawing.Point(61, 377);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 18);
+            this.label1.Size = new System.Drawing.Size(78, 18);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Not registered?";
+            this.label1.Text = "Get OTP?";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lCreateAcc
@@ -128,10 +128,11 @@
             this.lCreateAcc.ActiveLinkColor = System.Drawing.Color.RoyalBlue;
             this.lCreateAcc.AutoSize = true;
             this.lCreateAcc.LinkColor = System.Drawing.Color.SteelBlue;
-            this.lCreateAcc.Location = new System.Drawing.Point(182, 373);
+            this.lCreateAcc.Location = new System.Drawing.Point(159, 375);
             this.lCreateAcc.Name = "lCreateAcc";
             this.lCreateAcc.Size = new System.Drawing.Size(140, 20);
             this.lCreateAcc.TabIndex = 13;
+            this.lCreateAcc.TabStop = true;
             this.lCreateAcc.Text = "Create an account";
             this.lCreateAcc.VisitedLinkColor = System.Drawing.Color.White;
             this.lCreateAcc.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lCreateAcc_LinkClicked);

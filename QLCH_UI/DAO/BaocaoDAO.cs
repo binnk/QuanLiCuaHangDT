@@ -30,16 +30,23 @@ namespace QLCH_UI.DAO
             DataTable dt = ConnectSQL.Instance.ExecuteQuery(query);
             string queryy = "select sum(tri_gia) as summ from SUA_CHUA where tinh_trang = 'thanhtoan' and ngay_giao >= '" + date1 + "' and  ngay_giao <= '" + date2 + "'";
             DataTable dtt = ConnectSQL.Instance.ExecuteQuery(queryy);
-
+            double rs1 = 0, rs2 = 0;
             try
             {
-                return (Convert.ToDouble(dtt.Rows[0]["summ"])+Convert.ToDouble(dt.Rows[0]["summ"])).ToString("#,##0");
+                rs1 = Convert.ToDouble(dtt.Rows[0]["summ"]);
             }
-            catch ( Exception e)
+            catch 
             {
-                return Convert.ToDouble(dt.Rows[0]["summ"]).ToString("#,##0");
             }
-            
+            try
+            {
+                rs2 = Convert.ToDouble(dt.Rows[0]["summ"]);
+            }
+            catch
+            {
+            }
+            return (rs2 + rs1).ToString("#,##0");
+
         }
         public string Get_So_HD(string date1, string date2)
         {

@@ -126,7 +126,7 @@ namespace QLCH_UI
         string giam_gia = "0";
         private void tbgiam_gia_TextChanged(object sender, EventArgs e)
         {
-            if (tbgiam_gia.Text.Length > 12) tbgiam_gia.Text = Convert.ToDouble(giam_gia).ToString("#,##0");
+            if (tbgiam_gia.Text.Length == 0) tbgiam_gia.Text = "0";
             if (tbgiam_gia.Text.Length > 0)
             {
                 foreach (char i in tbgiam_gia.Text)
@@ -137,17 +137,20 @@ namespace QLCH_UI
                         break;
                     }
                 }
+                if (tbgiam_gia.Text.Length > 12 || Convert.ToDouble(GetFloat(tbgiam_gia.Text)) > Convert.ToDouble(GetFloat(lbtong_tien.Text)))
+                    tbgiam_gia.Text = Convert.ToDouble(giam_gia).ToString("#,##0");
                 giam_gia = GetFloat(tbgiam_gia.Text);
                 lbkhach_phai_tra.Text = (Convert.ToDouble(GetFloat(lbtong_tien.Text)) - Convert.ToDouble(GetFloat(tbgiam_gia.Text))).ToString("#,##0");
-              tbgiam_gia.Text = Convert.ToDouble(GetFloat(tbgiam_gia.Text)).ToString("#,##0");
+                tbgiam_gia.Text = Convert.ToDouble(GetFloat(tbgiam_gia.Text)).ToString("#,##0");
                 tbgiam_gia.SelectionStart = tbgiam_gia.Text.Length;
             }
+            
+               
         }
         string tien_khach_dua = "0";
         private void tbtien_khach_dua_TextChanged(object sender, EventArgs e)
         {
-            if (tbtien_khach_dua.Text.Length > 12) tbtien_khach_dua.Text = Convert.ToDouble(tien_khach_dua).ToString("#,##0");
-            tbtien_khach_dua.ForeColor = Color.Black;
+            if (tbtien_khach_dua.Text.Length == 0) tbtien_khach_dua.Text = "0";
             if (tbtien_khach_dua.Text.Length > 0)
             {
                 foreach (char i in tbtien_khach_dua.Text)
@@ -158,11 +161,14 @@ namespace QLCH_UI
                         break;
                     }
                 }
+                if (tbtien_khach_dua.Text.Length > 12) tbtien_khach_dua.Text = Convert.ToDouble(tien_khach_dua).ToString("#,##0");
                 tien_khach_dua = GetFloat(tbtien_khach_dua.Text);
                 lbtien_thua.Text = (Convert.ToDouble(GetFloat(tbtien_khach_dua.Text)) - Convert.ToDouble(GetFloat(lbkhach_phai_tra.Text))).ToString("#,##0");
                 tbtien_khach_dua.Text = Convert.ToDouble(GetFloat(tbtien_khach_dua.Text)).ToString("#,##0");
                 tbtien_khach_dua.SelectionStart = tbtien_khach_dua.Text.Length;
             }
+            tbtien_khach_dua.ForeColor = Color.Black;
+            
         }
         private void lbkhach_phai_tra_TextChanged(object sender, EventArgs e)
         {
