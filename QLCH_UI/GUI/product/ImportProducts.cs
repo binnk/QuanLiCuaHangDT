@@ -138,5 +138,11 @@ namespace QLCH_UI
         {
             this.Close();
         }
+        string sl = "";
+        private void tb_sl_TextChanged(object sender, EventArgs e)
+        {
+            if (tb_sl.Text.Length > 3) tb_sl.Text = sl;
+            else sl = tb_sl.Text;
+        }
     }
 }

@@ -66,9 +66,6 @@ E:\QuanLiCuaHangDT\QLCH_UI\bin\Debug\QLCH_UI.pdb
 E:\QuanLiCuaHangDT\QLCH_UI\bin\Debug\FontAwesome.Sharp.dll
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.csprojAssemblyReference.cache
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.AddCustomer.resources
-E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.CustomersForm.resources
-E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.OrdersForm.resources
-E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ProductsForm.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\LoginUI.LoginForm.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.MainForm.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.Properties.Resources.resources
@@ -287,7 +284,6 @@ E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.SellForm.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_Item.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.AddStaff.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.EditStaff.resources
-E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.StaffsForm.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.lb_gioitinh.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.lb_gioitinh.resources
 C:\Users\phamt\Desktop\QuanLiCuaHangDT\QLCH_UI\bin\Debug\SqlServerTypes\x64\msvcr120.dll
@@ -379,8 +375,6 @@ D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_UI_DS_Item.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemRepair.resources
 D:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.UC_ItemProduct.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.CTHDForm.resources
-E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ImportManagementForm.resources
-E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.WareHouseManagentForm.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.ReportForm.resources
 E:\QuanLiCuaHangDT\QLCH_UI\obj\Debug\QLCH_UI.EditImportProduct.resources
 E:\QuanLiCuaHangDT\QLCH_UI\bin\Debug\LiveCharts.dll

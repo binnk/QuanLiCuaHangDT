@@ -277,6 +277,7 @@
             this.tb_gia_nhap.Name = "tb_gia_nhap";
             this.tb_gia_nhap.Size = new System.Drawing.Size(414, 44);
             this.tb_gia_nhap.TabIndex = 104;
+            this.tb_gia_nhap.TextChanged += new System.EventHandler(this.tb_gia_nhap_TextChanged);
             // 
             // label6
             // 
@@ -296,6 +297,7 @@
             this.tb_sl.Name = "tb_sl";
             this.tb_sl.Size = new System.Drawing.Size(133, 44);
             this.tb_sl.TabIndex = 102;
+            this.tb_sl.TextChanged += new System.EventHandler(this.tb_sl_TextChanged);
             // 
             // label4
             // 
